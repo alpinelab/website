@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Michael Baudino -- CEO & Co-Founder -- @alpinelab
+    Thibault Dalban -- CEO & Co-Founder -- @alpinelab
 
 # THANKS
 
-    <name>
+    All the amazingly dynamic open-source community
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    jQuery, Modernizr, SLIM, MiddleMan
