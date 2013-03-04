@@ -81,3 +81,5 @@ activate :deploy do |deploy|
   deploy.remote = 'gh-pages'
   deploy.branch = 'master'
 end
+
+activate :livereload

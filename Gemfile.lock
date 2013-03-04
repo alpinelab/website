@@ -13,12 +13,18 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    em-websocket (0.4.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
+    eventmachine (1.0.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    ffi (1.4.0)
     fssm (0.2.10)
     haml (4.0.0)
       tilt
     hike (1.2.1)
+    http_parser.rb (0.5.3)
     http_router (0.10.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -42,6 +48,11 @@ GEM
     middleman-deploy (0.0.10)
       middleman-core (>= 3.0.0)
       ptools
+    middleman-livereload (3.0.1)
+      em-websocket (>= 0.2.0)
+      middleman-core (~> 3.0.2)
+      multi_json (~> 1.0)
+      rack-livereload
     middleman-more (3.0.12)
       coffee-script (~> 2.2.0)
       coffee-script-source (~> 1.3.3)
@@ -70,11 +81,15 @@ GEM
       padrino-core (= 0.10.7)
     ptools (1.2.2)
     rack (1.4.5)
+    rack-livereload (0.3.11)
+      rack
     rack-protection (1.4.0)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rb-fsevent (0.9.3)
+    rb-inotify (0.9.0)
+      ffi (>= 0.5.0)
     sass (3.2.6)
     sinatra (1.3.5)
       rack (~> 1.4)
@@ -107,4 +122,6 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 3.0.12)
   middleman-deploy
+  middleman-livereload
+  rb-inotify
   slim

@@ -7,3 +7,5 @@ gem 'middleman', '~>3.0.12'
 gem 'slim'
 
 gem 'middleman-deploy'
+gem 'middleman-livereload'
+gem 'rb-inotify'
