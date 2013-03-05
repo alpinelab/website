@@ -15,10 +15,10 @@ head
   meta name="description" content="Alpine Lab, le blog parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS, de CoffeeScript et d'Ember.js"
   meta name="viewport" content="width=device-width"
 
-  link rel="stylesheet" href="css/normalize.css"
-  link rel="stylesheet" href="css/main.css"
-  link rel="stylesheet" href="css/default.css"
-  script src="js/vendor/modernizr-2.6.1.min.js"
+  link rel="stylesheet" href="/css/normalize.css"
+  link rel="stylesheet" href="/css/main.css"
+  link rel="stylesheet" href="/css/default.css"
+  script src="/js/vendor/modernizr-2.6.1.min.js"
 body
   #wrapper
     header
@@ -30,7 +30,7 @@ body
           span.blog le blog
     nav
       ul
-        == link_to '/alpine-lab.html' do
+        == link_to '/pages/alpine-lab.html' do
           li Alpine lab
         == link_to 'https://www.skiwallet.com', 'target' => '_blank' do
           li Skiwallet

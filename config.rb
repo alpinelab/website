@@ -70,6 +70,7 @@ configure :build do
   # Use relative URLs
   activate :relative_assets
 
+  # Add asset fingerprinting to avoid cache issues
   activate :asset_hash
 
   # Compress PNGs after build
