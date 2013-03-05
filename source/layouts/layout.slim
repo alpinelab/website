@@ -11,24 +11,41 @@ head
   meta charset="utf-8"
   meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
   / Use title if it's in the page YAML frontmatter
-  title= data.page.title || "HTML5 Boilerplate"
-  meta name="description" content=""
+  title= data.page.title || "Alpine Lab, le blog"
+  meta name="description" content="Alpine Lab, le blog parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS, de CoffeeScript et d'Ember.js"
   meta name="viewport" content="width=device-width"
-
-  / Place favicon.ico and apple-touch-icon.png in the root directory
 
   link rel="stylesheet" href="css/normalize.css"
   link rel="stylesheet" href="css/main.css"
   link rel="stylesheet" href="css/default.css"
   script src="js/vendor/modernizr-2.6.1.min.js"
 body
-  /[if lt IE 7]
-    p.chromeframe
-      | You are using an outdated browser.
-      a href="http://browsehappy.com/" | Upgrade your browser today or
-      a href="http://www.google.com/chromeframe/?redirect=true" | install Google Chrome Frame to better experience this site.
-
-  == yield
+  #wrapper
+    header
+      == link_to '/' do
+        h1.sitename
+          span.alpine Alpine
+          span.lab
+            ' Lab
+          span.blog le blog
+    nav
+      ul
+        == link_to '/alpine-lab.html' do
+          li Alpine lab
+        == link_to 'https://www.skiwallet.com', 'target' => '_blank' do
+          li Skiwallet
+        == link_to '/contact.html' do
+          li Contact
+    #main
+      == yield
+    #end-of-main
+  footer
+    p
+      ' Le blog d'Alpine Lab est publié sous license
+      == link_to 'Creative Commons Attribution 3.0 (cc-by-3.0)', 'http://creativecommons.org/licenses/by/3.0/fr/'
+      ' . Le code est sous licence
+      == link_to 'MIT', 'http://opensource.org/licenses/MIT'
+      | .
 
   script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
   javascript:

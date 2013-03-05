@@ -1,0 +1,76 @@
+html, body
+  height: 100%
+  background-color: $sw_lightest_gray
+
+#wrapper
+  position: relative
+  width: $pageWidth
+  max-width: $pageWidth
+  min-height: 100%
+  margin: 0 auto (-$footerHeight)
+  background-color: white
+  padding: 0 2em
+  box-shadow: inset 0 -2px 7px 0 $sw_light_gray
+
+header
+  padding: 2em 0
+  h1.sitename
+    display: inline-block
+    font-size: 1.6em
+    margin: 0
+    padding-left: 4em
+    background: image-url('logo-alpinelab.png') no-repeat 0.5em 0
+    background-size: 3em 3em
+    vertical-align: middle
+    line-height: 3em
+    color: $sw_darker_gray
+    font-family: "SackersGothic", sans-serif
+    font-weight: lighter
+    .alpine, .lab
+      text-transform: uppercase
+    .alpine
+      color: $sw_dark_blue
+    .lab
+      color: $sw_dark_red
+    .blog
+      color: $sw_dark_gray
+      font-size: 0.8em
+
+nav
+  font-size: 1.2em
+  font-family: "SackersGothic", sans-serif
+  font-weight: lighter
+  text-transform: lowercase
+  ul
+    padding: 0
+    li
+      float: left
+      width: 20%
+      margin-right: 5%
+      text-align: left
+      height: 1.5em
+      border-bottom: solid 1px $sw_blue
+      &:hover
+        border-color: $sw_red
+      a
+        width: 100%
+
+#main
+  clear: both
+  padding: 2em 0 4em 0
+
+footer, #end-of-main
+  height: $footerHeight
+  clear: both
+
+footer
+  position: relative
+  width: $pageWidth
+  text-align: center
+  margin: 0 auto
+  *
+    margin: 0
+  p
+    color: $sw_light_gray
+    font-size: 0.8em
+    line-height: 1em
