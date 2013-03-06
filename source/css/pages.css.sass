@@ -2,24 +2,25 @@
   h2
     margin: 0
     margin-bottom: 1em
-  .avatar
-    float: left
-    margin-right: 1em
-    width: $avatarSize
-    height: $avatarSize
-    -webkit-transition: 0.5s ease
-    border-radius: 50%
-    border: ($avatarSize/2) solid rgba(black, 0.6)
-    background-position: 50% 50%
-    background-size: $avatarSize $avatarSize
-    background-repeat: no-repeat
-    background-origin: border-box
-    box-sizing: border-box
-    &:hover
-      border: 5px solid rgba(black, 0.6)
   article
     padding-top: 1em
     padding-bottom: 2em
+    .avatar
+      float: left
+      margin-right: 1em
+      width: $avatarSize
+      height: $avatarSize
+      -webkit-transition: 0.5s ease
+      border-radius: 50%
+      border: ($avatarSize/2) solid rgba(black, 0.6)
+      background-position: 50% 50%
+      background-size: $avatarSize $avatarSize
+      background-repeat: no-repeat
+      background-origin: border-box
+      box-sizing: border-box
+    &:hover
+      .avatar
+        border: 5px solid rgba(black, 0.6)
   i
     margin-left: 0.5em
     color: $sw_light_gray
@@ -40,6 +41,8 @@
       color: $google_plus
     &.icon-envelope:hover
       color: $sw_dark_red
+    &.icon-globe:hover
+      color: $sw_darkest_blue
     &.icon-phone:hover
       color: $phone
       &::after
@@ -61,3 +64,9 @@
     background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
   a i.icon-phone:hover::after
     content: "06.66.07.58.83"
+#mathilde
+  .avatar
+    background-image: url('/img/photo-mathilde.png')
+#martin
+  .avatar
+    background-image: url('/img/photo-martin.jpg')
