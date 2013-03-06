@@ -1,0 +1,62 @@
+#company, #team
+  h2
+    margin: 0
+    margin-bottom: 1em
+  .avatar
+    float: left
+    margin-right: 1em
+    width: $avatarSize
+    height: $avatarSize
+    -webkit-transition: 0.5s ease
+    border-radius: 50%
+    border: ($avatarSize/2) solid rgba(black, 0.6)
+    background-position: 50% 50%
+    background-size: $avatarSize $avatarSize
+    background-repeat: no-repeat
+    background-origin: border-box
+    box-sizing: border-box
+    &:hover
+      border: 5px solid rgba(black, 0.6)
+  article
+    margin-top: 2em
+  i
+    margin-left: 0.5em
+    color: $sw_light_gray
+    -webkit-transition: color 0.5s
+    -moz-transition: color 0.5s
+    -o-transition: color 0.5s
+    -ms-transition: color 0.5s
+    transition: color 0.5s
+    &.icon-github:hover
+      color: $sw_dark_gray
+    &.icon-twitter:hover
+      color: $twitter
+    &.icon-facebook-sign:hover
+      color: $facebook
+    &.icon-linkedin-sign:hover
+      color: $linkedin
+    &.icon-google-plus-sign:hover
+      color: $google_plus
+    &.icon-envelope:hover
+      color: $sw_dark_red
+    &.icon-phone:hover
+      color: $phone
+      &::after
+        margin-left: 1em
+        color: $sw_gray
+        font-size: 0.5em
+
+#alpinelab
+  .avatar
+    background-image: url('/img/logo-alpinelab.png')
+
+#mike
+  .avatar
+    background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
+  a i.icon-phone:hover::after
+    content: "07.61.90.93.62"
+#thib
+  .avatar
+    background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
+  a i.icon-phone:hover::after
+    content: "06.66.07.58.83"
