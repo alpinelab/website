@@ -9,6 +9,7 @@
 # THANKS
 
     All the amazingly dynamic open-source community
+    Also, Christopher Dell :-)
 
 # TECHNOLOGY COLOPHON
 
