@@ -5,13 +5,18 @@ body
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
   -webkit-text-stroke: 1px transparent
   background-color: white
-  color: $sw_dark_gray
+  color: $defaultTextColor
 
 a
   color: $linkColor
   text-decoration: none
   &:hover
     color: $linkColorHover
+
+a.stealth
+  color: $defaultTextColor
+  &:hover
+    color: $defaultTextColor
 
 .clearfix
   clear: both
