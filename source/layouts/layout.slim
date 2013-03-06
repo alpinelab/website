@@ -15,10 +15,9 @@ head
   meta name="description" content="Alpine Lab, le blog parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS, de CoffeeScript et d'Ember.js"
   meta name="viewport" content="width=device-width"
 
-  link rel="stylesheet" href="/css/normalize.css"
-  link rel="stylesheet" href="/css/main.css"
-  link rel="stylesheet" href="/css/default.css"
-  script src="/js/vendor/modernizr-2.6.1.min.js"
+  == stylesheet_link_tag 'normalize'
+  == stylesheet_link_tag 'main'
+  == stylesheet_link_tag 'default'
 body
   #wrapper
     header
@@ -47,11 +46,12 @@ body
       == link_to 'MIT', 'http://opensource.org/licenses/MIT'
       | .
 
-  script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+  == javascript_include_tag 'vendor/modernizr-2.6.1.min'
+  == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
   javascript:
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
-  script src="js/plugins.js"
-  script src="js/main.js"
+    window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')
+  == javascript_include_tag 'plugins'
+  == javascript_include_tag 'main'
 
   / Google Analytics: change UA-XXXXX-X to be your site's ID.
   javascript:
