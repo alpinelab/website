@@ -40,6 +40,12 @@
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
+activate :blog do |blog|
+  blog.prefix = 'posts'
+  blog.permalink = ':title'
+  blog.default_extension = '.md'
+end
+
 # Directory Indexes
 activate :directory_indexes
 
