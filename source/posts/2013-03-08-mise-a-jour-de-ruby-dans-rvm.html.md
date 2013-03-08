@@ -1,7 +1,7 @@
 ---
 title: Mise à jour de Ruby dans RVM
 date: 2013-03-08 12:10 +01:00
-tags: rvm ruby
+tags: rvm, ruby
 ---
 
 Pour mettre jour une version de Ruby avec [RVM](https://rvm.io) (par exemple passer de l 1.9.3-p374 à la 1.9.3-p392), c'est pas très compliqué.
