@@ -44,6 +44,7 @@ activate :blog do |blog|
   blog.prefix = 'posts'
   blog.permalink = ':title'
   blog.default_extension = '.md'
+  blog.layout = 'post'
 end
 
 # Directory Indexes
