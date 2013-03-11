@@ -27,8 +27,9 @@ C'est tout, RedCarpet va maintenant transformer tous les blocs de codes (entour√
 Avec un peu de CSS, on obtient donc √ßa :
 ![RedCarpet avec Middleman](middleman-redcarpet.png "RedCarpet avec Middleman")
 
-Dans un prochain article, on ajouterai de la coloration syntaxique (avec Middleman-syntax, donc Pygments, ou avec Rouge).
+Dans un prochain article, on ajouterai de la coloration syntaxique (avec [Middleman-syntax](https://github.com/middleman/middleman-syntax), donc [Pygments](http://pygments.org), ou avec [Rouge](https://github.com/jayferd/rouge)).
 
 
 #### Sources
-http://www.alexpeattie.com/blog/github-style-syntax-highlighting-with-pygments/
+* [Cette issue](https://github.com/middleman/middleman/issues/577) de Middleman
+* le [README](https://github.com/middleman/middleman-syntax) de Middleman-syntax

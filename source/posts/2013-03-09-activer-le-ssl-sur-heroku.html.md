@@ -73,8 +73,8 @@ $ heroku certs
 Chez moi, c'est `toyama-1696.herokussl.com`, dans ce qui suit, je vous laisse donc remplacer intelligemment par ce que vous aura répondu la commande ci-dessus.
 
 On va juste faire une ou deux petites vérifications :
-* tester que le endpoint route bien vers le HTTPS : en pointant son navigateur vers `http://toyama-1696.herokussl.com` ça doit afficher "No such app"
-* tester que le endpoint sert bien le certificat en SSl : en pointant son navigateur vers `https://toyama-1696.herokussl.com` ça doit dire que le certificat est prévu pour votre nom de domaine (chez moi, www.skiwallet.com).
+* tester que le endpoint route bien vers le HTTPS : en pointant son navigateur vers http://toyama-1696.herokussl.com ça doit afficher "No such app"
+* tester que le endpoint sert bien le certificat en SSl : en pointant son navigateur vers https://toyama-1696.herokussl.com ça doit dire que le certificat est prévu pour votre nom de domaine (chez moi, www.skiwallet.com).
 
 OK, on a donc l'URL du endpoint et ça semble fonctionner. Récupérons maintenant son adresse IP :
 
