@@ -24,7 +24,7 @@ set :markdown, fenced_code_blocks: true, autolink: true, smartypants: true, gh_b
 
 C'est tout, RedCarpet va maintenant transformer tous les blocs de codes (entourés de simples ou triple backquotes) en balises `<code>` (elles-mêmes imbriquées dans des balises `<pre>` si la version triple-backquotes est utilisée).
 
-Avec un peu de CSS, histoire que ça ait un peu de gueule : fond gris, bordure grise, angles arrondis et du padding plus ou moins grand selon qu'on est dans un bloc inline (simple backquote) ou pleine-ligne (triple backquote).
+Avec un peu de CSS, histoire que ça ait un peu de gueule (c'est du Sass, en fait) : fond gris, bordure grise, angles arrondis et du padding plus ou moins grand selon qu'on est dans un bloc inline (simple backquote) ou pleine-ligne (triple backquote).
 ```sass
 code
   margin: 0 0.1em
