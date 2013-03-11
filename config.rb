@@ -51,6 +51,8 @@ end
 # Directory Indexes
 activate :directory_indexes
 
+Time.zone = 'Paris'
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -63,6 +65,14 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 
 set :images_dir, 'img'
+
+set :markdown_engine, :redcarpet
+set :markdown,
+  fenced_code_blocks: true,
+  autolink: true,
+  smartypants: true,
+  gh_blockcode: true,
+  lax_spacing: true
 
 # Build-specific configuration
 configure :build do
