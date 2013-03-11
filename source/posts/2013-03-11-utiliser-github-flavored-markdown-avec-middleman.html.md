@@ -24,7 +24,30 @@ set :markdown, fenced_code_blocks: true, autolink: true, smartypants: true, gh_b
 
 C'est tout, RedCarpet va maintenant transformer tous les blocs de codes (entourés de simples ou triple backquotes) en balises `<code>` (elles-mêmes imbriquées dans des balises `<pre>` si la version triple-backquotes est utilisée).
 
-Avec un peu de CSS, on obtient donc ça :
+Avec un peu de CSS, histoire que ça ait un peu de gueule : fond gris, bordure grise, angles arrondis et du padding plus ou moins grand selon qu'on est dans un bloc inline (simple backquote) ou pleine-ligne (triple backquote).
+```sass
+code
+  margin: 0 0.1em
+  padding: 0.1em 0.2em
+  border: 1px solid lighten($sw_lighter_gray, 5%)
+  background-color: lighten($sw_lightest_gray, 5%)
+  border-radius: 0.2em
+
+pre
+  margin: 0 0.2em
+  padding: 0.5em 1em
+  border: 1px solid lighten($sw_lighter_gray, 5%)
+  background-color: lighten($sw_lightest_gray, 5%)
+  border-radius: 0.4em
+  code
+    margin: 0
+    padding: 0
+    border: none
+    background: none
+```
+
+On doit donc obtenir un truc comme ça :
+
 ![RedCarpet avec Middleman](middleman-redcarpet.png "RedCarpet avec Middleman")
 
 Dans un prochain article, on ajoutera de la coloration syntaxique (avec [Middleman-syntax](https://github.com/middleman/middleman-syntax), donc [Pygments](http://pygments.org), ou avec [Rouge](https://github.com/jayferd/rouge)).
