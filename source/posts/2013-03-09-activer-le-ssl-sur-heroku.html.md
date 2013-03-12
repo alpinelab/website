@@ -16,7 +16,7 @@ Pour le certificat, on a fait le choix d'en acheter un avec validation étendue 
 
 Il faut tout d'abord **créer une clé privée** avec password (dans un répertoire qui n'est pas public : cette clef est hautement confidentielle) :
 
-```bash
+```shell
 $ openssl genrsa -des3 -out server.orig.key 2048
 ```
 
@@ -24,13 +24,13 @@ Cette commande demandera quelques renseignements relatives à l'émetteur de la 
 
 Il faut ensuite **virer le password de cette clef** (sinon Heroku ne pourra pas l'utiliser puisque le password sera demandé à chaque démarrage du serveur) :
 
-```bash
+```shell
 $ openssl rsa -in server.orig.key -out server.key
 ```
 
 Ensuite on va **créer le CSR** correspondant (Certificate Signing Request, qui permet de demander à Thawte de nous générer un certificat) :
 
-```bash
+```shell
 $ openssl req -new -key server.key -out server.csr
 ```
 
@@ -40,25 +40,25 @@ Il suffit ensuite d'**envoyer le CSR** à Thawte (en précisant "Autre" comme pl
 
 Pour ça rien, de plus simple, si vous êtes déja familier avec la [Toolbelt Heroku](https://toolbelt.heroku.com). Éxecutez simplement à la racine de votre projet hébergé :
 
-```bash
+```shell
 $ heroku addons:add ssl
 ```
 
 Depuis le répertoire dans lequel vous avez mis toutes les clefs et autres certificats générés précédemment, vérifier que la chaîne de confiance des certificats d'autorité intermédiaires est complète (la commande doit vous afficher une succession de certificats SSL si tout s'est bien passé, sinon, un message d'erreur) :
 
-```bash
+```shell
 $ heroku certs:chain thawte_SkiWallet.pem
 ```
 
 Vérifier ensuite que la clef privée correspond au certificat Thawte (la commande vous affichera la clef SSL en cas de succès, un message d'erreur sinon) :
 
-```bash
+```shell
 $ heroku certs:key thawte_SkiWallet.pem server.key
 ```
 
 Ajouter finalement tout ce tintouin à votre appli Heroku (suffixez avec `--app nom-de-votre-app-heroku` si votre toolbelt est configurée pour gérer plusieurs applications Heroku) :
 
-```bash
+```shell
 $ heroku certs:add *
 ```
 
@@ -66,7 +66,7 @@ $ heroku certs:add *
 
 OK, on a donc installé notre certificat (ouf !), il faut maintenant configurer son serveur DNS. On va commencer par récupérer l'adresse du endpoint SSL qui nous a été assigné par Heroku. Elle s'affiche dans la colonne "Endpoint" de la commande suivant) :
 
-```bash
+```shell
 $ heroku certs
 ```
 
@@ -78,7 +78,7 @@ On va juste faire une ou deux petites vérifications :
 
 OK, on a donc l'URL du endpoint et ça semble fonctionner. Récupérons maintenant son adresse IP :
 
-```bash
+```shell
 $ host toyama-1696.herokussl.com
 ```
 
