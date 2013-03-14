@@ -1,10 +1,10 @@
 ---
-title: Utiliser RedCarpet et Rouge avec Middleman pour poster des bouts de code qui en jettent
+title: Utiliser RedCarpet et Rouge avec Middleman pour poster du code
 date: 2013-03-11 00:47 +01:00
 tags: Rouge, RedCarpet, Markdown, Middleman
 ---
 
-Pour pouvoir poster du code, aussi facilement que dans un README sur GitHub, on va utiliser [RedCarpet](https://github.com/vmg/redcarpet) pour générer du HTML à partir du Markdown puis [Rouge](https://github.com/jayferd/rouge) pour découper ce HTML en tokens en fonction du langage utilisé. On saupoudrera le tout d'un peu de CSS pour obtenir une vrai belle coloration syntaxique.
+Pour pouvoir poster du code beau et lisible sur un blog Middleman, on va utiliser [RedCarpet](https://github.com/vmg/redcarpet) pour transformer notre Markdown en HTML puis [Rouge](https://github.com/jayferd/rouge) pour découper ce HTML en tokens en fonction du langage utilisé. On saupoudrera le tout d'un peu de CSS pour obtenir une vrai belle coloration syntaxique.
 READMORE
 
 ### RedCarpet
