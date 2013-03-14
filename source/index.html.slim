@@ -1,11 +1,11 @@
 ---
-title: AlpineLab, blog technique
+title: Alpine Lab, blog technique
 pageable: true
 per_page: 5
 ---
 
 section.posts-listing
-  - page_articles.each_with_index do |article, i|
+  - page_articles.each do |article|
     article
       h2== link_to article.title, article.url
       == article.body
