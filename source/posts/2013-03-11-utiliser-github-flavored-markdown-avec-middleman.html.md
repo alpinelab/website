@@ -42,7 +42,7 @@ Et il est compilé par RedCarpet en ce code HTML :
 </pre>
 ```
 
-Avec un peu de CSS (c'est du Sass, en fait), histoire que ça ait un peu de gueule (c'est du Sass, en fait) : fond gris, bordure grise, angles arrondis et du padding plus ou moins grand selon qu'on est dans un bloc inline (simple backquote) ou pleine-ligne (triple backquote).
+Avec un peu de CSS (c'est du Sass, en fait), histoire que ça ait un peu de gueule : fond gris, bordure grise, angles arrondis et du padding plus ou moins grand selon qu'on est dans un bloc inline (simple backquote) ou pleine-ligne (triple backquote).
 
 ```sass
 code
