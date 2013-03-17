@@ -67,3 +67,8 @@ Là, par exemple, on voit que je n'ai pas écris de test pour la méthode `downl
 On peut même récupérer le code pour insérer un badge dans notre README, pour avoir la classe américaine sur GitHub :
 
 ![Badge Coveralls sur GitHub](coveralls-badge.png "Badge Coveralls sur GitHub")
+
+#### Sources
+
+* Le site de [Coveralls](https://coveralls.io)
+* La [doc Coveralls](https://coveralls.io/docs/ruby) pour Ruby
