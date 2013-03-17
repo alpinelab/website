@@ -7,11 +7,11 @@ tags:
 Quand vous développer (en Ruby, entre autres), vous écrivez des tests, n'est pas ? Carrément en [TDD](http://fr.wikipedia.org/wiki/Test_Driven_Development) ou au moins pour assurer la [non-régression](http://fr.wikipedia.org/wiki/Non-r%C3%A9gression), j'espère. Le problème est : comment être sûr que tout votre code est bien testé ? Que vous n'avez pas un peu zappé d'écrire de tests pour telle méthode ou tel classe ?
 READMORE
 
-La réponse s'appelle la [couverture de code](http://fr.wikipedia.org/wiki/Couverture_de_code) ("code coverage", en anlgais). Ça consiste à calculer le pourcentage de votre code qui est couvert par des tests. La chance, c'est qu'en Ruby, si votre code est hébergé sur [GitHub](http://github.com), il existe une solution en SaaS qui fait ça tout seul : [Coveralls](https://coveralls.io) \!
+La réponse s'appelle la [couverture de code](http://fr.wikipedia.org/wiki/Couverture_de_code) ("code coverage", en anglais). Ça consiste à calculer le pourcentage de votre code qui est couvert par des tests. La chance, c'est qu'en Ruby, si votre code est hébergé sur [GitHub](http://github.com), il existe une solution en SaaS qui fait ça toute seule : [Coveralls](https://coveralls.io) \!
 
 ### Inscription
 
-Il faut en premier lieu s'inscrire sur [Coveralls](https://coveralls.io), mais grâce à l'authentification GitHub, c'est fait en 2 clics.
+Il faut en premier lieu s'inscrire sur [Coveralls.io](https://coveralls.io), mais grâce à l'authentification GitHub, c'est fait en 2 clics.
 
 Coveralls vous demandera ensuite sur quels repositories vous voulez l'activer avec des petits boutons on/off très intuitifs (comme souvent, c'est gratuit pour les projets open-source, payant pour les projets privés) :
 
