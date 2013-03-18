@@ -424,8 +424,6 @@ Pour que tout marche, j'ai aussi besoin de ça dans mon `Gemfile` :
 gem 'middleman-minify-html'
 ```
 
-J'utilise aussi `activate :relative_assets` (qui dit à Middleman de créer des liens href relatifs plutôt qu'absolus). Je me dis "à quoi bon avoir des liens absolus ?". C'est pas super profond, comme réflexion, mais c'est mon seul argument.
-
 ### Caching
 
 Pour "fingerprinter" les assets (en langage un peu plus humain : pour mettre un hash à la fin des noms de fichiers des javascripts, css et autres images) afin d'éviter qu'un navigateur n'utilise une version obsolète d'un fichier qu'il aurait gardé en cache, il suffit d'ajouter cette ligne à `config.rb` (dans le block `configure :build`) :
@@ -485,7 +483,6 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
-  activate :relative_assets
   activate :asset_hash
 end
 
