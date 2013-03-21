@@ -1,0 +1,13 @@
+- content_for(:title, "#{tagname.capitalize} : tous les articles")
+
+h1
+  ' Articles en rapport avec
+  = tagname.capitalize
+
+section
+  - page_articles.each do |article|
+    article
+      h3== link_to article.title, article.url
+      == article.summary
+      .readmore
+        == link_to "Lire l'article complet", article.url

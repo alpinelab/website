@@ -1,6 +1,11 @@
 = wrap_layout :layout do
   article
     h1= current_page.title
+    ul.tags
+      li
+        i.icon-tags
+      - current_page.tags.each do |tag|
+        li== link_to tag.capitalize, tag_path(tag)
     == yield
   aside
     h3 Autres articles récents

@@ -46,6 +46,8 @@ activate :blog do |blog|
   blog.default_extension = '.md'
   blog.layout = 'post'
   blog.paginate = true
+  blog.tag_template = 'tag.html'
+  blog.taglink = '/tags/:tag'
 end
 
 # Directory Indexes
