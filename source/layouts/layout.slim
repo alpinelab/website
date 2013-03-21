@@ -19,6 +19,8 @@ head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
   meta property="og:site_name"    content="Alpine Lab"
   meta property="og:url"          content="http://www.alpine-lab.com#{current_page.url}"
   meta property="og:image"        content="http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"
+  meta property="og:type" content=(yield_content(:og_type) || "website")
+
   == yield_content(:og_article)
 
   == stylesheet_link_tag 'normalize'

@@ -1,7 +1,7 @@
 - content_for(:title, current_page.data.title)
 - content_for(:description, Nokogiri::HTML(current_page.summary).text)
+- content_for(:og_type, "article")
 - content_for(:og_article) do
-  meta property="og:type"                 content="article"
   meta itemprop="article:published_time"  content=current_page.data.date
   meta itemprop="article:author"          content="https://plus.google.com/106674357559734809246"
   meta itemprop="article:published_time"  content=current_page.data.date
