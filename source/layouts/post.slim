@@ -13,8 +13,10 @@
     meta itemprop="description" content=current_page.summary
     meta itemprop="url"         content="http://www.alpine-lab.com#{current_page.url}"
     meta itemprop="inLanguage"  content="fr"
-
     h1{itemprop="name headline"}= current_page.title
+    time.published{itemprop="datePublished" datetime=current_page.date.strftime('%Y-%m-%d')}
+      ' Publié le
+      == current_page.date.strftime('%d/%m/%Y')
     ul.tags
       li
         i.icon-tags
