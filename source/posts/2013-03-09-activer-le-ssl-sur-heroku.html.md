@@ -1,9 +1,9 @@
 ---
 title: Activer le SSL sur Heroku
 date: 2013-03-09 17:22 +01:00
-tags: ssl, heroku
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/106674357559734809246
+tags: ssl, heroku
 ---
 
 Le but de cet article est de montrer comment héberger un site HTTPS sur [Heroku](http://www.heroku.com).
