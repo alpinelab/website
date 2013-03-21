@@ -4,6 +4,9 @@ pageable: true
 per_page: 3
 ---
 
+- content_for(:og_article) do
+  meta property="og:type" content="website"
+
 section.posts-listing
   - page_articles.each do |article|
     article{itemscope=true itemtype="http://schema.org/BlogPosting"}
