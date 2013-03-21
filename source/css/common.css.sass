@@ -21,3 +21,49 @@ a.stealth
 
 .clearfix
   clear: both
+
+div,article
+  &>.avatar
+    width: $avatarSize
+    height: $avatarSize
+    -webkit-transition: 0.5s ease
+    -moz-transition: 0.5s ease
+    -o-transition: 0.5s ease
+    -ms-transition: 0.5s ease
+    transition: 0.5s ease
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border: ($avatarSize/2) solid rgba(black, 0.6)
+    background-position: 50% 50%
+    background-size: $avatarSize $avatarSize
+    background-repeat: no-repeat
+    background-origin: border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    background-image: url('/img/logo-alpinelab-128.png') // default avatar image
+  &:hover
+    &>.avatar
+      border: 5px solid rgba(black, 0.6)
+
+#alpinelab
+  .avatar
+    background-image: url('/img/logo-alpinelab-128.png')
+
+#mike
+  .avatar
+    background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
+  a i.icon-phone:hover::after
+    content: "07.61.90.93.62"
+#thib
+  .avatar
+    background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
+  a i.icon-phone:hover::after
+    content: "06.66.07.58.83"
+#mathilde
+  .avatar
+    background-image: url('/img/photo-mathilde.png')
+#martin
+  .avatar
+    background-image: url('/img/photo-martin.jpg')

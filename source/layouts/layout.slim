@@ -11,13 +11,18 @@ head
   meta charset="utf-8"
   meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
   title= yield_content(:title) || current_page.data.title || "Alpine Lab, blog technique"
-  meta name="description" content="Alpine Lab, le blog parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS, de CoffeeScript et d'Ember.js"
+  meta name="description" content="On parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS/Sass, de CoffeeScript et d'Ember.js"
   meta name="viewport" content="width=device-width"
 
   == stylesheet_link_tag 'normalize'
   == stylesheet_link_tag 'main'
   == stylesheet_link_tag 'default'
-body
+body{itemscope=true itemtype="http://schema.org/Blog"}
+  meta itemprop="name"        content="Alpine Lab, blog technique"
+  meta itemprop="description" content="On parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS/Sass, de CoffeeScript et d'Ember.js"
+  meta itemprop="url"         content="http://www.alpine-lab.com"
+  meta itemprop="inLanguage"  content="fr"
+  meta itemprop="image"       content="http://www.alpine-lab.com#{image_path('logo-alpinelab-128.png')}"
   #wrapper
     header
       == link_to '/' do
@@ -40,7 +45,9 @@ body
     #end-of-main
   footer
     p
-      ' Le blog d'Alpine Lab est publié sous license
+      | Le blog d'
+      ==' link_to 'Alpine Lab', 'https://plus.google.com/103306769618245403420', {:rel => 'publisher'}
+      ' est publié sous license
       == link_to 'Creative Commons Attribution 3.0 (cc-by-3.0)', 'http://creativecommons.org/licenses/by/3.0/fr/'
       ' . Le code est sous licence
       == link_to 'MIT', 'http://opensource.org/licenses/MIT'

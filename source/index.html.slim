@@ -6,9 +6,14 @@ per_page: 3
 
 section.posts-listing
   - page_articles.each do |article|
-    article
-      h2== link_to article.title, article.url
-      == article.body
+    article{itemscope=true itemtype="http://schema.org/BlogPosting"}
+      meta itemprop="description" content=article.summary
+      meta itemprop="url"         content="http://www.alpine-lab.com#{article.url}"
+      meta itemprop="inLanguage"  content="fr"
+
+      h2{itemprop="name headline"}== link_to article.title, article.url
+      .post-body{itemprop="articleBody"}== article.body
+
   - if paginate
     - if prev_page
       ==' link_to '&larr; Articles plus récents', prev_page, {:class => 'previous-page'}
