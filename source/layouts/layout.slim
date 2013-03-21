@@ -19,7 +19,7 @@ head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
   meta property="og:locale"       content="fr_FR"
   meta property="og:site_name"    content="Alpine Lab"
   meta property="og:url"          content="http://www.alpine-lab.com#{current_page.url}"
-  meta property="og:image"        content="http://www.alpine-lab.com#{image_path('logo-alpinelab-128.png')}"
+  meta property="og:image"        content="http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"
   == yield_content(:og_article)
 
   == stylesheet_link_tag 'normalize'
@@ -30,7 +30,7 @@ body{itemscope=true itemtype="http://schema.org/Blog"}
   meta itemprop="description" content="On parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS/Sass, de CoffeeScript et d'Ember.js"
   meta itemprop="url"         content="http://www.alpine-lab.com"
   meta itemprop="inLanguage"  content="fr"
-  meta itemprop="image"       content="http://www.alpine-lab.com#{image_path('logo-alpinelab-128.png')}"
+  meta itemprop="image"       content="http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"
   #wrapper
     header
       == link_to '/' do
