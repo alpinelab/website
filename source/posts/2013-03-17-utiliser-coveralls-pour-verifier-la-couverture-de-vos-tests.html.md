@@ -1,10 +1,10 @@
 ---
 title: Utiliser Coveralls.io pour vérifier la couverture de vos tests
 date: 2013-03-17 14:38 CET
-tags: coveralls tests travis
+tags: Coveralls, tests, Travis
 ---
 
-Quand vous développer (en Ruby, entre autres), vous écrivez des tests, n'est pas ? Carrément en [TDD](http://fr.wikipedia.org/wiki/Test_Driven_Development) ou au moins pour assurer la [non-régression](http://fr.wikipedia.org/wiki/Non-r%C3%A9gression), j'espère. Le problème est : comment être sûr que tout votre code est bien testé ? Que vous n'avez pas un peu zappé d'écrire de tests pour telle méthode ou telle classe ?
+Quand vous développez (en Ruby, entre autres), vous écrivez des tests, n'est pas ? Carrément en [TDD](http://fr.wikipedia.org/wiki/Test_Driven_Development) ou au moins pour assurer la [non-régression](http://fr.wikipedia.org/wiki/Non-r%C3%A9gression), j'espère. Le problème est : comment être sûr que tout votre code est bien testé ? Que vous n'avez pas un peu zappé d'écrire de tests pour telle méthode ou telle classe ?
 READMORE
 
 La réponse s'appelle la [couverture de code](http://fr.wikipedia.org/wiki/Couverture_de_code) ("code coverage", en anglais). Ça consiste à calculer le pourcentage de votre code qui est couvert par des tests. La chance, c'est qu'en Ruby, si votre code est hébergé sur [GitHub](http://github.com), il existe une solution en SaaS qui fait ça toute seule : [Coveralls](https://coveralls.io) \!

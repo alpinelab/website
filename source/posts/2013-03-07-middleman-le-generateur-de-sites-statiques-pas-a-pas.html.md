@@ -5,9 +5,7 @@ tags: middleman, slim, sass, coffeescript, markdown, github pages
 ---
 
 
-## La stack
-
-Le but est de monter un blog, pour raconter ma vie, basé sur la stack de technologies suivantes :
+Le but de cet article est de monter un blog, pour raconter ma vie, basé sur la stack de technologies suivantes :
 * [Middleman](http://middlemanapp.com/) : génération de sites statiques
 * [Slim](http://slim-lang.com/) (templating HTML)
 * [Sass](http://sass-lang.com/) (feuilles de style)
@@ -24,6 +22,7 @@ Dans un prochain article, on verra comment transformer tout ça en un blog avec 
 
 Cet article est un peu long parce que c'est un "pas à pas". Si vous voulez juste le résumé, rendez-vous [en fin d'article](#resume).
 
+Pour lire cet article, mieux vaut déjà maitriser git, GitHub et les langages utilisés (Slim, Markdown, Sass, CoffeeScript, ...).
 
 
 ## Installation de Middleman
