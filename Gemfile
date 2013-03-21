@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'middleman'
+gem 'nokogiri'
 
 gem 'slim'
 
