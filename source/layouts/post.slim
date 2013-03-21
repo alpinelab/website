@@ -1,3 +1,6 @@
+- content_for(:title, current_page.data.title)
+- content_for(:description, Nokogiri::HTML(current_page.summary).text)
+
 = wrap_layout :layout do
   article{itemscope=true itemtype="http://schema.org/BlogPosting"}
     meta itemprop="description" content=current_page.summary

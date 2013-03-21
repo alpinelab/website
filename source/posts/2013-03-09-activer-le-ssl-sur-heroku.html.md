@@ -8,9 +8,7 @@ tags: ssl, heroku
 
 Le but de cet article est de montrer comment héberger un site HTTPS sur [Heroku](http://www.heroku.com).
 
-Il suffit de 3 étapes : générer son certificat, installer l'addon Heroku qui va bien, configurer ses DNS.
-
-READMORE
+Il suffit de 3 étapes : générer son certificat, installer l'addon Heroku qui va bien, configurer ses DNS.READMORE
 
 ### Générer son certificat
 

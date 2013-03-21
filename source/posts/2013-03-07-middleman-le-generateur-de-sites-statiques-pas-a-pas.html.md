@@ -12,8 +12,7 @@ Le but de cet article est de monter un blog, pour raconter ma vie, basé sur la 
 * [Slim](http://slim-lang.com/) (templating HTML)
 * [Sass](http://sass-lang.com/) (feuilles de style)
 * [CoffeeScript](http://coffeescript.org/) (javascript)
-* [Markdown](http://daringfireball.net/projects/markdown/) pour le contenu des articles
-README
+* [Markdown](http://daringfireball.net/projects/markdown/) pour le contenu des articlesREADMORE
 
 Ce site sera hébergé par GitHub, parce que payer un dyno [Heroku](http://www.heroku.com) 30$ par mois pour raconter ma vie, non merci. On va donc utiliser la fonction GitHub Pages.
 
