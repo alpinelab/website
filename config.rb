@@ -47,7 +47,7 @@ activate :blog do |blog|
   blog.layout = 'post'
   blog.paginate = true
   blog.tag_template = 'tag.html'
-  blog.taglink = '/tags/:tag'
+  blog.taglink = '/tags/:tag.html'
 end
 
 # Directory Indexes
