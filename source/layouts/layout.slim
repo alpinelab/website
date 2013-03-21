@@ -7,7 +7,7 @@ doctype html
   html class="no-js lt-ie9"
 /[if gt IE 8]
   <!--> <html class="no-js"> <!--
-head
+head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
   meta charset="utf-8"
   meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
   title= yield_content(:title) || current_page.data.title || "Alpine Lab, blog technique"
@@ -16,9 +16,11 @@ head
   meta property="og:title"        content=(yield_content(:title) || "Alpine Lab, blog technique")
   meta property="og:description"  content=(yield_content(:description) || "On parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS/Sass, de CoffeeScript et d'Ember.js")
   meta property="og:type"         content="website"
+  meta property="og:locale"       content="fr_FR"
   meta property="og:site_name"    content="Alpine Lab"
   meta property="og:url"          content="http://www.alpine-lab.com#{current_page.url}"
   meta property="og:image"        content="http://www.alpine-lab.com#{image_path('logo-alpinelab-128.png')}"
+  == yield_content(:og_article)
 
   == stylesheet_link_tag 'normalize'
   == stylesheet_link_tag 'main'
