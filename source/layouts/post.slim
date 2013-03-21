@@ -10,7 +10,7 @@
 
 = wrap_layout :layout do
   article{itemscope=true itemtype="http://schema.org/BlogPosting"}
-    meta itemprop="description" content=current_page.summary
+    meta itemprop="description" content=Nokogiri::HTML(current_page.summary).text
     meta itemprop="url"         content="http://www.alpine-lab.com#{current_page.url}"
     meta itemprop="inLanguage"  content="fr"
     h1{itemprop="name headline"}= current_page.title
