@@ -41,6 +41,15 @@ body{itemscope=true itemtype="http://schema.org/Blog"}
           span.lab
             ' Lab
           span.blog blog technique
+      .social-networks
+        == link_to 'https://github.com/alpinelab', :target => :_blank do
+          i.icon-github
+        == link_to 'https://twitter.com/alpinelab', :target => :_blank do
+          i.icon-twitter
+        == link_to 'https://plus.google.com/103306769618245403420', :target => :_blank do
+          i.icon-google-plus-sign
+        == link_to 'https://facebook.com/alpinelab', :target => :_blank do
+          i.icon-facebook-sign
     nav
       ul
         == link_to '/pages/alpine-lab.html' do

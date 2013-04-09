@@ -74,3 +74,40 @@ div,article
 
 .pagination-wrapper
   margin-top: 4em
+
+i
+  margin-left: 0.5em
+  color: $sw_light_gray
+  -webkit-transition: color 0.5s
+  -moz-transition: color 0.5s
+  -o-transition: color 0.5s
+  -ms-transition: color 0.5s
+  transition: color 0.5s
+  &.icon-github, &.icon-github-sign
+    &:hover
+      color: $sw_dark_gray
+  &.icon-twitter, &.icon-twitter-sign
+    &:hover
+      color: $twitter
+  &.icon-facebook, &.icon-facebook-sign
+    &:hover
+      color: $facebook
+  &.icon-linkedin, &.icon-linkedin-sign
+    &:hover
+      color: $linkedin
+  &.icon-google-plus, &.icon-google-plus-sign
+    &:hover
+      color: $google_plus
+  &.icon-envelope, &.icon-envelope-sign
+    &:hover
+      color: $sw_dark_red
+  &.icon-globe, &.icon-globe-sign
+    &:hover
+      color: $sw_darkest_blue
+  &.icon-phone, &.icon-phone-sign
+    &:hover
+      color: $phone
+    &::after
+      margin-left: 1em
+      color: $sw_gray
+      font-size: 0.5em
