@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jayferd/rouge.git
-  revision: bf65ca6bc45528d5486e411bc7f8eee237a480e8
+  revision: 39a499f30b3d8d11e60837a9700f88636a49d0fd
   branch: master
   specs:
     rouge (0.3.2)
