@@ -1,7 +1,6 @@
-.pagination
-  text-align: center
-section.posts-listing
-  position: relative
+.pagination-wrapper
+  .pagination
+    text-align: center
   a
     &.previous-page, &.next-page
       position: absolute
@@ -10,6 +9,9 @@ section.posts-listing
       left: 0
     &.next-page
       right: 0
+
+section.posts-listing
+  position: relative
 
 article:not(:first-of-type)
   border-top: solid 3px $sw_light_gray

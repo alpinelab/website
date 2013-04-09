@@ -1,3 +1,8 @@
+---
+pageable: true
+per_page: 10
+---
+
 - content_for(:title, "#{tagname.capitalize} : tous les articles")
 - content_for(:description, "Liste des articles du blog contenant le mot-clef #{tagname.capitalize}")
 
@@ -5,10 +10,22 @@ h1
   ' Articles en rapport avec
   = tagname.capitalize
 
-section
+section.posts-listing
   - page_articles.each do |article|
     article
       h3== link_to article.title, article.url
       == article.summary
       .readmore
         == link_to "Lire l'article complet", article.url
+
+  - if paginate
+    .pagination-wrapper
+      - if prev_page
+        ==' link_to '&larr; Articles plus récents', prev_page, {:class => 'previous-page'}
+      - if next_page
+        == link_to 'Articles plus anciens &rarr;', next_page, {:class => 'next-page'}
+      .pagination
+        ' Page
+        =' page_number
+        ' sur
+        =' num_pages
