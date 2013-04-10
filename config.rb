@@ -28,7 +28,7 @@
 #   page "/admin/*"
 # end
 
-page '/sitemap.xml', :layout => false
+page '/sitemap.xml', :layout => false, :format => :xhtml
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
