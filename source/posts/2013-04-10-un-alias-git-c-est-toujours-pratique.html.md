@@ -3,7 +3,7 @@ title: Un alias git, c'est toujours pratique
 date: 2013-04-10 01:38 CEST
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/106674357559734809246
-tags: git alias middleman
+tags: git, alias, middleman
 ---
 
 Pour ce blog j'utilise [Middleman](http://middlemanapp.com), j'ai donc un repository pour les sources. Mais dès qu'il s'agit de déployer (i.e. compiler puis pusher les fichiers compilés sur un autre repository, que [github:pages](http://pages.github.com) reconnait comme devant les mettre en ligne), voilà la séquence de commandes que je dois executer :
