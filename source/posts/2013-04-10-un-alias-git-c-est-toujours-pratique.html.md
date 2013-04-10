@@ -13,7 +13,7 @@ $ middleman deploy --clean
 
 Épuisant.
 
-J'ai donc besoin d'un moyen d'executer toutes ces commandes d'un coup. Comme un alias ou un scriptshell seraient trop façiles, j'ai regardé du côté des _alias git_.
+J'ai donc besoin d'un moyen d'éxécuter toutes ces commandes d'un coup. Comme un alias ou un scriptshell seraient trop faciles, j'ai regardé du côté des _alias git_.
 
 En gros, je veux pouvoir tout simplement entrer :
 ```shell
