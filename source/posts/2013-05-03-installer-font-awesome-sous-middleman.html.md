@@ -1,7 +1,9 @@
 ---
 title: Installer Font Awesome sous Middleman
 date: 2013-05-03 22:25 CEST
-tags:
+authorName: Michael Baudino
+authorUrl: https://plus.google.com/106674357559734809246
+tags: middleman, fonts, icons
 ---
 
 Aujourd'hui, j'ai décidé d'intégrer les _font icons_ [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) sur notre blog (qui est généré par [Middleman](http://middlemanapp.com/) comme expliqué dans [un precédent article]()).
