@@ -10,7 +10,7 @@ Aujourd'hui, j'ai décidé d'intégrer les _font icons_ [Font-Awesome](http://fo
 
 Pour ceux qui ne savent pas ce que sont les _font icons_, voilà un petit rappel.
 
-Dans la vie, il y a ce que j'appelle les "font nerds". Ce sont généralement des designers qui sont passionnés par un truc que, personnellement, je ne comprends pas du tout : les polices d'écriture (ou "fonts").
+Dans la vie, il y a ce que j'appelle les _font nerds_. Ce sont généralement des designers qui sont passionnés par un truc que, personnellement, je ne comprends pas du tout : les polices d'écriture (ou "fonts"). Je les aime beaucoup, hein, c'est pas la question, Martin, notre designer préféré en est un. C'est juste que je ne les comprend pas :-)
 
 Bref, un de ces joyeux lurons s'est dit un jour : au lieu de faire un 'A', puis un 'B', etc... si je faisais plutôt une maison, une flêche, un téléphone, etc... Ça a donné Wingdings. C'était un peu moche.
 
