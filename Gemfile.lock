@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/jayferd/rouge.git
-  revision: 881b5836d402f325c9f23f17992f55e39744bff5
-  branch: master
-  specs:
-    rouge (0.3.3)
-      thor
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -31,12 +23,12 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    ffi (1.6.0)
+    ffi (1.8.1)
     fssm (0.2.10)
     haml (4.0.2)
       tilt
     hike (1.2.2)
-    htmlcompressor (0.0.5)
+    htmlcompressor (0.0.6)
       yui-compressor (~> 0.9.6)
     http_parser.rb (0.5.3)
     http_router (0.10.2)
@@ -66,9 +58,9 @@ GEM
     middleman-deploy (0.0.11)
       middleman-core (>= 3.0.0)
       ptools
-    middleman-livereload (3.0.1)
+    middleman-livereload (3.1.0)
       em-websocket (>= 0.2.0)
-      middleman-core (~> 3.0.2)
+      middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
     middleman-minify-html (3.0.0)
@@ -118,12 +110,14 @@ GEM
     rb-inotify (0.9.0)
       ffi (>= 0.5.0)
     redcarpet (2.2.2)
-    sass (3.2.7)
+    rouge (0.3.4)
+      thor
+    sass (3.2.8)
     sinatra (1.3.6)
       rack (~> 1.4)
       rack-protection (~> 1.3)
       tilt (~> 1.3, >= 1.3.3)
-    slim (1.3.7)
+    slim (1.3.8)
       temple (~> 0.6.3)
       tilt (~> 1.3.3)
     sprockets (2.4.5)
@@ -135,7 +129,7 @@ GEM
       sprockets (~> 2.0)
       tilt (~> 1.1)
     syntax (1.0.0)
-    temple (0.6.3)
+    temple (0.6.4)
     thor (0.15.4)
     tilt (1.3.7)
     tzinfo (0.3.37)
@@ -157,8 +151,9 @@ DEPENDENCIES
   middleman-livereload
   middleman-minify-html
   middleman-rouge
+  middleman-sprockets (= 3.0.10)
   nokogiri
   rb-inotify
   redcarpet
-  rouge!
+  rouge
   slim
