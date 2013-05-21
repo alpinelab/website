@@ -1,6 +1,7 @@
 ---
 title: Mise à jour de Ruby dans RVM
 date: 2013-03-08 12:10 +01:00
+priority: 0.7
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/106674357559734809246
 tags: rvm, ruby

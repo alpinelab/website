@@ -1,6 +1,7 @@
 ---
 title: Interdire uniquement l'enregistrement de nouveaux utilisateurs sous Devise
 date: 2013-05-06 08:11 CEST
+priority: 0.7
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/106674357559734809246
 tags: rails, devise

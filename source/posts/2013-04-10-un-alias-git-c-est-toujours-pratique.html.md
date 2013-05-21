@@ -1,6 +1,7 @@
 ---
 title: Un alias git, c'est toujours pratique
 date: 2013-04-10 01:38 CEST
+priority: 0.7
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/106674357559734809246
 tags: git, alias, middleman

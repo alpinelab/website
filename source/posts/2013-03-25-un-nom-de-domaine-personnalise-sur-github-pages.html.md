@@ -1,6 +1,7 @@
 ---
 title: Un nom de domaine personnalisé sur GitHub Pages
 date: 2013-03-25 01:34 CET
+priority: 0.7
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/106674357559734809246
 tags: github pages, dns

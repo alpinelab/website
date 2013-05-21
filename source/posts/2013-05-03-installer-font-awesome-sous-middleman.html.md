@@ -1,6 +1,7 @@
 ---
 title: Installer Font Awesome sous Middleman
 date: 2013-05-03 22:25 CEST
+priority: 0.7
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/106674357559734809246
 tags: middleman, fonts, icons
