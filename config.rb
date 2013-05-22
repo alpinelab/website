@@ -43,10 +43,10 @@ page '/sitemap.xml', :layout => false, :format => :xhtml
 activate :automatic_image_sizes
 
 activate :blog do |blog|
-  blog.prefix = 'posts'
+  blog.prefix = 'blog'
   blog.permalink = ':title'
   blog.default_extension = '.md'
-  blog.layout = 'post'
+  blog.layout = 'blog.slim'
   blog.paginate = true
   blog.tag_template = 'tag.html'
   blog.taglink = '/tags/:tag.html'

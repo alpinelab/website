@@ -1,0 +1,38 @@
+- content_for(:title, current_page.data.title)
+- content_for(:description, Nokogiri::HTML(current_page.summary).text)
+- content_for(:og_type, "article")
+- content_for(:og_article) do
+  meta itemprop="article:published_time"  content=current_page.data.date
+  meta itemprop="article:author"          content="https://plus.google.com/106674357559734809246"
+  meta itemprop="article:published_time"  content=current_page.data.date
+  - current_page.tags.each do |tag|
+    meta itemprop="article:tag"           content=tag
+
+= wrap_layout :layout do
+    article{itemscope=true itemtype="http://schema.org/BlogPosting"}
+      meta itemprop="description" content=Nokogiri::HTML(current_page.summary).text
+      meta itemprop="url"         content="http://www.alpine-lab.com#{current_page.url}"
+      meta itemprop="inLanguage"  content="fr"
+      h1{itemprop="name headline"}= current_page.title
+      time.published{itemprop="datePublished" datetime=current_page.date.strftime('%Y-%m-%d')}
+        ' Publié le
+        == current_page.date.strftime('%d/%m/%Y')
+      ul.tags
+        li
+          i.icon-tags
+        - current_page.tags.each do |tag|
+          li== link_to tag.capitalize, tag_path(tag)
+
+      .post-body{itemprop="articleBody"}== yield
+
+      .author{id=(case current_page.data.authorName when 'Michael Baudino' then 'mike' when 'Thibault Dalban' then 'thib' end)}
+        ' Écrit par
+        == link_to(current_page.data.authorName || 'Alpine Lab', current_page.data.authorUrl || 'https://plus.google.com/103306769618245403420', {:rel => 'author'})
+        .avatar
+
+    aside
+      h3 Autres articles récents
+      ul
+        - blog.articles[0...10].each do |article|
+          - unless article == current_page
+            li== link_to article.title, article.url

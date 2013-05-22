@@ -1,15 +1,11 @@
-## Alpine Lab blog
+# alpinelab/blog-alpinelab
 
-This is the source only.
+A ruby translation project managed on [Locale](http://www.localeapp.com/) that's open to all!
 
-For the compiled, static, hosted on [github:pages](http://pages.github.com) site, see https://github.com/alpinelab/alpinelab.github.com.
+## Contributing to alpinelab/blog-alpinelab
 
-The blog itself is available at http://alpinelab.github.com.
+- Edit the translations directly on the [alpinelab/blog-alpinelab](http://www.localeapp.com/projects/public?search=alpinelab/blog-alpinelab) project on Locale.
+- **That's it!**
+- The maintainer will then pull translations from the Locale project and push to Github.
 
-Powered by [Middleman](http://middlemanapp.com).
-Precompiles [Haml](http://haml.info), [Slim](http://slim-lang.com), [Sass](http://sass-lang.com), CoffeeScript, Markdown.
-
-#### License
-
-Written by [Michael Baudino](https://github.com/michaelbaudino) for [Alpine Lab](http://alpine-lab.com), 2013.
-Licensed under the terms of the MIT license (see `LICENSE.md` file).
+Happy translating!
