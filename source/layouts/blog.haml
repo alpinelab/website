@@ -1,0 +1,78 @@
+- content_for(:title, current_page.data.title)
+- content_for(:description, Nokogiri::HTML(current_page.summary).text)
+- content_for(:og_type, "article")
+- content_for(:og_article) do
+  %meta{itemprop: "article:published_time", content: current_page.data.date}
+  %meta{itemprop: "article:author", content: "https://plus.google.com/106674357559734809246"}
+  %meta{itemprop: "article:published_time", content: current_page.data.date}
+  - current_page.tags.each do |tag|
+    %meta{itemprop: "article:tag", content: tag}
+
+- wrap_layout :layout do
+  %meta{itemprop: "name", content: "Alpine Lab, blog technique"}
+  %meta{itemprop: "description", content: "On parle de développement web, d'entreprenariat, de Ruby/Rails, de Haml/Slim, de Sass, de CoffeeScript et d'Ember.js"}
+  %meta{itemprop: "url", content: "http://www.alpine-lab.com/blog"}
+  %meta{itemprop: "inLanguage", content: "fr"}
+  %meta{itemprop: "image", content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"}
+
+  #wrapper
+    %header
+      = link_to '/' do
+        .logo
+        %h1.sitename
+          %span.alpine> Alpine
+          %span.lab Lab
+          %span.blog blog technique
+      .social-networks
+        = link_to 'https://github.com/alpinelab', :target => :_blank do
+          %i.icon-github
+        = link_to 'http://pinterest.com/AlpineLab/', :target => :_blank do
+          %i.icon-pinterest
+        = link_to 'https://twitter.com/alpinelab', :target => :_blank do
+          %i.icon-twitter
+        = link_to 'https://plus.google.com/103306769618245403420', :target => :_blank do
+          %i.icon-google-plus-sign
+        = link_to 'https://facebook.com/alpinelab', :target => :_blank do
+          %i.icon-facebook-sign
+    %nav
+      %ul
+        = link_to '/pages/alpine-lab.html' do
+          %li Alpine lab
+        = link_to '/pages/equipe.html' do
+          %li L'équipe
+        = link_to 'https://www.skiwallet.com', 'target' => '_blank' do
+          %li Skiwallet
+    #main
+      %article{itemscope: true, itemtype: "http://schema.org/BlogPosting"}
+        %meta{itemprop: "description", content: Nokogiri::HTML(current_page.summary).text}
+        %meta{itemprop: "url", content: "http://www.alpine-lab.com#{current_page.url}"}
+        %meta{itemprop: "inLanguage", content: "fr"}
+        %h1{itemprop: "name headline"}= current_page.title
+        %time.published{itemprop: "datePublished", datetime: current_page.date.strftime('%Y-%m-%d')}
+          Publié le
+          = current_page.date.strftime('%d/%m/%Y')
+        %ul.tags
+          %li
+            %i.icon-tags
+          - current_page.tags.each do |tag|
+            %li= link_to tag.capitalize, tag_path(tag)
+
+        .post-body{itemprop: "articleBody"}= yield
+
+        .author{id: (case current_page.data.authorName when 'Michael Baudino' then 'mike' when 'Thibault Dalban' then 'thib' end)}
+          Écrit par
+          = link_to(current_page.data.authorName || 'Alpine Lab', current_page.data.authorUrl || 'https://plus.google.com/103306769618245403420', {:rel => 'author'})
+          .avatar
+
+      %aside
+        %h3 Autres articles récents
+        %ul
+          - blog.articles[0...10].each do |article|
+            - unless article == current_page
+              %li= link_to article.title, article.url
+    #end-of-main
+  %footer
+    %p
+      Le blog d'#{link_to 'Alpine Lab', 'https://plus.google.com/103306769618245403420', {:rel => 'publisher'}}
+      est publié sous license #{link_to 'Creative Commons Attribution 3.0 (cc-by-3.0)', 'http://creativecommons.org/licenses/by/3.0/fr/'}.
+      Le code est sous licence #{link_to 'MIT', 'http://opensource.org/licenses/MIT'}.

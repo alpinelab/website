@@ -6,6 +6,7 @@ gem 'middleman'
 gem 'nokogiri'
 
 gem 'slim'
+gem 'haml'
 
 gem 'middleman-sprockets', '3.0.10'
 gem 'middleman-deploy'

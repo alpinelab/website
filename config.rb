@@ -46,7 +46,7 @@ activate :blog do |blog|
   blog.prefix = 'blog'
   blog.permalink = ':title'
   blog.default_extension = '.md'
-  blog.layout = 'blog.slim'
+  blog.layout = 'blog.haml'
   blog.paginate = true
   blog.tag_template = 'tag.html'
   blog.taglink = '/tags/:tag.html'
@@ -76,7 +76,8 @@ set :markdown,
   autolink: true,
   smartypants: true,
   gh_blockcode: true,
-  lax_spacing: true
+  lax_spacing: true,
+  with_toc_data: true
 
 activate :rouge_syntax
 

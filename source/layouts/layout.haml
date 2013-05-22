@@ -1,0 +1,51 @@
+!!! 5
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7 ] <html class="ie6" lang="fr">
+/[if IE 7 ]    <html class="ie7" lang="fr">
+/[if IE 8 ]    <html class="ie8" lang="fr">
+/[if IE 9 ]    <html class="ie9" lang="fr">
+/[if (gt IE 9)|!(IE)] <!--> <html lang="fr">
+
+%head{prefix: "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"}
+  %meta{charset: "utf-8"}
+  %meta{:'http-equiv' => "X-UA-Compatible", content: "IE=edge,chrome=1"}
+  %title= yield_content(:title) || current_page.data.title || "Alpine Lab, blog technique"
+  %meta{name: "description", content: (yield_content(:description) || "On parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS/Sass, de CoffeeScript et d'Ember.js")}
+  %meta{name: "viewport", content: "width=device-width"}
+  %meta{property: "og:title", content: (yield_content(:title) || "Alpine Lab, blog technique")}
+  %meta{property: "og:description", content: (yield_content(:description) || "On parle de développement web, d'entreprenariat, de Ruby, de Rails, de HAML, de CSS/Sass, de CoffeeScript et d'Ember.js")}
+  %meta{property: "og:locale", content: "fr_FR"}
+  %meta{property: "og:site_name", content: "Alpine Lab"}
+  %meta{property: "og:url", content: "http://www.alpine-lab.com#{current_page.url}"}
+  %meta{property: "og:image", content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"}
+  %meta{property: "og:type", content: (yield_content(:og_type) || "website")}
+
+  = yield_content(:og_article)
+
+  = stylesheet_link_tag 'normalize'
+  = stylesheet_link_tag 'main'
+  = stylesheet_link_tag 'default'
+%body{itemscope: true, itemtype: "http://schema.org/Blog"}
+
+  = yield
+
+  = javascript_include_tag 'vendor/modernizr-2.6.1.min'
+  = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+  :javascript
+    window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')
+  = javascript_include_tag 'plugins'
+  = javascript_include_tag 'main'
+
+  :javascript
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39064942-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+:plain
+  </html>
