@@ -35,6 +35,7 @@ GEM
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
     i18n (0.6.1)
+    json (1.7.7)
     listen (0.7.3)
     maruku (0.6.1)
       syntax (>= 1.0.0)
@@ -150,6 +151,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  json (~> 1.7.7)
   middleman
   middleman-blog
   middleman-deploy
