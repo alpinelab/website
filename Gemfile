@@ -8,7 +8,7 @@ gem 'nokogiri'
 gem 'slim'
 gem 'haml'
 
-gem 'middleman-sprockets', '3.0.10'
+gem 'middleman-sprockets'
 gem 'middleman-deploy'
 gem 'middleman-livereload'
 gem 'rb-inotify'
