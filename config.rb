@@ -48,7 +48,7 @@ activate :blog do |blog|
   blog.default_extension = '.md'
   blog.layout = 'blogpost.haml'
   blog.paginate = true
-  blog.tag_template = 'tag.html'
+  blog.tag_template = 'blog/tag.html'
   blog.taglink = '/tags/:tag.html'
 end
 

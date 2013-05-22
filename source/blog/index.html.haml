@@ -17,10 +17,4 @@ layout: blog
       .post-body{itemprop: "articleBody"}~ article.body
 
   - if paginate
-    .pagination-wrapper
-      - if prev_page
-        = link_to '&larr; Articles plus récents', prev_page, {:class => 'previous-page'}
-      - if next_page
-        = link_to 'Articles plus anciens &rarr;', next_page, {:class => 'next-page'}
-      .pagination
-        Page #{page_number} sur #{num_pages}
+    = partial 'layouts/pagination', locals: {page_number: page_number, num_pages: num_pages, prev_page: prev_page, next_page: next_page}
