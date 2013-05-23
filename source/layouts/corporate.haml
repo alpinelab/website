@@ -1,0 +1,11 @@
+- content_for :stylesheets do
+  = stylesheet_link_tag 'corporate'
+
+- wrap_layout :layout do
+  %meta{itemprop: "name", content: "Alpine Lab"}
+  %meta{itemprop: "description", content: "Agence web jeune et pétillante"}
+  %meta{itemprop: "url", content: "http://www.alpine-lab.com"}
+  %meta{itemprop: "inLanguage", content: "fr"}
+  %meta{itemprop: "image", content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"}
+
+  = yield

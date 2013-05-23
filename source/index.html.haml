@@ -1,30 +1,37 @@
 ---
 title: Alpine Lab
 priority: 1.0
+layout: corporate
 ---
 
-%header
-  .logo{title: 'Alpine Lab'}
-  %nav
-    %ul
-      %li= link_to 'Marketing', '/marketing'
-      %li= link_to 'Technique', '/technique'
-      %li= link_to 'Gestion', '/gestion'
-      %li= link_to 'Team', '/equipe'
-      %li= link_to 'Blog', '/blog'
-      %li= link_to 'Contact', '/contact'
-
-%section
-  %h1 About
-
-%section
-  %h1 What we do
-  %ul
-    %li= link_to 'Marketing', '/marketing'
-    %li= link_to 'Technique', '/technique'
-    %li= link_to 'Gestion', '/gestion'
-
-%section
-  %h1 Hire us !
+#wrap
+  %header.navbar.navbar-fixed-top.navbar-inverse
+    .navbar-inner
+      .container
+        .brand Alpine Lab
+        %ul.nav
+          %li= link_to 'Marketing', '/marketing'
+          %li= link_to 'Technique', '/technique'
+          %li= link_to 'Gestion', '/gestion'
+          %li= link_to 'Team', '/equipe'
+          %li= link_to 'Blog', '/blog'
+          %li= link_to 'Contact', '/contact'
+  .container
+    %section
+      %h1 About
+    %section
+      %h1 What we do
+      %ul
+        %li= link_to 'Marketing', '/marketing'
+        %li= link_to 'Technique', '/technique'
+        %li= link_to 'Gestion', '/gestion'
+    %section
+      %h1 Hire us !
+  #push
 
 %footer
+  .container
+    %p.muted
+      Le site d'#{link_to 'Alpine Lab', 'https://plus.google.com/103306769618245403420', {:rel => 'publisher'}}
+      est publié sous license #{link_to 'Creative Commons Attribution 3.0 (cc-by-3.0)', 'http://creativecommons.org/licenses/by/3.0/fr/'}.
+      Le code est sous licence #{link_to 'MIT', 'http://opensource.org/licenses/MIT'}.

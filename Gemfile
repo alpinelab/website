@@ -15,6 +15,9 @@ gem 'middleman-livereload'
 gem 'rb-inotify'
 gem 'middleman-minify-html'
 gem 'middleman-blog'
+
 gem 'redcarpet'
 gem 'rouge'
 gem 'middleman-rouge'
+
+gem 'bootstrap-sass'
