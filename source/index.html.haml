@@ -3,6 +3,28 @@ title: Alpine Lab
 priority: 1.0
 ---
 
-%h1 Alpine Lab
+%header
+  .logo{title: 'Alpine Lab'}
+  %nav
+    %ul
+      %li= link_to 'Marketing', '/marketing'
+      %li= link_to 'Technique', '/technique'
+      %li= link_to 'Gestion', '/gestion'
+      %li= link_to 'Team', '/equipe'
+      %li= link_to 'Blog', '/blog'
+      %li= link_to 'Contact', '/contact'
 
-This is the homepage
+%section
+  %h1 About
+
+%section
+  %h1 What we do
+  %ul
+    %li= link_to 'Marketing', '/marketing'
+    %li= link_to 'Technique', '/technique'
+    %li= link_to 'Gestion', '/gestion'
+
+%section
+  %h1 Hire us !
+
+%footer

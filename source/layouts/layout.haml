@@ -20,11 +20,11 @@
   %meta{property: "og:image", content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"}
   %meta{property: "og:type", content: (yield_content(:og_type) || "website")}
 
-  = yield_content(:og_article)
+  = yield_content :og_article
 
   = stylesheet_link_tag 'normalize'
   = stylesheet_link_tag 'main'
-  = stylesheet_link_tag 'default'
+  = yield_content :stylesheets
 %body{itemscope: true, itemtype: "http://schema.org/Blog"}
 
   = yield
