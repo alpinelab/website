@@ -45,12 +45,16 @@ section
   &#hire-us
     margin: 3em 0
     background-color: $alRed
-    padding: 3em
     +border-radius(0.5em)
     color: $white
-    a
-      line-height: 30px
-      margin: 10px 0 10px 20px
+    h1.animate
+      text-align: right
+      width: 50%
+      +transition(1s width ease)
+    &:hover
+      h1.animate
+        width: 100%
+
 
 /* entire container, keeps perspective */
 .flip-container

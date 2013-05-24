@@ -74,11 +74,15 @@ layout: corporate
                     %p Blah Blah Blah encore et toujours...
     .container
       %section#hire-us
-        %a.btn.btn-danger.pull-right{href: '/contact'}
-          De toute urgence !
-        %h1
-          Engagez-nous
-          %i.icon-arrow-right
+        .row
+          .span9
+            %h1.animate
+              Engagez-nous
+              %i.icon-arrow-right
+          .span3
+            %h1
+              %a.btn.btn-large.btn-danger{href: '/contact'}
+                De toute urgence !
   #push
 
 %footer
