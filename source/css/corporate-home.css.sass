@@ -1,0 +1,89 @@
+section
+  &#about, &#what-we-do, &#hire-us
+    padding: 2em 0
+
+  &#about
+    background-color: $alBlue
+    color: $alBlueLightest
+    h1
+      font-size: 4em
+      line-height: 1.2em
+      color: rgba($black, 0.5)
+      background-color: transparent
+      text-shadow: rgba($alBlueLightest, 0.8) 0px 1px 1px, rgba($alBlueDarkest, 0.8) 0px -1px 1px
+
+  &#what-we-do
+    h1
+      text-align: center
+      font-size: 4em
+      line-height: 1.2em
+      color: rgba($alBlue, 1.0)
+      text-shadow: rgba($alBlueDarkest, 0.8) 0px -1px 1px
+      margin-bottom: 1em
+    ul.row-fluid
+      li.span4
+        text-align: center
+        a
+          .front, .back
+            margin: 0 auto
+            +border-radius(50%)
+            p
+              position: relative
+              display: inline-block
+              top: 50%
+              margin-top: -0.5em
+          .front
+            background-color: $alBlue
+            color: $alBlueLightest
+            font-weight: bold
+            font-size: 2.5em
+          .back
+            background-color: $white
+            color: $alBlue
+            border: solid $homeCirclesBorder $alBlue
+
+  &#hire-us
+    margin: 3em 0
+    background-color: $alRed
+    padding: 3em
+    +border-radius(0.5em)
+    color: $white
+    a
+      line-height: 30px
+      margin: 10px 0 10px 20px
+
+/* entire container, keeps perspective */
+.flip-container
+  perspective: 1000
+  -webkit-perspective: 1000
+  +square($homeCirclesRadius + 2 * $homeCirclesBorder)
+
+  /* flip the pane when hovered */
+  &:hover .flipper, &.hover .flipper
+    transform: rotateY(180deg)
+    -webkit-transform: rotateY(180deg)
+
+  /* flip speed goes here */
+  .flipper
+    +transition(0.6s)
+    transform-style: preserve-3d
+    -webkit-transform-style: preserve-3d
+    position: relative
+
+    /* hide back of pane during swap */
+    .front, .back
+      +backface-visibility(hidden)
+      position: absolute
+      top: 0
+      left: 0
+
+    /* front pane, placed above back */
+    .front
+      +square($homeCirclesRadius + 2 * $homeCirclesBorder)
+      z-index: 2
+
+    /* back, initially hidden pane */
+    .back
+      +square($homeCirclesRadius)
+      transform: rotateY(180deg)
+      -webkit-transform: rotateY(180deg)

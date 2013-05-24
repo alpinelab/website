@@ -1,5 +1,13 @@
 html, body
   height: 100%
+  +box-sizing(border-box)
+body
+  font-family: "LucidaGrande", "Lucida Sans Unicode", sans-serif
+  -webkit-font-smoothing: antialiased
+  font-smooth: always
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
+  -webkit-text-stroke: 1px transparent
+
 
 #wrap
   min-height: 100%
@@ -9,6 +17,12 @@ html, body
   &>.container
     padding-top: $navbarHeight
 
+header.navbar
+  .brand
+    padding: (($navbarHeight - $logoHeight) / 2 - 2) 20px (($navbarHeight - $logoHeight) / 2 + 2)
+  li
+    font-weight: bold
+
 #push, footer
   height: $footerHeight
 
@@ -16,3 +30,6 @@ footer
   background-color: $grayLighter
   text-align: center
   line-height: $footerHeight
+
+.full-width
+  width: 100%

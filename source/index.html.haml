@@ -8,25 +8,77 @@ layout: corporate
   %header.navbar.navbar-fixed-top.navbar-inverse
     .navbar-inner
       .container
-        .brand Alpine Lab
+        .brand{title: 'Alpine Lab'}
+          = link_to image_tag('logo-alpinelab-128.png', width: '40px', height: '40px'), '/'
         %ul.nav
-          %li= link_to 'Marketing', '/marketing'
-          %li= link_to 'Technique', '/technique'
-          %li= link_to 'Gestion', '/gestion'
-          %li= link_to 'Team', '/equipe'
-          %li= link_to 'Blog', '/blog'
-          %li= link_to 'Contact', '/contact'
-  .container
-    %section
-      %h1 About
-    %section
-      %h1 What we do
-      %ul
-        %li= link_to 'Marketing', '/marketing'
-        %li= link_to 'Technique', '/technique'
-        %li= link_to 'Gestion', '/gestion'
-    %section
-      %h1 Hire us !
+          %li
+            = link_to '/equipe' do
+              %i.icon-group
+              Équipe
+          %li
+            = link_to '/marketing' do
+              %i.icon-globe
+              Marketing
+          %li
+            = link_to '/technique' do
+              %i.icon-code
+              Technique
+          %li
+            = link_to '/gestion' do
+              %i.icon-calendar
+              Gestion
+        %ul.nav.pull-right
+          %li
+            = link_to '/blog' do
+              %i.icon-edit
+              Blog
+        %a.btn.btn-primary.pull-right{href: '/contact'}
+          Engagez-nous
+  .container.full-width
+    %section#about
+      .container
+        %h1 Bâtir des stratégies innovantes.
+        %p
+          Nous sommes une jeune agence riche de profils multiples : developpeurs, designer, architecte, modélisateur...
+        %p
+          Cette diversité crée notre complémentarité : elle nous permet de sortir des sentiers battus pour concevoir des solutions globales et innovantes, intégrant tous les expertises du  domaine du web : design, intuitivité, fonctionalité, ergonomie... et bon sens !
+    %section#what-we-do
+      .container
+        %h1 Nos compétences
+        %ul.row-fluid
+          %li.span4
+            = link_to '/marketing' do
+              .flip-container{ontouchstart: "this.classList.toggle('hover');"}
+                .flipper
+                  .front
+                    %p Marketing
+                  .back
+                    %p
+                      Du blah blah marketing
+                      Lorem Ipsum Doler
+          %li.span4
+            = link_to '/technique' do
+              .flip-container{ontouchstart: "this.classList.toggle('hover');"}
+                .flipper
+                  .front
+                    %p Technique
+                  .back
+                    %p Blah Blah Blah technique, personne n'y comprend rien...
+          %li.span4
+            = link_to '/gestion' do
+              .flip-container{ontouchstart: "this.classList.toggle('hover');"}
+                .flipper
+                  .front
+                    %p Gestion
+                  .back
+                    %p Blah Blah Blah encore et toujours...
+    .container
+      %section#hire-us
+        %a.btn.btn-danger.pull-right{href: '/contact'}
+          De toute urgence !
+        %h1
+          Engagez-nous
+          %i.icon-arrow-right
   #push
 
 %footer
