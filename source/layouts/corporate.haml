@@ -9,4 +9,41 @@
   %meta{itemprop: "inLanguage", content: "fr"}
   %meta{itemprop: "image", content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"}
 
-  = yield
+  #wrap
+    %header.navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container
+          .brand{title: 'Alpine Lab'}
+            = link_to image_tag('logo-alpinelab-128.png', width: '40px', height: '40px'), '/'
+          %ul.nav
+            %li
+              = link_to '/equipe' do
+                %i.icon-group
+                Équipe
+            %li
+              = link_to '/marketing' do
+                %i.icon-globe
+                Marketing
+            %li
+              = link_to '/technique' do
+                %i.icon-code
+                Technique
+            %li
+              = link_to '/gestion' do
+                %i.icon-calendar
+                Gestion
+          %ul.nav.pull-right
+            %li
+              = link_to '/blog' do
+                %i.icon-edit
+                Blog
+          %a.btn.btn-primary.pull-right{href: '/contact'}
+            Engagez-nous
+
+    = yield
+  %footer
+    .container
+      %p.muted
+        Le site d'#{link_to 'Alpine Lab', 'https://plus.google.com/103306769618245403420', {:rel => 'publisher'}}
+        est publié sous license #{link_to 'Creative Commons Attribution 3.0 (cc-by-3.0)', 'http://creativecommons.org/licenses/by/3.0/fr/'}.
+        Le code est sous licence #{link_to 'MIT', 'http://opensource.org/licenses/MIT'}.
