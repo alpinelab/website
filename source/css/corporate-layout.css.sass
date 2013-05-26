@@ -2,12 +2,15 @@ html, body
   height: 100%
   +box-sizing(border-box)
 body
-  font-family: "LucidaGrande", "Lucida Sans Unicode", sans-serif
+  // font-family: "LucidaGrande", "Lucida Sans Unicode", sans-serif
+  font-family: "SackersGothic", sans-serif
   -webkit-font-smoothing: antialiased
   font-smooth: always
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
   -webkit-text-stroke: 1px transparent
 
+a:hover
+  text-decoration: none
 
 #wrap
   min-height: 100%
@@ -18,10 +21,50 @@ body
     padding-top: $navbarHeight
 
 header.navbar
+  +opacity(90)
   .brand
     padding: (($navbarHeight - $logoHeight) / 2 - 2) 20px (($navbarHeight - $logoHeight) / 2 + 2)
-  li
-    font-weight: bold
+  .nav
+    & > li
+      font-size: 1.3em
+      font-weight: bold
+      & > a
+        padding-left: 30px
+        padding-right: 30px
+        text-transform: lowercase
+        i
+          +transition(color 0.25s ease)
+        &:hover i
+          color: $alRed
+      &.active
+        & > a, & > a:hover
+          background-color: inherit
+          +box-shadow(none)
+          & > i
+            color: $alRed
+  #hire-us-btn
+    position: relative
+    width: 250px
+    .header-btn
+      font-size: 1.1em
+      background-color: $alRed
+      color: white
+      padding: 30px 20px 10px
+      text-align: center
+      margin-top: -20px
+      +transition(margin-top 0.25s ease-out)
+      text-shadow: none
+      &::after
+        content: ''
+        width: 0
+        height: 0
+        position: absolute
+        left: 0px
+        top: 100%
+        border: solid transparent 125px
+        border-top: solid $alRed 20px
+      &:hover
+        margin-top: 0
 
 #push, footer
   height: $footerHeight

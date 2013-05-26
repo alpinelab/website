@@ -10,35 +10,32 @@
   %meta{itemprop: "image", content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"}
 
   #wrap
-    %header.navbar.navbar-fixed-top.navbar-inverse
+    %header.navbar.navbar-fixed-top
       .navbar-inner
         .container
           .brand{title: 'Alpine Lab'}
-            = link_to image_tag('logo-alpinelab-128.png', width: '40px', height: '40px'), '/'
+            = link_to image_tag('logo-alpinelab-128.png', width: '60px', height: '60px'), '/'
           %ul.nav
-            %li
-              = link_to '/equipe' do
+            %li{:class => current_page.path == 'pages/equipe.html' ? 'active' : ''}
+              = link_to '/pages/equipe' do
                 %i.icon-group
                 Équipe
-            %li
-              = link_to '/marketing' do
+            %li{:class => current_page.path == 'pages/marketing.html' ? 'active' : ''}
+              = link_to '/pages/marketing' do
                 %i.icon-globe
                 Marketing
-            %li
-              = link_to '/technique' do
+            %li{:class => current_page.path == 'pages/technique.html' ? 'active' : ''}
+              = link_to '/pages/technique' do
                 %i.icon-code
                 Technique
-            %li
-              = link_to '/gestion' do
+            %li{:class => current_page.path == 'pages/gestion.html' ? 'active' : ''}
+              = link_to '/pages/gestion' do
                 %i.icon-calendar
                 Gestion
           %ul.nav.pull-right
-            %li
-              = link_to '/blog' do
-                %i.icon-edit
-                Blog
-          %a.btn.btn-primary.pull-right{href: '/contact'}
-            Engagez-nous
+            %li#hire-us-btn
+              %a.header-btn{href: '/contact'}
+                Engagez-nous
 
     = yield
   %footer
