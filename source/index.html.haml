@@ -7,41 +7,69 @@ layout: corporate
 .container.full-width
   %section#about
     .container
-      %h1 Alpine Lab
-      %p
-        Nous sommes une jeune agence riche de profils multiples : developpeurs, designer, architecte, modélisateur...
-      %p
-        Cette diversité crée notre complémentarité : elle nous permet de sortir des sentiers battus pour concevoir des solutions globales et innovantes, intégrant tous les expertises du  domaine du web : design, intuitivité, fonctionalité, ergonomie... et bon sens !
+      %h1.alpinelab
+        %span.alpine> Alpine
+        %span.lab Lab
+      .row-fluid
+        %p.offset2.span8
+          Nous sommes une agence web aux profils multiples.
+      .row-fluid
+        %p
+          Notre diversité, c’est notre complémentarité :
+          %br/
+          elle nous permet de sortir des sentiers battus pour concevoir des solutions innovantes,
+          %br/
+          intégrant toutes les expertises du  domaine du web.
+      %ul.row-fluid
+        .span1
+        - {thibault: '/dev', martin: '/design', mathilde: '/marketing', steeve: '/design', mike: '/dev'}.each do |name, tag|
+          %li.span2
+            = link_to "/pages/equipe##{name}" do
+              .flip-container{ontouchstart: "this.classList.toggle('hover');"}
+                .flipper
+                  .front.avatar{id: name}
+                  .back
+                    %p= tag
+
   %section#what-we-do
     .container
-      %h1 Nos compétences
+      %h2 MÉTIERS
       %ul.row-fluid
         %li.span4
-          = link_to '/pages/marketing' do
-            .flip-container{ontouchstart: "this.classList.toggle('hover');"}
-              .flipper
-                .front
-                  %p Marketing
-                .back
-                  %p
-                    Du blah blah marketing
-                    Lorem Ipsum Doler
+          %i.icon-beaker.icon-large
+          %h3 Design
+          %p L’expérience utilisateur est transversale, concerne chaque étape de la conception et implique l’ensemble de nos savoirs-faire.
+          %p Nos objectifs : créer des solutions <strong>fluides</strong>, <strong>ergonomiques</strong> et <strong>efficaces</strong>. Un accès immédiat au contenu récherché, en travaillant notamment la hiérarchie de l’information.
+          %ul.features
+            %li
+              %h4 Services clés
+            - ['audits', 'parcours utilisateur', 'stratégie de contenu', 'hiérarchie de l\'information', 'maquettes et prototypes', 'ergonomie'].each do |feature|
+              .row-fluid
+                %li.span8.offset4= "/ #{feature}"
+
         %li.span4
-          = link_to '/pages/technique' do
-            .flip-container{ontouchstart: "this.classList.toggle('hover');"}
-              .flipper
-                .front
-                  %p Technique
-                .back
-                  %p Blah Blah Blah technique, personne n'y comprend rien...
+          %i.icon-code.icon-large
+          %h3 Technique
+          %p
+            Nos process de travail sont également pensés en suivant les dévelopements modernes d'execution : <strong>test driven development</strong>, intégration continue (
+            %a{href: 'https://travis-ci.org'}> Travis
+            ), code versionné (
+            %a{href: 'https://github.com'}> Github
+            ) et organisé (git flow), lean management.
+          %p Mais notre meilleur atout, c'est probablement notre détermination. Nous aimons les sites <strong>simples et intuitifs</strong>, et nous sommes prêts à  passer des heures pour faire économiser quelques secondes à nos utilisateurs.
+          %ul.features
+            %li
+              %h4 Technologies clés
+            - [['RubyOnRails', 'Haml', 'Sass'], ['Ember.js', 'CoffeeScript'], ['HTML5', 'CSS3'], ['Heroku', 'OpenShift']].each do |feature_group|
+              .row-fluid
+                %li.span8.offset4
+                  - feature_group.each do |feature|
+                    = "/ #{feature}"
+
         %li.span4
-          = link_to '/pages/gestion' do
-            .flip-container{ontouchstart: "this.classList.toggle('hover');"}
-              .flipper
-                .front
-                  %p Gestion
-                .back
-                  %p Blah Blah Blah encore et toujours...
+          %i.icon-calendar.icon-large
+          %h3 Management
+          %p Blah blah
   .container
     %section#hire-us
       .row
@@ -53,17 +81,6 @@ layout: corporate
           %h1
             %a.btn.btn-large.btn-danger{href: '/contact'}
               De toute urgence !
-  .container
-    %p Bacon ipsum dolor sit amet jowl drumstick ribeye bresaola, ground round salami bacon t-bone kielbasa. Leberkas flank kielbasa pastrami. Brisket pork chop kielbasa leberkas sausage shoulder, corned beef biltong pork loin ham hock shank bresaola doner flank. Ribeye kielbasa cow fatback shoulder. Sausage beef ribs ground round andouille sirloin pastrami flank pork chop turkey chicken beef rump.
 
-    %p Rump ribeye t-bone bacon pancetta. Salami hamburger pork chop sirloin capicola swine spare ribs. Tenderloin salami frankfurter short loin, short ribs jerky andouille strip steak pork loin leberkas pork belly corned beef tri-tip. Corned beef ham hock t-bone turkey pork loin flank pig meatball. Tail biltong ham short ribs shoulder, turducken boudin. Tail leberkas venison pork turducken, brisket hamburger tenderloin fatback sausage tri-tip swine.
-
-    %p Short ribs tongue chicken bacon capicola tri-tip. Tri-tip turducken hamburger meatloaf meatball sausage beef ribs drumstick t-bone sirloin bresaola pork pastrami beef. Ham hock prosciutto chuck beef drumstick, jerky short loin biltong. Ribeye chuck shank ball tip, salami filet mignon shoulder swine.
-
-    %p Doner corned beef ball tip pork belly sirloin. Strip steak boudin pork chop tail, sirloin shank leberkas ribeye venison kielbasa tri-tip. Andouille flank meatloaf pastrami ham hock. Ball tip beef ribs jowl pork belly brisket, jerky corned beef.
-
-    %p Doner ham hamburger corned beef tri-tip drumstick, turkey andouille jowl sirloin pork loin shoulder shank tenderloin t-bone. Swine kielbasa spare ribs tenderloin andouille shoulder ribeye cow. Pork loin chicken pastrami bresaola tongue, cow sausage meatball bacon tri-tip drumstick. Bresaola doner sausage cow tri-tip swine turkey. Capicola jerky filet mignon spare ribs ham beef flank pig.
-
-    %p Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
 #push
 

@@ -4,43 +4,89 @@ section
 
   &#about
     background-color: $alBlue
-    color: $alBlueLightest
+    color: $white
     h1
       font-size: 4em
       line-height: 1.2em
-      color: rgba($black, 0.5)
-      background-color: transparent
-      text-shadow: rgba($alBlueLightest, 0.8) 0px 1px 1px, rgba($alBlueDarkest, 0.8) 0px -1px 1px
+      &.alpinelab
+        font-family: "SackersGothic", sans-serif
+        font-weight: lighter
+        text-transform: uppercase
+        text-align: center
+        margin: 50px 0 100px 0
+        .alpine
+          color: $white
+        .lab
+          color: $alRed
+    p
+      font-size: 1.5em
+      line-height: 25px
+      text-align: center
+    .flip-container
+      +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
+      margin-top: 100px
+      .front
+        +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
+        background-color: $alBlue
+        color: $alBlueLightest
+        font-weight: bold
+        font-size: 2.5em
+        &.avatar
+          background-position: center
+          background-size: cover
+          -webkit-filter: grayscale(100%)
+        &#mike
+          background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
+        &#thibault
+          background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
+        &#mathilde
+          background-image: url('/img/photo-mathilde.jpg')
+        &#steeve
+          background-image: url('/img/photo-steeve.jpg')
+        &#martin
+          background-image: url('/img/photo-martin.jpg')
+      .back
+        +square($avatarCirclesRadius)
+        background-color: $white
+        color: $alBlue
+        border: solid $avatarCirclesBorder $alBlue
+        font-size: 0.6em
+        font-weight: bold
+        font-style: italic
+
 
   &#what-we-do
-    h1
+    h2
       text-align: center
       font-size: 4em
       line-height: 1.2em
       color: rgba($alBlue, 1.0)
       text-shadow: rgba($alBlueDarkest, 0.8) 0px -1px 1px
       margin-bottom: 1em
-    ul.row-fluid
-      li.span4
-        text-align: center
-        a
-          .front, .back
-            margin: 0 auto
-            +border-radius(50%)
-            p
-              position: relative
-              display: inline-block
-              top: 50%
-              margin-top: -0.5em
-          .front
-            background-color: $alBlue
-            color: $alBlueLightest
-            font-weight: bold
-            font-size: 2.5em
-          .back
-            background-color: $white
-            color: $alBlue
-            border: solid $homeCirclesBorder $alBlue
+    i.icon-large
+      font-size: 4em
+    h3
+      margin-bottom: 1em
+    ul
+      margin: 0
+    p
+      font-size: 1.1em
+    .features
+      list-style: none
+      margin-top: 2em
+      background-color: $alGrayLightest
+      padding: 0em 0 1.5em
+      h4
+        font-family: "BenchNine", sans-serif
+        font-size: 1.4em
+        position: relative
+        top: -0.3em
+        text-align: left
+        text-transform: uppercase
+      li
+        font-size: 1.3em
+        text-align: left
+        min-height: 0
 
   &#hire-us
     margin: 3em 0
@@ -55,39 +101,41 @@ section
       h1.animate
         width: 100%
 
-
-/* entire container, keeps perspective */
-.flip-container
-  perspective: 1000
-  -webkit-perspective: 1000
-  +square($homeCirclesRadius + 2 * $homeCirclesBorder)
-
-  /* flip the pane when hovered */
-  &:hover .flipper, &.hover .flipper
-    transform: rotateY(180deg)
-    -webkit-transform: rotateY(180deg)
-
-  /* flip speed goes here */
-  .flipper
-    +transition(0.6s)
-    transform-style: preserve-3d
-    -webkit-transform-style: preserve-3d
-    position: relative
-
-    /* hide back of pane during swap */
-    .front, .back
-      +backface-visibility(hidden)
-      position: absolute
-      top: 0
-      left: 0
-
-    /* front pane, placed above back */
-    .front
-      +square($homeCirclesRadius + 2 * $homeCirclesBorder)
-      z-index: 2
-
-    /* back, initially hidden pane */
-    .back
-      +square($homeCirclesRadius)
-      transform: rotateY(180deg)
-      -webkit-transform: rotateY(180deg)
+  ul.row-fluid
+    li
+      text-align: center
+      a
+        /* entire container, keeps perspective */
+        .flip-container
+          perspective: 1000
+          -webkit-perspective: 1000
+          /* flip the pane when hovered */
+          &:hover .flipper, &.hover .flipper
+            transform: rotateY(180deg)
+            -webkit-transform: rotateY(180deg)
+          /* flip speed goes here */
+          .flipper
+            +transition(0.6s)
+            transform-style: preserve-3d
+            -webkit-transform-style: preserve-3d
+            position: relative
+            /* hide back of pane during swap */
+            .front, .back
+              +backface-visibility(hidden)
+              position: absolute
+              top: 0
+              left: 0
+              margin: 0 auto
+              +border-radius(50%)
+              p
+                position: relative
+                display: inline-block
+                top: 50%
+                margin-top: -0.5em
+            /* front pane, placed above back */
+            .front
+              z-index: 2
+            /* back, initially hidden pane */
+            .back
+              transform: rotateY(180deg)
+              -webkit-transform: rotateY(180deg)

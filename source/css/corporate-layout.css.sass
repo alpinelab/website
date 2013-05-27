@@ -2,8 +2,8 @@ html, body
   height: 100%
   +box-sizing(border-box)
 body
-  // font-family: "LucidaGrande", "Lucida Sans Unicode", sans-serif
-  font-family: "SackersGothic", sans-serif
+  font-family: "Lato", sans-serif
+  font-weight: 300
   -webkit-font-smoothing: antialiased
   font-smooth: always
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
@@ -22,6 +22,7 @@ a:hover
 
 header.navbar
   +opacity(90)
+  font-family: "SackersGothic", sans-serif
   .brand
     padding: (($navbarHeight - $logoHeight) / 2 - 2) 20px (($navbarHeight - $logoHeight) / 2 + 2)
   .nav
@@ -31,7 +32,6 @@ header.navbar
       & > a
         padding-left: 30px
         padding-right: 30px
-        text-transform: lowercase
         i
           +transition(color 0.25s ease)
         &:hover i
@@ -44,7 +44,10 @@ header.navbar
             color: $alRed
   #hire-us-btn
     position: relative
-    width: 250px
+    width: 200px
+    font-family: "Lato", sans-serif
+    font-weight: bold
+    text-transform: lowercase
     .header-btn
       font-size: 1.1em
       background-color: $alRed
@@ -61,10 +64,11 @@ header.navbar
         position: absolute
         left: 0px
         top: 100%
-        border: solid transparent 125px
+        border: solid transparent 100px
         border-top: solid $alRed 20px
       &:hover
         margin-top: 0
+
 
 #push, footer
   height: $footerHeight
