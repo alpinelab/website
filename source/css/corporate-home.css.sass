@@ -5,6 +5,7 @@ section
   &#about
     background-color: $alBlue
     color: $white
+    position: relative
     h1
       font-size: 4em
       line-height: 1.2em
@@ -13,7 +14,7 @@ section
         font-weight: lighter
         text-transform: uppercase
         text-align: center
-        margin: 50px 0 100px 0
+        margin: 50px 0 80px 0
         .alpine
           color: $white
         .lab
@@ -24,7 +25,7 @@ section
       text-align: center
     .flip-container
       +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
-      margin-top: 100px
+      margin-top: 80px
       .front
         +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
         background-color: $alBlue
@@ -54,7 +55,6 @@ section
         font-weight: bold
         font-style: italic
 
-
   &#what-we-do
     h2
       text-align: center
@@ -71,9 +71,11 @@ section
       margin: 0
     p
       font-size: 1.1em
+    .span4
+      padding: 0 20px
     .features
       list-style: none
-      margin-top: 2em
+      margin-top: 4em
       background-color: $alGrayLightest
       padding: 0em 0 1.5em
       h4
@@ -139,3 +141,39 @@ section
             .back
               transform: rotateY(180deg)
               -webkit-transform: rotateY(180deg)
+
+.transition-square
+  +square($transitionSquareWidth)
+  position: absolute
+  &#transition-square-1
+    bottom: 0
+    right: $transitionSquareWidth
+    background-color: $white
+  &#transition-square-2
+    bottom: 0
+    right: 0
+    background-color: darken($alBlueLightest, 10%)
+  &#transition-square-3
+    bottom: $transitionSquareWidth
+    right: 0
+    background-color: $alBlueLightest
+  &#transition-square-4
+    bottom: -$transitionSquareWidth
+    right: 0
+    background-color: darken($alBlueLight, 3%)
+  &#transition-square-5
+    bottom: -2 * $transitionSquareWidth
+    right: 0
+    background-color: $alBlue
+  &#transition-square-6
+    bottom: -$transitionSquareWidth
+    right: $transitionSquareWidth
+    background-color: $alBlueLighter
+  &#transition-square-7
+    bottom: -$transitionSquareWidth
+    right: 2 * $transitionSquareWidth
+    background-color: darken($alBlueLightest, 5%)
+  &#transition-square-8
+    bottom: -$transitionSquareWidth
+    right: 3 * $transitionSquareWidth
+    background-color: lighten($alBlueLighter, 15%)

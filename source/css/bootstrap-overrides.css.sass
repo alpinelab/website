@@ -180,9 +180,9 @@ $btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !defa
 // $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1
 
 $navbarHeight:                    100px !default
-// $navbarBackgroundHighlight:       #ffffff !default
-// $navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default
-// $navbarBorder:                    darken($navbarBackground, 12%) !default
+$navbarBackgroundHighlight:       rgba(#ffffff, 0.8) !default
+$navbarBackground:                rgba(darken($navbarBackgroundHighlight, 5%), 0.8) !default
+$navbarBorder:                    rgba(darken($navbarBackground, 12%), 0.8) !default
 
 $navbarText:                      $alGrayDarker !default
 $navbarLinkColor:                 $alGrayDarker !default

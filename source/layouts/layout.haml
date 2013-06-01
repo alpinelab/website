@@ -28,7 +28,7 @@
   = stylesheet_link_tag 'normalize'
   = stylesheet_link_tag 'main'
   = yield_content :stylesheets
-%body{itemscope: true, itemtype: "http://schema.org/Blog"}
+%body{itemscope: true, itemtype: "http://schema.org/Blog", data: {spy: :scroll, target: 'header.navbar', offset: 50}}
 
   = yield
 
@@ -38,6 +38,8 @@
     window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')
   = javascript_include_tag 'plugins'
   = javascript_include_tag 'main'
+
+  = yield_content(:javascripts)
 
   :javascript
     var _gaq = _gaq || [];

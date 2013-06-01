@@ -4,6 +4,17 @@ priority: 1.0
 layout: corporate
 ---
 
+- content_for :javascripts do
+  :javascript
+    $('.navbar ul.nav a, .navbar .brand a').bind('click',function(event){
+        $('html, body').stop().animate({
+            scrollTop: $($(this).attr('href')).offset().top - 100
+        }, 300);
+        console.log('haha');
+        event.preventDefault();
+    });
+
+
 .container.full-width
   %section#about
     .container
@@ -20,6 +31,7 @@ layout: corporate
           elle nous permet de sortir des sentiers battus pour concevoir des solutions innovantes,
           %br/
           intégrant toutes les expertises du  domaine du web.
+        %p Ouais.
       %ul.row-fluid
         .span1
         - {thibault: '/dev', martin: '/design', mathilde: '/marketing', steeve: '/design', mike: '/dev'}.each do |name, tag|
@@ -30,6 +42,15 @@ layout: corporate
                   .front.avatar{id: name}
                   .back
                     %p= tag
+    .transition-square#transition-square-1
+    .transition-square#transition-square-2
+    .transition-square#transition-square-3
+    .transition-square#transition-square-4
+    .transition-square#transition-square-5
+    .transition-square#transition-square-6
+    .transition-square#transition-square-7
+    .transition-square#transition-square-8
+
 
   %section#what-we-do
     .container
@@ -39,7 +60,7 @@ layout: corporate
           %i.icon-beaker.icon-large
           %h3 Design
           %p L’expérience utilisateur est transversale, concerne chaque étape de la conception et implique l’ensemble de nos savoirs-faire.
-          %p Nos objectifs : créer des solutions <strong>fluides</strong>, <strong>ergonomiques</strong> et <strong>efficaces</strong>. Un accès immédiat au contenu récherché, en travaillant notamment la hiérarchie de l’information.
+          %p Nos objectifs : créer des solutions <strong>fluides</strong>, <strong>ergonomiques</strong> et <strong>efficaces</strong>. Un accès immédiat au contenu recherché, en travaillant notamment la hiérarchie de l’information.
           %ul.features
             %li
               %h4 Services clés
@@ -70,6 +91,104 @@ layout: corporate
           %i.icon-calendar.icon-large
           %h3 Management
           %p Blah blah
+
+  %section#team
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+
+  %hr/
+  %hr/
+  %hr/
+  %section#projects
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+    %p Bacon ipsum dolor sit amet short ribs kielbasa fatback prosciutto. Ball tip brisket short loin flank, pancetta prosciutto tenderloin tail pork loin chicken ham hock corned beef. Bacon ribeye tail ground round turkey. Bacon doner prosciutto spare ribs tri-tip. Pork sausage ribeye strip steak meatball salami t-bone tri-tip tongue short loin andouille boudin.
+
+    %p Chuck chicken fatback filet mignon, corned beef shankle ribeye bresaola brisket rump doner sausage tail beef. Sirloin frankfurter filet mignon tenderloin ribeye brisket tail hamburger bresaola meatball. Swine tail meatball ball tip, pork belly frankfurter leberkas chicken tongue t-bone. Tenderloin shankle turkey pastrami doner. Biltong spare ribs bacon hamburger beef boudin leberkas capicola flank chicken.
+
+    %p Tri-tip turducken shank, venison pastrami pork chop hamburger ball tip bresaola chicken turkey sausage ground round frankfurter. Corned beef filet mignon pancetta jowl jerky biltong shankle. Jowl tail prosciutto, bresaola frankfurter sausage tenderloin biltong strip steak chuck. Ribeye capicola fatback, ham hock brisket shoulder jowl corned beef. Ribeye ground round meatball chicken ham, meatloaf tri-tip. Turducken strip steak meatloaf, pork loin turkey swine capicola ham hock ham chuck cow pancetta pork brisket. Drumstick pork loin frankfurter, filet mignon corned beef capicola pastrami.
+
+    %p Salami andouille turducken, fatback brisket tenderloin beef ribs pig shank. Sirloin salami pig ribeye ground round flank corned beef hamburger drumstick. Short ribs venison flank tri-tip. Fatback tenderloin jowl meatball chuck capicola ham beef boudin filet mignon pork shankle salami rump cow.
+
+    %p Ham hock biltong turducken jerky shoulder hamburger pork loin sausage. Pork sausage shoulder, drumstick tongue ham hock bresaola sirloin short loin. Ham doner brisket shank ground round, pastrami pork belly andouille kielbasa corned beef jowl beef. Drumstick sausage leberkas boudin rump jowl.
+
   .container
     %section#hire-us
       .row

@@ -14,13 +14,10 @@
       .navbar-inner
         .container
           .brand{title: 'Alpine Lab'}
-            = link_to image_tag('logo-alpinelab-128.png', width: '60px', height: '60px'), '/'
+            = link_to image_tag('logo-alpinelab-128.png', width: '60px', height: '60px'), '#wrap'
           %ul.nav
-            - {design: 'icon-beaker', technique: 'icon-code', management: 'icon-calendar', equipe: 'icon-group'}.each do |page, icon|
-              %li{:class => current_page.path == "pages/#{page}.html" ? 'active' : ''}
-                = link_to "/pages/#{page}" do
-                  %i{class: icon}
-                  = page
+            - {:'what-we-do' => 'métiers', :team => 'équipe', :projects => 'réalisations'}.each do |anchor, category|
+              %li= link_to category, "##{anchor}"
           %ul.nav.pull-right
             %li#hire-us-btn
               %a.header-btn{href: '/contact'}

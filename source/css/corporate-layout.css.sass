@@ -21,7 +21,6 @@ a:hover
     padding-top: $navbarHeight
 
 header.navbar
-  +opacity(90)
   font-family: "SackersGothic", sans-serif
   .brand
     padding: (($navbarHeight - $logoHeight) / 2 - 2) 20px (($navbarHeight - $logoHeight) / 2 + 2)
@@ -34,14 +33,13 @@ header.navbar
         padding-right: 30px
         i
           +transition(color 0.25s ease)
-        &:hover i
+        &:hover
           color: $alRed
       &.active
         & > a, & > a:hover
           background-color: inherit
           +box-shadow(none)
-          & > i
-            color: $alRed
+          color: $alRed
   #hire-us-btn
     position: relative
     width: 200px
