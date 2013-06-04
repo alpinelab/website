@@ -1,11 +1,26 @@
 section
-  &#about, &#what-we-do, &#hire-us
+  &#about, &#what-we-do, &#team, &#hire-us
     padding: 2em 0
+    position: relative
+    h2
+      font-family: "BebasNeue", sans-serif
+      text-align: center
+      font-size: 8em
+      line-height: 1.2em
+      color: rgba($alBlue, 1.0)
+      margin-bottom: 1em
+      letter-spacing: 0.1em
+      .mirror
+        display: inline-block
+        -webkit-transform: rotateY(180deg)
+        -moz-transform: rotateY(180deg)
+        -ms-transform: rotateY(180deg)
+        -o-transform: rotateY(180deg)
+        transform: rotateY(180deg)
 
   &#about
     background-color: $alBlue
     color: $white
-    position: relative
     h1
       font-size: 4em
       line-height: 1.2em
@@ -32,19 +47,19 @@ section
         color: $alBlueLightest
         font-weight: bold
         font-size: 2.5em
-        &.avatar
+        &.member-badge
           background-position: center
           background-size: cover
-          -webkit-filter: grayscale(100%)
-        &#mike
+          +filter(grayscale(100%))
+        &#badge-mike
           background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
-        &#thibault
+        &#badge-thibault
           background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
-        &#mathilde
+        &#badge-mathilde
           background-image: url('/img/photo-mathilde.jpg')
-        &#steeve
+        &#badge-steeve
           background-image: url('/img/photo-steeve.jpg')
-        &#martin
+        &#badge-martin
           background-image: url('/img/photo-martin.jpg')
       .back
         +square($avatarCirclesRadius)
@@ -56,13 +71,7 @@ section
         font-style: italic
 
   &#what-we-do
-    h2
-      text-align: center
-      font-size: 4em
-      line-height: 1.2em
-      color: rgba($alBlue, 1.0)
-      text-shadow: rgba($alBlueDarkest, 0.8) 0px -1px 1px
-      margin-bottom: 1em
+    padding-bottom: 100px
     i.icon-large
       font-size: 4em
     h3
@@ -72,7 +81,7 @@ section
     p
       font-size: 1.1em
     .span4
-      padding: 0 20px
+      padding: 0 30px
     .features
       list-style: none
       margin-top: 4em
@@ -113,13 +122,11 @@ section
           -webkit-perspective: 1000
           /* flip the pane when hovered */
           &:hover .flipper, &.hover .flipper
-            transform: rotateY(180deg)
-            -webkit-transform: rotateY(180deg)
+            +transform(rotateY(180deg))
           /* flip speed goes here */
           .flipper
             +transition(0.6s)
-            transform-style: preserve-3d
-            -webkit-transform-style: preserve-3d
+            +transform-style(preserve-3d)
             position: relative
             /* hide back of pane during swap */
             .front, .back
@@ -139,12 +146,12 @@ section
               z-index: 2
             /* back, initially hidden pane */
             .back
-              transform: rotateY(180deg)
-              -webkit-transform: rotateY(180deg)
+              +transform(rotateY(180deg))
 
 .transition-square
   +square($transitionSquareWidth)
   position: absolute
+  z-index: 100
   &#transition-square-1
     bottom: 0
     right: $transitionSquareWidth

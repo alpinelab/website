@@ -8,9 +8,7 @@ body
   font-smooth: always
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
   -webkit-text-stroke: 1px transparent
-
-a:hover
-  text-decoration: none
+  color: $defaultTextColor
 
 #wrap
   min-height: 100%
@@ -26,7 +24,7 @@ header.navbar
     padding: (($navbarHeight - $logoHeight) / 2 - 2) 20px (($navbarHeight - $logoHeight) / 2 + 2)
   .nav
     & > li
-      font-size: 1.3em
+      font-size: 1.4em
       font-weight: bold
       & > a
         padding-left: 30px
@@ -40,6 +38,8 @@ header.navbar
           background-color: inherit
           +box-shadow(none)
           color: $alRed
+    li a[href="#about"]
+      display: none
   #hire-us-btn
     position: relative
     width: 200px

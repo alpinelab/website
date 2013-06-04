@@ -1,0 +1,93 @@
+section#team
+  background-color: $alBlueLighter
+  color: $white
+  font-size: 1.2em
+  font-weight: 400
+  h2
+    color: $white
+  article
+    margin-bottom: 50px
+    &>.avatar-big
+      width: $avatarSize
+      height: $avatarSize
+      +transition(0.5s ease)
+      +border-radius(50%)
+      border: ($avatarSize/2) solid rgba(black, 0.6)
+      background-position: 50% 50%
+      background-size: $avatarSize $avatarSize
+      background-repeat: no-repeat
+      background-origin: border-box
+      +box-sizing(border-box)
+      background-image: url('/img/logo-alpinelab-128.png') // default avatar image
+      +filter(grayscale(100%))
+    &:nth-child(2n)>.avatar-big
+      float: left
+      margin-right: 15px
+    &:nth-child(2n+1)
+      text-align: right
+      &>.avatar-big
+        float: right
+        margin-left: 15px
+    &:hover
+      &>.avatar-big
+        border: 5px solid rgba(black, 0.6)
+
+  #alpinelab
+    .avatar-big
+      background-image: url('/img/logo-alpinelab-128.png')
+
+  #mike
+    .avatar-big
+      background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
+    a i.icon-phone:hover::after
+      content: "07.61.90.93.62"
+  #thibault
+    .avatar-big
+      background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
+    a i.icon-phone:hover::after
+      content: "06.66.07.58.83"
+  #mathilde
+    .avatar-big
+      background-image: url('/img/photo-mathilde.jpg')
+  #martin
+    .avatar-big
+      background-image: url('/img/photo-martin.jpg')
+  #steeve
+    .avatar-big
+      background-image: url('/img/photo-steeve.jpg')
+
+  i
+    margin-left: 0.5em
+    color: $white
+    +transition(color 0.5s ease)
+    &.icon-github, &.icon-github-sign
+      &:hover
+        color: $alGrayDark
+    &.icon-twitter, &.icon-twitter-sign
+      &:hover
+        color: $twitter
+    &.icon-facebook, &.icon-facebook-sign
+      &:hover
+        color: $facebook
+    &.icon-linkedin, &.icon-linkedin-sign
+      &:hover
+        color: $linkedin
+    &.icon-pinterest, &.icon-pinterest-sign
+      &:hover
+        color: $pinterest
+    &.icon-google-plus, &.icon-google-plus-sign
+      &:hover
+        color: $google_plus
+    &.icon-envelope, &.icon-envelope-sign
+      &:hover
+        color: $alRedDark
+    &.icon-globe, &.icon-globe-sign
+      &:hover
+        color: $alBlueDarkest
+    &.icon-phone, &.icon-phone-sign
+      &:hover
+        color: $phone
+      &::after
+        margin-left: 1em
+        color: $alGray
+        font-size: 0.5em

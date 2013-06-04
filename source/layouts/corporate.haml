@@ -14,13 +14,13 @@
       .navbar-inner
         .container
           .brand{title: 'Alpine Lab'}
-            = link_to image_tag('logo-alpinelab-128.png', width: '60px', height: '60px'), '#wrap'
+            = link_to image_tag('logo-alpinelab-128.png', width: '60px', height: '60px'), '#about'
           %ul.nav
-            - {:'what-we-do' => 'métiers', :team => 'équipe', :projects => 'réalisations'}.each do |anchor, category|
+            - {:about => 'à propos', :'what-we-do' => 'métiers', :team => 'équipe', :projects => 'réalisations'}.each do |anchor, category|
               %li= link_to category, "##{anchor}"
           %ul.nav.pull-right
             %li#hire-us-btn
-              %a.header-btn{href: '/contact'}
+              %a.header-btn{href: 'mailto:dahu@alpine-lab.com&subject=Faites-moi quelque chose de chouette !'}
                 engagez-nous
 
     = yield
