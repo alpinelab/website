@@ -155,6 +155,8 @@ section
         font-size: 0.6em
         &::before
           content: ' - '
+    .row-fluid
+      margin-bottom: 50px
     .screenshot
       position: relative
       width: 80%
@@ -165,12 +167,13 @@ section
         top: 0
         +square(100%)
         position: absolute
-        background-color: rgba($black, 0.5)
+        background-color: rgba($black, 0.7)
         color: white
         .mask-content
           position: absolute
           bottom: 0
           padding: 0 30px 30px 30px
+          line-height: 1.0em
       &:hover
         .mask
           display: block
