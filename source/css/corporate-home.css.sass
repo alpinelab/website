@@ -1,5 +1,5 @@
 section
-  &#about, &#what-we-do, &#team, &#hire-us
+  &#about, &#what-we-do, &#team, &#hire-us, &#projects
     padding: 2em 0
     position: relative
     h2
@@ -148,6 +148,32 @@ section
             .back
               +transform(rotateY(180deg))
 
+  &#projects
+    h3
+      font-weight: normal
+      .description
+        font-size: 0.6em
+        &::before
+          content: ' - '
+    .screenshot
+      position: relative
+      width: 80%
+      height: auto
+      .mask
+        display: none
+        left: 0
+        top: 0
+        +square(100%)
+        position: absolute
+        background-color: rgba($black, 0.5)
+        color: white
+        .mask-content
+          position: absolute
+          bottom: 0
+          padding: 0 30px 30px 30px
+      &:hover
+        .mask
+          display: block
 .transition-square
   +square($transitionSquareWidth)
   position: absolute
