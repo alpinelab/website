@@ -39,15 +39,8 @@ layout: corporate
                   .front.member-badge{id: "badge-#{name}"}
                   .back
                     %p= tag
-    .transition-square#transition-square-1
-    .transition-square#transition-square-2
-    .transition-square#transition-square-3
-    .transition-square#transition-square-4
-    .transition-square#transition-square-5
-    .transition-square#transition-square-6
-    .transition-square#transition-square-7
-    .transition-square#transition-square-8
-
+    - (1..8).each do |i|
+      .transition-square{id: "transition-square-#{i}"}
 
   %section#what-we-do
     .container
@@ -95,15 +88,8 @@ layout: corporate
             - ['Strategic Opportunities Thinking', 'Innovation', 'Consumer Insights', 'Competitive & Category Analysis', 'Market & Trends Analysis'].each do |feature|
               .row-fluid
                 %li.span8.offset4= "/ #{feature}"
-    .transition-square#transition-square-1
-    .transition-square#transition-square-2
-    .transition-square#transition-square-3
-    .transition-square#transition-square-4
-    .transition-square#transition-square-5
-    .transition-square#transition-square-6
-    .transition-square#transition-square-7
-    .transition-square#transition-square-8
-
+    - (1..8).each do |i|
+      .transition-square{id: "transition-square-#{i}"}
 
 
   %section#team
