@@ -46,19 +46,18 @@ layout: corporate
     .container
       %h2 MÉTIERS
       %ul.row-fluid
-        %li.span4
+        %li.span4.domain
           %i.icon-beaker.icon-large
           %h3 Design
           %p L’expérience utilisateur est transversale, concerne chaque étape de la conception et implique l’ensemble de nos savoirs-faire.
           %p Nos objectifs : créer des solutions <strong>fluides</strong>, <strong>ergonomiques</strong> et <strong>efficaces</strong>. Proposer un accès immédiat au contenu recherché, en travaillant notamment la hiérarchie de l’information.
-          %ul.features
-            %li
-              %h4 Services clés
+          .features
+            %h4 Services clés
             - ['audits', 'parcours utilisateur', 'stratégie de contenu', 'hiérarchie de l\'information', 'maquettes et prototypes', 'ergonomie'].each do |feature|
-              .row-fluid
-                %li.span8.offset4= "/ #{feature}"
+              %ul.row-fluid
+                %li.span10.offset2= "/ #{feature}"
 
-        %li.span4
+        %li.span4.domain
           %i.icon-code.icon-large
           %h3 Technique
           %p
@@ -68,26 +67,25 @@ layout: corporate
             %a{href: 'https://github.com'}> Github
             ) et organisé (git flow), lean management.
           %p Mais notre meilleur atout, c'est probablement notre détermination. Nous aimons les sites <strong>simples et intuitifs</strong>, et nous sommes prêts à  passer des heures pour faire économiser quelques secondes à nos utilisateurs.
-          %ul.features
-            %li
-              %h4 Technologies clés
+          .features
+            %h4 Technologies clés
             - [['RubyOnRails', 'Haml', 'Sass'], ['Ember.js', 'CoffeeScript'], ['HTML5', 'CSS3'], ['Heroku', 'OpenShift']].each do |feature_group|
-              .row-fluid
-                %li.span8.offset4
+              %ul.row-fluid
+                %li.span10.offset2
                   - feature_group.each do |feature|
                     = "/ #{feature}"
 
-        %li.span4
+        %li.span4.domain
           %i.icon-calendar.icon-large
           %h3 Management
           %p Nous intégrons la stratégie et la planification de manière transversale dans chaque projet.
           %p L’univers du web est en constante mutation, c’est pourquoi il nous est impératif de <strong>développer notre connaissance des utilisateurs</strong>, d’être à l’avant-garde des réflexions sur les nouvelles tendances en matière d’<strong>innovation</strong>, de <strong>technologie</strong>, d’<strong>usage</strong>, de <strong>design</strong>, de <strong>médias</strong>... pour identifier les <strong>opportunités stratégiques</strong> et d'<strong>innovation</strong> qui créent une <strong>valeur ajoutée</strong> tangible pour le utilisateurs.
-          %ul.features
-            %li
-              %h4 Services clés
+          .features
+            %h4 Services clés
             - ['Strategic Opportunities Thinking', 'Innovation', 'Consumer Insights', 'Competitive & Category Analysis', 'Market & Trends Analysis'].each do |feature|
-              .row-fluid
-                %li.span8.offset4= "/ #{feature}"
+              %ul.row-fluid
+                %li.span10.offset2= "/ #{feature}"
+
     - (1..8).each do |i|
       .transition-square{id: "transition-square-#{i}"}
 
