@@ -10,100 +10,6 @@ section
       color: rgba($alBlue, 1.0)
       margin-bottom: 1em
       letter-spacing: 0.1em
-      .mirror
-        display: inline-block
-        -webkit-transform: rotateY(180deg)
-        -moz-transform: rotateY(180deg)
-        -ms-transform: rotateY(180deg)
-        -o-transform: rotateY(180deg)
-        transform: rotateY(180deg)
-
-  &#about
-    background-color: $alBlue
-    color: $white
-    h1
-      font-size: 6em
-      line-height: 1.2em
-      &.alpinelab
-        font-family: "SackersGothic", sans-serif
-        font-weight: lighter
-        text-transform: uppercase
-        text-align: center
-        margin: 50px 0 80px 0
-        .alpine
-          color: $white
-        .lab
-          color: $alRed
-    p
-      font-size: 1.5em
-      line-height: 25px
-      text-align: center
-    .flip-container
-      +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
-      margin-top: 80px
-      .front
-        +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
-        background-color: $alBlue
-        color: $alBlueLightest
-        font-weight: bold
-        font-size: 2.5em
-        &.member-badge
-          background-position: center
-          background-size: cover
-          +filter(grayscale(100%))
-        &#badge-mike
-          background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
-        &#badge-thibault
-          background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
-        &#badge-mathilde
-          background-image: url('/img/photo-mathilde.jpg')
-        &#badge-steeve
-          background-image: url('/img/photo-steeve.jpg')
-        &#badge-martin
-          background-image: url('/img/photo-martin.jpg')
-      .back
-        +square($avatarCirclesRadius)
-        background-color: $white
-        color: $alBlue
-        border: solid $avatarCirclesBorder $alBlue
-        font-size: 0.6em
-        font-weight: bold
-        font-style: italic
-
-  &#what-we-do
-    padding-bottom: 100px
-    i.icon-large
-      font-size: 4em
-    h3
-      margin-bottom: 1em
-    ul
-      margin: 0
-    p
-      font-size: 1.1em
-    .span4
-      padding: 0 30px
-    .domain
-      height: 650px
-      position: relative
-    .features
-      position: absolute
-      bottom: 0
-      width: 100%
-      list-style: none
-      margin-top: 4em
-      background-color: $alGrayLightest
-      padding: 0em 0 1.5em
-      h4
-        font-family: "BenchNine", sans-serif
-        font-size: 1.4em
-        position: relative
-        top: -1em
-        text-align: left
-        text-transform: uppercase
-      li
-        font-size: 1.3em
-        text-align: left
-        min-height: 0
 
   &#hire-us
     margin: 3em 0
@@ -154,35 +60,6 @@ section
             .back
               +transform(rotateY(180deg))
 
-  &#projects
-    h3
-      font-weight: normal
-      .description
-        font-size: 0.6em
-        &::before
-          content: ' - '
-    .row-fluid
-      margin-bottom: 50px
-    .screenshot
-      position: relative
-      width: 80%
-      height: auto
-      .mask
-        display: none
-        left: 0
-        top: 0
-        +square(100%)
-        position: absolute
-        background-color: rgba($black, 0.7)
-        color: white
-        .mask-content
-          position: absolute
-          bottom: 0
-          padding: 0 30px 30px 30px
-          line-height: 1.0em
-      &:hover
-        .mask
-          display: block
 .transition-square
   +square($transitionSquareWidth)
   position: absolute

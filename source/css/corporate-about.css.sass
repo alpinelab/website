@@ -1,0 +1,51 @@
+section#about
+  background-color: $alBlue
+  color: $white
+  h1
+    font-size: 6em
+    line-height: 1.2em
+    &.alpinelab
+      font-family: "SackersGothic", sans-serif
+      font-weight: lighter
+      text-transform: uppercase
+      text-align: center
+      margin: 50px 0 80px 0
+      .alpine
+        color: $white
+      .lab
+        color: $alRed
+  p
+    font-size: 1.5em
+    line-height: 25px
+    text-align: center
+  .flip-container
+    +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
+    margin-top: 80px
+    .front
+      +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
+      background-color: $alBlue
+      color: $alBlueLightest
+      font-weight: bold
+      font-size: 2.5em
+      &.member-badge
+        background-position: center
+        background-size: cover
+        +filter(grayscale(100%))
+      &#badge-mike
+        background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
+      &#badge-thibault
+        background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
+      &#badge-mathilde
+        background-image: url('/img/photo-mathilde.jpg')
+      &#badge-steeve
+        background-image: url('/img/photo-steeve.jpg')
+      &#badge-martin
+        background-image: url('/img/photo-martin.jpg')
+    .back
+      +square($avatarCirclesRadius)
+      background-color: $white
+      color: $alBlue
+      border: solid $avatarCirclesBorder $alBlue
+      font-size: 0.6em
+      font-weight: bold
+      font-style: italic
