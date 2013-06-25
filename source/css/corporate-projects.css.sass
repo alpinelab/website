@@ -9,12 +9,15 @@ section#projects
     margin-bottom: 50px
   .screenshot
     position: relative
+    img
+      border: solid 1px $alGrayLight
     .mask
       left: 0
       top: 0
       +square(100%)
       position: absolute
       background-color: rgba($black, 0)
+      border: solid 1px rgba($black, 0)
       color: transparent
       .mask-content
         position: absolute
@@ -25,4 +28,5 @@ section#projects
     &:hover
       .mask
         background-color: rgba($black, 0.8)
+        border-color: rgba($black, 0.8)
         color: white
