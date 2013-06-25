@@ -16,14 +16,15 @@ section#projects
       top: 0
       +square(100%)
       position: absolute
-      background-color: $black
-      +opacity(0)
-      color: white
+      background-color: rgba($black, 0)
+      color: transparent
       .mask-content
         position: absolute
         bottom: 0
         padding: 0 30px 30px 30px
         line-height: 1.0em
+        font-size: 1.2em
     &:hover
       .mask
-        +opacity(70)
+        background-color: rgba($black, 0.8)
+        color: white
