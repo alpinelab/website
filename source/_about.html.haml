@@ -1,0 +1,26 @@
+%section#about
+  .container
+    %h1.alpinelab
+      %span.alpine> Alpine
+      %span.lab Lab
+    .row-fluid
+      %p.offset2.span8
+        Nous sommes une agence web aux profils multiples.
+    .row-fluid
+      %p
+        Notre diversité, nous permet d'aborder les projets sous divers angles,
+        %br/
+        en confrontant nos points de vue pour concevoir des solutions innovantes.
+      %p Ouais.
+    %ul.members.row-fluid
+      .span1
+      - {thibault: '/dev', martin: '/design', mathilde: '/marketing', steeve: '/design', mike: '/dev'}.each do |name, tag|
+        %li.member.span2
+          = link_to "##{name}" do
+            .flip-container{ontouchstart: "this.classList.toggle('hover');"}
+              .flipper
+                .front.member-badge{id: "badge-#{name}"}
+                .back
+                  %p= tag
+  - (1..8).each do |i|
+    .transition-square{id: "transition-square-#{i}"}
