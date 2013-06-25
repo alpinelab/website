@@ -12,12 +12,12 @@ section#projects
     width: 80%
     height: auto
     .mask
-      display: none
       left: 0
       top: 0
       +square(100%)
       position: absolute
-      background-color: rgba($black, 0.7)
+      background-color: $black
+      +opacity(0)
       color: white
       .mask-content
         position: absolute
@@ -26,4 +26,4 @@ section#projects
         line-height: 1.0em
     &:hover
       .mask
-        display: block
+        +opacity(70)
