@@ -3,6 +3,12 @@ section#team
   color: $white
   font-size: 1.2em
   font-weight: 400
+  line-height: 1.4em
+  a
+    color: $white
+    &:hover
+      text-decoration: underline
+
   h2
     color: $white
   article
@@ -19,7 +25,7 @@ section#team
       background-origin: border-box
       +box-sizing(border-box)
       background-image: url('/img/logo-alpinelab-128.png') // default avatar image
-      +filter(grayscale(100%))
+      // +filter(grayscale(100%))
     &:nth-child(2n)>.avatar-big
       float: left
       margin-right: 15px
@@ -31,6 +37,24 @@ section#team
     &:hover
       &>.avatar-big
         border: 5px solid rgba(black, 0.6)
+
+  .social-networks
+    a
+      i
+        margin-left: 0.5em
+        color: $white
+        display: inline-block
+        +transition(all 0.25s ease)
+        &.icon-phone, &.icon-phone-sign
+          &::after
+            margin-left: 1em
+            font-size: 0.5em
+            color: $white
+      &:hover
+        text-decoration: none
+        i:not(.icon-phone)
+          +transform-origin(50% 50% 0)
+          +transform(rotateZ(30deg))
 
   #alpinelab
     .avatar-big
@@ -55,39 +79,3 @@ section#team
   #steeve
     .avatar-big
       background-image: url('/img/photo-steeve.jpg')
-
-  i
-    margin-left: 0.5em
-    color: $white
-    +transition(color 0.5s ease)
-    &.icon-github, &.icon-github-sign
-      &:hover
-        color: $alGrayDark
-    &.icon-twitter, &.icon-twitter-sign
-      &:hover
-        color: $twitter
-    &.icon-facebook, &.icon-facebook-sign
-      &:hover
-        color: $facebook
-    &.icon-linkedin, &.icon-linkedin-sign
-      &:hover
-        color: $linkedin
-    &.icon-pinterest, &.icon-pinterest-sign
-      &:hover
-        color: $pinterest
-    &.icon-google-plus, &.icon-google-plus-sign
-      &:hover
-        color: $google_plus
-    &.icon-envelope, &.icon-envelope-sign
-      &:hover
-        color: $alRedDark
-    &.icon-globe, &.icon-globe-sign
-      &:hover
-        color: $alBlueDarkest
-    &.icon-phone, &.icon-phone-sign
-      &:hover
-        color: $phone
-      &::after
-        margin-left: 1em
-        color: $alGray
-        font-size: 0.5em
