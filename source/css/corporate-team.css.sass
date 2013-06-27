@@ -1,8 +1,6 @@
 section#team
   background-color: $alBlue
   color: $white
-  font-size: 1.1em
-  font-weight: 400
   a
     color: $white
     &:hover
@@ -11,6 +9,8 @@ section#team
   h2
     color: $white
   article
+    font-size: 1.1em
+    font-weight: 400
     text-align: justify
     margin-bottom: 50px
     &>.avatar-big
@@ -39,7 +39,6 @@ section#team
       background-color: $white
       +border-radius(20px)
       +box-shadow(0 0 40px 20px $white)
-      // +transition(all 0.5s ease)
       &:hover
         +animation(logo-heartbeat 1s)
         +animation-iteration-count(infinite)
