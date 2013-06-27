@@ -80,7 +80,13 @@
         height: 800px
         p
           padding: 0 10px
-
+    &#projects
+      h3
+        text-align: center
+        .description
+          display: block
+          &::before
+            content: ''
 
 /* Phones and phablets */
 @media (max-width: 767px)
@@ -141,12 +147,37 @@
     &#team
       article
         padding: 0 5%
+    &#projects
+      padding: 0 5%
+      h2
+        font-size: 5em
+      article.span5.offset2
+        margin-top: 4em
+      .screenshot, .screenshot:hover
+        margin-top: 2em
+        img
+          float: left
+          width: 70%
+        .mask
+          width: 25%
+          height: auto
+          position: static
+          margin-left: 75%
+          font-size: 0.9em
+          background-color: $white
+          border: none
+          color: $alGrayDarkest
+          .mask-content
+            position: static
+            padding: 0
+            line-height: 1.0em
+            font-size: 1.2em
 
 
 /* Phones only */
 @media (max-width: 480px)
   section
-    &#about, &#what-we-do, &#team, &#hire-us, &#projects
+    &#about, &#what-we-do, &#team, &#hire-us
       h2
         font-size: 6em
     &#what-we-do
@@ -156,3 +187,14 @@
           width: 100%
         p
           margin-left: 0
+    &#projects
+      h2
+        font-size: 4em
+      .screenshot, .screenshot:hover
+        img
+          float: none
+          width: 100%
+        .mask
+          width: 100%
+          margin-left: 0
+          text-align: justify
