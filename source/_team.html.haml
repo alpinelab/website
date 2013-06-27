@@ -1,122 +1,99 @@
 %section#team
   .container
     %h2 ÉQUIPE
-    %article#mike
-      .avatar-big
-      Moi, c'est <strong>Michael Baudino</strong>, je suis le co-fondateur d'#{link_to 'Alpine Lab', 'https://www.alpine-lab.com'} et c'est moi qui maintiens et qui écris sur ce blog. Je m'occupe aussi du compte Twitter.
-      %br/
-      Je suis particulièrement en charge de la partie administrative et financière, de l'intégration graphique (CSS), mais je fais aussi du Rails et du Ember, il n'y a pas de raison, c'est le plus fun !
-      %br/
-      Sinon, je fais du ski et du snowboard depuis un paquet de temps (je suis savoyard, après tout), j'aime le fromage, les diots, la Guinness et la bande dessinée (franco-belge). Je suis aussi fan de la Classe Américaine.
-      %br/
-      Je suis membre actif du réseau #{link_to 'Lyon.rb', 'http://lyonrb.fr'}, ancien de l'#{link_to 'EPITA', 'http://www.epita.fr'} et avant, j'étais directeur informatique du groupe #{link_to 'Acrelec', 'http://www.acrelec.com'}
-      %p.social-networks
-        = link_to 'mailto:michael.baudino@alpine-lab.com' do
-          %i.icon-envelope.icon-2x
-        = link_to 'https://github.com/michaelbaudino', :target => :_blank do
-          %i.icon-github.icon-2x
-        = link_to 'https://twitter.com/kh_mike', :target => :_blank do
-          %i.icon-twitter.icon-2x
-        = link_to 'https://facebook.com/michael.baudino', :target => :_blank do
-          %i.icon-facebook-sign.icon-2x
-        = link_to 'http://www.linkedin.com/in/michaelbaudino', :target => :_blank do
-          %i.icon-linkedin-sign.icon-2x
-        = link_to 'https://plus.google.com/106674357559734809246', :target => :_blank do
-          %i.icon-google-plus-sign.icon-2x
-        = link_to 'tel:+33761909362' do
-          %i.icon-phone.icon-2x
-      .clearfix
+    .row-fluid
+      %article#mike.span4
+        .avatar-big
+        Ça, c'est <strong>Michael Baudino</strong>, co-fondateur d'#{link_to 'Alpine Lab', 'https://www.alpine-lab.com'}, développeur passionné Ruby/Rails et Ember.js, et en charge notamment de l'intégration graphique et de la chose administrative et financière.
+        %br/
+        Sinon, il fais du ski, mange du fromage et des diots, bois de la Guinness et lis des BDs. Et il connait toutes les répliques de la Classe Américaine.
+        %br/
+        Il est membre actif du réseau #{link_to 'Lyon.rb', 'http://lyonrb.fr'}, ancien de l'#{link_to 'EPITA', 'http://www.epita.fr'} et avant, il était directeur informatique du groupe #{link_to 'Acrelec', 'http://www.acrelec.com'}.
+        %p.social-networks
+          = link_to 'mailto:michael.baudino@alpine-lab.com' do
+            %i.icon-envelope-alt.icon-2x
+          = link_to 'https://github.com/michaelbaudino', :target => :_blank do
+            %i.icon-github.icon-2x
+          = link_to 'https://twitter.com/michaelbaudino', :target => :_blank do
+            %i.icon-twitter.icon-2x
+          = link_to 'https://linkedin.com/in/michaelbaudino', :target => :_blank do
+            %i.icon-linkedin-sign.icon-2x
+          = link_to 'tel:+33761909362' do
+            %i.icon-phone.icon-2x
+        .clearfix
 
-    %article#thibault
-      .avatar-big
-      %br/
-      Ça, c'est <strong>Thibault Dalban</strong>, l'autre co-fondateur d'#{link_to 'Alpine Lab', 'https://alpine-lab.com'}. C'est un ancien #{link_to 'Epitech', 'http://www.epitech.eu'} qui est passé par #{link_to 'Sopra Group', 'http://www.sopragroup.fr'} en tant que chef de projet de développement logiciel.
-      %br/
-      Il s'occupe notamment des relations avec les clients (stations et skieurs) parce qu'il comprend bien ce qu'ils attendent et qu'il exprime bien ce que nous on pense. Alors que moi, moins.
-      %br/
-      C'est un bauju (il vient des Bauges, le pays de la tome avec un seul "m"), c'est dire à quel point ça a été naturel pour lui de se lancer dans un projet de #{link_to 'vente de forfaits de ski en ligne', 'https://www.skiwallet.com', :target => '_blank'} !
-      %br/
-      C'est aussi lui qui suit de près l'actualité des mobiles, tant côté matériel que logiciel, et l'évolution des comportements des utilisateurs depuis ces plate-formes.
-      %p.social-networks
-        = link_to 'mailto:thibault.dalban@alpine-lab.com' do
-          %i.icon-envelope.icon-2x
-        = link_to 'https://github.com/thibaultdalban', :target => :_blank do
-          %i.icon-github.icon-2x
-        = link_to 'https://twitter.com/kh_thib', :target => :_blank do
-          %i.icon-twitter.icon-2x
-        = link_to 'https://facebook.com/thibault.dalban', :target => :_blank do
-          %i.icon-facebook-sign.icon-2x
-        = link_to 'http://fr.linkedin.com/pub/thibault-dalban/3/659/386', :target => :_blank do
-          %i.icon-linkedin-sign.icon-2x
-        = link_to 'https://plus.google.com/111655806475665469057', :target => :_blank do
-          %i.icon-google-plus-sign.icon-2x
-        = link_to 'tel:+33666075883' do
-          %i.icon-phone.icon-2x
-      .clearfix
+      .span4.central-logo
+        = image_tag('logo-alpinelab-128.png')
 
-    %article#mathilde
-      .avatar-big
-      %br/
-      Cette jolie blonde, c'est <strong>Mathilde Aglietta</strong>, qui, en plus de nous amener un point de vue féminin sur le projet, gère toute notre communication (sur Internet, dans les médias traditionnels, nos partenariats, etc...).
-      %br/
-      Double diplomée (la classe !) à la fois de #{link_to 'Grenoble EM', 'http://www.grenoble-em.com'} (management) et de #{link_to 'Strate College', 'http://www.stratecollege.fr'} (design), elle s'intéresse à tout ce qui touche de près ou de loin au marketing, online et offline.
-      %br/
-      Elle aime #{link_to 'le bio, la nature et la mode', 'http://www.almostbio.com', :target => '_blank'}, elle tient même un blog là-dessus qui s'appelle #{link_to 'AlmostBio', 'http://www.almostbio.com'}, parce que finalement, même en étant le profil le moins technique de l'équipe, elle l'est quand même vachement.
-      %p.social-networks
-        = link_to 'mailto:mathilde.aglietta@alpine-lab.com' do
-          %i.icon-envelope.icon-2x
-        = link_to 'https://twitter.com/MatWdK', :target => :_blank do
-          %i.icon-twitter.icon-2x
-        = link_to 'https://www.facebook.com/mathilde.aglietta', :target => :_blank do
-          %i.icon-pinterest.icon-2x
-        = link_to 'http://pinterest.com/mwdk/', :target => :_blank do
-          %i.icon-facebook-sign.icon-2x
-        = link_to 'http://fr.linkedin.com/pub/mathilde-aglietta/31/2/6b6', :target => :_blank do
-          %i.icon-linkedin-sign.icon-2x
-        = link_to 'https://plus.google.com/107736371985260099287', :target => :_blank do
-          %i.icon-google-plus-sign.icon-2x
-      .clearfix
+      %article#thibault.span4
+        .avatar-big
+        Lui, c'est <strong>Thibault Dalban</strong>, l'autre co-fondateur d'#{link_to 'Alpine Lab', 'https://alpine-lab.com'}. Ancien #{link_to 'Epitech', 'http://www.epitech.eu'}, il est précédemment passé par la case chef de projet chez #{link_to 'Sopra', 'http://www.sopragroup.fr'}.
+        %br/
+        Également developpeur Rails et Ember, spécialiste bases de données et plate-formes mobiles, il s'occupe aussi des relations clients.
+        %br/
+        Il vient des Bauges, le pays de la tome avec un seul "m", c'est dire à quel point ça a été naturel pour lui de se lancer dans un projet de #{link_to 'vente de forfaits de ski en ligne', 'https://www.skiwallet.com', :target => '_blank'} !
+        %p.social-networks
+          = link_to 'mailto:thibault.dalban@alpine-lab.com' do
+            %i.icon-envelope-alt.icon-2x
+          = link_to 'https://github.com/thibaultdalban', :target => :_blank do
+            %i.icon-github.icon-2x
+          = link_to 'https://twitter.com/kh_thib', :target => :_blank do
+            %i.icon-twitter.icon-2x
+          = link_to 'http://fr.linkedin.com/pub/thibault-dalban/3/659/386', :target => :_blank do
+            %i.icon-linkedin-sign.icon-2x
+          = link_to 'tel:+33666075883' do
+            %i.icon-phone.icon-2x
+        .clearfix
 
-    %article#martin
-      .avatar-big
-      %br/
-      <strong>Martin Thibault</strong> est un chic type et un designer brillant.
-      %br/
-      Avec plusieurs années de design (print, web et d'applications mobiles) dans des agences prestigieuses de New York et Paris, il a acquis assez de professionalisme pour contrebalancer son esprit d'artiste torturé.
-      %br/
-      Ça fait de lui un créatif incroyable avec qui il est d'une facilité étonnante de travailler, et nous sommes sacrément contents de l'avoir à bord de cette aventure.
-      %br/
-      Dans la vie, il aime le vintage, les GIFs animés, les fringues de hipster et le ski, évidemment (encore un savoyard !).
-      %p.social-networks
-        = link_to 'mailto:martin.thibault@alpine-lab.com' do
-          %i.icon-envelope.icon-2x
-        = link_to 'https://twitter.com/martin_thibault', :target => :_blank do
-          %i.icon-twitter.icon-2x
-        = link_to 'http://fr.linkedin.com/pub/martin-thibault/14/a4/99', :target => :_blank do
-          %i.icon-linkedin-sign.icon-2x
-        = link_to 'https://plus.google.com/111477832549665352816', :target => :_blank do
-          %i.icon-google-plus-sign.icon-2x
-        = link_to 'http://www.m-a-r-t-i-n.org', :target => :_blank do
-          %i.icon-globe.icon-2x
-      .clearfix
+    .row-fluid
+      %article#mathilde.span4
+        .avatar-big
+        Cette jolie blonde, c'est <strong>Mathilde Aglietta</strong>, qui, en plus de nous amener un point de vue féminin sur le projet, gère toute notre communication (sur Internet, dans les médias traditionnels, nos partenariats, etc...).
+        %br/
+        Double diplomée (la classe !) à la fois de #{link_to 'Grenoble EM', 'http://www.grenoble-em.com'} (management) et de #{link_to 'Strate College', 'http://www.stratecollege.fr'} (design), elle s'intéresse à tout ce qui touche de près ou de loin au marketing.
+        %br/
+        Elle aime #{link_to 'le bio, la nature et la mode', 'http://www.almostbio.com', :target => '_blank'}, elle tient même un blog là-dessus qui s'appelle #{link_to 'AlmostBio', 'http://www.almostbio.com'}.
+        %p.social-networks
+          = link_to 'mailto:mathilde.aglietta@alpine-lab.com' do
+            %i.icon-envelope-alt.icon-2x
+          = link_to 'https://twitter.com/MatWdK', :target => :_blank do
+            %i.icon-twitter.icon-2x
+          = link_to 'http://pinterest.com/mwdk/', :target => :_blank do
+            %i.icon-pinterest.icon-2x
+          = link_to 'http://fr.linkedin.com/pub/mathilde-aglietta/31/2/6b6', :target => :_blank do
+            %i.icon-linkedin-sign.icon-2x
+        .clearfix
 
-    %article#steeve
-      .avatar-big
-      %br/
-      Lui, c'est <strong>Steeve Galté</strong> notre passionné de tout. Il s'intéresse à plein de choses, mais toujours à fond : il a cette immense qualité qu'est la curiosité.
-      %br/
-      Steeve se situe quelque part entre sa formation d'architecte (diplomé d'état, s'il-vous-plait), le studio de création 3D qu'il a co-fondé (#{link_to 'Bloc Rendering', 'http://www.bloc-rendering.com'}), ses connaissances en intégration web et son expérience du design.
-      %br/
-      Il est à la vie comme au boulot : intéressé, intéressant et enthousiaste. Il aime s'amuser dans des registres variés : électronique, art, informatique, design, urbanisme, vidéo, etc...
-      %br/
-      Il écoute de la musique parfois étrange, mais on lui pardonne.
-      %p.social-networks
-        = link_to 'mailto:steeve.galte@alpine-lab.com' do
-          %i.icon-envelope.icon-2x
-        = link_to 'https://twitter.com/_schnek_', :target => :_blank do
-          %i.icon-twitter.icon-2x
-        = link_to 'fr.linkedin.com/pub/steeve-galté/4b/1b8/b65/', :target => :_blank do
-          %i.icon-linkedin-sign.icon-2x
-        = link_to 'https://plus.google.com/107582896437284542284', :target => :_blank do
-          %i.icon-google-plus-sign.icon-2x
-      .clearfix
+      %article#martin.span4
+        .avatar-big
+        <strong>Martin Thibault</strong> est un chic type et un designer brillant.
+        %br/
+        Avec plusieurs années de design dans des agences prestigieuses de Paris et New York, il a acquis assez de professionalisme pour contrebalancer son esprit d'artiste torturé.
+        %br/
+        Ça fait de lui un créatif incroyable avec qui il est d'une facilité étonnante de travailler, et nous sommes sacrément contents de l'avoir à bord de cette aventure.
+        %br/
+        Dans la vie, il aime le vintage, les GIFs animés, les fringues de hipster et le ski.
+        %p.social-networks
+          = link_to 'mailto:martin.thibault@alpine-lab.com' do
+            %i.icon-envelope-alt.icon-2x
+          = link_to 'https://twitter.com/martin_thibault', :target => :_blank do
+            %i.icon-twitter.icon-2x
+          = link_to 'http://fr.linkedin.com/pub/martin-thibault/14/a4/99', :target => :_blank do
+            %i.icon-linkedin-sign.icon-2x
+        .clearfix
+
+      %article#steeve.span4
+        .avatar-big
+        Et voilà <strong>Steeve Galté</strong> notre passionné de tout. Il s'intéresse à plein de choses, mais toujours à fond : il a cette immense qualité qu'est la curiosité.
+        %br/
+        Steeve se situe quelque part entre sa formation d'architecte (diplomé d'état, s'il-vous-plait), le studio de création 3D qu'il a co-fondé (#{link_to 'Bloc Rendering', 'http://www.bloc-rendering.com'}), ses connaissances en intégration web et son expérience du design.
+        %br/
+        Il est à la vie comme au boulot : intéressé, intéressant et enthousiaste. Et même s'il écoute de la musique parfois étrange, on lui pardonne.
+        %p.social-networks
+          = link_to 'mailto:steeve.galte@alpine-lab.com' do
+            %i.icon-envelope-alt.icon-2x
+          = link_to 'https://twitter.com/_schnek_', :target => :_blank do
+            %i.icon-twitter.icon-2x
+          = link_to 'fr.linkedin.com/pub/steeve-galté/4b/1b8/b65/', :target => :_blank do
+            %i.icon-linkedin-sign.icon-2x
+        .clearfix

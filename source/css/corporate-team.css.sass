@@ -1,9 +1,8 @@
 section#team
   background-color: $alBlue
   color: $white
-  font-size: 1.2em
+  font-size: 1.1em
   font-weight: 400
-  line-height: 1.4em
   a
     color: $white
     &:hover
@@ -12,6 +11,7 @@ section#team
   h2
     color: $white
   article
+    text-align: justify
     margin-bottom: 50px
     &>.avatar-big
       width: $avatarSize
@@ -26,22 +26,25 @@ section#team
       +box-sizing(border-box)
       background-image: url('/img/logo-alpinelab-128.png') // default avatar image
       // +filter(grayscale(100%))
-    &:nth-child(2n)>.avatar-big
       float: left
       margin-right: 15px
-    &:nth-child(2n+1)
-      text-align: right
-      &>.avatar-big
-        float: right
-        margin-left: 15px
     &:hover
       &>.avatar-big
         border: 5px solid rgba(black, 0.6)
 
+  .central-logo
+    img
+      display: block
+      margin: 100px auto
+      background-color: $white
+      +border-radius(20px)
+      +box-shadow(0 0 40px 20px $white)
+
   .social-networks
+    text-align: left
     a
       i
-        margin-left: 0.5em
+        margin-right: 0.5em
         color: $white
         display: inline-block
         +transition(all 0.25s ease)
@@ -52,9 +55,16 @@ section#team
             color: $white
       &:hover
         text-decoration: none
-        i:not(.icon-phone)
-          +transform-origin(50% 50% 0)
-          +transform(rotateZ(30deg))
+        i
+          +text-shadow(0 0 7px $white)
+          &:not(.icon-phone)
+            +transform-origin(50% 50% 0)
+            +transform(rotateZ(30deg))
+          &.icon-phone
+            position: relative
+            &:hover::after
+              position: absolute
+              top: 25%
 
   #alpinelab
     .avatar-big

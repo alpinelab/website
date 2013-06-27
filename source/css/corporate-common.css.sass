@@ -26,6 +26,13 @@
   -o-filter: $filter
   filter: $filter
 
+@mixin text-shadow($text-shadow)
+  -webkit-text-shadow: $text-shadow
+  -moz-text-shadow: $text-shadow
+  -ms-text-shadow: $text-shadow
+  -o-text-shadow: $text-shadow
+  text-shadow: $text-shadow
+
 a
   color: $linkColor
   text-decoration: none
