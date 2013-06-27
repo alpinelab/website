@@ -23,9 +23,10 @@
 //     background-color: black
 
 
-/* Collapsed navbar */
+/* Phones, tablets and desktops */
 @media (max-width: 979px)
   header.navbar
+    margin-bottom: 0
     .navbar-inner
       min-height: $collapsedNavbarHeight
       .brand
@@ -57,3 +58,34 @@
             margin-top: -20px
           &::after
             display: none
+
+  #wrap
+    &>.container
+      padding: 0
+
+/* Phones and tablets */
+@media (max-width: 767px)
+  body
+    padding: 0
+  header
+    padding: 0 20px
+  section#about
+    h1.alpinelab
+      font-size: 4em
+      margin: 25px 0 40px 0
+    .members
+      margin-left: 0
+      .member
+        width: 50%
+        margin: 5% 0
+        float: left
+        &:last-child
+          width: 100%
+        .flip-container
+          margin: 0 auto
+
+  section
+    &#about, &#what-we-do, &#team, &#hire-us, &#projects
+      .row-fluid
+        p
+          padding: 10px 5%
