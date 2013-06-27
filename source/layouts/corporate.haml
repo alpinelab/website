@@ -13,15 +13,25 @@
     %header.navbar.navbar-fixed-top
       .navbar-inner
         .container
+
+          %a.btn.btn-navbar{data: {toggle: 'collapse', target: '.nav-collapse'}}
+            - 3.times do
+              %span.icon-bar
+
           .brand{title: 'Alpine Lab'}
-            = link_to image_tag('logo-alpinelab-128.png', width: '60px', height: '60px'), '#about'
-          %ul.nav
-            - {:about => 'à propos', :'what-we-do' => 'métiers', :team => 'équipe', :projects => 'réalisations'}.each do |anchor, category|
-              %li= link_to category, "##{anchor}"
-          %ul.nav.pull-right
-            %li#hire-us-btn
-              %a.header-btn{href: 'mailto:dahu@alpine-lab.com&subject=Faites-moi quelque chose de chouette !', target: :_blank}
-                engagez-nous
+            = link_to '#about' do
+              = image_tag('logo-alpinelab-128.png', width: '60px', height: '60px')
+              .hidden-desktop
+                %span.alpine> Alpine
+                %span.lab Lab
+          .nav-collapse.collapse
+            %ul.nav
+              - {:about => 'à propos', :'what-we-do' => 'métiers', :team => 'équipe', :projects => 'réalisations'}.each do |anchor, category|
+                %li= link_to category, "##{anchor}"
+            %ul.nav.pull-right
+              %li#hire-us-btn
+                %a.header-btn{href: 'mailto:dahu@alpine-lab.com&subject=Faites-moi quelque chose de chouette !', target: :_blank}
+                  engagez-nous
 
     = yield
   %footer

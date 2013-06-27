@@ -1,0 +1,59 @@
+@mixin collapsedNavbarVerticalAlign($elementHeight)
+  margin-top: ($collapsedNavbarHeight - $elementHeight) / 2
+
+
+// /* Large desktop */
+// @media (min-width: 1200px)
+//   body
+//     background-color: red
+
+// /* Portrait tablet to landscape and desktop */
+// @media (min-width: 768px) and (max-width: 979px)
+//   body
+//     background-color: green
+
+// /* Landscape phone to portrait tablet */
+// @media (max-width: 767px)
+//   body
+//     background-color: yellow
+
+// /* Landscape phones and down */
+// @media (max-width: 480px)
+//   body
+//     background-color: black
+
+
+/* Collapsed navbar */
+@media (max-width: 979px)
+  header.navbar
+    .navbar-inner
+      min-height: $collapsedNavbarHeight
+      .brand
+        display: inline-block
+        padding: 0 20px
+
+        font-family: "SackersGothic", sans-serif
+        font-weight: lighter
+        .alpine, .lab
+          text-transform: uppercase
+        .alpine
+          margin-left: 10px
+          color: $alBlue
+        .lab
+          color: $alRed
+
+    .btn, .btn-group
+      +collapsedNavbarVerticalAlign(30px)
+
+    .nav
+      li
+        text-align: right
+      #hire-us-btn
+        width: auto
+        margin-top: 30px
+        .header-btn
+          padding: 9px 30px
+          &:hover
+            margin-top: -20px
+          &::after
+            display: none
