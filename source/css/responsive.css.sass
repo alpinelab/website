@@ -23,7 +23,15 @@
 //     background-color: black
 
 
-/* Phones, tablets and desktops */
+/* Phones, phablets, tablets and desktop */
+@media (max-width: 1199px)
+  section
+    &#what-we-do
+      .domain
+        height: 650px
+
+
+/* Phones, phablets and tablets */
 @media (max-width: 979px)
   header.navbar
     margin-bottom: 0
@@ -63,7 +71,18 @@
     &>.container
       padding: 0
 
-/* Phones and tablets */
+  section
+    &#about, &#what-we-do, &#team, &#hire-us, &#projects
+      h2
+        margin-bottom: 0.25em
+    &#what-we-do
+      .domain
+        height: 800px
+        p
+          padding: 0 10px
+
+
+/* Phones and phablets */
 @media (max-width: 767px)
   body
     padding: 0
@@ -89,3 +108,48 @@
       .row-fluid
         p
           padding: 10px 5%
+    &#what-we-do
+      padding-bottom: 0
+      .domain
+        position: static
+        height: auto
+        padding: 0 10%
+        h3
+          float: left
+          width: 6em
+          margin: 1em 0
+        p
+          padding: 0
+          text-align: justify
+          margin-left: 10em
+        .features
+          position: static
+          bottom: 0
+          margin: 20px 0 70px
+          text-align: left
+          padding: 2.5%
+          width: 95%
+          font-size: 0.9em
+          h4
+            top: 0
+            display: inline
+            &::after
+              content: " : "
+          li
+            margin: 0
+            display: inline
+
+
+/* Phones only */
+@media (max-width: 480px)
+  section
+    &#about, &#what-we-do, &#team, &#hire-us, &#projects
+      h2
+        font-size: 6em
+    &#what-we-do
+      .domain
+        h3
+          float: none
+          width: 100%
+        p
+          margin-left: 0
