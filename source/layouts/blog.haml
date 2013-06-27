@@ -10,7 +10,7 @@
 
   #wrapper
     %header
-      = link_to '/' do
+      = link_to '/blog' do
         .logo
         %h1.sitename
           %span.alpine> Alpine
@@ -29,12 +29,8 @@
           %i.icon-facebook-sign
     %nav
       %ul
-        = link_to '/pages/alpine-lab.html' do
+        = link_to '/blog/alpine-lab.html' do
           %li Alpine lab
-        = link_to '/pages/equipe.html' do
-          %li L'équipe
-        = link_to 'https://www.skiwallet.com', 'target' => '_blank' do
-          %li Skiwallet
     #main
       ~ yield
     #end-of-main
