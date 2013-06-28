@@ -14,6 +14,7 @@ gem 'middleman-livereload'
 gem 'rb-inotify'
 gem 'middleman-minify-html'
 gem 'middleman-blog'
+gem 'middleman-favicon-maker'
 
 gem 'redcarpet'
 gem 'rouge'

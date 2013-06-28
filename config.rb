@@ -106,6 +106,10 @@ configure :build do
   # require "middleman-smusher"
   # activate :smusher
 
+  # Create a whole bunch of favicons for various devices and OSes
+  activate :favicon_maker,
+    favicon_maker_base_image: 'img/logo-alpinelab-500.png'
+
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
