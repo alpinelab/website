@@ -28,6 +28,7 @@
             %ul.nav
               - {:about => 'à propos', :'what-we-do' => 'métiers', :team => 'équipe', :projects => 'réalisations'}.each do |anchor, category|
                 %li= link_to category, "##{anchor}"
+              %li= link_to 'blog', '/blog'
             %ul.nav.pull-right
               %li#hire-us-btn
                 %a.header-btn{href: 'mailto:dahu@alpine-lab.com&subject=Faites-moi quelque chose de chouette !', target: :_blank}
