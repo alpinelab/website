@@ -6,7 +6,6 @@ gem 'middleman'
 gem 'nokogiri'
 gem 'json', '~> 1.7.7'
 
-gem 'slim'
 gem 'haml'
 
 gem 'middleman-sprockets'

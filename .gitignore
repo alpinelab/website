@@ -12,6 +12,8 @@
 
 # Ignore RVM config file
 /.rvmrc
+/.ruby-version
+/.ruby-gemset
 
 # Ignore Sass' cache
 /.sass-cache
