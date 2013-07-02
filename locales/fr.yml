@@ -1,5 +1,9 @@
 fr:
   corporate:
+    about:
+      sentence1_html: Nous sommes une équipe aux parcours et aux profils complémentaires.
+      sentence2_html: Nous utilisons notre bon sens, notre imagination et la puissance de Ruby on Rails, <br class="hidden-phone" />pour concevoir des sites web simplement innovants...
+      sentence3_html: Accessoirement, nous sommes aussi un groupe d'amis !
     common:
       email-subject: Faites-moi quelque chose de chouette !
       hire-us_html: engagez-nous&nbsp;!

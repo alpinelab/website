@@ -4,16 +4,9 @@
       %span.alpine.visible-phone Alpine
       %span.alpine.hidden-phone> Alpine
       %span.lab Lab
-    .row-fluid
-      %p.offset2.span8
-        Nous sommes une équipe aux parcours et aux profils complémentaires.
-    .row-fluid
-      %p
-        Nous utilisons notre bon sens, notre imagination et la puissance de Ruby on Rails,
-        %br.hidden-phone/
-        pour concevoir des sites web simplement innovants...
-      %p
-        Accessoirement, nous sommes aussi un groupe d'amis !
+    %p= I18n.t('corporate.about.sentence1_html')
+    %p= I18n.t('corporate.about.sentence2_html')
+    %p= I18n.t('corporate.about.sentence3_html')
     %ul.members.row-fluid
       .span1.visible-desktop
       - {thibault: '/dev', martin: '/design', mathilde: '/marketing', steeve: '/design', mike: '/dev'}.each do |name, tag|

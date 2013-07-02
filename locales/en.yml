@@ -1,5 +1,9 @@
 en:
   corporate:
+    about:
+      sentence1_html: We are a team with complementary skills and profiles.
+      sentence2_html: We use our common sense, our imagination and Ruby on Rails awesomeness, <br class="hidden-phone" /> to create web products that are simply innovatives...
+      sentence3_html: Last but not least, we are a group of friends !
     common:
       email-subject: Please create something fancy for me !
       hire-us_html: hire&nbsp;us&nbsp;!
