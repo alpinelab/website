@@ -15,6 +15,39 @@ en:
       projects: projects
       team: team
       what-we-do: what we do
+    team:
+      martin_html: |-
+        <strong>Martin Thibault</strong> is a great guy and a brilliant designer.
+        <br />
+        After many years in prestigious agencies in Paris and New York, he acquired enough professionalism to balance his troubled artist mind.
+        <br />
+        That makes him an incredible creative whom it's surprisingly easy to work with, and we're extremely happy to count him amongst us in this adventure.
+        <br />
+        In private life, he worships vintage, animated GIFs, hipster fashion and ski.
+      mathilde_html: |-
+        This pretty blonde, it's <strong>Mathilde Aglietta</strong>, who, in addition to bring a girly point-of-view on the projects, manages all our communication (on Internet, in traditionnal medias, with our partners, etc...).
+        <br />
+        Double graduated (classy !) from both <a href="http://www.grenoble-em.com" target="_blank">Grenoble EM</a> (management) and <a href="http://www.stratecollege.fr" target="_blank">Strate College</a> (design), she's interested in any marketing, branding, trending -related matters.
+        <br />
+        She loves <a href="http://www.almostbio.com" target="_blank">organic food, nature and fashion</a>, she even writes about that on her blog: <a href="http://www.almostbio.com" target="_blank">AlmostBio</a>.
+      mike_html: |-
+        This is <strong>Michael Baudino</strong>, <a href="http://www.alpine-lab.com">Alpine Lab</a> co-founder, passionate Ruby/Rails and Ember.js developer, and in charge of, among other things, graphic integration and administrative and financial matters.
+        <br />
+        Otherwise, he skis, eats cheese and "diots", drinks Guinness and reads comic books. He also knows by heart every line from La Classe Américaine.
+        <br />
+        He is an active member of the <a href="http://lyonrb.fr" target="_blank">Lyon.rb</a> network, <a href="http://www.epita.fr" target="_blank">EPITA</a> alumni and former IT director of the <a href="http://www.acrelec.com" target="_blank">Acrelec</a> group.
+      steeve_html: |-
+        Here come <strong>Steeve Galté</strong>, passionated about everything. He's interested by a lot of things, but always thoroughly : he's got this unvaluable quality which is curiosity.
+        <br />
+        Steeve is somewhere inbetween his architect school courses (state graduation valedictorian, please), the 3D creation studio he co-founded (<a href="http://www.bloc-rendering.com" target="_blank">Bloc Rendering</a>), his web integration knowledge and his design experience.
+        <br />
+        He's in life exactly as at work : interested, interesting and enthusiast. He often listens to a strange kind of music, but we forgive him totally.
+      thibault_html: |-
+        This guy is <strong>Thibault Dalban</strong>, the other <a href="http://www.alpine-lab.com">Alpine Lab</a> co-founder. <a href="http://www.epitech.eu" target="_blank">Epitech</a> alumni, he previously was a project manager at <a href="http://www.sopragroup.fr target="_blank">Sopra</a>.
+        <br />
+        Rails and Ember developer, databases and mobile devices specialist, he also handles our customer relationships.
+        <br />
+        He's from Les Bauges, in the French Alps, that's why it was so obvious for him to build an <a href="https://www.skiwallet.com" target="_blank">online ski passes market place</a> !
     what-we-do:
       design:
         features:
