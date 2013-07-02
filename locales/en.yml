@@ -1,0 +1,12 @@
+en:
+  corporate:
+    common:
+      email-subject: Please create something fancy for me !
+    footer_html: <a rel="publisher" href="https://plus.google.com/103306769618245403420">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. All code is licensed under the <a href="http://opensource.org/licenses/MIT">MIT</a>.
+    header:
+      about: about
+      blog: blog
+      hire-us: hire us
+      projects: projects
+      team: team
+      what-we-do: what we do

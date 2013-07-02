@@ -26,18 +26,16 @@
                 %span.lab Lab
           .nav-collapse.collapse
             %ul.nav
-              - {:about => 'à propos', :'what-we-do' => 'métiers', :team => 'équipe', :projects => 'réalisations'}.each do |anchor, category|
-                %li= link_to category, "##{anchor}"
-              %li= link_to 'blog', '/blog'
+              - [:about, :'what-we-do', :team, :projects].each do |category|
+                %li= link_to I18n.t("corporate.header.#{category}"), "##{category}"
+              %li= link_to I18n.t('corporate.header.blog'), '/blog'
             %ul.nav.pull-right
               %li#hire-us-btn
-                %a.header-btn{href: 'mailto:dahu@alpine-lab.com?subject=Faites-moi quelque chose de chouette !', target: :_blank}
-                  engagez-nous
+                %a.header-btn{href: "mailto:dahu@alpine-lab.com?subject=#{I18n.t('corporate.common.email-subject')}", target: :_blank}
+                  = I18n.t('corporate.header.hire-us')
 
     = yield
   %footer
     .container
       %p.muted
-        Le site d'#{link_to 'Alpine Lab', 'https://plus.google.com/103306769618245403420', {:rel => 'publisher'}}
-        est publié sous license #{link_to 'Creative Commons Attribution 3.0 (cc-by-3.0)', 'http://creativecommons.org/licenses/by/3.0/fr/'}.
-        Le code est sous licence #{link_to 'MIT', 'http://opensource.org/licenses/MIT'}.
+        = I18n.t('corporate.footer_html')

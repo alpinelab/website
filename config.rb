@@ -121,3 +121,7 @@ activate :deploy do |deploy|
 end
 
 activate :livereload
+
+activate :i18n, mount_at_root: :en
+
+require '.localeapp/config'
