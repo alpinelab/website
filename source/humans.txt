@@ -6,7 +6,7 @@
     Michael Baudino   -- Co-Founder & Rails addict     -- GitHub:  @michaelbaudino
     Thibault Dalban   -- Co-Founder & Rails addict     -- GitHub:  @thibaultdalban
     Mathilde Aglietta -- Branding & trends nerd        -- Twitter: @M_Aglietta
-    Steeve Galté      -- Curious tech-savvy architect  -- Twitter: @la_schnek
+    Steeve Galte      -- Curious tech-savvy architect  -- Twitter: @la_schnek
     Martin Thibault   -- Brillian designer & font nerd -- Twitter: @martin_thibault
 
 
