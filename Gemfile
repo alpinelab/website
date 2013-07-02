@@ -12,7 +12,7 @@ gem 'middleman-sprockets'
 gem 'middleman-deploy'
 gem 'middleman-livereload'
 gem 'rb-inotify'
-gem 'middleman-minify-html'
+gem 'middleman-minify-html', github: 'michaelbaudino/middleman-minify-html', :branch => 'master'
 gem 'middleman-blog'
 gem 'middleman-favicon-maker'
 

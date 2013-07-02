@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/michaelbaudino/middleman-minify-html.git
+  revision: 2af54170653d1d1ad7438617ea2aa7e86ea64f9e
+  branch: master
+  specs:
+    middleman-minify-html (3.1.0)
+      middleman-core (~> 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -73,8 +81,6 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
-    middleman-minify-html (3.1.0)
-      middleman-core (~> 3.0)
     middleman-more (3.1.2)
     middleman-rouge (0.0.1)
       middleman-core (>= 3.0.0)
@@ -138,7 +144,7 @@ DEPENDENCIES
   middleman-deploy
   middleman-favicon-maker
   middleman-livereload
-  middleman-minify-html
+  middleman-minify-html!
   middleman-rouge
   middleman-sprockets
   nokogiri
