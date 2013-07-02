@@ -1,50 +1,16 @@
 %section#what-we-do
   .container
-    %h2 MÉTIERS
+    %h2= I18n.t('corporate.what-we-do.title')
     %ul.row-fluid
-      %li.span4.domain
-        %h3
-          %i.icon-beaker.icon-large
-          %br/
-          Design
-        %p L’expérience utilisateur est transversale, concerne chaque étape de la conception et implique l’ensemble de nos savoirs-faire.
-        %p Nos objectifs : créer des solutions <strong>fluides</strong>, <strong>ergonomiques</strong> et <strong>efficaces</strong>. Proposer un accès immédiat au contenu recherché, en travaillant notamment la hiérarchie de l’information.
-        %p Concevoir des solutions <strong>esthétiques</strong>, valorisant l’<strong>univers visuel de nos clients</strong>.
-        %ul.features
-          %h4 Services clés
-          - ['audits', 'parcours utilisateur', 'stratégie de contenu', 'hiérarchie de l\'information', 'maquettes et prototypes', 'ergonomie'].each do |feature|
-            %li= "/ #{feature}"
-
-      %li.span4.domain
-        %h3
-          %i.icon-code.icon-large
-          %br/
-          Technique
-        %p
-          Nos méthodes de travail incluent le <strong>test driven development</strong>, l'<strong>intégration continue</strong> (
-          %a{href: 'https://travis-ci.org'}> Travis
-          ), le <strong>code versionné</strong> (
-          %a{href: 'https://github.com'}> Github
-          ) et <strong>organisé</strong> (
-          %a{href: 'http://nvie.com/posts/a-successful-git-branching-model'}> git-flow
-          ), et le <strong>lean management</strong>.
-        %p Nous sommes spécialisés dans le développement <strong>Ruby on Rails</strong>.
-        %p Nous aimons les sites <strong>simples et intuitifs</strong>, nous sommes prêts à passer des heures pour faire économiser quelques secondes à nos utilisateurs.
-        %ul.features
-          %h4 Technologies clés
-          - [['RubyOnRails', 'Haml', 'Sass'], ['Ember.js', 'CoffeeScript'], ['HTML5', 'CSS3'], ['Heroku', 'OpenShift']].each do |feature_group|
-            %li
-              - feature_group.each do |feature|
-                = "/ #{feature}"
-
-      %li.span4.domain
-        %h3
-          %i.icon-calendar.icon-large
-          %br/
-          Gestion
-        %p La <strong>stratégie</strong> et la <strong>planification</strong> sont présentes de manière transversale dans chaque projet. La veille est impérative pour identifier les <strong>opportunités stratégiques</strong> dans l'univers en constante mutation qu'est le web.
-        %p Nous développons notre <strong>connaissance des utilisateurs</strong>, et des tendances en matière d’<strong>innovation</strong>, d’<strong>usage</strong>, de <strong>médias</strong>... pour créer une <strong>valeur ajoutée</strong> tangible.
-        %ul.features
-          %h4 Orientations clés
-          - ['opportunités stratégiques', 'innovation', 'connaissance des utilisateurs', 'analyse de la concurrence', 'marché et tendances'].each do |feature|
-            %li= "/ #{feature}"
+      - [[:design, :beaker, 3, 6], [:technologies, :code, 3, 4], [:marketing, :calendar, 2, 5]].each do |domain, icon, num_sentences, num_features|
+        %li.span4.domain
+          %h3
+            %i.icon-large{class: "icon-#{icon}"}
+            %br/
+            = I18n.t("corporate.what-we-do.#{domain}.title")
+          - (1..num_sentences).each do |i|
+            %p= I18n.t("corporate.what-we-do.#{domain}.sentence#{i}_html")
+          %ul.features
+            %h4= I18n.t("corporate.what-we-do.#{domain}.features.title")
+            - (1..num_features).each do |i|
+              %li= '/ ' + I18n.t("corporate.what-we-do.#{domain}.features.feature#{i}")

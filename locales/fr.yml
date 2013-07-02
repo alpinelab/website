@@ -15,3 +15,40 @@ fr:
       projects: réalisations
       team: équipe
       what-we-do: métiers
+    what-we-do:
+      design:
+        features:
+          feature1: audits
+          feature2: parcours utilisateur
+          feature3: stratégie de contenu
+          feature4: hiérarchie de l'information
+          feature5: maquettes et prototypes
+          feature6: ergonomie
+          title: Services clés
+        sentence1_html: L’expérience utilisateur est transversale, concerne chaque étape de la conception et implique l’ensemble de nos savoirs-faire.
+        sentence2_html: 'Nos objectifs : créer des solutions <strong>fluides</strong>, <strong>ergonomiques</strong> et <strong>efficaces</strong>. Proposer un accès immédiat au contenu recherché, en travaillant notamment la hiérarchie de l’information.'
+        sentence3_html: Concevoir des solutions <strong>esthétiques</strong>, valorisant l’<strong>univers visuel de nos clients</strong>.
+        title: Design
+      marketing:
+        features:
+          feature1: opportunités stratégiques
+          feature2: innovation
+          feature3: connaissance des utilisateurs
+          feature4: analyse de la concurrence
+          feature5: marché et tendances
+          title: Orientations clés
+        sentence1_html: La <strong>stratégie</strong> et la <strong>planification</strong> sont présentes de manière transversale dans chaque projet. La veille est impérative pour identifier les <strong>opportunités stratégiques</strong> dans l'univers en constante mutation qu'est le web.
+        sentence2_html: Nous développons notre <strong>connaissance des utilisateurs</strong>, et des tendances en matière d’<strong>innovation</strong>, d’<strong>usage</strong>, de <strong>médias</strong>... pour créer une <strong>valeur ajoutée</strong> tangible.
+        title: Marketing
+      technologies:
+        features:
+          feature1: Ruby on Rails / Haml / Sass
+          feature2: Ember.js / CoffeeScript
+          feature3: HTML5 / CSS3
+          feature4: Heroku / PaaS
+          title: Technologies clés
+        sentence1_html: Nos méthodes de travail incluent le <strong>test driven development</strong>, l'<strong>intégration continue</strong> (<a href="https://travis-ci.org" target="_blank">Travis</a>), <strong>code versionné</strong> (<a href="https://github.com" target="_blank">Github</a>) et <strong>organisé</strong> (<a href="http://nvie.com/posts/a-successful-git-branching-model" target="_blank">git-flow</a>), et le <strong>lean management</strong>.
+        sentence2_html: Nous sommes spécialisés dans le développement <strong>Ruby on Rails</strong>.
+        sentence3_html: Nous aimons les sites <strong>simples et intuitifs</strong>, nous sommes prêts à passer des heures pour faire économiser quelques secondes à nos utilisateurs.
+        title: Technologies
+      title: MÉTIERS
