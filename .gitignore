@@ -17,3 +17,6 @@
 
 # Ignore Sass' cache
 /.sass-cache
+
+# Ignore LocaleApp config
+/.localeapp
