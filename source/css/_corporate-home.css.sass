@@ -20,6 +20,7 @@ section
       text-align: right
       width: 50%
       +transition(1s width ease)
+      font-size: 2.7em
     &:hover
       h1.animate
         width: 100%
@@ -96,3 +97,11 @@ section
     bottom: -$transitionSquareWidth
     right: 3 * $transitionSquareWidth
     background-color: lighten($alBlueLighter, 15%)
+  &#transition-square-9
+    bottom: - 2 * $transitionSquareWidth
+    right: $transitionSquareWidth
+    background-color: lighten($alBlueLighter, 15%)
+  &#transition-square-10
+    bottom: -3 * $transitionSquareWidth
+    right: 0
+    background-color: $alBlueLighter

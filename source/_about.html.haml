@@ -6,13 +6,14 @@
       %span.lab Lab
     .row-fluid
       %p.offset2.span8
-        Nous sommes une agence web aux profils multiples.
+        Nous sommes une équipe aux parcours et aux profils complémentaires.
     .row-fluid
       %p
-        Notre diversité, nous permet d'aborder les projets sous divers angles,
+        Nous utilisons notre bon sens, notre imagination et la puissance de Ruby on Rails,
         %br.hidden-phone/
-        en confrontant nos points de vue pour concevoir des solutions innovantes.
-      %p Ouais.
+        pour concevoir des sites web simplement innovants...
+      %p
+        Accessoirement, nous sommes aussi un groupe d'amis !
     %ul.members.row-fluid
       .span1.visible-desktop
       - {thibault: '/dev', martin: '/design', mathilde: '/marketing', steeve: '/design', mike: '/dev'}.each do |name, tag|
@@ -23,5 +24,5 @@
                 .front.member-badge{id: "badge-#{name}"}
                 .back
                   %p= tag
-  - (1..8).each do |i|
+  - (1..10).each do |i|
     .transition-square.visible-desktop{id: "transition-square-#{i}"}

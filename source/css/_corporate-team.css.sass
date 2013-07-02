@@ -13,6 +13,7 @@ section#team
     font-weight: 400
     text-align: justify
     margin-bottom: 50px
+    padding: 0 10px
     &>.avatar-big
       width: $avatarSize
       height: $avatarSize
@@ -38,13 +39,14 @@ section#team
       margin: 100px auto
       background-color: $white
       +border-radius(20px)
-      +box-shadow(0 0 40px 20px $white)
+      +box-shadow(0 0 40px 15px $white)
       &:hover
         +animation(logo-heartbeat 1s)
         +animation-iteration-count(infinite)
 
   .social-networks
     text-align: left
+    margin-top: 10px
     a
       i
         margin-right: 0.5em
