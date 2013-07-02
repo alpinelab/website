@@ -3,8 +3,8 @@
 source 'https://rubygems.org'
 
 gem 'middleman'
+gem 'activesupport', '~> 3.2.13'
 gem 'nokogiri'
-gem 'json', '~> 1.7.7'
 
 gem 'haml'
 
