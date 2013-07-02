@@ -122,6 +122,6 @@ end
 
 activate :livereload
 
-activate :i18n, mount_at_root: :en
+activate :i18n, mount_at_root: :fr
 
 require '.localeapp/config'
