@@ -26,11 +26,10 @@ layout: corporate
       .row-fluid
         .span9
           %h1.animate
-            Un projet ?
+            = I18n.t('corporate.common.you-have-a-project')
         .span3
           %h1
-            %a.btn.btn-large.btn-danger{href: 'mailto:dahu@alpine-lab.com?subject=Faites-moi quelque chose de chouette !', target: :_blank}
-              Engagez-nous&nbsp;!
+            %a.btn.btn-large.btn-danger{href: "mailto:dahu@alpine-lab.com?subject=#{I18n.t('corporate.common.email_subject')}", target: :_blank}
+              = I18n.t('corporate.common.hire-us_html')
 
 #push
-
