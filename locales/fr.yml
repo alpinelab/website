@@ -15,6 +15,20 @@ fr:
       projects: réalisations
       team: équipe
       what-we-do: métiers
+    projects:
+      almostbio:
+        description: Web-magazine
+        mask: Un blog au sujet du bio, que nous avons conçu comme un web-magazine. On y parle de tout ce qui concerne le bio, à la fois en terme de produits et d’initiatives.
+        title: AlmostBio
+      skiwallet:
+        description: Site de vente de forfaits de ski en ligne.
+        mask: Une solution multi-stations pensée pour être simple et fluide, plaçant le design et l'intuitivité du parcours client au coeur du concept. La poudreuse à portée de clic.
+        title: SkiWallet
+      title: RÉALISATIONS
+      youpijob:
+        description: Site de mise en relation entre particuliers
+        mask: Nous avons développé et designé pour Youpijob des fonctionnalités avancées de paiement en ligne et de cagnottes.
+        title: YoupiJob
     team:
       martin_html: |-
         <strong>Martin Thibault</strong> est un chic type et un designer brillant.

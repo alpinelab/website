@@ -1,41 +1,41 @@
 %section#projects
   .container
-    %h2 RÉALISATIONS
+    %h2= I18n.t('corporate.projects.title')
     .row-fluid
       %article.span6.offset3
         %h3
-          SkiWallet
+          = I18n.t('corporate.projects.skiwallet.title')
           %span.description
-            Plateforme de vente en ligne de forfaits de ski
+            = I18n.t('corporate.projects.skiwallet.description')
         .screenshot
           %a{href: 'https://www.skiwallet.com', target: :_blank}
             %img{src: image_path('projects-skiwallet.jpg')}
             .mask
               .mask-content
-                Une solution multi-stations pensée pour être simple et fluide, plaçant le design et l'intuitivité du parcours client au coeur du concept. La poudreuse à portée de clic.
+                = I18n.t('corporate.projects.skiwallet.mask')
       .clearfix.visible-phone
     .row-fluid
       %article.span5
         %h3
-          AlmostBio
+          = I18n.t('corporate.projects.almostbio.title')
           %span.description
-            Web-magazine
+            = I18n.t('corporate.projects.almostbio.description')
         .screenshot
           %a{href: 'http://www.almostbio.com', target: :_blank}
             %img{src: image_path('projects-almostbio.jpg')}
             .mask
               .mask-content
-                C’est un blog au sujet du bio, que nous avons conçu comme un web-magazine. On y parle de tout ce qui concerne le bio, à la fois en terme de produits et d’initiatives.
+                = I18n.t('corporate.projects.almostbio.mask')
       .clearfix.visible-phone
       %article.span5.offset2
         %h3
-          YoupiJob
+          = I18n.t('corporate.projects.youpijob.title')
           %span.description
-            Plate-forme de mise en relation entre particuliers
+            = I18n.t('corporate.projects.youpijob.description')
         .screenshot
           %a{href: 'http://www.youpijob.com', target: :_blank}
             %img{src: image_path('projects-youpijob.jpg')}
             .mask
               .mask-content
-                Nous avons développé et designé pour Youpijob des fonctionnalités avancées de paiement en ligne et de cagnottes.
+                = I18n.t('corporate.projects.youpijob.mask')
       .clearfix.visible-phone

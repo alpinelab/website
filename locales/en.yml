@@ -15,6 +15,20 @@ en:
       projects: projects
       team: team
       what-we-do: what we do
+    projects:
+      almostbio:
+        description: Web-magazine
+        mask: An organic-oriented blog, that we designed as a web-magazine. It's focused on everything organic-related, about both products and initiatives.
+        title: AlmostBio
+      skiwallet:
+        description: Ski passes e-commerce website.
+        mask: A cross-resorts solution designed to be simple and fluid, which focuses on slick design and user expericence intuitivity. Fresh powder right under your click.
+        title: SkiWallet
+      title: PROJECTS
+      youpijob:
+        description: Work links establishing for individuals
+        mask: We designed and developed advanced payment and complex money pools features for YoupiJob.
+        title: YoupiJob
     team:
       martin_html: |-
         <strong>Martin Thibault</strong> is a great guy and a brilliant designer.
