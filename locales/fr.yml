@@ -7,6 +7,7 @@ fr:
     common:
       email-subject: Faites-moi quelque chose de chouette !
       hire-us_html: engagez-nous&nbsp;!
+      page-description: Agence web lyonnaise jeune et moderne, spécialistes Ruby on Rails, Haml, Sass, CoffeeScript, HTML5, CSS3
       you-have-a-project: Un projet ?
     footer_html: Le site d'<a rel="publisher" href="https://plus.google.com/103306769618245403420">Alpine Lab</a> est publié sous license <a href="http://creativecommons.org/licenses/by/3.0/fr/">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. Le code est sous licence <a href="http://opensource.org/licenses/MIT">MIT</a>.
     header:

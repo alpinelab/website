@@ -4,6 +4,9 @@ priority: 1.0
 layout: corporate
 ---
 
+- content_for :description do
+  = I18n.t('corporate.common.page-description')
+
 - content_for :javascripts do
   :javascript
     $('.navbar ul.nav a, .navbar .brand a, .members .member a').bind('click',function(event){
