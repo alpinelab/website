@@ -3,15 +3,27 @@
 
 # TEAM
 
-    Michael Baudino -- CEO & Co-Founder -- @alpinelab
-    Thibault Dalban -- CEO & Co-Founder -- @alpinelab
+    Michael Baudino   -- Co-Founder & Rails addict     -- GitHub:  @michaelbaudino
+    Thibault Dalban   -- Co-Founder & Rails addict     -- GitHub:  @thibaultdalban
+    Mathilde Aglietta -- Branding & trends nerd        -- Twitter: @M_Aglietta
+    Steeve Galté      -- Curious tech-savvy architect  -- Twitter: @la_schnek
+    Martin Thibault   -- Brillian designer & font nerd -- Twitter: @martin_thibault
+
+
+# WHERE ?
+
+  We all live in Lyon, France, except Martin who lives in Paris, but we first met years ago in our hometown, Aix-les-Bains, in the heart of the French Alps.
+  Come visit us and grab a beer if you're in Lyons !
+
 
 # THANKS
 
     All the amazingly dynamic open-source community
-    Also, Christopher Dell :-)
+    Also, huge thanks to Christopher Dell aka @tigrish for everything he's done for us :-)
+
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr, SLIM, MiddleMan
+    MiddleMan, Ruby
+    Haml, Sass, CoffeeScript
+    HTML5, CSS3, jQuery
