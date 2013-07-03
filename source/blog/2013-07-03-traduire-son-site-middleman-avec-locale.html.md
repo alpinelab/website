@@ -13,14 +13,14 @@ Pour ceux qui ne connaissent pas, on en profite pour faire un peu de pub, parce 
 
 !['Locale'](locale-01-interface.png "Locale")
 
-Il y a plein d'autre fonctionnalités (commande de traductions, workflows, synchronisation, ...) que je vous laisse découvrir [en essayant par vous même](http://www.localeapp.com/users/sign_up).
+Il y a plein d'autres fonctionnalités (commande de traductions, workflows, synchronisation, ...) que je vous laisse découvrir [en essayant par vous même](http://www.localeapp.com/users/sign_up).
 
 Bref, c'est bien beau tout ça, mais comment on s'en sert avec Middleman ?
 
 
 ## Installation de la gem
 
-Locale s'installe par une gem, comme Middleman fonctionne à base de fichier `Gemfile`, il suffit d'y ajouter :
+Locale s'installe par une gem. Comme Middleman fonctionne à base de fichier `Gemfile`, il suffit d'y ajouter :
 
 ```ruby
 gem 'localeapp'
@@ -80,7 +80,7 @@ La version française du site sera donc disponible, comme d'habitude sur [http:/
 
 Middleman sait quand générer des versions localisées des pages quand elles sont placées dans le dossier `source/localizable`, il suffit donc de déplacer, par exemple, votre `source/index.html.haml` dans `source/localized/index.html.haml`.
 
-Bien, maintenant, on peut utiliser, dans ce fichier, la classe Ruby I18n et notamment sa fonction `t` (ou `translate`), comme on le fait sous Rails (en Haml) :
+Bien, maintenant, on peut utiliser, dans ce fichier, la classe Ruby I18n et notamment sa fonction `t` (ou `translate`), comme on le fait sous Rails (ici, en Haml) :
 
 ```haml
 %h1= I18n.t('index.title')
@@ -90,7 +90,7 @@ Ce qui devrait afficher "Missing translation". Qu'à celà ne tienne, on va alle
 
 ## Création d'une traduction dans Locale
 
-Sur la page de son projet, il suffit de cliquer sur une des langues, pour tomber sur la liste (cide, au début) des traductions.
+Sur la page de son projet, il suffit de cliquer sur une des langues, pour tomber sur la liste (vide, au début) des traductions.
 
 Cliquez donc sur le bouton "+" en haut pour en créer une nouvelle :
 
@@ -122,11 +122,11 @@ Vous vous doutez bien, si il y a un `localeapp pull`, c'est qu'il y a aussi un `
 $ localeapp push locales/fr.yml
 ```
 
-Oui, il faut spécifier quel fichier on pushe, c'est pas la fête du slip.
+Oui, il faut spécifier quel fichier on pushe, c'est pas la fête du slip, non plus.
 
 ### Bonus 2 : I18n.locale
 
-Pour savoir quelle est la langue courant dynamiquement, tout comme sous Rails, on peut utiliser la variable Ruby `I18n.locale`, ce qui permet, par exemple de changer son Haml qui ressemblait à ça :
+Pour savoir quelle est la langue courante dynamiquement, tout comme sous Rails, on peut utiliser la variable Ruby `I18n.locale`, ce qui permet, par exemple de changer son Haml qui ressemblait à ça :
 
 ```haml
 %html{lang: 'fr'}
