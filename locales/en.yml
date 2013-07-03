@@ -77,7 +77,7 @@ en:
         sentence2_html: 'Our goals: build <strong>fluid</strong>, <strong>ergonomic</strong> and <strong>efficient</strong> solutions. Provide immediate access to important content, by improving the information hierarchy.'
         sentence3_html: Create <strong>aesthetic</strong> solutions which showcase our customers <strong>visual universe</strong>.
         title: Design
-      marketing:
+      management:
         features:
           feature1: strategic opportunites
           feature2: innovation
@@ -87,7 +87,7 @@ en:
           title: Key orientations
         sentence1_html: <strong>Strategy</strong> and <strong>planning</strong> are cross-cutting practices in every project. Monitoring is imperative to identify <strong>strategic opportunities</strong> in such a constantly moving environment as the web.
         sentence2_html: We develop our <strong>knowledge of users</strong> and in terms of <strong>innovation</strong>, <strong>usage</strong>, <strong>medias</strong>... to create a tangible <strong>added value</strong>.
-        title: Marketing
+        title: Management
       technologies:
         features:
           feature1: Ruby on Rails / Haml / Sass

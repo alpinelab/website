@@ -77,7 +77,7 @@ fr:
         sentence2_html: 'Nos objectifs : créer des solutions <strong>fluides</strong>, <strong>ergonomiques</strong> et <strong>efficaces</strong>. Proposer un accès immédiat au contenu recherché, en travaillant notamment la hiérarchie de l’information.'
         sentence3_html: Concevoir des solutions <strong>esthétiques</strong>, valorisant l’<strong>univers visuel de nos clients</strong>.
         title: Design
-      marketing:
+      management:
         features:
           feature1: opportunités stratégiques
           feature2: innovation
@@ -87,7 +87,7 @@ fr:
           title: Orientations clés
         sentence1_html: La <strong>stratégie</strong> et la <strong>planification</strong> sont présentes de manière transversale dans chaque projet. La veille est impérative pour identifier les <strong>opportunités stratégiques</strong> dans l'univers en constante mutation qu'est le web.
         sentence2_html: Nous développons notre <strong>connaissance des utilisateurs</strong>, et des tendances en matière d’<strong>innovation</strong>, d’<strong>usage</strong>, de <strong>médias</strong>... pour créer une <strong>valeur ajoutée</strong> tangible.
-        title: Marketing
+        title: Gestion
       technologies:
         features:
           feature1: Ruby on Rails / Haml / Sass
