@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/michaelbaudino/middleman-minify-html.git
-  revision: 36a47817fee9a753db7cdc8d8a9359119c396b18
+  revision: 37a5d0677cc0ef7c77478ca3e1d2d62062d9052d
   branch: feature/use-htmlcompressor-as-an-external-gem
   specs:
     middleman-minify-html (3.1.0)
