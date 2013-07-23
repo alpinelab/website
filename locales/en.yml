@@ -5,10 +5,15 @@ en:
       sentence2_html: We use our common sense, our imagination and Ruby on Rails awesomeness, <br class="hidden-phone" /> to create web products that are simply innovatives...
       sentence3_html: Last but not least, we are a group of friends !
     common:
+      address_html: |-
+        1 rue de la Martinière<br>
+        69001 Lyon<br>
+        France<br>
+        contact@alpine-lab.com<br>
+        +33 950 831 231
       email-subject: Please create something fancy for me !
-      hire-us_html: hire&nbsp;us&nbsp;!
+      hire-us_html: write to us
       page-description: Fresh and modern web agency in Lyon, France, specialists of Ruby on Rails, Haml, Sass, CoffeeScript, HTML5, CSS3
-      you-have-a-project: You have a project ?
     footer_html: <a rel="publisher" href="https://plus.google.com/103306769618245403420">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. All code is licensed under the <a href="http://opensource.org/licenses/MIT">MIT</a>.
     header:
       about: about

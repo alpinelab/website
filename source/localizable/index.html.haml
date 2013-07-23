@@ -26,15 +26,13 @@ layout: corporate
   = partial 'commitments'
   = partial 'projects'
 
-  .container
+  .container.full-width
     %section#hire-us
-      .row-fluid
-        .span9
-          %h1.animate
-            = I18n.t('corporate.common.you-have-a-project')
-        .span3
-          %h1
-            %a.btn.btn-large.btn-danger{href: "mailto:dahu@alpine-lab.com?subject=#{I18n.t('corporate.common.email_subject')}", target: :_blank}
-              = I18n.t('corporate.common.hire-us_html')
+      .logo
+        = image_tag('logo-alpinelab-mirroreffect.png', width: '87px', height: '88px')
+      .address
+        = I18n.t('corporate.common.address_html')
+      %a.hire-us-btn{href: "mailto:dahu@alpine-lab.com?subject=#{I18n.t('corporate.common.email-subject')}", target: :_blank}
+        = I18n.t('corporate.common.hire-us_html')
 
 #push
