@@ -1,51 +1,51 @@
 section#about
-  background-color: $alBlue
-  color: $white
-  h1
-    font-size: 6em
-    line-height: 1.2em
-    &.alpinelab
-      font-family: "SackersGothic", sans-serif
-      font-weight: lighter
-      text-transform: uppercase
-      text-align: center
-      margin: 50px 0 80px 0
-      .alpine
-        color: $white
-      .lab
-        color: $alRed
+  background-color: $alGrayLightest
+  color: $alGrayDarker
+  padding: 5em 0
   p
     font-size: 1.5em
     line-height: 25px
     text-align: center
+    .blue
+      color: $alBlue
+    .rotating-words
+      width: 160px
+      display: inline-block
+      text-align: left
+      overflow-x: hidden
+  .star-delimiter
+    color: $alBlue
+    text-align: center
+    margin: 2.5em 0
+    font-size: 1.5em
+    &:after
+      content: '*'
   .flip-container
     +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
-    margin-top: 80px
+    margin-left: auto
+    margin-right: auto
     .front
       +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
       background-color: $alBlue
       color: $alBlueLightest
       font-weight: bold
       font-size: 2.5em
-      &.member-badge
+      &.domain-badge
         background-position: center
         background-size: cover
-        +filter(grayscale(100%))
-      &#badge-mike
-        background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
-      &#badge-thibault
-        background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
-      &#badge-mathilde
-        background-image: url('/img/photo-mathilde.jpg')
-      &#badge-steeve
-        background-image: url('/img/photo-steeve.jpg')
-      &#badge-martin
-        background-image: url('/img/photo-martin.jpg')
+      &#badge-consulting
+        background-image: url('/img/badge-consulting.jpg')
+      &#badge-design
+        background-image: url('/img/badge-design.jpg')
+      &#badge-dev
+        background-image: url('/img/badge-dev.jpg')
     .back
-      +square($avatarCirclesRadius)
-      background-color: $white
-      color: $alBlue
-      border: solid $avatarCirclesBorder $alBlue
-      font-size: 0.6em
+      +square($avatarCirclesRadius + 2 * $avatarCirclesBorder)
+      background-color: $alBlue
+      color: $white
       font-weight: bold
-      font-style: italic
+      text-transform: uppercase
+      p
+        position: relative
+        top: 2em
+        font-size: 1em

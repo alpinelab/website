@@ -1,9 +1,11 @@
 en:
   corporate:
     about:
-      sentence1_html: We are a team with complementary skills and profiles.
-      sentence2_html: We use our common sense, our imagination and Ruby on Rails awesomeness, <br class="hidden-phone" /> to create web products that are simply innovatives...
-      sentence3_html: Last but not least, we are a group of friends !
+      domain-consulting: consulting
+      domain-design: design
+      domain-dev: dev
+      rotating-words_js: '[''astounding'', ''high-performance'', ''on-demand'', ''innovative'', ''amazing'', ''responsive'']'
+      tagline_html: We support your brand in its digital strategy<br> by building <span class="blue"><span class="rotating-words"></span> web sites</span>
     common:
       address_html: |-
         1 rue de la Martinière<br>

@@ -27,83 +27,36 @@ section
       display: inline-block
       padding: 0.6em 1.4em
 
-  ul.row-fluid
-    li
-      text-align: center
-      a
-        /* entire container, keeps perspective */
-        .flip-container
-          perspective: 1000
-          -webkit-perspective: 1000
-          /* flip the pane when hovered */
-          &:hover .flipper, &.hover .flipper
-            +transform(rotateY(180deg))
-          /* flip speed goes here */
-          .flipper
-            +transition(0.6s)
-            +transform-style(preserve-3d)
+  .row
+    text-align: center
+    /* entire container, keeps perspective */
+    .flip-container
+      perspective: 1000
+      -webkit-perspective: 1000
+      /* flip the pane when hovered */
+      &:hover .flipper, &.hover .flipper
+        +transform(rotateY(180deg))
+      /* flip speed goes here */
+      .flipper
+        +transition(0.6s)
+        +transform-style(preserve-3d)
+        position: relative
+        /* hide back of pane during swap */
+        .front, .back
+          +backface-visibility(hidden)
+          position: absolute
+          top: 0
+          left: 0
+          margin: 0 auto
+          +border-radius(50%)
+          p
             position: relative
-            /* hide back of pane during swap */
-            .front, .back
-              +backface-visibility(hidden)
-              position: absolute
-              top: 0
-              left: 0
-              margin: 0 auto
-              +border-radius(50%)
-              p
-                position: relative
-                display: inline-block
-                top: 50%
-                margin-top: -0.5em
-            /* front pane, placed above back */
-            .front
-              z-index: 2
-            /* back, initially hidden pane */
-            .back
-              +transform(rotateY(180deg))
-
-.transition-square
-  +square($transitionSquareWidth)
-  position: absolute
-  z-index: 100
-  &#transition-square-1
-    bottom: 0
-    right: $transitionSquareWidth
-    background-color: $white
-  &#transition-square-2
-    bottom: 0
-    right: 0
-    background-color: darken($alBlueLightest, 10%)
-  &#transition-square-3
-    bottom: $transitionSquareWidth
-    right: 0
-    background-color: $alBlueLightest
-  &#transition-square-4
-    bottom: -$transitionSquareWidth
-    right: 0
-    background-color: darken($alBlueLight, 3%)
-  &#transition-square-5
-    bottom: -2 * $transitionSquareWidth
-    right: 0
-    background-color: $alBlue
-  &#transition-square-6
-    bottom: -$transitionSquareWidth
-    right: $transitionSquareWidth
-    background-color: $alBlueLighter
-  &#transition-square-7
-    bottom: -$transitionSquareWidth
-    right: 2 * $transitionSquareWidth
-    background-color: darken($alBlueLightest, 5%)
-  &#transition-square-8
-    bottom: -$transitionSquareWidth
-    right: 3 * $transitionSquareWidth
-    background-color: lighten($alBlueLighter, 15%)
-  &#transition-square-9
-    bottom: - 2 * $transitionSquareWidth
-    right: $transitionSquareWidth
-    background-color: lighten($alBlueLighter, 15%)
-  &#transition-square-10
-    bottom: -3 * $transitionSquareWidth
-    right: 0
-    background-color: $alBlueLighter
+            display: inline-block
+            top: 50%
+            margin-top: -0.5em
+        /* front pane, placed above back */
+        .front
+          z-index: 2
+        /* back, initially hidden pane */
+        .back
+          +transform(rotateY(180deg))
