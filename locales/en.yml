@@ -71,39 +71,16 @@ en:
         <br />
         He's from Les Bauges, in the French Alps, that's why it was so obvious for him to build an <a href="https://www.skiwallet.com" target="_blank">online ski passes market place</a> !
     what-we-do:
+      consulting:
+        content: Sit qmet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        title: Consulting
       design:
-        features:
-          feature1: audits
-          feature2: user experience
-          feature3: content strategy
-          feature4: information hierarchy
-          feature5: mockups and prototypes
-          feature6: ergonomy
-          title: Key services
-        sentence1_html: User eXperience is cross-domain, involved in each step of the conception and is required all across our know-how.
-        sentence2_html: 'Our goals: build <strong>fluid</strong>, <strong>ergonomic</strong> and <strong>efficient</strong> solutions. Provide immediate access to important content, by improving the information hierarchy.'
-        sentence3_html: Create <strong>aesthetic</strong> solutions which showcase our customers <strong>visual universe</strong>.
+        content: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
         title: Design
-      management:
-        features:
-          feature1: strategic opportunites
-          feature2: innovation
-          feature3: knowledge of users
-          feature4: competition analysis
-          feature5: market trends
-          title: Key orientations
-        sentence1_html: <strong>Strategy</strong> and <strong>planning</strong> are cross-cutting practices in every project. Monitoring is imperative to identify <strong>strategic opportunities</strong> in such a constantly moving environment as the web.
-        sentence2_html: We develop our <strong>knowledge of users</strong> and in terms of <strong>innovation</strong>, <strong>usage</strong>, <strong>medias</strong>... to create a tangible <strong>added value</strong>.
-        title: Management
-      technologies:
-        features:
-          feature1: Ruby on Rails / Haml / Sass
-          feature2: Ember.js / CoffeeScript
-          feature3: HTML5 / CSS3
-          feature4: Heroku / PaaS
-          title: Key technologies
-        sentence1_html: We use modern workflows like <strong>test driven development</strong>, <strong>continuous integration</strong> (<a href="https://travis-ci.org" target="_blank">Travis</a>), <strong>code versioning</strong> (<a href="https://github.com" target="_blank">Github</a>) and <strong>branching</strong> (<a href="http://nvie.com/posts/a-successful-git-branching-model" target="_blank">git-flow</a>), and <strong>lean management</strong>.
-        sentence2_html: We are specialists in <strong>Ruby on Rails</strong> development.
-        sentence3_html: We love <strong>simple and intuitive</strong> websites, we literally spend hours to make our users gain a few seconds.
-        title: Technologies
-      title: WHAT WE DO
+      dev:
+        content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.
+        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipisicing elit, sed
+        title: Code
+      title: What we do

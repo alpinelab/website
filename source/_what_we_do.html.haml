@@ -1,16 +1,11 @@
 %section#what-we-do
   .container
     %h2= I18n.t('corporate.what-we-do.title')
-    %ul.row-fluid
-      - [[:design, :beaker, 3, 6], [:technologies, :code, 3, 4], [:management, :calendar, 2, 5]].each do |domain, icon, num_sentences, num_features|
-        %li.span4.domain
+    .row
+      - [:design, :dev, :consulting].each do |domain|
+        .span4.domain
           %h3
-            %i.icon-large{class: "icon-#{icon}"}
-            %br/
             = I18n.t("corporate.what-we-do.#{domain}.title")
-          - (1..num_sentences).each do |i|
-            %p= I18n.t("corporate.what-we-do.#{domain}.sentence#{i}_html")
-          %ul.features
-            %h4= I18n.t("corporate.what-we-do.#{domain}.features.title")
-            - (1..num_features).each do |i|
-              %li= '/ ' + I18n.t("corporate.what-we-do.#{domain}.features.feature#{i}")
+          %p.domain-content= I18n.t("corporate.what-we-do.#{domain}.content")
+          %p.domain-details= I18n.t("corporate.what-we-do.#{domain}.details")
+          .star-delimiter
