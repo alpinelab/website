@@ -1,0 +1,4 @@
+%section#customers
+  %h2= I18n.t('corporate.customers.title')
+  - {skiwallet: 'https://www.skiwallet.com', youpijob: 'https://youpijob.fr', localeapp: 'https://www.localeapp.com', almostbio: 'http://almostbio.com'}.each do |customer, url|
+    = link_to image_tag("customer-#{customer}.png"), url, {target: :_blank}

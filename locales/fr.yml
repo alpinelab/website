@@ -15,6 +15,8 @@ fr:
       email-subject: Faites-moi quelque chose de chouette !
       hire-us_html: écrivez-nous
       page-description: Agence web lyonnaise jeune et moderne, spécialistes Ruby on Rails, Haml, Sass, CoffeeScript, HTML5, CSS3
+    customers:
+      title: Nos clients
     footer_html: Le site d'<a rel="publisher" href="https://plus.google.com/103306769618245403420">Alpine Lab</a> est publié sous license <a href="http://creativecommons.org/licenses/by/3.0/fr/">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. Le code est sous licence <a href="http://opensource.org/licenses/MIT">MIT</a>.
     header:
       about: à propos
@@ -71,15 +73,15 @@ fr:
         Il vient des Bauges, le pays de la tome avec un seul "m", c'est dire à quel point ça a été naturel pour lui de se lancer dans un projet de <a href="https://www.skiwallet.com" target="_blank">vente de forfaits de ski en ligne</a> !
     what-we-do:
       consulting:
-        content: Sit qmet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        content: Nous intégrons la gestion de projet de manière transversale. Nous attachons une grande importance la veille (technologique, design, tendances, usages…) et stratégique (médias).
+        details: Nous élaborons et planifions et implémentons des stratégies digitales globales.
         title: Le Conseil
       design:
-        content: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+        content: Nous concevons des solutions esthétiques, valorisant l'identité visuelle de nos clients. Pour nous, l'expérience utilisateur doit avant tout permettre un accès rapide aux contenu recherchées.
+        details: Bref, nos solutions doivent être fluides, ergonomiques et efficaces.
         title: Le Design
       dev:
-        content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.
-        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipisicing elit, sed
+        content: Nos process de travail sont basés sur le Lean management, le test driven development et l'intégration continue (Travis), le code versionné (Github) et organisé (git-flow).
+        details: Nous utilisons principalement le langage Ruby on Rails pour développer.
         title: Le Code
       title: Nos métiers
