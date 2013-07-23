@@ -13,28 +13,12 @@
     %header.navbar.navbar-fixed-top
       .navbar-inner
         .container
-
-          %a.btn.btn-navbar{data: {toggle: 'collapse', target: '.nav-collapse'}}
-            - 3.times do
-              %span.icon-bar
-
           .brand{title: 'Alpine Lab'}
             = link_to '#about' do
-              = image_tag('logo-alpinelab-128.png', width: '60px', height: '60px')
-              .hidden-desktop
-                %span.alpine> Alpine
-                %span.lab Lab
-          .nav-collapse.collapse
-            %ul.nav
-              - [:about, :'what-we-do', :team, :projects].each do |category|
-                %li= link_to I18n.t("corporate.header.#{category}"), "##{category}"
-              %li= link_to I18n.t('corporate.header.blog'), '/blog'
-            %ul.nav.pull-right
-              %li#hire-us-btn
-                %a.header-btn{href: "mailto:dahu@alpine-lab.com?subject=#{I18n.t('corporate.common.email-subject')}", target: :_blank}
-                  = I18n.t('corporate.common.hire-us_html')
+              = image_tag('logo-alpinelab-mirroreffect.png', width: '132px', height: '133px')
 
     = yield
+
   %footer
     .container
       %p.muted

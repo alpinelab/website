@@ -22,52 +22,9 @@ body
 header.navbar
   font-family: "SackersGothic", sans-serif
   .brand
-    padding: (($navbarHeight - $logoHeight) / 2 - 2) 20px (($navbarHeight - $logoHeight) / 2 + 2)
-  .nav
-    & > li
-      font-size: 1.4em
-      font-weight: bold
-      & > a
-        padding-left: 30px
-        padding-right: 30px
-        i
-          +transition(color 0.25s ease)
-        &:hover
-          color: $alRed
-      &.active
-        & > a, & > a:hover
-          background-color: inherit
-          +box-shadow(none)
-          color: $alRed
-    li a[href="#about"]
-      display: none
-  #hire-us-btn
-    position: relative
-    width: 200px
-    font-family: "Lato", sans-serif
-    font-weight: bold
-    text-transform: lowercase
-    .header-btn
-      font-size: 1.1em
-      background-color: $alRed
-      color: white
-      padding: 30px 20px 10px
-      text-align: center
-      margin-top: -20px
-      +transition(margin-top 0.25s ease-out)
-      text-shadow: none
-      &::after
-        content: ''
-        width: 0
-        height: 0
-        position: absolute
-        left: 0px
-        top: 100%
-        border: solid transparent 100px
-        border-top: solid $alRed 20px
-      &:hover
-        margin-top: 0
-
+    width: 100%
+    text-align: center
+    padding: 20px
 
 #push, footer
   height: $footerHeight
