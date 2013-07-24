@@ -5,7 +5,7 @@ en:
       domain-design: design
       domain-dev: dev
       rotating-words_js: '[''astounding'', ''high-performance'', ''on-demand'', ''innovative'', ''amazing'', ''responsive'']'
-      tagline_html: We support your brand in its digital strategy<br> by building <span class="blue"><span class="rotating-words"></span> web sites</span>
+      tagline_html: We support your brand in its digital strategy<br> by building <span class="blue">websites that are <span class="rotating-words"></span></span>
     common:
       address_html: |-
         1 rue de la Martinière<br>
@@ -74,15 +74,15 @@ en:
         He's from Les Bauges, in the French Alps, that's why it was so obvious for him to build an <a href="https://www.skiwallet.com" target="_blank">online ski passes market place</a> !
     what-we-do:
       consulting:
-        content: Sit qmet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        content: We imagine and implement global digital strategies.
+        details: We integrate project management transversally. We highly value survey (technological, strategic, design, trends, uses...).
         title: Consulting
       design:
-        content: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+        content: Our solutions are fluid, ergonomic and efficient.
+        details: We build aesthetic solutions, which highlight our customers visual identity. From our point of view, user experience must facilitate quick access to the content you are looking for.
         title: Design
       dev:
-        content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.
-        details: Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipisicing elit, sed
+        content: We develop using modern and elegant RubyOnRails.
+        details: '... and a lot more technologies. Our workflow includes lean management, TDD (test-driven development), continuous integration (Travis) and versioned and organized code (GitHub + GitFlow).'
         title: Code
       title: What we do

@@ -73,15 +73,15 @@ fr:
         Il vient des Bauges, le pays de la tome avec un seul "m", c'est dire à quel point ça a été naturel pour lui de se lancer dans un projet de <a href="https://www.skiwallet.com" target="_blank">vente de forfaits de ski en ligne</a> !
     what-we-do:
       consulting:
-        content: Nous intégrons la gestion de projet de manière transversale. Nous attachons une grande importance la veille (technologique, design, tendances, usages…) et stratégique (médias).
-        details: Nous élaborons et planifions et implémentons des stratégies digitales globales.
+        content: Nous élaborons et implémentons des stratégies digitales globales.
+        details: Nous intégrons la gestion de projet de manière transversale. Nous attachons une grande importance à la veille (technologique, stratégique, design, tendances, usages, ...).
         title: Le Conseil
       design:
-        content: Nous concevons des solutions esthétiques, valorisant l'identité visuelle de nos clients. Pour nous, l'expérience utilisateur doit avant tout permettre un accès rapide aux contenu recherchées.
-        details: Bref, nos solutions doivent être fluides, ergonomiques et efficaces.
+        content: Nos solutions sont fluides, ergonomiques et efficaces.
+        details: Nous concevons des solutions esthétiques, valorisant l'identité visuelle de nos clients. Pour nous, l'expérience utilisateur doit avant tout permettre un accès rapide aux contenus recherchés.
         title: Le Design
       dev:
-        content: Nos process de travail sont basés sur le Lean management, le test driven development et l'intégration continue (Travis), le code versionné (Github) et organisé (git-flow).
-        details: Nous utilisons principalement le langage Ruby on Rails pour développer.
+        content: Nous développons en RubyOnRails, moderne et élégant.
+        details: '... et beaucoup d''autres technologies. Nos process de travail incluent du lean management, du TDD (test-driven development), de l''intégration continue (Travis) et un code versionné et organisé (GitHub + GitFlow).'
         title: Le Code
       title: Nos métiers
