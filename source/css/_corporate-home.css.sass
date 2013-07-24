@@ -1,24 +1,24 @@
 section
+
   &:nth-child(2n+1)
     background-color: $alGrayLightest
+    color: $alGrayDarker
+  &:nth-child(2n)
+    background-color: $white
+    color: $alGrayDark
 
-  &#about, &#what-we-do, &#customers, &#team, &#hire-us, &#projects
-    padding: 5em 0
-    position: relative
-    h2
-      font-family: "SackersGothic", sans-serif
-      text-align: center
-      font-size: 1.1em
-      line-height: 1.2em
-      color: rgba($alBlue, 1.0)
-      margin-bottom: 3em
-      letter-spacing: 0.1em
-      text-transform: uppercase
+  padding: 5em 0
+  position: relative
+  h2
+    font-family: "SackersGothic", sans-serif
+    font-size: 1.1em
+    line-height: 1.2em
+    color: rgba($alBlue, 1.0)
+    margin-bottom: 3em
+    letter-spacing: 0.1em
+    text-transform: uppercase
 
   &#hire-us
-    background-color: $alGrayLightest
-    color: $alGrayDarkest
-    text-align: center
     .address
       margin: 1em 0 1.5em 0
       line-height: 2em
@@ -32,7 +32,6 @@ section
       padding: 0.6em 1.4em
 
   .row
-    text-align: center
     /* entire container, keeps perspective */
     .flip-container
       perspective: 1000
