@@ -12,7 +12,7 @@
     %p= I18n.t('corporate.about.tagline_html')
     .star-delimiter
     .row
-      .span3.visible-desktop
+      .span3
       - [:consulting, :design, :dev].each do |domain|
         .span2
           .flip-container{ontouchstart: "this.classList.toggle('hover');"}
@@ -20,4 +20,3 @@
               .front.domain-badge{id: "badge-#{domain}"}
               .back
                 %p= I18n.t("corporate.about.domain-#{domain}")
-      .span3.visible-desktop

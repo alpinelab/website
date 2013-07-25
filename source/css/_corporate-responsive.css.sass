@@ -1,71 +1,20 @@
-@mixin collapsedNavbarVerticalAlign($elementHeight)
-  margin-top: ($collapsedNavbarHeight - $elementHeight) / 2
-
-
 /* Phones, phablets, tablets and desktop */
 @media (max-width: 1199px)
-  section
-    &#what-we-do
-      .domain
-        height: 650px
 
 
 /* Phones, phablets and tablets */
 @media (max-width: 979px)
   header.navbar
     margin-bottom: 0
-    .navbar-inner
-      min-height: $collapsedNavbarHeight
-      .brand
-        display: inline-block
-        padding: 0 20px
-
-        font-family: "SackersGothic", sans-serif
-        font-weight: lighter
-        .alpine, .lab
-          text-transform: uppercase
-        .alpine
-          margin-left: 10px
-          color: $alBlue
-        .lab
-          color: $alRed
-
-    .btn, .btn-group
-      +collapsedNavbarVerticalAlign(30px)
-
-    .nav
-      li
-        text-align: center
-      #hire-us-btn
-        width: auto
-        margin-top: 30px
-        .header-btn
-          padding: 9px 30px
-          &:hover
-            margin-top: -20px
-          &::after
-            display: none
 
   #wrap
     &>.container
       padding: 0
 
-  section
-    &#about, &#what-we-do, &#team, &#hire-us, &#projects
-      h2
-        margin-bottom: 0.25em
-    &#what-we-do
-      .domain
-        height: 800px
-        p
-          padding: 0 10px
-    &#projects
-      h3
-        text-align: center
-        .description
-          display: block
-          &::before
-            content: ''
+  section#projects
+    .video-container
+      max-width: 90%
+
 
 /* Phones and phablets */
 @media (max-width: 767px)
@@ -75,113 +24,15 @@
     padding: 0
     margin: 0
   section#about
-    h1.alpinelab
-      font-size: 4em
-      margin: 25px 0 40px 0
-    .members
-      margin-left: 0
-      .member
-        width: 50%
-        margin: 5% 0
-        float: left
-        &:last-child
-          width: 100%
-        .flip-container
-          margin: 0 auto
+    .flip-container
+      margin: 1em auto
 
-  section
-    &#about, &#what-we-do, &#team, &#hire-us, &#projects
-      .row-fluid
-        p
-          padding: 10px 5%
-    &#what-we-do
-      padding-bottom: 0
-      .domain
-        position: static
-        height: auto
-        padding: 0 10%
-        h3
-          float: left
-          width: 6em
-          margin: 1em 0
-        p
-          padding: 0
-          text-align: justify
-          margin-left: 10em
-        .features
-          position: static
-          bottom: 0
-          margin: 20px 0 70px
-          text-align: left
-          padding: 2.5%
-          width: 95%
-          font-size: 0.9em
-          h4
-            top: 0
-            display: inline
-            &::after
-              content: " : "
-          li
-            margin: 0
-            display: inline
-    &#team
-      article
-        padding: 0 5%
-    &#projects
-      padding: 0 5%
-      h2
-        font-size: 5em
-      article.span5.offset2
-        margin-top: 4em
-      .screenshot, .screenshot:hover
-        margin-top: 2em
-        img
-          float: left
-          width: 70%
-        .mask
-          width: 25%
-          height: auto
-          position: static
-          margin-left: 75%
-          font-size: 0.9em
-          background-color: $white
-          border: none
-          color: $alGrayDarkest
-          .mask-content
-            position: static
-            padding: 0
-            line-height: 1.0em
-            font-size: 1.2em
-    &#hire-us
-      margin: 0 5%
-      h1.animate, &:hover h1.animate
-        +transition(none)
-        width: 100%
-        text-align: center
-      h1
-        text-align: center
+  p
+    padding: 0 5%
+
   footer
     line-height: normal
 
+
 /* Phones only */
 @media (max-width: 480px)
-  section
-    &#about, &#what-we-do, &#team, &#hire-us
-      h2
-        font-size: 5em
-    &#what-we-do
-      .domain
-        h3
-          float: none
-          width: 100%
-        p
-          margin-left: 0
-    &#projects
-      .screenshot, .screenshot:hover
-        img
-          float: none
-          width: 100%
-        .mask
-          width: 100%
-          margin-left: 0
-          text-align: justify
