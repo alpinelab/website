@@ -1,3 +1,4 @@
 %section#commitments
-  .container
-    %h2 Nos engagements
+  %h2= I18n.t('corporate.commitments.title')
+  - {opensource: 'http://opensource.org', lyonrb: 'http://www.lyonrb.fr'}.each do |commitment, url|
+    = link_to image_tag("commitment-#{commitment}.png"), url, {target: :_blank}

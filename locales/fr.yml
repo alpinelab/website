@@ -6,6 +6,8 @@ fr:
       domain-dev: dev
       rotating-words_js: '[''étonnants'', ''performants'', ''sur-mesure'', ''innovants'', ''époustouflants'', ''responsifs'']'
       tagline_html: Nous accompagnons votre marque dans sa stratégie digitale<br> en créant <span class="blue">des sites web <span class="rotating-words"></span></span>
+    commitments:
+      title: Nos engagements
     common:
       address_html: |-
         1 rue de la Martinière<br>
