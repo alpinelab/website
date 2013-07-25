@@ -1,41 +1,18 @@
 %section#projects
-  .container
-    %h2= I18n.t('corporate.projects.title')
-    .row-fluid
-      %article.span6.offset3
-        %h3
-          = I18n.t('corporate.projects.skiwallet.title')
-          %span.description
-            = I18n.t('corporate.projects.skiwallet.description')
-        .screenshot
-          %a{href: 'https://www.skiwallet.com', target: :_blank}
-            %img{src: image_path('projects-skiwallet.jpg')}
-            .mask
-              .mask-content
-                = I18n.t('corporate.projects.skiwallet.mask')
-      .clearfix.visible-phone
-    .row-fluid
-      %article.span5
-        %h3
-          = I18n.t('corporate.projects.almostbio.title')
-          %span.description
-            = I18n.t('corporate.projects.almostbio.description')
-        .screenshot
-          %a{href: 'http://www.almostbio.com', target: :_blank}
-            %img{src: image_path('projects-almostbio.jpg')}
-            .mask
-              .mask-content
-                = I18n.t('corporate.projects.almostbio.mask')
-      .clearfix.visible-phone
-      %article.span5.offset2
-        %h3
-          = I18n.t('corporate.projects.youpijob.title')
-          %span.description
-            = I18n.t('corporate.projects.youpijob.description')
-        .screenshot
-          %a{href: 'http://www.youpijob.com', target: :_blank}
-            %img{src: image_path('projects-youpijob.jpg')}
-            .mask
-              .mask-content
-                = I18n.t('corporate.projects.youpijob.mask')
-      .clearfix.visible-phone
+  %h2= I18n.t('corporate.projects.title')
+  .star-delimiter
+
+  %h3= I18n.t('corporate.projects.skiwallet.title')
+  %ul.description= I18n.t('corporate.projects.skiwallet.description_html')
+  %img{src: image_path('projects-skiwallet.jpg')}
+  %img{src: image_path('projects-skiwallet-items.jpg')}
+  .video-container
+    .embed-container
+      %iframe{src: 'http://player.vimeo.com/video/60546380', frameborder: 0, webkitAllowFullScreen: true, mozallowfullscreen: true, allowFullScreen: true}
+  .star-delimiter
+
+  - ['youpijob', 'locale', 'almostbio'].each do |project|
+    %h3= I18n.t("corporate.projects.#{project}.title")
+    %ul.description= I18n.t("corporate.projects.#{project}.description_html")
+    %img{src: image_path("projects-#{project}.jpg")}
+    .star-delimiter

@@ -29,24 +29,43 @@ en:
       what-we-do: what we do
     projects:
       almostbio:
-        description: Web-magazine
-        mask: An organic-oriented blog, that we designed as a web-magazine. It's focused on everything organic-related, about both products and initiatives.
+        description_html: |-
+          <li>Branding</li>
+          <li>Artistic direction & graphic design</li>
+          <li>Design interaction & prototyping</li>
+          <li>Front and back-end development</li>
+          <li>Product development</li>
+          <li>Maintenance</li>
         title: AlmostBio
+      locale:
+        description_html: |-
+          <li>MySQL to PostgreSQL migration</li>
+          <li>Dedicated server to Heroku migration</li>
+        title: Locale
       skiwallet:
-        description: Ski passes e-commerce website.
-        mask: A cross-resorts solution designed to be simple and fluid, which focuses on slick design and user expericence intuitivity. Fresh powder right under your click.
+        description_html: |-
+          <li>Branding</li>
+          <li>Customer process & UX</li>
+          <li>Artistic direction & graphic design</li>
+          <li>Design interaction & prototyping</li>
+          <li>Front and back-end development</li>
+          <li>Product developement</li>
         title: SkiWallet
-      title: PROJECTS
+      title: Our projects
       youpijob:
-        description: Work links establishing for individuals
-        mask: We designed and developed advanced payment and complex money pools features for YoupiJob.
+        description_html: |-
+          <li>1-click payment system</li>
+          <li>Money pools system</li>
+          <li>Vouchers system</li>
+          <li>Front and back-end development</li>
+          <li>Integration with legacy visual identity</li>
         title: YoupiJob
     team:
-      martin_html: Martin Thibault, brilliant designer, inspired graphist, likes animated GIFs and fonts, also designs mobile applications
-      mathilde_html: Mathilde Aglietta, marketing and communication, consulting and training, organic and fashion fan, sponsor of Web School Factory hackathons
-      mike_html: Michael Baudino, co-founder, passionate Ruby/Rails developer, free software supporter, active member of <a href="http://www.lyonrb.fr" target="_blank">Lyon.rb</a>
-      steeve_html: Steeve Galté, graphic integration, former architect, curious about everything, also co-founder of Bloc Rendering
-      thibault_html: Thibault Dalban, co-founder, Ruby/Rails and Ember.js developer, database and mobile devices specialist
+      martin_html: <b>Martin Thibault</b>, designer, artist, mobile applications conceiver, <a href="http://www.ecoles-conde.com" target="_blank">Condé</a> and <a href="http://www.esad-amiens.fr" target="_blank">Beaux Arts</a> alumni, many years of design experience in Paris and New York agencies.
+      mathilde_html: <b>Mathilde Aglietta</b>, communication consulting, e-marketing, training, <a href="http://www.grenoble-em.com" target="_blank">Grenoble&nbsp;EM</a> and <a href="http://www.stratecollege.fr" target="_blank">Strate Collège</a> alumni, junior mentor of <a href="http://www.webschoolfactory.fr" target="_blank">Web School Factory</a> hackatons.
+      mike_html: <b>Michael Baudino</b>, co-founder, passionate Ruby/Rails programmer, open-source contributor, active member of the <a href="http://www.lyonrb.fr" target="_blank">Lyon.rb</a> network, <a href="http://www.epita.fr" target="_blank">EPITA</a> alumni, former <a href="http://www.acrelec.fr" target="_blank">Acrelec</a> group IT manager.
+      steeve_html: <b>Steeve Galté</b>, self-taught web integrator and designer, state-graduated architech (<a href="http://www.montpellier.archi.fr" target="_blank">ENSAM</a>), co-founder of <a href="http://www.bloc-rendering.com" target="_blank">Bloc Rendering</a> 3D creation studio.
+      thibault_html: <b>Thibault Dalban</b>, co-founder, multi-language developer (Java, PHP, Ruby/Rails, Ember.js), free-software advocate, <a href="http://www.epitech.eu" target="_blank">Epitech</a> alumni, former software architect at <a href="http://www.sopragroup.com" target="_blank">Sopra Group</a>.
       title: Our team
     what-we-do:
       consulting:

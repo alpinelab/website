@@ -1,33 +1,44 @@
 section#projects
+  h2
+    margin-bottom: 2em
+
   h3
-    font-weight: normal
-    .description
-      font-size: 0.6em
-      line-height: normal
-      &::before
-        content: ' - '
-  .row-fluid
-    margin-bottom: 50px
-  .screenshot
+    text-transform: uppercase
+    font-size: 1.1em
+    font-family: "SackersGothic", sans-serif
+    color: $alRed
+    letter-spacing: 1px
+
+  .description
+    list-style: none
+    li
+      line-height: 2em
+      font-weight: 300
+      color: $alGrayDarkest
+
+  img
+    margin: 2em 0
+
+  .video-container
+    width: 50%
+    margin: 0 auto 5em
+
+  .embed-container
     position: relative
-    img
-      border: solid 1px $alGrayLight
-    .mask
-      left: 0
-      top: 0
-      +square(100%)
-      position: absolute
-      background-color: rgba($black, 0)
-      border: solid 1px rgba($black, 0)
-      color: transparent
-      .mask-content
-        position: absolute
-        bottom: 0
-        padding: 0 30px 30px 30px
-        line-height: 1.0em
-        font-size: 1.2em
-    &:hover
-      .mask
-        background-color: rgba($black, 0.8)
-        border-color: rgba($black, 0.8)
-        color: white
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: hidden
+    width: 100%
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+  .star-delimiter
+    margin: 0
