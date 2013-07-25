@@ -1,93 +1,48 @@
 section#team
-  a
-    color: $white
-    &:hover
-      text-decoration: underline
-
-  h2
-    color: $white
   article
-    font-size: 1.1em
-    font-weight: 400
-    text-align: justify
-    margin-bottom: 50px
-    padding: 0 10px
-    &>.avatar-big
-      width: $avatarSize
-      height: $avatarSize
-      +transition(0.5s ease)
-      +border-radius(50%)
-      border: ($avatarSize/2) solid rgba(black, 0.6)
+    p
+      font-size: 1.5em
+      line-height: 1.35em
+      a, a:hover
+        color: inherit
+      a:hover
+        text-decoration: underline
+    .avatar
+      width: $avatarWidth
+      height: $avatarHeight
       background-position: 50% 50%
-      background-size: $avatarSize $avatarSize
+      background-size: cover
       background-repeat: no-repeat
-      background-origin: border-box
-      +box-sizing(border-box)
-      background-image: url('/img/logo-alpinelab-128.png') // default avatar image
-      float: left
-      margin-right: 15px
-    &:hover
-      &>.avatar-big
-        border: 5px solid rgba(black, 0.6)
+      margin: 1em auto
+    .star-delimiter
+      margin: 1em 0
 
-  .central-logo
-    img
-      display: block
-      margin: 100px auto
-      background-color: $white
-      +border-radius(20px)
-      +box-shadow(0 0 40px 15px $white)
-      &:hover
-        +animation(logo-heartbeat 1s)
-        +animation-iteration-count(infinite)
+  ul.social-networks
+    list-style: none
+    font-size: 0.8em
+    margin: 0
+    li
+      display: inline
+      &:not(:first-child):before
+        content: ' – '
+        color: $alBlue
+      a
+        color: $alBlue
+        text-decoration: underline
 
-  .social-networks
-    text-align: left
-    margin-top: 10px
-    a
-      i
-        margin-right: 0.5em
-        color: $white
-        display: inline-block
-        +transition(all 0.25s ease)
-        &.icon-phone, &.icon-phone-sign
-          &::after
-            margin-left: 1em
-            font-size: 0.5em
-            color: $white
-      &:hover
-        text-decoration: none
-        i
-          +text-shadow(0 0 7px $white)
-          &:not(.icon-phone)
-            +transform-origin(50% 50% 0)
-            +transform(rotateZ(30deg))
-          &.icon-phone
-            position: relative
-            &:hover::after
-              position: absolute
-              top: 25%
-
-  #alpinelab
-    .avatar-big
-      background-image: url('/img/logo-alpinelab-128.png')
 
   #mike
-    .avatar-big
+    .avatar
       background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
-    a i.icon-phone:hover::after
-      content: "07.61.90.93.62"
   #thibault
-    .avatar-big
+    .avatar
       background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
-    a i.icon-phone:hover::after
-      content: "06.66.07.58.83"
   #mathilde
-    .avatar-big
+    .avatar
       background-image: url('/img/photo-mathilde.jpg')
   #martin
-    .avatar-big
+    .avatar
       background-image: url('/img/photo-martin.jpg')
   #steeve
-    .avatar-big
+    .avatar
       background-image: url('/img/photo-steeve.jpg')

@@ -1,77 +1,48 @@
 %section#team
   .container
-    %h2 ÉQUIPE
-    .row-fluid
+    %h2= I18n.t('corporate.team.title')
+    .row
       %article#mike.span4
-        .avatar-big
-        = I18n.t('corporate.team.mike_html')
-        %p.social-networks
-          = link_to 'mailto:michael.baudino@alpine-lab.com' do
-            %i.icon-envelope-alt.icon-2x
-          = link_to 'https://github.com/michaelbaudino', :target => :_blank do
-            %i.icon-github.icon-2x
-          = link_to 'https://twitter.com/michaelbaudino', :target => :_blank do
-            %i.icon-twitter.icon-2x
-          = link_to 'https://linkedin.com/in/michaelbaudino', :target => :_blank do
-            %i.icon-linkedin-sign.icon-2x
-          = link_to 'tel:+33761909362' do
-            %i.icon-phone.icon-2x
-        .clearfix
-
-      .span4.central-logo.hidden-phone
-        = image_tag('logo-alpinelab-128.png')
+        .avatar
+        %p= I18n.t('corporate.team.mike_html')
+        %ul.social-networks
+          %li= link_to 'GitHub', 'https://github.com/michaelbaudino', :target => :_blank
+          %li= link_to 'Twitter', 'https://twitter.com/michaelbaudino', :target => :_blank
+          %li= link_to 'LinkedIn', 'https://linkedin.com/in/michaelbaudino', :target => :_blank
+        .star-delimiter
 
       %article#thibault.span4
-        .avatar-big
-        = I18n.t('corporate.team.thibault_html')
-        %p.social-networks
-          = link_to 'mailto:thibault.dalban@alpine-lab.com' do
-            %i.icon-envelope-alt.icon-2x
-          = link_to 'https://github.com/thibaultdalban', :target => :_blank do
-            %i.icon-github.icon-2x
-          = link_to 'https://twitter.com/kh_thib', :target => :_blank do
-            %i.icon-twitter.icon-2x
-          = link_to 'http://fr.linkedin.com/pub/thibault-dalban/3/659/386', :target => :_blank do
-            %i.icon-linkedin-sign.icon-2x
-          = link_to 'tel:+33666075883' do
-            %i.icon-phone.icon-2x
-        .clearfix
+        .avatar
+        %p= I18n.t('corporate.team.thibault_html')
+        %ul.social-networks
+          %li= link_to 'GitHub', 'https://github.com/thibaultdalban', :target => :_blank
+          %li= link_to 'Twitter', 'https://twitter.com/kh_thib', :target => :_blank
+          %li= link_to 'LinkedIn', 'http://fr.linkedin.com/pub/thibault-dalban/3/659/386', :target => :_blank
+        .star-delimiter
 
-    .row-fluid
       %article#mathilde.span4
-        .avatar-big
-        = I18n.t('corporate.team.mathilde_html')
-        %p.social-networks
-          = link_to 'mailto:mathilde.aglietta@alpine-lab.com' do
-            %i.icon-envelope-alt.icon-2x
-          = link_to 'https://twitter.com/MatWdK', :target => :_blank do
-            %i.icon-twitter.icon-2x
-          = link_to 'http://pinterest.com/mwdk/', :target => :_blank do
-            %i.icon-pinterest.icon-2x
-          = link_to 'http://fr.linkedin.com/pub/mathilde-aglietta/31/2/6b6', :target => :_blank do
-            %i.icon-linkedin-sign.icon-2x
-        .clearfix
+        .avatar
+        %p= I18n.t('corporate.team.mathilde_html')
+        %ul.social-networks
+          %li= link_to 'Twitter', 'https://twitter.com/MatWdK', :target => :_blank
+          %li= link_to 'Pinterest', 'http://pinterest.com/mwdk/', :target => :_blank
+          %li= link_to 'LinkedIn', 'http://fr.linkedin.com/pub/mathilde-aglietta/31/2/6b6', :target => :_blank
+        .star-delimiter
 
+    .row
+      / .span2
       %article#martin.span4
-        .avatar-big
-        = I18n.t('corporate.team.martin_html')
-        %p.social-networks
-          = link_to 'mailto:martin.thibault@alpine-lab.com' do
-            %i.icon-envelope-alt.icon-2x
-          = link_to 'https://twitter.com/martin_thibault', :target => :_blank do
-            %i.icon-twitter.icon-2x
-          = link_to 'http://fr.linkedin.com/pub/martin-thibault/14/a4/99', :target => :_blank do
-            %i.icon-linkedin-sign.icon-2x
-        .clearfix
+        .avatar
+        %p= I18n.t('corporate.team.martin_html')
+        %ul.social-networks
+          %li= link_to 'Twitter', 'https://twitter.com/martin_thibault', :target => :_blank
+          %li= link_to 'LinkedIn', 'http://fr.linkedin.com/pub/martin-thibault/14/a4/99', :target => :_blank
+        .star-delimiter
 
       %article#steeve.span4
-        .avatar-big
-        = I18n.t('corporate.team.steeve_html')
-        %p.social-networks
-          = link_to 'mailto:steeve.galte@alpine-lab.com' do
-            %i.icon-envelope-alt.icon-2x
-          = link_to 'https://twitter.com/_schnek_', :target => :_blank do
-            %i.icon-twitter.icon-2x
-          = link_to 'fr.linkedin.com/pub/steeve-galté/4b/1b8/b65/', :target => :_blank do
-            %i.icon-linkedin-sign.icon-2x
-        .clearfix
+        .avatar
+        %p= I18n.t('corporate.team.steeve_html')
+        %ul.social-networks
+          %li= link_to 'Twitter', 'https://twitter.com/_schnek_', :target => :_blank
+          %li= link_to 'LinkedIn', 'fr.linkedin.com/pub/steeve-galté/4b/1b8/b65/', :target => :_blank
+        .star-delimiter
