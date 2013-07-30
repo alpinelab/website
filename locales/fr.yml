@@ -76,7 +76,7 @@ fr:
         details: Nous concevons des solutions esthétiques, valorisant l'identité visuelle de nos clients. Pour nous, l'expérience utilisateur doit avant tout permettre un accès rapide aux contenus recherchés.
         title: Le Design
       dev:
-        content: Nous développons en RubyOnRails, moderne et élégant.
+        content: Nous développons en RubyOnRails, moderne et élégant...
         details: '... et beaucoup d''autres technologies. Nos process de travail incluent du lean management, du TDD (test-driven development), de l''intégration continue (Travis) et un code versionné et organisé (GitHub + GitFlow).'
         title: Le Code
       title: Nos métiers

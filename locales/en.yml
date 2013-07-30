@@ -77,7 +77,7 @@ en:
         details: We build aesthetic solutions, which highlight our customers visual identity. From our point of view, user experience must facilitate quick access to the content you are looking for.
         title: Design
       dev:
-        content: We develop using modern and elegant RubyOnRails.
+        content: We develop using modern and elegant RubyOnRails...
         details: '... and a lot more technologies. Our workflow includes lean management, TDD (test-driven development), continuous integration (Travis) and versioned and organized code (GitHub + GitFlow).'
         title: Code
       title: What we do
