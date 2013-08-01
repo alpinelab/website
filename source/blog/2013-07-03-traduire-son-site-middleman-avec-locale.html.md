@@ -11,7 +11,7 @@ Pour traduire nos sites en Rails, on utilise pratiquement tout le temps le SaaS 
 
 Pour ceux qui ne connaissent pas, on en profite pour faire un peu de pub, parce que c'est [notre pote Chris](https://github.com/tigrish) qui le développe et que, nous même, on bosse de temps en temps sur ce projet. Sachez donc que c'est un service qui permet de ne plus se galérer avec les fichiers de traduction Yaml de Rails, mais plutôt d'utiliser cette superbe interface de traduction, directement depuis votre navigateur :
 
-!['Locale'](locale-01-interface.png "Locale")
+![Locale](locale-01-interface.png "Locale")
 
 Il y a plein d'autres fonctionnalités (commande de traductions, workflows, synchronisation, ...) que je vous laisse découvrir [en essayant par vous même](http://www.localeapp.com/users/sign_up).
 
@@ -39,7 +39,7 @@ Splendide.
 
 Une fois loggé(e) sur le site de Locale, cliquez sur le bouton "+" pour créer un projet.
 
-!['Locale - Add project'](locale-02-add-project.png "Locale - Add project")
+![Locale - Add project](locale-02-add-project.png "Locale - Add project")
 
 Après avoir renseigné quelques menues informations (nom du projet, langue par défaut, ...), le projet est créé et vous êtes redirigé(e) vers une modale qui vous explique quoi faire maintenant, c'est à dire l'ajout de la gem au `Gemfile` et le `bundle install` qu'on vient de faire juste avant, mais surtout, ça nous propose d'executer l'instruction suivante qui sert à lier notre projet Locale à notre projet Middleman :
 
@@ -94,17 +94,17 @@ Sur la page de son projet, il suffit de cliquer sur une des langues, pour tomber
 
 Cliquez donc sur le bouton "+" en haut pour en créer une nouvelle :
 
-!['Locale - Create translation'](locale-03-create-translation.png "Locale - Create translation")
+![Locale - Create translation](locale-03-create-translation.png "Locale - Create translation")
 
 Une modale vous permettra alors de renseigner le chemin de la traduction :
 
-!['Locale - Name new translation'](locale-04-create-translation-modal.png "Locale - Name new translation")
+![Locale - Name new translation](locale-04-create-translation-modal.png "Locale - Name new translation")
 
 Les chemins utilisent les points comme séparateurs, on crée donc, dans cet exemple, une traduction qui s'appelle `title` dans le le noeud `index`, ce qui correspond à la clef que l'on a précédemment passée à la fonction `t` du module Ruby `I18n` (faut suivre, hein...).
 
 Voilà, on peut maintenant remplir très intuitivement le contenu de cette traduction dans toutes les langues :
 
-!['Locale - Fill in a translation'](locale-05-fill-translation.png "Locale - Fill in a translation")
+![Locale - Fill in a translation](locale-05-fill-translation.png "Locale - Fill in a translation")
 
 Il ne reste alors plus qu'à ordonner à la gem de rappatrier les fichiers Yaml qui vont bien, et que Middleman saura lire en tapant dans la console :
 
