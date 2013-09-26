@@ -19,6 +19,11 @@
 
     = yield
 
+  #blog-btn
+    = link_to '/blog' do
+      = I18n.t('corporate.blog-btn')
+      %span.caret
+
   %footer
     .container
       %p.muted

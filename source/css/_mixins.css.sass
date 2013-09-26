@@ -75,6 +75,13 @@
   -o-transition: $transition
   transition: $transition
 
+@mixin transition-transform($transition-transform)
+  +transition(-webkit-transform $transition-transform)
+  +transition(-moz-transform $transition-transform)
+  +transition(-ms-transform $transition-transform)
+  +transition(-o-transform $transition-transform)
+  +transition(transform $transition-transform)
+
 @mixin animation-iteration-count($count)
   -webkit-animation-iteration-count: $count
   -moz-animation-iteration-count: $count
