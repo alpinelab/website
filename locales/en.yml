@@ -6,7 +6,7 @@ en:
       domain-dev: code
       rotating-words_js: '[''astounding'', ''high-performance'', ''on-demand'', ''innovative'', ''amazing'', ''responsive'']'
       tagline_html: We support your brand in its digital strategy<br> by building <span class="blue">websites that are <span class="rotating-words"></span></span>
-    blog-btn: Blog (fr)
+    blog-btn: Blog
     commitments:
       title: Our commitments
     common:
