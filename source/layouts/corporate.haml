@@ -16,6 +16,10 @@
           .brand{title: 'Alpine Lab'}
             = link_to '#about' do
               = image_tag('logo-alpinelab-mirroreffect.png', width: '132px', height: '133px')
+          #languages
+            - [:fr, :en].each do |lang|
+              %a.lang{id: lang, href: I18n.locale == lang ? nil : "/#{lang unless lang == :fr}"}
+                %img.flag{src: image_path("lang/#{lang}#{'_inactive' if lang == I18n.locale}.png")}
 
     = yield
 
