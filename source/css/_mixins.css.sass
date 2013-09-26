@@ -12,6 +12,13 @@
   -o-border-radius: $border-radius
   border-radius: $border-radius
 
+@mixin border-top-radius($border-top-radius)
+  -webkit-border-radius: $border-top-radius $border-top-radius 0 0
+  -moz-border-radius: $border-top-radius $border-top-radius 0 0
+  -ms-border-radius: $border-top-radius $border-top-radius 0 0
+  -o-border-radius: $border-top-radius $border-top-radius 0 0
+  border-radius: $border-top-radius $border-top-radius 0 0
+
 @mixin transform($transformation)
   -webkit-transform: $transformation
   -moz-transform: $transformation
