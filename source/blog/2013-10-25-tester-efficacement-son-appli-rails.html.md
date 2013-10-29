@@ -24,16 +24,23 @@ J'ai trouvé une réponse dans cette excellente conférence de Sandi Metz ["Magi
 
 Si vous ne la connaissez pas, jetez un coup d'oeil à son [CV](http://www.poodr.com/about/), à mon avis elle connait son boulot !
 
-Si vous n'êtes pas anglophobe je vous invite évidemment à regarder la conférence en entier pour avoir tous les détails, je voulais juste en résumer les concepts principaux:
+Et si vous n'êtes pas anglophobe je vous conseille vivement de regarder la conférence en entier pour avoir tous les détails, je voulais juste en résumer les concepts principaux:
+
+
+### Tester le comportement, non le fonctionnement
+
+C'est le principe de base pour écrire des tests exhaustif et surtout , non bloquants pour les évolutions futures. L'approche est basée sur la philosophie "orienté objet": on considère chaque entité de notre application (Modeles, Vues, Controlleurs...) comme une "boite noire".
+
+Le but va être de tester leur **comportement général**. On ne veut **surtout pas** tester ce qui se trouve à l'intérieur de la boite pour toutes les raisons évoquées en introduction, mais aussi parce que ces tests seraient liés à l'implémentation (= le fonctionnement). Cela signifie que lors d'une refactorisation, quand bien même le comportement du controlleur n'aurait pas changé, les tests planteraient lamentablement, faisant perdre énormément de temps puisque ça nécessiterait une réécriture des tests à chaque amélioration du code.
 
 
 ### Les messages sont la clé
 
-L'approche est basée sur la philosophie "orienté objet": on considère chaque entité de notre application (Modeles, Vues, Controlleurs...) comme une "boite noire" qui intéragit avec les autres au moyen de messages.
+Notre application est donc composée de "boites noires", mais pour fonctionner, elles doivent communiquer entre elles au moyen de messages. En concentrant nos tests sur ces messages , on peut donc spécifier et controller le comportement des briques de notre application.
 
 Ces messages peuvent être de deux types:
 
-- requête: demande d'information, par exemple recuperer un ID d'utilisateur dans la base de données.
+- requête: demande d'information, par exemple récupérer un ID d'utilisateur dans la base de données.
 - commande: déclenche une action externe, par exemple créer un utilisateur en base de donnée, envoyer un mail...
 
 Ils sont aussi de différentes sources:
@@ -42,14 +49,14 @@ Ils sont aussi de différentes sources:
 - sortants: messages envoyés
 - internes: messages entre les composants de notre entité
 
-Maintenant qu'on a fait la liste des 6 types de messages possibles, il ne reste plus qu'à les tester !
+On se retrouve donc seulement avec 6 types de messages différents
 
 
 ### le strict minimum
 
 On a déja pas mal réduit la liste des choses à tester en se concentrant uniquement sur les messages, mais est-ce utile de tous les tester ?
 
-On peut déja éliminer d'office les **messages internes**, puisque ceux ci sont liés à l'implémentation (à l'intérieur de la boite noire): Toujours tester le comportement, et non le fonctionnement.
+On peut déja éliminer d'office les **messages internes** (le plus souvent des appels aux fonctions privées de notre controlleur), puisque ceux ci sont liés à l'implémentation: Toujours tester le comportement, et non le fonctionnement.
 
 Pour des raisons similaires, on ne tiendra pas compte des **requêtes sortantes**: Ces requêtes n'ont aucun impact sur le reste de l'application, elle servent au fonctionnement de notre controlleur mais ne définissent pas son comportement.
 
@@ -59,6 +66,7 @@ Bien, on a maintenant notre réponse au "quoi tester?", on peut passer au "comme
 ### Le tableau magique
 
 Il ne nous reste plus que trois types de messages, ça veut dire qu'on aura que trois types de tests à implémenter !
+Sandy Metz résume ça très bien dans le tableau suivant:
 
 ![magic tricks of testing](magic-tricks-of-testing-minimalist-table.png)
 
