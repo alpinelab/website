@@ -27,7 +27,7 @@
 
     .author{id: (case current_page.data.authorName when 'Michael Baudino' then 'mike' when 'Thibault Dalban' then 'thib' end)}
       Écrit par
-      = link_to(current_page.data.authorName || 'Alpine Lab', current_page.data.authorUrl || 'https://plus.google.com/103306769618245403420', {:rel => 'author'})
+      = link_to(current_page.data.authorName || 'Alpine Lab', current_page.data.authorUrl || 'https://plus.google.com/+AlpineLab', {:rel => 'author'})
       .avatar
 
   %aside
