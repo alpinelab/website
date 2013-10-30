@@ -50,13 +50,9 @@ div,article
 #mike
   .avatar
     background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
-  a i.icon-phone:hover::after
-    content: "07.61.90.93.62"
 #thib
   .avatar
     background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
-  a i.icon-phone:hover::after
-    content: "06.66.07.58.83"
 #mathilde
   .avatar
     background-image: url('/img/photo-mathilde.jpg')
@@ -70,41 +66,28 @@ div,article
 .pagination-wrapper
   margin-top: 4em
 
-i
+i.fa
   margin-left: 0.5em
   color: $sw_light_gray
   +transition(color 0.5s)
-  &.icon-github, &.icon-github-sign
+  &.fa-github, &.fa-github-square
     &:hover
       color: $sw_dark_gray
-  &.icon-twitter, &.icon-twitter-sign
+  &.fa-twitter, &.fa-twitter-square
     &:hover
       color: $twitter
-  &.icon-facebook, &.icon-facebook-sign
+  &.fa-facebook, &.fa-facebook-square
     &:hover
       color: $facebook
-  &.icon-linkedin, &.icon-linkedin-sign
+  &.fa-linkedin, &.fa-linkedin-square
     &:hover
       color: $linkedin
-  &.icon-pinterest, &.icon-pinterest-sign
+  &.fa-pinterest, &.fa-pinterest-square
     &:hover
       color: $pinterest
-  &.icon-google-plus, &.icon-google-plus-sign
+  &.fa-google-plus, &.fa-google-plus-square
     &:hover
       color: $google_plus
-  &.icon-envelope, &.icon-envelope-sign
-    &:hover
-      color: $sw_dark_red
-  &.icon-globe, &.icon-globe-sign
-    &:hover
-      color: $sw_darkest_blue
-  &.icon-phone, &.icon-phone-sign
-    &:hover
-      color: $phone
-    &::after
-      margin-left: 1em
-      color: $sw_gray
-      font-size: 0.5em
 
 .caret // loosely based on Bootstrap implementation
   display: inline-block

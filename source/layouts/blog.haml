@@ -1,5 +1,6 @@
 - content_for :stylesheets do
   = stylesheet_link_tag 'blog'
+  = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css'
 
 - wrap_layout :layout do
   %meta{itemprop: "name", content: "Alpine Lab, blog technique"}
@@ -18,15 +19,17 @@
           %span.blog blog technique
       .social-networks
         = link_to 'https://github.com/alpinelab', :target => :_blank do
-          %i.icon-github
+          %i.fa.fa-github
+        = link_to 'http://www.linkedin.com/vsearch/p?company=%22Alpine+Lab%22', :target => :_blank do
+          %i.fa.fa-linkedin-square
         = link_to 'http://pinterest.com/AlpineLab/', :target => :_blank do
-          %i.icon-pinterest
+          %i.fa.fa-pinterest
         = link_to 'https://twitter.com/alpinelab', :target => :_blank do
-          %i.icon-twitter
+          %i.fa.fa-twitter
         = link_to 'https://plus.google.com/+AlpineLab', :target => :_blank do
-          %i.icon-google-plus-sign
+          %i.fa.fa-google-plus-square
         = link_to 'https://facebook.com/alpinelab', :target => :_blank do
-          %i.icon-facebook-sign
+          %i.fa.fa-facebook-square
     #main
       ~ yield
 

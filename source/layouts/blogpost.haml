@@ -19,7 +19,7 @@
       = current_page.date.strftime('%d/%m/%Y')
     %ul.tags
       %li
-        %i.icon-tags
+        %i.fa.fa-tags
       - current_page.tags.each do |tag|
         %li= link_to tag.capitalize, tag_path(tag)
 
