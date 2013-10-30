@@ -1,7 +1,7 @@
 !!! XML
 
 - base_url = "http://www.alpine-lab.com/"
-- pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) }
+- pages = sitemap.resources.find_all { |p| p.source_file.match(/\.html/) and not p.destination_path.match(/\/page\/[0-9]+/) }
 
 %urlset{xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9"}
   - pages.each do |p|
