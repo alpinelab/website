@@ -7,6 +7,8 @@ authorUrl: https://plus.google.com/106674357559734809246
 tags: middleman, fonts, icons
 ---
 
+_**UPDATE** Article mis à jour le 30/10/2013 pour intégrer la nouvelle convention de nommage de Font Awesome 4_
+
 Aujourd'hui, j'ai décidé d'intégrer les _font icons_ [Font-Awesome](http://fortawesome.github.com/Font-Awesome/) sur notre blog (qui est généré par [Middleman](http://middlemanapp.com/) comme expliqué dans [un precédent article]()).
 
 ### Historique
@@ -27,47 +29,26 @@ Voilà pour l'historique. Il existe maintenant pas mal de packs de _font icons_ 
 
 ### Intégration à Middleman
 
-Dans un premier temps, il faut télécharger les fonts. C'est pas trop compliqué, il y a un gros bouton jaune sur la [homepage](http://fortawesome.github.com/Font-Awesome). Je vous colle même le lien direct ici : http://fortawesome.github.com/Font-Awesome.
-
-Ce lien pointe vers un fichier ZIP, qui contient :
-* les fonts dans le sous-dossier `font`, à coller dans notre projet Middleman dans `source/fonts/` (répertoire à créer si nécessaire)
-* des docs dans le sous-dossier dossier `docs` (vous commencez à voir la logique ? attention, ça se complique après)
-* le code CSS nécessaire à charger ces fonts, en plein de versions :
-  * CSS
-  * CSS minifié
-  * CSS compatible IE7
-  * LESS
-  * LESS compatible IE7
-  * Sass
-  * Scss
-
-Sympa, non ? L'idéal, me direz-vous, serait d'utilisez directement la version minifiée, les plus radins d'entre-nous y verraient un bon moyen d'économiser des cycles de (pré-)processeur.
-C'est sans compter un léger détail de conventions : Bootstrap (avec lequel l'intégration de Font Awesome est optimisée) stocke les fichiers des polices dans `/font` alors que Middleman les stocke par défaut dans `/fonts`. Vous avez vu la différence ? Pas de `s` final chez Bootstrap. Donc la version minifiée ne réussira jamais à charger la police (et qui, honnêtement, à envie de mettre son nez dans du CSS minifié pour le modifier ?).
-
-Rénial. Mais qu'à celà ne tienne : on va utiliser la version Sass (parce que j'utilise déjà du Sass partout). On va donc extraire `sass/font-awesome.sass` du fichier ZIP pour aller le mettre dans `source/fonts/`.
-
-En ouvrant ce fichier, on voit que sa première vraie instruction (qui ne soit pas un commentaire) est la suivante :
-```sass
-$fontAwesomePath:   "../font" !default
+Avant, il y avait une feinte, pour adapter Font Awesome à Middleman, mais maintenant il y a [Bootstrap CDN](http://www.bootstrapcdn.com) qui nous sert directement le CSS nécessaire. Il suffit donc d'ajouter à ses pages une balise stylesheet :
+```html
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
 ```
 
-Vous avez deviné ? Exactement : il faut ajouter un `s` pour faire `../fonts` :
+Ou, en Sass :
+
 ```sass
-$fontAwesomePath:   "../fonts" !default
+= stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css'
 ```
 
-Maintenant, plus qu'à utiliser ce fichier. Pour ça, il suffit d'ajouter la ligne suivante à votre `default.css.sass` (ou autre fichier Sass) :
-```sass
-@import "font-awesome"
-```
+C'est tout (je vous laisse ajuster avec le numéro de version adéquate au moment où vous lirez cet article).
 
 ### Utilisation des font-icons
 
-OK, c'est bien beau, on a ajoutée une police bizarre à notre asset pipeline, maintenant quoi ?
+OK, c'est bien beau, on a ajoutée une police bizarre à notre header HTML, maintenant quoi ?
 
-Il suffit d'ajouter à une page la balise HTML `<i class="icon-github"></i>` pour faire apparaitre une petite icone GitHub. En Slim, ça donne ça :
+Il suffit d'ajouter à une page la balise HTML `<i class="fa fa-github"></i>` pour faire apparaitre une petite icone GitHub. En Slim, ça donne ça :
 ```slim
-i.icon-github
+i.fa.fa-github
 ```
 
 Ça, c'est quelques exemples :
@@ -76,16 +57,17 @@ i.icon-github
 
 Et comme c'est une balise HTML contenant du texte (dont les caractères sont des dessins, certe, mais du texte quand même), on peut lui appliquer les styles qu'on veut. Par exemple, on voudrait qu'elle soit rouge et qu'elle devienne bleue quand la souris de l'utilisateur est au-dessus ? Rien de plus simple ?
 ```sass
-i.icon-github
+i.fa.fa-github
   color: red
   &:hover
     color: blue
 ```
 
 Easy, non ? Et on peut aussi ajouter d'autres classes à la balise :
-* `icon-large`, `icon-2x`, `icon-3x` ou `icon-4x` indiquent la taille de l'icône
-* `icon-spin` la fait tourner sur elle-même
-* `icon-border` l'affiche dans un cadre gris
+* `fa-lg`, `fa-2x`, `fa-3x` ou `fa-4x` indiquent la taille de l'icône
+* `fa-spin` la fait tourner sur elle-même
+* `fa-rotate-*` et `fa-flip-*` l'inclinent ou la retournent
+* ... et bien d'autres encore que vous pouvez retrouver dans la [documentation de Font Awesome](http://fortawesome.github.io/Font-Awesome/examples)
 
 Et voilà, vous savez tout ! Essayez, jouez avec, c'est super facile.
 
