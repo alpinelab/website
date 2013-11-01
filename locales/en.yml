@@ -21,7 +21,7 @@ en:
       page-description: Web agency in Lyon, France, specialists of Ruby and Rails, creators of SkiWallet. Agile development, smart design for ergonomic and responsive web sites and applications.
     customers:
       title: Our customers
-    footer_html: <a rel="publisher" href="https://plus.google.com/103306769618245403420">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. All code is licensed under the <a href="http://opensource.org/licenses/MIT">MIT</a>.
+    footer_html: <a rel="publisher" href="https://plus.google.com/+AlpineLab">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. All code is licensed under the <a href="http://opensource.org/licenses/MIT">MIT</a>.
     header:
       about: about
       blog: blog

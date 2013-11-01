@@ -13,7 +13,7 @@
   /[if IE 9 ]    <html class="ie9" lang="en">
   /[if (gt IE 9)|!(IE)] <!--> <html lang="en">
 
-%head{prefix: "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"}
+%head{prefix: "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# http://ogp.me/ns/article#"}
   %title= yield_content(:title) || current_page.data.title
   %meta{:'http-equiv' => 'X-UA-Compatible', content: 'IE=edge,chrome=1'}
   %meta{charset:  'utf-8'                                                                                       }

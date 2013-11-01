@@ -3,7 +3,7 @@ title: SkiWallet à la conférence Blend
 date: 2013-09-24 22:45 CEST
 priority: 0.7
 authorName: Michael Baudino
-authorUrl: https://plus.google.com/106674357559734809246
+authorUrl: https://plus.google.com/+MichaelBaudino
 tags: conference, blend
 ---
 

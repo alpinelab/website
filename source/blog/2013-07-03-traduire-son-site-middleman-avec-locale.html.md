@@ -3,7 +3,7 @@ title: Traduire son site Middleman avec Locale
 date: 2013-07-03 01:53 CEST
 priority: 0.7
 authorName: Michael Baudino
-authorUrl: https://plus.google.com/106674357559734809246
+authorUrl: https://plus.google.com/+MichaelBaudino
 tags: middleman, locale, i18n
 ---
 

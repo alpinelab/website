@@ -3,7 +3,7 @@ title: Activer le SSL sur Heroku
 date: 2013-03-09 17:22 +01:00
 priority: 0.7
 authorName: Michael Baudino
-authorUrl: https://plus.google.com/106674357559734809246
+authorUrl: https://plus.google.com/+MichaelBaudino
 tags: ssl, heroku
 ---
 

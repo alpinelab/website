@@ -3,7 +3,7 @@ title: Utiliser RedCarpet et Rouge avec Middleman pour poster du code
 date: 2013-03-11 00:47 +01:00
 priority: 0.7
 authorName: Michael Baudino
-authorUrl: https://plus.google.com/106674357559734809246
+authorUrl: https://plus.google.com/+MichaelBaudino
 tags: middleman, redcarpet, rouge, markdown
 ---
 
