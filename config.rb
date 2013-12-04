@@ -116,8 +116,8 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = 'gh-pages'
-  deploy.branch = 'master'
+  deploy.remote = 'origin'
+  deploy.branch = 'gh-pages'
 end
 
 activate :livereload
