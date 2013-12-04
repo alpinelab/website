@@ -9,6 +9,13 @@ The website/blog itself is available at [www.alpine-lab.com](http://www.alpine-l
 Powered by [Middleman](http://middlemanapp.com).
 Precompiles [Haml](http://haml.info), [Sass](http://sass-lang.com), CoffeeScript, Markdown.
 
+### Bootstraping
+
+To configure LocaleApp, type the following command:
+```shell
+$ localeapp install --standalone your_api_key
+```
+
 #### License
 
 Written by [Michael Baudino](https://github.com/michaelbaudino) for [Alpine Lab](http://www.alpine-lab.com), 2013.
