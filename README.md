@@ -2,12 +2,19 @@
 
 This is the source code only.
 
-For the compiled, static, hosted on [github:pages](http://pages.github.com) site, see [alpinelab.github.com project](https://github.com/alpinelab/alpinelab.github.com).
+For the compiled, static, hosted on [github:pages](http://pages.github.com) site, see the [gh-pages branch](https://github.com/alpinelab/website/tree/gh-pages).
 
 The website/blog itself is available at [www.alpine-lab.com](http://www.alpine-lab.com).
 
 Powered by [Middleman](http://middlemanapp.com).
 Precompiles [Haml](http://haml.info), [Sass](http://sass-lang.com), CoffeeScript, Markdown.
+
+### Bootstraping
+
+To configure LocaleApp, type the following command:
+```shell
+$ localeapp install --standalone your_api_key
+```
 
 #### License
 

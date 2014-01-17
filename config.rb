@@ -96,7 +96,7 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Add asset fingerprinting to avoid cache issues
   activate :asset_hash
@@ -136,8 +136,8 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = 'gh-pages'
-  deploy.branch = 'master'
+  deploy.remote = 'origin'
+  deploy.branch = 'gh-pages'
 end
 
 activate :livereload
