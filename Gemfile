@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'middleman'
-gem 'activesupport', '~> 3.2.13'
+# gem 'activesupport', '~> 3.2.13'
 gem 'nokogiri'
 
 gem 'haml'
