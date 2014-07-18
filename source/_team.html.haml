@@ -2,7 +2,7 @@
   .container
     %h2= I18n.t('corporate.team.title')
     .row
-      %article#mike.col-sm-4
+      %article#mike.col-sm-4.col-sm-offset-1
         .avatar
         %p= I18n.t('corporate.team.mike_html')
         %ul.social-networks
@@ -11,7 +11,7 @@
           %li= link_to 'LinkedIn', 'https://linkedin.com/in/michaelbaudino', :target => :_blank
         .star-delimiter
 
-      %article#thibault.col-sm-4
+      %article#thibault.col-sm-4.col-sm-offset-2
         .avatar
         %p= I18n.t('corporate.team.thibault_html')
         %ul.social-networks
@@ -20,10 +20,21 @@
           %li= link_to 'LinkedIn', 'https://linkedin.com/pub/thibault-dalban/3/659/386', :target => :_blank
         .star-delimiter
 
-      %article#martin.col-sm-4
+    .row
+      %article#martin.col-sm-4.col-sm-offset-1
         .avatar
         %p= I18n.t('corporate.team.martin_html')
         %ul.social-networks
           %li= link_to 'Twitter', 'https://twitter.com/martin_thibault', :target => :_blank
           %li= link_to 'LinkedIn', 'https://linkedin.com/pub/martin-thibault/14/a4/99', :target => :_blank
         .star-delimiter
+
+      %article#mathilde.col-sm-4.col-sm-offset-2
+        .avatar
+        %p= I18n.t('corporate.team.mathilde_html')
+        %ul.social-networks
+          %li= link_to 'Twitter', 'https://twitter.com/M_Aglietta', :target => :_blank
+          %li= link_to 'Pinterest', 'http://pinterest.com/mwdk/', :target => :_blank
+          %li= link_to 'LinkedIn', 'https://linkedin.com/pub/mathilde-aglietta/31/2/6b6', :target => :_blank
+        .star-delimiter
+
