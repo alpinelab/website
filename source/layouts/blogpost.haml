@@ -7,7 +7,7 @@
   - current_page.tags.each do |tag|
     %meta{itemprop: "article:tag", content: tag}
 
-- wrap_layout :blog do
+= wrap_layout :blog do
   %article{itemscope: true, itemtype: "http://schema.org/BlogPosting"}
     %meta{itemprop: "description", content: Nokogiri::HTML(current_page.summary).text}
     %meta{itemprop: "url", content: "http://www.alpine-lab.com#{current_page.url}"}

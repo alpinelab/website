@@ -12,9 +12,9 @@
     %p= I18n.t('corporate.about.tagline_html')
     .star-delimiter
     .row
-      .span3
+      .col-sm-3
       - [:design, :dev, :consulting].each do |domain|
-        .span2
+        .col-sm-2
           .flip-container{ontouchstart: "this.classList.toggle('hover');"}
             .flipper
               .front.domain-badge{id: "badge-#{domain}"}

@@ -140,7 +140,9 @@ activate :deploy do |deploy|
   deploy.branch = 'gh-pages'
 end
 
-activate :livereload
+configure :development do
+ activate :livereload
+end
 
 activate :i18n, mount_at_root: :fr
 

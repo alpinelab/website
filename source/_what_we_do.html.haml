@@ -3,7 +3,7 @@
     %h2= I18n.t('corporate.what-we-do.title')
     .row
       - [:design, :dev, :consulting].each do |domain|
-        .span4.domain
+        .col-sm-4.domain
           %h3
             = I18n.t("corporate.what-we-do.#{domain}.title")
           %p.domain-content= I18n.t("corporate.what-we-do.#{domain}.content")

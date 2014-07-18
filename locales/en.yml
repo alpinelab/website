@@ -21,7 +21,7 @@ en:
       page-description: Web agency in Lyon, France, specialists of Ruby and Rails, creators of SkiWallet. Agile development, smart design for ergonomic and responsive web sites and applications.
     customers:
       title: Our customers
-    footer_html: "<a rel=\"publisher\" href=\"https://plus.google.com/+AlpineLab\">Alpine Lab</a> website is published under <a href=\"http://creativecommons.org/licenses/by/3.0/fr/\">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. All code is licensed under the <a href=\"http://opensource.org/licenses/MIT\">MIT</a>."
+    footer_html: <a rel="publisher" href="https://plus.google.com/+AlpineLab">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. All code is licensed under the <a href="http://opensource.org/licenses/MIT">MIT</a>.
     header:
       about: about
       blog: blog
@@ -62,11 +62,11 @@ en:
           <li>Integration with legacy visual identity</li>
         title: YoupiJob
     team:
-      martin_html: "<b>Martin Thibault</b>, interface designer and artistic director, trained at the <a href=\"http://www.esad-amiens.fr\" target=\"_blank\">Beaux Arts</a>, many years of experience in Paris and New York agencies."
-      mathilde_html: "<b>Mathilde Aglietta</b>, strategy and marketing consulting, <a href=\"http://www.grenoble-em.com\" target=\"_blank\">Grenoble EM</a> and <a href=\"http://www.stratecollege.fr\" target=\"_blank\">Strate Collège</a> alumni, junior mentor of <a href=\"http://www.webschoolfactory.fr\" target=\"_blank\">Web School Factory</a> hackatons, design mentor at <a href=\"http://simplon.co\" target=\"_blank\">Simplon</a>."
-      mike_html: "<b>Michael Baudino</b>, co-founder, passionate Ruby on Rails programmer, open-source contributor, president of <a href=\"http://www.lyonrb.fr\" target=\"_blank\">Lyon.rb</a>, <a href=\"http://www.epita.fr\" target=\"_blank\">EPITA</a> alumni, former <a href=\"http://www.acrelec.fr\" target=\"_blank\">Acrelec</a> group IT manager."
-      steeve_html: "<b>Steeve Galté</b>, self-taught web integrator and designer, state-graduated architech (<a href=\"http://www.montpellier.archi.fr\" target=\"_blank\">ENSAM</a>), co-founder of <a href=\"http://www.bloc-rendering.com\" target=\"_blank\">Bloc Rendering</a> 3D creation studio."
-      thibault_html: "<b>Thibault Dalban</b>, co-founder, multi-language developer (Java, PHP, Ruby/Rails, Ember.js), free-software advocate, <a href=\"http://www.epitech.eu\" target=\"_blank\">Epitech</a> alumni, former software architect at <a href=\"http://www.sopragroup.com\" target=\"_blank\">Sopra Group</a>."
+      martin_html: <b>Martin Thibault</b>, interface designer and artistic director, trained at the <a href="http://www.esad-amiens.fr" target="_blank">Beaux Arts</a>, many years of experience in Paris and New York agencies.
+      mathilde_html: <b>Mathilde Aglietta</b>, strategy and marketing consulting, <a href="http://www.grenoble-em.com" target="_blank">Grenoble EM</a> and <a href="http://www.stratecollege.fr" target="_blank">Strate Collège</a> alumni, junior mentor of <a href="http://www.webschoolfactory.fr" target="_blank">Web School Factory</a> hackatons, design mentor at <a href="http://simplon.co" target="_blank">Simplon</a>.
+      mike_html: <b>Michael Baudino</b>, co-founder, passionate Ruby/Rails programmer, open-source contributor, president of <a href="http://www.lyonrb.fr" target="_blank">Lyon.rb</a>, <a href="http://www.epita.fr" target="_blank">EPITA</a> alumni, former <a href="http://www.acrelec.fr" target="_blank">Acrelec</a> group IT manager.
+      steeve_html: <b>Steeve Galté</b>, self-taught web integrator and designer, state-graduated architech (<a href="http://www.montpellier.archi.fr" target="_blank">ENSAM</a>), co-founder of <a href="http://www.bloc-rendering.com" target="_blank">Bloc Rendering</a> 3D creation studio.
+      thibault_html: <b>Thibault Dalban</b>, co-founder, multi-language developer (Java, PHP, Ruby/Rails, Ember.js), free-software advocate, <a href="http://www.epitech.eu" target="_blank">Epitech</a> alumni, former software architect at <a href="http://www.sopragroup.com" target="_blank">Sopra Group</a>.
       title: Our team
     what-we-do:
       consulting:

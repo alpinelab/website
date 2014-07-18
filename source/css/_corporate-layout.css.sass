@@ -8,7 +8,7 @@ body
   font-smooth: always
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
   -webkit-text-stroke: 1px transparent
-  color: $defaultTextColor
+  color: $text-color
   text-align: center
 
 #wrap
@@ -18,10 +18,12 @@ body
   margin: 0 auto (-$footerHeight)
   padding-bottom: $footerHeight
   &>.container
-    padding-top: $navbarHeight
+    padding-top: $navbar-height
 
 header.navbar
   font-family: "SackersGothic", sans-serif
+  background: $navbar-default-bg
+  border-color: $navbar-default-border
   .container
     position: relative
     .brand
@@ -38,13 +40,15 @@ header.navbar
   height: $footerHeight
 
 footer
-  background-color: $grayLighter
+  background-color: $alGrayLighter
   line-height: $footerHeight
   p
     margin: 0
 
 .full-width
   width: 100%
+  padding-left: 0
+  padding-right: 0
 
 #blog-btn
   position: fixed

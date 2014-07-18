@@ -3,7 +3,6 @@
 source 'https://rubygems.org'
 
 gem 'middleman'
-# gem 'activesupport', '~> 3.2.13'
 gem 'nokogiri'
 
 gem 'haml'
@@ -20,6 +19,6 @@ gem 'redcarpet'
 gem 'rouge'
 gem 'middleman-rouge'
 
-gem 'bootstrap-sass', '~> 2.3'
+gem 'bootstrap-sass'
 
 gem 'localeapp'
