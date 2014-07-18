@@ -21,8 +21,8 @@ Déjà, il faut savoir que les numéros de version de Rails sont stockés dans l
 
 La façon bourrine de vérifier qu'on est dans un de ces deux cas est la suivante :
 ```ruby
-if (::Rails::VERSION::MAJOR == 4 && (::Rails::VERSION::MINOR > 0 or (::Rails::VERSION::MINOR == 0 && ::Rails::VERSION::TINY >= 2))) ||
-   (::Rails::VERSION::MAJOR == 3 && (::Rails::VERSION::MINOR > 2 or (::Rails::VERSION::MINOR == 2 && ::Rails::VERSION::TINY >= 16)))
+if (::Rails::VERSION::MAJOR == 4 && (::Rails::VERSION::MINOR > 0 || (::Rails::VERSION::MINOR == 0 && ::Rails::VERSION::TINY >= 2)))
+|| (::Rails::VERSION::MAJOR == 3 && (::Rails::VERSION::MINOR > 2 || (::Rails::VERSION::MINOR == 2 && ::Rails::VERSION::TINY >= 16)))
   # votre code va ici
 end
 ```
