@@ -38,7 +38,10 @@ fr:
           <li>Maintenance</li>
         title: AlmostBio
       locale:
-        description_html: |
+        description_html: |-
+          <li>Refonte du système de paiement</li>
+          <li>Support client et bugfixes</li>
+          <li>Maintenance de la gem</li>
           <li>Migration de MySQL à PostgreSQL</li>
           <li>Migration d'un serveur dédié à Heroku</li>
         title: Locale

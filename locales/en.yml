@@ -40,6 +40,9 @@ en:
         title: AlmostBio
       locale:
         description_html: |-
+          <li>Payment system refactoring</li>
+          <li>Customer support and bug fixes</li>
+          <li>Gem maintenance</li>
           <li>MySQL to PostgreSQL migration</li>
           <li>Dedicated server to Heroku migration</li>
         title: Locale
