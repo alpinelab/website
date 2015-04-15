@@ -1,0 +1,36 @@
+fr:
+  team:
+    title: "Notre équipe"
+    members: [
+      {
+        email: "michael.baudino@alpine-lab.com",
+        name: "Michael Baudino",
+        description: "Co-fondateur, développeur Ruby/Rails, président de Lyon.rb, organisateur de RailsGirls Lyon, membre du staff de RuLu et La Conf, diplômé EPITA, ancien DSI du groupe Acrelec.",
+        github: "michaelbaudino",
+        twitter: "michaelbaudino",
+        linkedin: "michaelbaudino"
+      },
+      {
+        email: "thibault.dalban@alpine-lab.com",
+        name: "Thibault Dalban",
+        description: "Co-fondateur, développeur polyglotte (Java, PHP, Ruby/Rails, Ember.js), défenseur du libre, diplômé Epitech, ancien architecte logiciel chez Sopra Group.",
+        github: "thibaultdalban",
+        twitter: "thibaultdalban",
+        linkedin: "thibaultdalban"
+      },
+      {
+        email: "yann@vaillant.im",
+        name: "Yann Vaillant",
+        description: "Co-fondateur, développeur polyglotte (Java, PHP, Ruby/Rails, Ember.js), défenseur du libre, diplômé Epitech, ancien architecte logiciel chez Sopra Group.",
+        github: "vayan",
+        twitter: "vayan"
+      },
+      {
+        email: "s.fertons@gmail.com",
+        name: "Sylvain Fertons",
+        description: "Développeur front-end et back-end (SASS, CoffeeScript, Backbone, AngularJS, Ruby/Rails), diplômé de l’HEAJ (Belgique), ancien architecte d’une superbe maquette de LEGOS City.",
+        github: "spharian",
+        twitter: "spharian",
+        linkedin: "sylvainfertons"
+      }
+    ]

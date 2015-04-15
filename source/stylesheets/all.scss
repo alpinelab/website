@@ -1,0 +1,27 @@
+@import "reset";
+@import "fonts";
+@import "bourbon";
+@import "mixins";
+@import "animations";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+// Colors
+$blue: #3a9ee3;
+$red: #e2545b;
+$greyBg: #efeff0;
+
+
+// Sizes
+$sectionsMargin: 70px;
+
+
+// Responsive
+$desktop: 1180px;
+$tabletLandscape: 1020px;
+$mobile: 620px;
+
+
+@import "main";
+@import "sections/*";

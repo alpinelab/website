@@ -1,0 +1,119 @@
+/**************************************************/
+/* INTRO
+/**************************************************/
+
+#intro {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    @include ratio(44%);
+
+    .parallax-bg {
+        background-image: url("../images/header-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        will-change: transform;
+        @include position(absolute, 0);
+    }
+
+    @include max-width($desktop) {
+        @include ratio(60%);
+    }
+
+    @include max-width($mobile) {
+        height: 100vh;
+    }
+
+    .container {
+        overflow: hidden;
+        text-align: center;
+        @include display(flex);
+        @include align-items(center);
+        @include flex-direction(column);
+        @include justify-content(center);
+    }
+
+    h2 {
+        font-size: 60px;
+        letter-spacing: 6px;
+        line-height: 1.3;
+        margin-bottom: 56px;
+        position: relative;
+        text-transform: uppercase;
+        @include monserratBold;
+
+        // Red line
+        &:after {
+            content: "";
+            background: $red;
+            width: 88px;
+            height: 2px;
+            margin-left: -44px;
+            @include position(absolute, null null -25px 50%);
+
+            @include max-width($mobile) {
+                left: 0;
+                margin: 0;
+            }
+        }
+
+        @include max-width(1540px) {
+            font-size: 41px;
+        }
+
+        @include max-width(890px) {
+            font-size: 31px;            
+        }
+
+        @include max-width(740px) {
+            margin-bottom: 0;      
+        }
+
+        @include max-width($mobile) {
+            font-size: 22px;
+            text-align: left;
+            max-width: 330px;
+            @include position(absolute, null null 24% 6%);
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        position: relative;
+
+        a {
+            color: $red;
+            position: relative;
+            
+            // Hover underline
+            &:after {
+                content: "";
+                background: $red;
+                height: 2px;
+                opacity: 0;
+                will-change: transform, opacity;
+                @include transition(all .2s ease-in-out);
+                @include transform(translateY(2px) scaleX(.95));
+                @include position(absolute, null 0 -2px 0);
+            }
+
+            &:hover {
+                color: #da3f47;
+
+                &:after {
+                    background: #da3f47;
+                    opacity: 1;
+                    @include transform(none);
+                }
+            }
+        }
+
+        @include max-width($desktop) {
+            font-size: 17px;
+        }
+
+        @include max-width(740px) {
+            display: none;           
+        }
+    }
+}

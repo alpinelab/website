@@ -1,4 +1,0 @@
-# robotstxt.org/
-
-User-agent: *
-Sitemap: http://www.alpine-lab.com/sitemap.xml

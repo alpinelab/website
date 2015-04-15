@@ -1,0 +1,23 @@
+/**************************************************/
+/* FONTS
+/**************************************************/
+
+@mixin lato {
+    font-family: "Lato", sans-serif;
+}
+@mixin latoLight {
+    @include lato;
+    font-weight: 300;
+}
+@mixin latoBold {
+    @include lato;
+    font-weight: 700;
+}
+
+@mixin montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+@mixin monserratBold {
+    @include montserrat;
+    font-weight: 700;
+}

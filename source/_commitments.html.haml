@@ -1,4 +1,0 @@
-%section#commitments
-  %h2= I18n.t('corporate.commitments.title')
-  - {opensource: 'http://opensource.org', simplon: 'http://simplon.co', lyonrb: 'http://lyonrb.fr', railsgirls: 'http://railsgirly.lyonrb.fr', rulu: 'http://rulu.eu', laconf: 'http://la-conf.org', webschoolfactory: 'http://www.webschoolfactory.fr'}.each do |commitment, url|
-    = link_to image_tag("commitment-#{commitment}.png"), url, {target: :_blank}
