@@ -1,0 +1,23 @@
+---
+priority: 0.3
+layout: blog
+---
+
+- content_for(:title, "#{tagname.capitalize} : tous les articles")
+- content_for(:description, "Liste des articles du blog contenant le mot-clef #{tagname.capitalize}")
+
+%h2 Articles en rapport avec #{tagname.capitalize}
+
+%ul.posts-listing
+  - page_articles.each do |article|
+    %li= link_to article.title, article.url
+
+
+%h3
+  Autres tags
+  %i.fa.fa-tags
+
+%ul.tags{style: "text-align: left; padding-top: 1em;"}
+  - blog.tags.each do |tag, articles|
+    - if tag != tagname
+      %li= link_to tag.capitalize, tag_path(tag)
