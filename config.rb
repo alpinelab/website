@@ -58,11 +58,12 @@ activate :directory_indexes
 Time.zone = 'Paris'
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def gravatar_for(email)
+    hash = Digest::MD5.hexdigest(email.chomp.downcase)
+    "http://www.gravatar.com/avatar/#{hash}?size=128"
+  end
+end
 
 set :css_dir, 'css'
 
