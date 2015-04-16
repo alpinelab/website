@@ -1,0 +1,16 @@
+%section#team.container
+  %h3.section__title.section__title--blue= I18n.t("corporate.team.title")
+  .row
+    - %w{mike thibault yann sylvain}.each do |member|
+      .col-3.col-3--centered
+        %img{src: gravatar_for(I18n.t("corporate.team.#{member}.email")), class: "avatar", alt: I18n.t("corporate.team.#{member}.email")}
+        %h4= I18n.t("corporate.team.#{member}.name")
+        %p= I18n.t("corporate.team.#{member}.html")
+        %ul.social-networks
+          %li
+            %a{href: "https://github.com/#{I18n.t("corporate.team.#{member}.github")}", target: "_blank"} Github
+          %li
+            %a{href: "https://twitter.com/#{I18n.t("corporate.team.#{member}.twitter")}", target: "_blank"} Twitter
+          - if I18n.t("corporate.team.#{member}").has_key?(:linkedin)
+            %li
+              %a{href: I18n.t("corporate.team.#{member}.linkedin"), target: "_blank"} LinkedIn

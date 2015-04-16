@@ -8,7 +8,12 @@ body {
 }
 
 a {
+    color: inherit;
     @include transition(all .2s ease-in-out);
+}
+
+p a:hover {
+    text-decoration: underline;
 }
 
 h4 {

@@ -1,0 +1,17 @@
+---
+title: Alpine Lab
+priority: 1.0
+layout: corporate
+---
+
+- content_for :description do
+  = I18n.t("corporate.common.page-description")
+
+= partial "header"
+
+%main{role: "main"}
+  = partial "intro"
+  = partial "commitments"
+  = partial "team"
+
+= partial "footer"

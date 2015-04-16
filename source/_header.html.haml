@@ -1,0 +1,11 @@
+%header#header
+  .container
+    %h1.header__logo.logo
+      %a{href: "#"}
+        = partial "svg-logo", locals: { width: 68, height: 24, strokeColor: "#fff" }
+        %span.name Alpinelab
+
+    %ul.header__languages
+      - [:fr, :en].each do |lang|
+        %li.header__languages-item
+          %a{class: ('active' if lang == I18n.locale), href: I18n.locale == lang ? nil : "/#{lang unless lang == :fr}"}= lang

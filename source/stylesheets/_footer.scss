@@ -215,6 +215,10 @@ svg {
         &:hover {
             opacity: 1;
         }
+
+        i {
+            display: none;
+        }
     }
 
     @include max-width($tabletLandscape) {

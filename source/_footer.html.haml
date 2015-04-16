@@ -1,0 +1,48 @@
+
+  
+%footer#footer
+  .row.container
+    .col-3
+      .footer__logo.logo.hidden
+        = partial "svg-logo", locals: { width: 137, height: 49, strokeColor: "#202023" }
+        %p.name= '<i class="alpine-word word">Alpine</i><i class="lab-word word">lab</i>'.html_safe
+
+    .col-3
+      %h5= I18n.t("corporate.footer.contact-title")
+      %ul.footer__address
+        = I18n.t("corporate.common.address_html")
+        %li
+          %a{href: "mailto:dahu@alpine-lab.com", class: "write-us"}
+            %span= I18n.t("corporate.common.hire-us_html")
+    
+    .col-3
+      %h5
+        %a{href: "#", target: "_blank"}= I18n.t("corporate.footer.articles-title")
+      %ul.footer__last-articles
+        %li
+          %a{href: "#"} Des helpers pour vérifier la version de Rails
+        %li
+          %a{href: "#"} SkiWallet à la conférence Blend
+        %li
+          %a{href: "#"} Installer git-flow dans une box Nitrous.IO
+        %li
+          %a{href: "#"} Git en couleurs
+        %li
+          %a{href: "#"} Traduire son site Middleman avec Locale
+        %li
+          %a{href: "#"} Générer ses vues Devise en Haml
+
+  .footer__bottom
+    .container
+      %ul.alpine-social-networks
+        %li
+          %a{href: "https://github.com/alpinelab", target: "_blank", class: "fa fa-github", title: "Github"}
+            %i Github
+        %li
+          %a{href: "https://twitter.com/alpinelab", target: "_blank", class: "fa fa-twitter", title: "Twitter"}
+            %i Twitter
+        %li
+          %a{href: "https://www.linkedin.com/company/alpine-lab", target: "_blank", class: "fa fa-linkedin-square", title: "LinkedIn"}
+            %i LinkedIn
+
+      %p.copyright= I18n.t("corporate.footer.copyright")

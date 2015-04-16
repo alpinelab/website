@@ -1,0 +1,18 @@
+%section#intro
+  .parallax-bg
+  .container  
+    %h2= I18n.t("corporate.header.main-title")
+    %h3= I18n.t("corporate.header.subtitle")
+
+%section#our-jobs.container
+  %h3.section__title= I18n.t("corporate.what-we-do.title")
+  .row
+    .col-3.col-3--centered
+      %h4= I18n.t("corporate.what-we-do.design.content")
+      %p= I18n.t("corporate.what-we-do.design.details")
+    .col-3.col-3--centered
+      %h4= I18n.t("corporate.what-we-do.dev.content")
+      %p= I18n.t("corporate.what-we-do.dev.details")
+    .col-3.col-3--centered
+      %h4= I18n.t("corporate.what-we-do.consulting.content")
+      %p= I18n.t("corporate.what-we-do.consulting.details")
