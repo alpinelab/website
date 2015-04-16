@@ -17,7 +17,7 @@
       %h5
         = link_to I18n.t("corporate.footer.articles-title"), '/blog'
       %ul.footer__last-articles
-        - page_articles[0..6].each do |article|
+        - page_articles[0..5].each do |article|
           %li= link_to article.title, article.url
 
   .footer__bottom

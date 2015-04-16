@@ -1,31 +1,14 @@
-!!!
-%html
-  %head
-    %title= current_page.data.title
+- content_for :stylesheets do
+  = stylesheet_link_tag "corporate"
 
-    %meta{charset: "UTF-8"}
-    %meta{name:     'description',    content: (yield_content(:description) || current_page.data.description)     }
-    %meta{name:     'viewport',       content: 'width=device-width, initial-scale=1.0, user-scalable=no'          }
-    %meta{property: 'og:title',       content: (yield_content(:title) || current_page.data.title)                 }
-    %meta{property: 'og:description', content: (yield_content(:description) || current_page.data.description)     }
-    %meta{property: 'og:locale',      content: "#{I18n.locale}_#{I18n.locale.upcase}"                             }
-    %meta{property: 'og:site_name',   content: 'Alpine Lab'                                                       }
-    %meta{property: 'og:url',         content: "http://www.alpine-lab.com#{current_page.url}"                     }
-    %meta{property: 'og:image',       content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}" }
-    %meta{property: 'og:type',        content: (yield_content(:og_type) || 'website')                             }
-    %meta{itemprop: 'name',        content: 'Alpine Lab'                                                          }
-    %meta{itemprop: 'description', content: (yield_content(:description) || current_page.data.description)        }
-    %meta{itemprop: 'url',         content: 'http://www.alpine-lab.com'                                           }
-    %meta{itemprop: 'inLanguage',  content: I18n.locale                                                           }
-    %meta{itemprop: 'image',       content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"    }
+- content_for :javascripts do
+  = javascript_include_tag "corporate"
 
-    %link{rel: 'icon', href: 'images/favicon.png' }
+= wrap_layout :layout do
+  %meta{itemprop: 'name',        content: 'Alpine Lab'                                                        }
+  %meta{itemprop: 'description', content: (yield_content(:description) || current_page.data.description)      }
+  %meta{itemprop: 'url',         content: 'http://www.alpine-lab.com'                                         }
+  %meta{itemprop: 'inLanguage',  content: I18n.locale                                                         }
+  %meta{itemprop: 'image',       content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"  }
 
-    %link{href: 'http://fonts.googleapis.com/css?family=Lato:300,400,700%7CMontserrat:400,700', rel: 'stylesheet', type: 'text/css'}
-
-    = stylesheet_link_tag "all"
-
-  %body{class: page_classes}
-    = yield
-  
-    = javascript_include_tag  "all"
+  = yield

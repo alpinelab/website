@@ -46,7 +46,7 @@ activate :blog do |blog|
   blog.prefix = 'blog'
   blog.permalink = ':title'
   blog.default_extension = '.md'
-  blog.layout = 'blogpost.haml'
+  blog.layout = 'blogpost.html.haml'
   blog.paginate = true
   blog.tag_template = 'blog/tag.html'
   blog.taglink = '/tags/:tag.html'

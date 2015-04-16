@@ -13,4 +13,6 @@ gem "redcarpet"
 gem "rouge"
 gem "middleman-rouge"
 
+gem "bootstrap-sass"
+
 gem "localeapp"

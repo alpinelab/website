@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title= current_page.data.title
+
+    %meta{charset: "UTF-8"}
+    %meta{name:     'description',    content: (yield_content(:description) || current_page.data.description)     }
+    %meta{name:     'viewport',       content: 'width=device-width, initial-scale=1.0, user-scalable=no'          }
+    %meta{property: 'og:title',       content: (yield_content(:title) || current_page.data.title)                 }
+    %meta{property: 'og:description', content: (yield_content(:description) || current_page.data.description)     }
+    %meta{property: 'og:locale',      content: "#{I18n.locale}_#{I18n.locale.upcase}"                             }
+    %meta{property: 'og:site_name',   content: 'Alpine Lab'                                                       }
+    %meta{property: 'og:url',         content: "http://www.alpine-lab.com#{current_page.url}"                     }
+    %meta{property: 'og:image',       content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}" }
+    %meta{property: 'og:type',        content: (yield_content(:og_type) || 'website')                             }
+
+    %link{rel: 'icon', href: 'images/favicon.png' }
+
+    %link{href: 'http://fonts.googleapis.com/css?family=Lato:300,400,700%7CMontserrat:400,700', rel: 'stylesheet', type: 'text/css'}
+    
+    = yield_content :stylesheets
+
+  %body{class: page_classes}
+    = yield
+  
+    = yield_content :javascripts

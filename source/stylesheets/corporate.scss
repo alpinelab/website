@@ -1,10 +1,11 @@
 @import "reset";
-@import "fonts";
 @import "bourbon";
-@import "mixins";
-@import "animations";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+@import "corporate/fonts";
+@import "corporate/mixins";
+@import "corporate/animations";
 
 
 // Colors
@@ -23,7 +24,7 @@ $tabletLandscape: 1020px;
 $mobile: 620px;
 
 
-@import "main";
-@import "sections/*";
-@import "header";
-@import "footer";
+@import "corporate/main";
+@import "corporate/sections/*";
+@import "corporate/header";
+@import "corporate/footer";
