@@ -17,7 +17,7 @@
     
     .col-3
       %h5
-        %a{href: "#", target: "_blank"}= I18n.t("corporate.footer.articles-title")
+        = link_to I18n.t("corporate.footer.articles-title"), '/blog'
       %ul.footer__last-articles
         %li
           %a{href: "#"} Des helpers pour vérifier la version de Rails
