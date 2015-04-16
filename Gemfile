@@ -1,8 +1,16 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+
+gem "nokogiri"
+gem "bourbon"
+gem "font-awesome-sass"
 
 gem "middleman", "~>3.3.10"
 gem "middleman-livereload", "~> 3.1.0"
-gem "bourbon"
+gem "middleman-blog"
 gem "jquery-middleman"
-gem 'font-awesome-sass'
+
+gem "redcarpet"
+gem "rouge"
+gem "middleman-rouge"
+
 gem "localeapp"

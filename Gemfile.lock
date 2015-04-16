@@ -7,6 +7,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
     bourbon (4.2.2)
       sass (~> 3.4)
       thor
@@ -77,6 +78,10 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-blog (3.5.3)
+      addressable (~> 2.3.5)
+      middleman-core (~> 3.2)
+      tzinfo (>= 0.3.0)
     middleman-core (3.3.10)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -94,6 +99,10 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-rouge (0.0.1)
+      middleman-core (>= 3.0.0)
+      redcarpet (>= 2.2.0)
+      rouge (>= 0.3.0)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -117,10 +126,12 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    redcarpet (3.2.3)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    rouge (1.8.0)
     sass (3.4.13)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -157,4 +168,8 @@ DEPENDENCIES
   jquery-middleman
   localeapp
   middleman (~> 3.3.10)
+  middleman-blog
   middleman-livereload (~> 3.1.0)
+  middleman-rouge
+  redcarpet
+  rouge
