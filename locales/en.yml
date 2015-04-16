@@ -32,9 +32,9 @@ en:
       about: about
       blog: blog
       main-title: |-
-        Simple and ergonomics
+        Simple and ergonomic
         <br>
-        individualized applications
+        individualized applications.
       projects: projects
       subtitle: Mainly powered by <a href="http://rubyonrails.org" target="_blank">Ruby on Rails</a>
       team: team
