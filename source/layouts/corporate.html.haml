@@ -13,6 +13,11 @@
     %meta{property: 'og:url',         content: "http://www.alpine-lab.com#{current_page.url}"                     }
     %meta{property: 'og:image',       content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}" }
     %meta{property: 'og:type',        content: (yield_content(:og_type) || 'website')                             }
+    %meta{itemprop: 'name',        content: 'Alpine Lab'                                                          }
+    %meta{itemprop: 'description', content: (yield_content(:description) || current_page.data.description)        }
+    %meta{itemprop: 'url',         content: 'http://www.alpine-lab.com'                                           }
+    %meta{itemprop: 'inLanguage',  content: I18n.locale                                                           }
+    %meta{itemprop: 'image',       content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"    }
 
     %link{rel: 'icon', href: 'images/favicon.png' }
 
