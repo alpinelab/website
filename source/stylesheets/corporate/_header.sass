@@ -25,6 +25,8 @@
 
 .header__logo
   float: left
+  position: relative
+  z-index: 100
   @include transform-origin(0 0)
   a
     color: #fff
@@ -33,6 +35,24 @@
     @include animation(logoApparition .9s $ease-out-circ)
     @include animation-fill-mode(forwards)
     @include animation-delay(.2s)
+
+.header__navigation
+  text-align: center
+  @include position(absolute, null 0 null 0)
+  @include max-width($tabletLandscape)
+    display: none
+
+.header__navigation-item
+  display: inline-block
+  &:not(:first-child)
+    margin-left: 40px
+  a
+    color: #fff
+    font-size: 13px
+    text-transform: uppercase
+    @include montserrat
+    &:not(.active)
+      opacity: .6
 
 .header__languages
   float: right

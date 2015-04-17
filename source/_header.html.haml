@@ -1,9 +1,15 @@
 %header#header
   .container
     %h1.header__logo.logo
-      %a{href: "#"}
+      %a.scroll-to{href: "#intro"}
         = partial "svg-logo", locals: { width: 68, height: 24, strokeColor: "#fff" }
         %span.name Alpinelab
+
+    %nav.header__navigation{role: "navigation"}
+      %ul.header__navigation-list
+        - get_menu_labels(%w{what-we-do commitments team footer}).each_with_index do |(key, label), index|
+          %li.header__navigation-item
+            %a.scroll-to{href: "##{key}"}= label
 
     %ul.header__languages
       - [:fr, :en].each do |lang|

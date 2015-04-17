@@ -6,13 +6,14 @@
         %p.name= '<i class="alpine-word word">Alpine</i><i class="lab-word word">lab</i>'.html_safe
 
     .col-3
-      %h5= I18n.t("corporate.footer.contact-title")
-      %ul.footer__address
-        = I18n.t("corporate.common.address_html")
-        %li
-          %a{href: "mailto:dahu@alpine-lab.com", class: "write-us"}
-            %span= I18n.t("corporate.common.hire-us_html")
-    
+      %article
+        %h5= I18n.t("corporate.footer.title")
+        %ul.footer__address
+          = I18n.t("corporate.common.address_html")
+          %li
+            %a{href: "mailto:dahu@alpine-lab.com", class: "write-us"}
+              %span= I18n.t("corporate.common.hire-us_html")
+
     .col-3
       %h5
         = link_to I18n.t("corporate.footer.articles-title"), '/blog'
