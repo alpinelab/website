@@ -1,0 +1,65 @@
+/**************************************************/
+/* HEADER
+/**************************************************/
+
+#header
+  height: 75px
+  z-index: 10
+  @include position(fixed, 0 0 null 0)
+  .container
+    padding-top: 25px
+  .scrolled &
+    &:before
+      @include transform(none)
+  // Blue rectangle
+  &:before
+    content: ""
+    background: $blue
+    will-change: transform
+    z-index: -1
+    @include position(absolute, 0)
+    @include transform(translateY(calc(-100% + 4px)))
+    @include transition(transform .5s $ease-out-expo)
+    @include max-width(700px)
+      @include transform(translateY(-100%))
+
+.header__logo
+  float: left
+  @include transform-origin(0 0)
+  a
+    color: #fff
+  .scrolled &
+    @include transform(translateY(-80px) scale(.8))
+    @include animation(logoApparition .9s $ease-out-circ)
+    @include animation-fill-mode(forwards)
+    @include animation-delay(.2s)
+
+.header__languages
+  float: right
+  margin-right: -5px
+
+.header__languages-item
+  float: left
+  padding: 0 10px
+  &:last-child
+    padding-right: 0
+  &:not(:last-child)
+    position: relative
+    // Separation line
+    &:after
+      content: ""
+      background: #fff
+      height: 16px
+      margin-top: -9px
+      opacity: .2
+      width: 1px
+      @include position(absolute, 50% -1px null null)
+  a
+    color: #fff
+    display: block
+    font-size: 11px
+    opacity: .47
+    padding: 5px
+    text-transform: uppercase
+    &.active
+      opacity: 1
