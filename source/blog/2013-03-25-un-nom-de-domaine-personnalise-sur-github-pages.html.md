@@ -27,7 +27,7 @@ Comme il est malin, il va créer automatiquement certaines redirections. Là, da
 Tout ce qu'il reste à faire, c'est quand même configurer votre serveur DNS pour que `www.alpine-lab.com` et `alpine-lab.com` soient redirigés vers l'adresse IP de GitHub Pages (entrée A dans votre config DNS) `204.232.175.78` ou vers le nom de domaine (entrée CNAME) `alpinelab.github.com`.
 
 Voilà à quoi ressemble la conf DNS, chez moi :
-![Configuration DNS qui pointe vers GitHub Pages](nom-de-domaine-personnalise-sur-github-pages-00-screen-eurodns.png "Configuration DNS qui pointe vers GitHub Pages")
+![Configuration DNS qui pointe vers GitHub Pages](blog/nom-de-domaine-personnalise-sur-github-pages-00-screen-eurodns.png "Configuration DNS qui pointe vers GitHub Pages")
 
 Voilà. C'est tout bon.
 

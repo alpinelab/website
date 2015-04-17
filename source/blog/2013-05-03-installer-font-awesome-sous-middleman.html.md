@@ -19,7 +19,7 @@ Dans la vie, il y a ce que j'appelle les _font nerds_. Ce sont généralement de
 
 Bref, un de ces joyeux lurons s'est dit un jour : au lieu de faire un 'A', puis un 'B', etc... si je faisais plutôt une maison, une flêche, un téléphone, etc... Ça a donné Wingdings. C'était un peu moche.
 
-![Wingdings](font-awesome-wingdings.gif "Wingdings")
+![Wingdings](blog/font-awesome-wingdings.gif "Wingdings")
 
 Plus tard, d'autres mecs - le W3C - ont travaillé pendant des années pour nous pondre notamment le langage CSS et ses possibilités de travailler les polices facilement (changer les couleurs, tailles, ombres, orientations, etc...).
 
@@ -53,7 +53,7 @@ i.fa.fa-github
 
 Ça, c'est quelques exemples :
 
-![Exemple d'icones Font Awesome](font-awesome-examples.png "Exemple d'icones Font Awesome")
+![Exemple d'icones Font Awesome](blog/font-awesome-examples.png "Exemple d'icones Font Awesome")
 
 Et comme c'est une balise HTML contenant du texte (dont les caractères sont des dessins, certe, mais du texte quand même), on peut lui appliquer les styles qu'on veut. Par exemple, on voudrait qu'elle soit rouge et qu'elle devienne bleue quand la souris de l'utilisateur est au-dessus ? Rien de plus simple ?
 ```sass

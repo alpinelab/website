@@ -17,7 +17,7 @@ Il faut en premier lieu s'inscrire sur [Coveralls.io](https://coveralls.io), mai
 
 Coveralls vous demandera ensuite sur quels repositories vous voulez l'activer avec des petits boutons on/off très intuitifs (comme souvent, c'est gratuit pour les projets open-source, payant pour les projets privés) :
 
-![Liste de vos projets qui utilisent Coveralls](coveralls-repositories.png "Liste de vos projets qui utilisent Coveralls")
+![Liste de vos projets qui utilisent Coveralls](blog/coveralls-repositories.png "Liste de vos projets qui utilisent Coveralls")
 
 ### Installation
 
@@ -52,15 +52,15 @@ Si vous n'utilisez pas de service d'intégration continue, je vous conseille de 
 
 Sur le site de Coveralls, vous pouvez donc voir un résumé de votre projet, build par build :
 
-![Un projet sur Coveralls](coveralls-project.png "Un projet sur Coveralls")
+![Un projet sur Coveralls](blog/coveralls-project.png "Un projet sur Coveralls")
 
 Pour chaque build, un résumé fichier par fichier :
 
-![Un build sur Coveralls](coveralls-build.png "Un build sur Coveralls")
+![Un build sur Coveralls](blog/coveralls-build.png "Un build sur Coveralls")
 
 Et enfin, le truc le plus utile et productif : pour chaque fichier, le détail de couverture ligne par ligne :
 
-![Un fichier sur Coveralls](coveralls-file.png "Un fichier sur Coveralls")
+![Un fichier sur Coveralls](blog/coveralls-file.png "Un fichier sur Coveralls")
 
 Là, par exemple, on voit que je n'ai pas écris de test pour la méthode `download_best_subtitle`, ce que je peux donc m'empresser d'aller faire.
 
@@ -68,7 +68,7 @@ Là, par exemple, on voit que je n'ai pas écris de test pour la méthode `downl
 
 On peut même récupérer le code pour insérer un badge dans notre README, pour avoir la classe américaine sur GitHub :
 
-![Badge Coveralls sur GitHub](coveralls-badge.png "Badge Coveralls sur GitHub")
+![Badge Coveralls sur GitHub](blog/coveralls-badge.png "Badge Coveralls sur GitHub")
 
 #### Sources
 

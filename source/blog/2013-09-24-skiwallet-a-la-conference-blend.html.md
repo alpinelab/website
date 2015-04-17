@@ -11,7 +11,7 @@ Juste un petit mot pour vous dire qu'on a été selectionnés pour présenter [S
 
 Voilà, on est super contents, d'une parce qu'on a été pris parmis une centaine de projets, de deux parce qu'il y a un [lineup interminable](http://www.blendconference.com/speakers) et de trois parce qu'on espère rencontrer un paquet de gens motivés.
 
-![Blend Web Mix](blend-conf.png)
+![Blend Web Mix](blog/blend-conf.png)
 
 En plus, on est aux côtés des copains de [Simplauto](http://www.simplauto.com) et de [Tilkee](http://www.tilkee.com) qui vont essayer de nous mettre la patée, mais on ne va pas se laisser faire :-)
 

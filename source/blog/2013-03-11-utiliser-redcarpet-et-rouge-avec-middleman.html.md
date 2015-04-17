@@ -70,7 +70,7 @@ pre
 
 On doit donc obtenir un truc comme ça :
 
-![RedCarpet avec Middleman](middleman-redcarpet.png "RedCarpet avec Middleman")
+![RedCarpet avec Middleman](blog/middleman-redcarpet.png "RedCarpet avec Middleman")
 
 ### Coloration syntaxique avec Rouge
 
@@ -127,7 +127,7 @@ Pensez quand même à importer ce nouveau fichier, en ajoutant la ligne suivante
 
 Voilà, en relançant éventuellement votre serveur Middleman et en rechargeant votre page de navigateur, vous devez obtenir à peu près ça :
 
-![RedCarpet et Rouge avec Middleman](middleman-redcarpet-rouge.png "RedCarpet et Rouge avec Middleman")
+![RedCarpet et Rouge avec Middleman](blog/middleman-redcarpet-rouge.png "RedCarpet et Rouge avec Middleman")
 
 #### Sources
 * [Cette issue](https://github.com/middleman/middleman/issues/577) de Middleman

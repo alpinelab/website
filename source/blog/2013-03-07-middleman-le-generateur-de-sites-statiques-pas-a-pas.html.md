@@ -64,7 +64,7 @@ $ bundle exec middleman server
 
 Et en pointant son navigateur vers [http://localhost:4567](http://localhost:4567), on doit avoir ça :
 
-![Middleman Hello World](middleman-01-hello-world.png "Hello World Middleman")
+![Middleman Hello World](blog/middleman-01-hello-world.png "Hello World Middleman")
 
 
 
