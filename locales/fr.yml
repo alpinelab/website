@@ -31,12 +31,9 @@ fr:
     header:
       about: "à propos"
       blog: blog
-      main-title: |-
-        Applications personnalisées,
-        <br>
-        simples et ergonomiques.
+      main-title: Nous sommes développeurs <span>Ruby/Rails</span>
       projects: réalisations
-      subtitle: Solutions principalement développées sous <a href="http://rubyonrails.org" target="_blank">Ruby on Rails</a>
+      subtitle: Agence web orientée startups et open-source.
       team: "équipe"
       what-we-do: métiers
     projects:
