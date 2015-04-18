@@ -1,11 +1,5 @@
 fr:
   corporate:
-    about:
-      domain-consulting: conseil
-      domain-design: design
-      domain-dev: code
-      rotating-words_js: "['étonnants', 'performants', 'sur-mesure', 'innovants', 'époustouflants', 'responsifs']"
-      tagline_html: Nous accompagnons votre marque dans sa stratégie digitale<br> en créant <span class="blue">des sites web <span class="rotating-words"></span></span>
     blog-btn: Blog
     commitments:
       title: Nos engagements
@@ -21,31 +15,17 @@ fr:
         </li>
       email-subject: Faites-moi quelque chose de chouette !
       hire-us_html: "écrivez-nous"
-      page-description: Agence web à Lyon, spécialisée Ruby et Rails, créateurs de SkiWallet. Développement agile, création de sites et applications web ergonomiques et responsives.
+      page-description: Agence web Ruby/Rails orientée développement agile, startups, applications web complexes et open-source à Lyon.
     customers:
-      title: Nos clients
+      title: Nos projets
     footer:
       articles-title: Derniers articles
       copyright: Le site d'<a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> est publié sous license <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>Le code est sous licence <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
       title: Nous contacter
     header:
-      about: "à propos"
-      blog: blog
       main-title: Nous sommes développeurs <span>Ruby/Rails</span>
-      projects: réalisations
-      subtitle: Agence web orientée startups et open-source.
-      team: "équipe"
-      what-we-do: métiers
+      subtitle: agence web orientée startups et open-source
     projects:
-      almostbio:
-        description_html: |-
-          <li>Branding</li>
-          <li>Direction artistique & design graphique</li>
-          <li>Interaction design & prototypage</li>
-          <li>Développement front et back-end</li>
-          <li>Développement produit</li>
-          <li>Maintenance</li>
-        title: AlmostBio
       locale:
         description_html: |-
           <li>Refonte du système de paiement</li>
@@ -64,34 +44,23 @@ fr:
           <li>Développement produit</li>
         title: SkiWallet
       title: Nos réalisations
-      youpijob:
-        description_html: |-
-          <li>Système de paiement 1-click</li>
-          <li>Système de cagnottes</li>
-          <li>Système de coupons</li>
-          <li>Développement front et back-end</li>
-          <li>Intégration à la charte graphique existante</li>
-        title: YoupiJob
     team:
       mike:
         email: michael.baudino@alpine-lab.com
         github: michaelbaudino
         html: Co-fondateur, développeur Ruby/Rails, président de <a href="http://www.lyonrb.fr" target="_blank">Lyon.rb</a>, organisateur de <a href="http://railsgirly.lyonrb.fr" target="_blank">RailsGirls&nbsp;Lyon</a>, membre du staff de <a href="http://rulu.eu" target="_blank">RuLu</a> et <a href="http://la-conf.org" target="_blank">La&nbsp;Conf</a>, diplômé <a href="http://www.epita.fr" target="_blank">EPITA</a>, ancien DSI du groupe <a href="http://www.acrelec.fr" target="_blank">Acrelec</a>.
-        linkedin: https://linkedin.com/in/michaelbaudino
         name: Michael Baudino
         twitter: michaelbaudino
       sylvain:
         email: s.fertons@gmail.com
         github: spharian
         html: Développeur front-end et back-end (SASS, CoffeeScript, Backbone, AngularJS, Ruby/Rails), diplômé de l'<a href="http://www.heaj.be" target="_blank">HEAJ</a> (Belgique), ancien architecte d'une superbe maquette de LEGOS City.
-        linkedin: https://www.linkedin.com/in/sylvainfertons
         name: Sylvain Fertons
         twitter: spharian
       thibault:
         email: thibault.dalban@alpine-lab.com
         github: thibaultdalban
         html: Co-fondateur, développeur polyglotte (Java, PHP, Ruby/Rails, Ember.js), défenseur du libre, diplômé <a href="http://www.epitech.eu" target="_blank">Epitech</a>, ancien architecte logiciel chez <a href="http://www.sopragroup.com" target="_blank">Sopra&nbsp;Group</a>.
-        linkedin: https://linkedin.com/pub/thibault-dalban/3/659/386
         name: Thibault Dalban
         twitter: kh_thib
       title: Notre équipe
@@ -102,16 +71,16 @@ fr:
         name: Yann Vaillant
         twitter: vayan
     what-we-do:
-      consulting:
-        content: Nous élaborons et implémentons des stratégies digitales globales.
-        details: 'Pour concevoir les solutions les mieux adaptées, notre approche Design Thinking est intégrée de manière transversale et inspirée par la veille : technologique, stratégique, design, tendances, usages.'
-        title: Le Conseil
-      design:
-        content: Nos solutions sont fluides, ergonomiques et efficaces.
-        details: Nous concevons des solutions esthétiques, valorisant l'identité visuelle de nos clients. Pour nous, l'expérience utilisateur doit avant tout permettre un accès rapide aux contenus recherchés.
-        title: Le Design
-      dev:
-        content: Nous développons en Ruby on Rails, moderne et élégant...
-        details: "... et beaucoup d'autres technologies. Nos process de travail incluent du lean management, du TDD (test-driven development), de l'intégration continue (Travis) et un code versionné et organisé (GitHub + GitFlow)."
+      enterprises:
+        details: nous exploitons de grosses applications web en se basant sur des technologies PaaS stables et eprouvées pour des mises en productions sereines et des performances optimales
+        tags: fiabilité, performance, stabilité
+        title: Entreprises
+      quality:
+        details: notre code est versionné (git), organisé (gitflow), testé (rspec, capybara) au sein d'un process d'intégration continue (Travis, Codeship), d'audit de qualité et de sécurité continu (Codeclimate, code reviews) et de déployement continu (Heroku)
+        tags: "élégant, testé, maintenable"
         title: Le Code
-      title: Nos métiers
+      startups:
+        details: nous contruisons des MVPs pour les startups en itérant rapidement, en vous aidant à faire les choix technologiques adaptés pour un prototypage et un mise en ligne la plus rapide possible
+        tags: MVPs, itérations rapides
+        title: Startups
+      title: Nos atouts

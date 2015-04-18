@@ -1,7 +1,8 @@
 %section#what-we-do.container
   %h3.section__title= I18n.t("corporate.what-we-do.title")
   .row
-    - %w{design dev consulting}.each do |domain|
+    - %w{enterprises startups quality}.each do |domain|
       .col-3.col-3--centered
-        %h4= I18n.t("corporate.what-we-do.#{domain}.content")
-        %p= I18n.t("corporate.what-we-do.#{domain}.details")
+        %h4= I18n.t("corporate.what-we-do.#{domain}.title")
+        %p.tags= I18n.t("corporate.what-we-do.#{domain}.tags")
+        %p.details= I18n.t("corporate.what-we-do.#{domain}.details")
