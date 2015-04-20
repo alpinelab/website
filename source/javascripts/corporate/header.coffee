@@ -47,8 +47,8 @@ class Corporate.Header
 
   scrollTo: (e) =>
     e.preventDefault()
-    $link = $(e.currentTarget)
-    target = if $link.attr('href') then $link.attr('href') else $link.data('scroll-to')
+    $scrollEl = $(e.currentTarget)
+    target = $scrollEl.attr('href') || $scrollEl.data('scroll-to')
     targetOffsetTop = @sections[target.replace('#', '')].offsetTop
     @autoScrolling = true
 
