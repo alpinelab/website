@@ -2,8 +2,8 @@ $window = $(window)
 autoScrolling = false
 
 reachedBottom = ->
-  $window.scrollTop() >= maxScroll()
-
+  $(window).scrollTop() >= maxScroll()
+  
 maxScroll = ->
   $(document).height() - $window.height()
 
@@ -15,7 +15,7 @@ updateNavigation = ->
     $this = $(this)
     sectionOffsetTop = $this.offset().top
 
-    if (scrollTop >= sectionOffsetTop && scrollTop <= $this.outerHeight() + $this.offset().top)
+    if (scrollTop >= sectionOffsetTop && scrollTop <= $this.outerHeight() + $this.offset().top || reachedBottom())
       current = if reachedBottom() then 'footer' else $this.attr('id')
       $('.header__navigation-item a').removeClass('active')
       $('.header__navigation-item a[href=#' + current + ']').addClass('active')
