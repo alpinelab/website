@@ -11,4 +11,3 @@ $ ->
   FastClick.attach(document.body)
   new Corporate.Header
   new Corporate.Footer
-  
