@@ -1,45 +1,63 @@
-$window = $(window)
-autoScrolling = false
+class Corporate.Header
+  constructor: ->
+    @window = $(window)
+    @autoScrolling = false
+    @sections = []
+    @triggerBlueBgOffset = 40
+    @headerHeight = $('#header').outerHeight()
 
-reachedBottom = ->
-  $(window).scrollTop() >= maxScroll()
-  
-maxScroll = ->
-  $(document).height() - $window.height()
+    @getSectionsData()
+    @bindEvents()
 
-updateNavigation = ->
-  wHeight = $window.height()
-  scrollTop = $window.scrollTop() + $('#header').outerHeight()
+  bindEvents: ->
+    @window.scroll @scroll
+    @window.resize @getSectionsData
+    $('.scroll-to').click @scrollTo
 
-  $('section').each ->
-    $this = $(this)
-    sectionOffsetTop = $this.offset().top
+  reachedTop: (section, sectionData) ->
+    scrollTopWithHeader = @scrollTop + @headerHeight
+    scrollTopWithHeader >= sectionData.offsetTop && scrollTopWithHeader <= sectionData.height + sectionData.offsetTop
 
-    if (scrollTop >= sectionOffsetTop && scrollTop <= $this.outerHeight() + $this.offset().top || reachedBottom())
-      current = if reachedBottom() then 'footer' else $this.attr('id')
-      $('.header__navigation-item a').removeClass('active')
-      $('.header__navigation-item a[href=#' + current + ']').addClass('active')
+  reachedBottom: ->
+    @scrollTop >= @maxScroll()
 
-$window.on 'scroll', ->
-  $this = $(this)
-  $body = $('body')
-  scrollTop = $this.scrollTop()
-  scale = Math.max(1, 1 + (scrollTop / 6000))
+  maxScroll: ->
+    $(document).height() - @window.height()
 
-  if scrollTop >= 40 then $body.addClass('scrolled') else $body.removeClass('scrolled')
-  $('.parallax-bg').css('transform', 'scale(' + scale + ')') if scrollTop <= $('#intro').outerHeight()
-  updateNavigation() unless autoScrolling
+  getSectionsData: =>
+    $('section, #footer').each (index, section) =>
+      $section = $(section)
+      @sections[$section.attr('id')] = 
+        offsetTop: $section.offset().top
+        height: $section.outerHeight()
 
-$('.scroll-to').on 'click', (e) ->
-  e.preventDefault()
-  $this = $(this)
-  target = if $this.attr('href') then $this.attr('href') else $this.data('scroll-to')
+  updateNavigation: =>
+    for section, sectionData of @sections
+      if (@reachedTop(section, sectionData) || @reachedBottom())
+        current = if @reachedBottom() then 'footer' else section
+        $('.header__navigation-item a').removeClass('active')
+        $('.header__navigation-item a[href=#' + current + ']').addClass('active')
 
-  autoScrolling = true
-  TweenMax.to window, .7,
-    scrollTo:
-      y: Math.min(maxScroll(), $(target).offset().top - $('#header').outerHeight() + 1)
-      autoKill: false
-    onComplete: ->
-      updateNavigation()
-      autoScrolling = false
+  scroll: =>
+    @scrollTop = @window.scrollTop()
+    $body = $('body')
+    scale = Math.max(1, 1 + (@scrollTop / 6000))
+
+    if @scrollTop >= @triggerBlueBgOffset then $body.addClass('scrolled') else $body.removeClass('scrolled')
+    $('.parallax-bg').css('transform', 'scale(' + scale + ')') if @scrollTop <= $('#intro').outerHeight()
+    @updateNavigation() unless @autoScrolling
+
+  scrollTo: (e) =>
+    e.preventDefault()
+    $link = $(e.currentTarget)
+    target = if $link.attr('href') then $link.attr('href') else $link.data('scroll-to')
+    targetOffsetTop = @sections[target.replace('#', '')].offsetTop
+    @autoScrolling = true
+
+    TweenMax.to window, .7,
+      scrollTo:
+        y: Math.min(@maxScroll(), targetOffsetTop - @headerHeight + 1)
+        autoKill: false
+      onComplete: =>
+        @updateNavigation()
+        @autoScrolling = false
