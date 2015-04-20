@@ -18,11 +18,9 @@ class Corporate.Header
     scrollTopWithHeader = @scrollTop + @headerHeight
     scrollTopWithHeader >= sectionData.offsetTop && scrollTopWithHeader <= sectionData.height + sectionData.offsetTop
 
-  scrollReachedBottom: ->
-    @scrollTop >= @maxScroll()
+  scrollReachedBottom: -> @scrollTop >= @maxScroll()
 
-  maxScroll: ->
-    $(document).height() - @window.height()
+  maxScroll: -> $(document).height() - @window.height()
 
   getSectionsData: =>
     $('section, #footer').each (index, section) =>
