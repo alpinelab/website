@@ -1,11 +1,11 @@
 %footer#footer
   .row.container
-    .col-3
+    .col-3.col
       .footer__logo.logo.hidden
         = partial "svg-logo", locals: { width: 137, height: 49, strokeColor: "#202023" }
         %p.name= '<i class="alpine-word word">Alpine</i><i class="lab-word word">lab</i>'.html_safe
 
-    .col-3
+    .col-3.col
       %article
         %h5= I18n.t("corporate.footer.title")
         %ul.footer__address
@@ -14,7 +14,7 @@
             %a{href: "mailto:dahu@alpine-lab.com", class: "write-us"}
               %span= I18n.t("corporate.common.hire-us_html")
 
-    .col-3
+    .col-3.col
       %h5
         = link_to I18n.t("corporate.footer.articles-title"), '/blog'
       %ul.footer__last-articles

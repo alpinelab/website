@@ -79,6 +79,12 @@ h4
   @include flex-wrap(wrap)
   @include justify-content(space-between)
 
+.col--centered
+  text-align: center
+
+.col-2
+  width: 45%
+
 .col-3
   margin-bottom: $sectionsMargin
   width: (90% / 3)
@@ -90,11 +96,11 @@ h4
     &:nth-child(4)
       margin-left: 0
       margin-right: 0
-  @include max-width(560px)
+  @include max-width($mobile)
     margin-bottom: 42px
-    width: 100%
     &:last-child
       margin-bottom: 60px
 
-.col-3--centered
-  text-align: center
+.col
+  @include max-width($mobile)
+    width: 100%

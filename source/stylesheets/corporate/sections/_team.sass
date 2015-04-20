@@ -2,6 +2,16 @@
 /* TEAM
 /**************************************************/
 
+#team
+  .col-2
+    margin-bottom: 40px
+    &:nth-last-child(-n+2)
+      margin-bottom: $sectionsMargin
+    @include max-width($mobile)
+      margin-bottom: 30px !important
+  @include max-width($mobile)
+    margin-bottom: 20px
+
 .avatar
   width: 67px
   margin-bottom: 8px

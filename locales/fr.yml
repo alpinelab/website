@@ -73,14 +73,11 @@ fr:
     what-we-do:
       enterprises:
         details: Nous exploitons de grosses <strong>applications web</strong> en se basant sur des technologies <strong>PaaS</strong> stables et éprouvées pour des mises en productions sereines et des performances optimales.
-        tags: fiabilité, performance, stabilité
         title: Entreprises
       quality:
-        details: Notre code est <strong>versionné</strong> (git), </strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit de qualité et de sécurité continue</strong> (Codeclimate, code reviews) et de <strong>déployement continu</strong> (Heroku).
-        tags: "élégant, testé, maintenable"
+        details: Notre code est <strong>versionné</strong> (git), </strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit continu</strong> (Codeclimate, code reviews) et de <strong>déployement continu</strong> (Heroku).
         title: Le Code
       startups:
         details: Nous contruisons des <strong>MVPs</strong> pour les startups en itérant rapidement, en vous aidant à faire les choix technologiques adaptés pour un prototypage et un mise en ligne la plus rapide possible.
-        tags: MVPs, itérations rapides
         title: Startups
       title: Nos atouts
