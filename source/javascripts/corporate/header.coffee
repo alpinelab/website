@@ -33,7 +33,7 @@ class Corporate.Header
 
   updateNavigation: =>
     for section, sectionData of @sections
-      if (@sectionReachedTop(section, sectionData) || @scrollReachedBottom())
+      if @sectionReachedTop(section, sectionData) || @scrollReachedBottom()
         current = if @scrollReachedBottom() then 'footer' else section
         $('.header__navigation-item a').removeClass('active')
         $('.header__navigation-item a[href=#' + current + ']').addClass('active')
