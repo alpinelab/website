@@ -14,11 +14,11 @@ class Corporate.Header
     @window.resize @getSectionsData
     $('.scroll-to').click @scrollTo
 
-  reachedTop: (section, sectionData) ->
+  sectionReachedTop: (section, sectionData) ->
     scrollTopWithHeader = @scrollTop + @headerHeight
     scrollTopWithHeader >= sectionData.offsetTop && scrollTopWithHeader <= sectionData.height + sectionData.offsetTop
 
-  reachedBottom: ->
+  scrollReachedBottom: ->
     @scrollTop >= @maxScroll()
 
   maxScroll: ->
@@ -33,8 +33,8 @@ class Corporate.Header
 
   updateNavigation: =>
     for section, sectionData of @sections
-      if (@reachedTop(section, sectionData) || @reachedBottom())
-        current = if @reachedBottom() then 'footer' else section
+      if (@sectionReachedTop(section, sectionData) || @scrollReachedBottom())
+        current = if @scrollReachedBottom() then 'footer' else section
         $('.header__navigation-item a').removeClass('active')
         $('.header__navigation-item a[href=#' + current + ']').addClass('active')
 
