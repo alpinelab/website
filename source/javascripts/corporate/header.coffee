@@ -32,7 +32,7 @@ class Corporate.Header
   updateNavigation: =>
     for section, sectionData of @sections
       if @sectionReachedTop(section, sectionData) || @scrollReachedBottom()
-        current = if @scrollReachedBottom() then 'footer' else section
+        current = if @scrollReachedBottom() then 'commitments' else section
         $('.header__navigation-item a').removeClass('active')
         $('.header__navigation-item a[href=#' + current + ']').addClass('active')
 
@@ -40,7 +40,7 @@ class Corporate.Header
     @scrollTop = @window.scrollTop()
     $body = $('body')
     scale = Math.max(1, 1 + (@scrollTop / 6000))
-    opacity = Math.min(@scrollTop / 800, 1)
+    opacity = Math.min(@scrollTop / 600, 1)
 
     if @scrollTop >= @triggerBlueBgOffset then $body.addClass('scrolled') else $body.removeClass('scrolled')
     if @scrollTop <= $('#intro').outerHeight()

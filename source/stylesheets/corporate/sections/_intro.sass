@@ -13,6 +13,8 @@
     background-position: center
     will-change: transform
     @include position(absolute, 0)
+    @include max-width($mobile)
+      @include calc(background-position, "100% + 120px")
   .parallax-bg--blur
     background-image: url("../images/intro-bg-blur.jpg")
     opacity: 0

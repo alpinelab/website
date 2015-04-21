@@ -9,5 +9,10 @@
       margin-right: auto
 
 .how-we-do
-  border-top: 1px solid #e6eaec
+  background: $greyBg
   padding: 60px 0px $sectionsMargin 0
+  @include max-width($mobile)
+    .col:not(:last-child)
+      margin-bottom: 44px
+    br
+      display: none
