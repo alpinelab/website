@@ -8,6 +8,20 @@
   @include max-width($mobile)
     padding-bottom: 10px
 
+.commitments__title
+  color: #2e2e2e
+  font-size: 15px
+  margin: 0 0 18px -24px
+  @include montserrat
+  &:before
+    content: ""
+    background: #d3d3d3
+    display: inline-block
+    width: 15px
+    height: 2px
+    margin-right: 10px
+    @include position(relative, -4px null null null)
+
 .commitments__list
   overflow: hidden
   text-align: center
@@ -20,7 +34,8 @@
     
 .commitments__item
   display: inline-block
-  margin: 0 40px 30px 40px
+  // margin: 0 40px 30px 40px
+  margin: 0 20px
   @include max-width($mobile)
     margin-right: 30px
     margin-left: 30px
@@ -30,8 +45,8 @@
   background-position: center
   background-repeat: no-repeat
   background-size: 100% auto
-  width: 90px
-  height: 90px
+  width: 70px
+  height: 70px
   opacity: .9
   text-indent: -9999px
   @include transition(opacity .23s ease-in-out)

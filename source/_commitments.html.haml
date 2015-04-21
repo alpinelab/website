@@ -1,16 +1,27 @@
 %section#commitments
-  .container
-    %h3.section__title= I18n.t("corporate.commitments.title")
-    %ul.commitments__list
-      %li.commitments__item
-        %a.commitments__link.commitments__link--lyon-rb{href: '#', target: '_blank'} Lyon RB
-      %li.commitments__item
-        %a.commitments__link.commitments__link--la-conf-paris{href: '#', target: '_blank'} La Conf Paris
-      %li.commitments__item
-        %a.commitments__link.commitments__link--rails-girls-lyon{href: '#', target: '_blank'} Rails Girls
-      %li.commitments__item
-        %a.commitments__link.commitments__link--open-source{href: '#', target: '_blank'} Open Source
-      %li.commitments__item
-        %a.commitments__link.commitments__link--rulu{href: '#', target: '_blank'} Rulu
-      %li.commitments__item
-        %a.commitments__link.commitments__link--cuisine-du-web{href: '#', target: '_blank'} Cuisine du web
+  %h3.section__title= I18n.t("corporate.commitments.title")
+  
+  .container.row  
+    .col-3.col.col--centered
+      %h5.commitments__title OSS
+      %ul.commitments__list
+        %li.commitments__item
+          %a.commitments__link.commitments__link--open-source{href: '#', target: '_blank'} Open Source
+    
+    .col-3.col.col--centered
+      %h5.commitments__title Communauté
+      %ul.commitments__list
+        %li.commitments__item
+          %a.commitments__link.commitments__link--lyon-rb{href: '#', target: '_blank'} Lyon RB
+        %li.commitments__item
+          %a.commitments__link.commitments__link--rails-girls-lyon{href: '#', target: '_blank'} Rails Girls
+    
+    .col-3.col.col--centered
+      %h5.commitments__title Événementiel
+      %ul.commitments__list
+        %li.commitments__item
+          %a.commitments__link.commitments__link--rulu{href: '#', target: '_blank'} Rulu
+        %li.commitments__item
+          %a.commitments__link.commitments__link--cuisine-du-web{href: '#', target: '_blank'} Cuisine du web
+        %li.commitments__item
+          %a.commitments__link.commitments__link--la-conf-paris{href: '#', target: '_blank'} La Conf Paris+
