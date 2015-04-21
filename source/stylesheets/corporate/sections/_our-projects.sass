@@ -1,0 +1,111 @@
+/**************************************************/
+/* OUR PROJECTS
+/**************************************************/
+
+#our-projects
+  border-bottom: 1px solid #e6eaec
+
+.our-projects__list
+  overflow: hidden
+
+.our-projects__list-item
+  float: left
+  width: (100% / 3)
+
+.project
+  display: block
+  overflow: hidden
+  @include ratio(70%)
+  div
+    text-align: center
+    @include display(flex)
+    @include align-items(center)
+    @include flex-direction(column)
+    @include justify-content(center)
+  &:hover
+    .project-bg
+      @include filter(none)
+      @include transform(none)
+    .project-description
+      opacity: 0
+      visibility: hidden
+      p
+        @include transform(translateY(7px))
+    .project-title
+      opacity: 0
+      @include transform(translateY(5px))
+
+.project-bg,
+.project-bg-color
+  @include position(absolute, 0)
+
+.project-bg
+  background-position: center
+  background-size: cover
+  will-change: transform, filter
+  @include filter(blur(2px))
+  @include transform(scale(1.02))
+  @include transition(all .1s ease, transform .4s ease-in-out)
+
+.project-title
+  color: #fff
+  font-size: 24px
+  margin-bottom: 30px
+  position: relative
+  will-change: transform
+  @include montserratBold
+  @include transition(all .3s ease-in-out)
+  &:after
+    content: ""
+    background: #fff
+    width: 20px
+    height: 1px
+    margin-left: -10px
+    @include position(absolute, null null -16px 50%)
+
+.project-description
+  color: #fff
+  padding: 0 23%
+  @include position(absolute, 0)
+  @include transition(all .3s ease-in-out)
+  p
+    font-size: 17px
+    opacity: .8
+    line-height: 1.7
+    @include transition(all .3s ease-in-out)
+
+.project-bg--locale
+  background-image: image-url("locale-project.jpg")
+
+.project-bg-color--locale
+  background: rgba(203, 31, 18, .91)
+
+.project-bg--kyero
+  background-image: image-url("kyero-project.jpg")
+
+.project-bg-color--kyero
+  background: rgba(81, 96, 84, .96)
+
+.project-bg--guerir-le-regard
+  background-image: image-url("guerir-le-regard-project.jpg")
+
+.project-bg-color--guerir-le-regard
+  background: rgba(242, 140, 19, .9)
+
+.project-bg--skiwallet
+  background-image: image-url("skiwallet-project.jpg")
+
+.project-bg-color--skiwallet
+  background: rgba(91, 169, 222, .9)
+
+.project-bg--tyrolienne
+  background-image: image-url("tyrolienne-project.jpg")
+
+.project-bg-color--tyrolienne
+  background: rgba(232, 195, 112, .9)
+
+.project-bg--cinqpoints
+  background-image: image-url("cinqpoints-project.jpg")
+
+.project-bg-color--cinqpoints
+  background: rgba(141, 141, 141, .9)

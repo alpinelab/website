@@ -2,10 +2,9 @@
   %h3.section__title.section__title--blue= I18n.t("corporate.team.title")
   .row
     - %w{mike thibault yann sylvain}.each do |member|
-      .col-2.col.col--centered
+      .col-4.col.col--centered
         %img{src: gravatar_for(I18n.t("corporate.team.#{member}.email")), class: "avatar", alt: I18n.t("corporate.team.#{member}.email")}
         %h4= I18n.t("corporate.team.#{member}.name")
-        %p= I18n.t("corporate.team.#{member}.html")
         %ul.social-networks
           %li
             %a{href: "https://github.com/#{I18n.t("corporate.team.#{member}.github")}", target: "_blank"} Github

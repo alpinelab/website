@@ -25,6 +25,8 @@ fr:
     header:
       main-title: Nous sommes développeurs <span>Ruby/Rails</span>
       subtitle: agence web orientée startups et open-source
+    our-projects:
+      title: Nos projets
     projects:
       locale:
         description_html: |-
@@ -48,26 +50,22 @@ fr:
       mike:
         email: michael.baudino@alpine-lab.com
         github: michaelbaudino
-        html: Co-fondateur, développeur Ruby/Rails, président de <a href="http://www.lyonrb.fr" target="_blank">Lyon.rb</a>, organisateur de <a href="http://railsgirly.lyonrb.fr" target="_blank">RailsGirls&nbsp;Lyon</a>, membre du staff de <a href="http://rulu.eu" target="_blank">RuLu</a> et <a href="http://la-conf.org" target="_blank">La&nbsp;Conf</a>, diplômé <a href="http://www.epita.fr" target="_blank">EPITA</a>, ancien DSI du groupe <a href="http://www.acrelec.fr" target="_blank">Acrelec</a>.
         name: Michael Baudino
         twitter: michaelbaudino
       sylvain:
         email: s.fertons@gmail.com
         github: spharian
-        html: Développeur front-end et back-end (SASS, CoffeeScript, Backbone, AngularJS, Ruby/Rails), diplômé de l'<a href="http://www.heaj.be" target="_blank">HEAJ</a> (Belgique), ancien architecte d'une superbe maquette de LEGOS City.
         name: Sylvain Fertons
         twitter: spharian
       thibault:
         email: thibault.dalban@alpine-lab.com
         github: thibaultdalban
-        html: Co-fondateur, développeur polyglotte (Java, PHP, Ruby/Rails, Ember.js), défenseur du libre, diplômé <a href="http://www.epitech.eu" target="_blank">Epitech</a>, ancien architecte logiciel chez <a href="http://www.sopragroup.com" target="_blank">Sopra&nbsp;Group</a>.
         name: Thibault Dalban
         twitter: kh_thib
       title: Notre équipe
       yann:
         email: yann@vaillant.im
         github: vayan
-        html: Co-fondateur, développeur polyglotte (Java, PHP, Ruby/Rails, Ember.js), défenseur du libre, diplômé <a href="http://www.epitech.eu" target="_blank">Epitech</a>, ancien architecte logiciel chez <a href="http://www.sopragroup.com" target="_blank">Sopra&nbsp;Group</a>.
         name: Yann Vaillant
         twitter: vayan
     what-we-do:

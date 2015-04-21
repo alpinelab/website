@@ -1,0 +1,13 @@
+%section#our-projects
+  %h3.section__title= I18n.t("corporate.our-projects.title")
+
+  %ul.our-projects__list
+    - %w{locale kyero guerir-le-regard skiwallet tyrolienne cinqpoints}.each do |project|
+      %li.our-projects__list-item
+        %a.project{href: "#", target: "_blank"}
+          %div
+            .project-bg{class: "project-bg--#{project}"}
+            .project-description
+              .project-bg-color{class: "project-bg-color--#{project}"}
+              %h4.project-title= project.capitalize.gsub("-", " ")
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit.

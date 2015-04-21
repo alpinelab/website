@@ -3,19 +3,34 @@
 /**************************************************/
 
 #team
-  .col-2
-    margin-bottom: 40px
-    &:nth-last-child(-n+2)
-      margin-bottom: $sectionsMargin
-    @include max-width($mobile)
-      margin-bottom: 30px !important
+  padding-bottom: $sectionsMargin
+  .col:hover .avatar
+    @include filter(none)
+  @include max-width(1280px)
+    h4
+      font-size: 16px
+  @include max-width(1030px)
+    .row
+      max-width: 500px
+      margin: 0 auto
+    .col
+      width: 190px
+      &:nth-child(-n+2)
+        margin-bottom: 40px
   @include max-width($mobile)
-    margin-bottom: 20px
+    .row
+      max-width: 190px
+    .col:not(:last-child)
+      width: 100%
+      margin-bottom: 40px
 
 .avatar
-  width: 67px
-  margin-bottom: 8px
+  width: 100%
+  border-radius: 50%
+  overflow: hidden
+  margin-bottom: 14px
   @include filter(grayscale(100%))
+  @include transition(all .2s ease-in-out)
 
 .social-networks
   color: $blue

@@ -7,7 +7,7 @@
 
     %nav.header__navigation{role: "navigation"}
       %ul.header__navigation-list
-        - get_menu_labels(%w{what-we-do team commitments}).each_with_index do |(key, label), index|
+        - get_menu_labels(%w{what-we-do our-projects team commitments}).each_with_index do |(key, label), index|
           %li.header__navigation-item
             %a.scroll-to{href: "##{key}"}= label
   

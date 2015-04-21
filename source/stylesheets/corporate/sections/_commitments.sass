@@ -4,14 +4,16 @@
 
 #commitments
   border-top: 1px solid #e6eaec
-  padding-bottom: 60px
+  padding-bottom: 20px
   @include max-width($mobile)
     padding-bottom: 10px
 
 .commitments__title
   color: #2e2e2e
   font-size: 15px
-  margin: 0 0 18px -24px
+  margin: 0 0 18px -23px
+  &:not(:first-child)
+    margin-top: 40px
   @include montserrat
   &:before
     content: ""
@@ -25,12 +27,6 @@
 .commitments__list
   overflow: hidden
   text-align: center
-  @include max-width($desktop)
-    width: 516px
-    margin: 0 auto
-  @include max-width($mobile)
-    width: auto
-    margin-bottom: 35px
     
 .commitments__item
   display: inline-block
@@ -73,3 +69,6 @@
 
 .commitments__link--open-source
   @include retina-image("../images/open-source-logo", null)
+
+.commitments__link--blend-web-mix
+  @include retina-image("../images/blend-web-mix-logo", null)
