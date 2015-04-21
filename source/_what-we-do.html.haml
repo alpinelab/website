@@ -9,9 +9,7 @@
   
   .how-we-do
     .row.container
-      .col-2.col.col--centered
-        %h4= I18n.t("corporate.what-we-do.pricing.title")
-        %p= I18n.t("corporate.what-we-do.pricing.details")
-      .col-2.col.col--centered
-        %h4= I18n.t("corporate.what-we-do.contracts.title")
-        %p= I18n.t("corporate.what-we-do.contracts.details")
+      - %w{pricing contracts}.each do |col|
+        .col-2.col.col--centered
+          %h4= I18n.t("corporate.what-we-do.#{col}.title")
+          %p= I18n.t("corporate.what-we-do.#{col}.details")
