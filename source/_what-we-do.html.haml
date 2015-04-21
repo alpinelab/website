@@ -1,7 +1,17 @@
-%section#what-we-do.container
-  %h3.section__title= I18n.t("corporate.what-we-do.title")
-  .row
-    - %w{enterprises startups quality}.each do |domain|
-      .col-3.col.col--centered
-        %h4= I18n.t("corporate.what-we-do.#{domain}.title")
-        %p.details= I18n.t("corporate.what-we-do.#{domain}.details")
+%section#what-we-do
+  .container
+    %h3.section__title= I18n.t("corporate.what-we-do.title")
+    .row
+      - %w{enterprises startups quality}.each do |domain|
+        .col-3.col.col--centered
+          %h4= I18n.t("corporate.what-we-do.#{domain}.title")
+          %p= I18n.t("corporate.what-we-do.#{domain}.details")
+  
+  .how-we-do
+    .row.container
+      .col-2.col.col--centered
+        %h4= I18n.t("corporate.what-we-do.pricing.title")
+        %p= I18n.t("corporate.what-we-do.pricing.details")
+      .col-2.col.col--centered
+        %h4= I18n.t("corporate.what-we-do.contracts.title")
+        %p= I18n.t("corporate.what-we-do.contracts.details")

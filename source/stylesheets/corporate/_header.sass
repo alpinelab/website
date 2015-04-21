@@ -83,3 +83,19 @@
     text-transform: uppercase
     &.active
       opacity: 1
+
+.header__write-us
+  background: $red
+  border-radius: 50%
+  color: #fff
+  float: right
+  font-size: 15px
+  width: 40px
+  height: 40px
+  margin: -8px 0 0 36px
+  will-change: transform
+  @include transition(transform .3s ease-in-out)
+  &:hover
+    @include transform(scale(1.15))
+  @include max-width($mobile)
+    display: none

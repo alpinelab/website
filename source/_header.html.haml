@@ -7,10 +7,13 @@
 
     %nav.header__navigation{role: "navigation"}
       %ul.header__navigation-list
-        - get_menu_labels(%w{what-we-do commitments team footer}).each_with_index do |(key, label), index|
+        - get_menu_labels(%w{what-we-do commitments team}).each_with_index do |(key, label), index|
           %li.header__navigation-item
             %a.scroll-to{href: "##{key}"}= label
-
+  
+    %button.header__write-us.scroll-to{data: {"scroll-to": "footer"}, title: I18n.t("corporate.footer.title")}
+      %i.fa.fa-pencil
+      
     %ul.header__languages
       - [:fr, :en].each do |lang|
         %li.header__languages-item

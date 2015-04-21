@@ -50,7 +50,7 @@ class Corporate.Header
     $scrollEl = $(e.currentTarget)
     target = $scrollEl.attr('href') || $scrollEl.data('scroll-to')
     targetOffsetTop = @sections[target.replace('#', '')].offsetTop
-    scrollY = if target == 'footer' then targetOffsetTop else targetOffsetTop - @headerHeight + 1
+    scrollY = targetOffsetTop - @headerHeight + 1
     @autoScrolling = true
 
     TweenMax.to window, .7,
