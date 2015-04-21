@@ -8,11 +8,14 @@
   overflow: hidden
   @include ratio(44%)
   .parallax-bg
-    background-image: url("../images/header-bg.jpg")
+    background-image: url("../images/intro-bg.jpg")
     background-size: cover
     background-position: center
     will-change: transform
     @include position(absolute, 0)
+  .parallax-bg--blur
+    background-image: url("../images/intro-bg-blur.jpg")
+    opacity: 0
   @include max-width($desktop)
     @include ratio(60%)
   @include max-width($mobile)

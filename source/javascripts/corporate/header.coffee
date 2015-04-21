@@ -40,9 +40,12 @@ class Corporate.Header
     @scrollTop = @window.scrollTop()
     $body = $('body')
     scale = Math.max(1, 1 + (@scrollTop / 6000))
+    opacity = Math.min(@scrollTop / 800, 1)
 
     if @scrollTop >= @triggerBlueBgOffset then $body.addClass('scrolled') else $body.removeClass('scrolled')
-    $('.parallax-bg').css('transform', 'scale(' + scale + ')') if @scrollTop <= $('#intro').outerHeight()
+    if @scrollTop <= $('#intro').outerHeight()
+      $('.parallax-bg').css('transform', 'scale(' + scale + ')')
+      $('.parallax-bg--blur').css('opacity', opacity)
     @updateNavigation() unless @autoScrolling
 
   scrollTo: (e) =>
