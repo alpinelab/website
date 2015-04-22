@@ -1,10 +1,9 @@
 en:
   corporate:
-    blog-btn: Blog
     commitments:
       community-title: Community
       conferences-title: Conferences
-      open-source-description: 
+      open-source-description: 'We <strong>maintain</strong> a few open-source projects/gems and we <strong>contribute all our modifications upstream</strong>.<br>Some examples: <a href="https://github.com/Locale/localeapp" target="_blank">localeapp</a>, <a href="https://github.com/middleman/middleman" target="_blank">middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">paperclip</a>, <a href="https://github.com/sunspot/sunspot" target="_blank">sunspot</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, ...'
       open-source-title: Open source
       title: Our commitments
     common:
@@ -18,46 +17,43 @@ en:
           <a href="tel:+33950831231">33 950 831 231</a>
         </li>
       email-subject: I want you!
-      hire-us_html: write to us
-      page-description: 
+      hire-us_html: email us
+      page-description: Ruby/Rails web agency in Lyon focusing on agile development, startups, large web applications.
     footer:
       articles-title: Latest articles
       copyright: <a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>All code is licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
       title: Contact us
     header:
-      main-title: |-
-        Simple and ergonomic
-        <br>
-        individualized applications.
-      subtitle: Mainly powered by <a href="http://rubyonrails.org" target="_blank">Ruby on Rails</a>
+      main-title: We are <span>Ruby/Rails</span> developers
+      subtitle: web agency for startups with open source software
     our-projects:
       guerir-le-regard:
-        description: 
+        description: Web-documentary for Institut Curie. Jury prize at Web Program Festival.
         link: http://guerirleregard.fr
         stack: Middleman / Sass / CoffeeScript
         title: Guérir le regard
       kyero:
-        description: 
+        description: Leading real-estate website in Spain. Full technical exploitation. Performance and reliability.
         link: https://kyero.com
         stack: Rails / Sidekiq / Solr / Heroku / Rspec
         title: Kyero
       locale:
-        description: 
+        description: Translation SaaS tool for Rails projects. Full management et exploitation.
         link: http://www.localeapp.com
         stack: Rails / Sidekiq / API / gem / Rspec
         title: Locale
       misterbnb:
-        description: 
+        description: Gay-friendly Airbnb. High growth website. Short iterations. Large feature set.
         link: https://www.misterbnb.com
         stack: Rails / PostgreSQL / Rspec
         title: Misterbnb
       misterout:
-        description: 
+        description: If it's Ruby-related, we can help. Contact us!
         link: javascript:void(0);
         stack: "&nbsp;"
         title: Your project?
       skiwallet:
-        description: 
+        description: Ski passes e-commerce website. Full project management and exploitation.
         link: https://www.skiwallet.com
         stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
@@ -86,18 +82,18 @@ en:
         twitter: vayan
     what-we-do:
       contracts:
-        details: 
-        title: 
+        details: Our <a href="/conditions-generales-de-ventes.pdf" target="_blank">terms</a> (in French) are <a href="https://github.com/tibastral/contrats-francais">agile development contracts</a>.<br>And the code we write <strong>belongs to you</strong>.
+        title: Agility
       enterprises:
-        details: 
-        title: 
+        details: We manage <strong>very high trafic websites</strong> using reliable PaaS technologies to <strong>deploy peacefully</strong> and <strong>scale</strong> automatically applications that we have optimized for <strong>performance</strong> and robustness (caching, background jobs).
+        title: Enterprises
       pricing:
-        details: 
-        title: 
+        details: 'As we are working the agile way, invoicing is<br>simple and transparent: <strong class="price">€ 400 / day</strong>'
+        title: Pricing
       quality:
-        details: 
-        title: 
+        details: Our code is <strong>versioned</strong> (git), <strong>organised</strong> (gitflow), <strong>tested</strong> (RSpec, Capybara) within <strong>continuous integration</strong> (Travis, Codeship), <strong>continuous audit</strong> (Codeclimate, code reviews) and <strong>continuous deployment</strong> (Heroku) processes.
+        title: Code quality
       startups:
-        details: 
-        title: 
-      title: 
+        details: We build <strong>MVP</strong>s by iterating shortly and guiding you through technological choices for <strong>quick prototyping</strong>, short <strong>time-to-market</strong> and activity monitoring until you are successful enough to have your own internal dev team.
+        title: Startups
+      title: What we do
