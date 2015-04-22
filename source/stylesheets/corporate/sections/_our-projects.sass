@@ -2,11 +2,10 @@
 /* OUR PROJECTS
 /**************************************************/
 
-#our-projects
-  border-bottom: 1px solid #e6eaec
-
 .our-projects__list
   overflow: hidden
+  @include max-width($tabletLandscape)
+    padding: 0
 
 .our-projects__list-item
   float: left
@@ -56,7 +55,7 @@
 
 .project-title
   color: #fff
-  font-size: 24px
+  font-size: 21px
   margin-bottom: 30px
   position: relative
   will-change: transform
@@ -77,18 +76,20 @@
 
 .project-overlay
   color: #fff
-  padding: 0 23%
+  padding: 0 40px
   @include position(absolute, 0)
 
 .project-description
-  font-size: 17px
+  font-size: 15px
   opacity: .8
-  line-height: 1.7
+  line-height: 1.6
 
 .project-stack
   font-size: 14px
   margin-top: 15px
   opacity: .5
+  @include max-width(1160px)
+    display: none
 
 $projects: (locale: rgba(203, 31, 18, .91), kyero: rgba(81, 96, 84, .96), guerir-le-regard: rgba(242, 140, 19, .9), skiwallet: rgba(91, 169, 222, .92), misterbnb: rgba(255, 48, 130, .91), misterout: rgba(95, 197, 241, .92))
 @each $project_name, $bgColor in ($projects)

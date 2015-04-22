@@ -1,7 +1,7 @@
 %section#our-projects
   %h3.section__title= I18n.t("corporate.our-projects.title")
-
-  %ul.our-projects__list
+  
+  %ul.our-projects__list.container
     - %w{locale kyero guerir-le-regard skiwallet misterbnb}.each do |project_name|
       %li.our-projects__list-item
         %a.project{href: I18n.t("corporate.our-projects.#{project_name}.link"), target: "_blank"}

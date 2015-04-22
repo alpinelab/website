@@ -54,6 +54,7 @@ en:
       misterout:
         description: 
         link: javascript:void(0);
+        stack: "&nbsp;"
         title: Your project?
       skiwallet:
         description: 
