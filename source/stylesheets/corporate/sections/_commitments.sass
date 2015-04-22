@@ -30,7 +30,6 @@
     
 .commitments__item
   display: inline-block
-  // margin: 0 40px 30px 40px
   margin: 0 20px
   @include max-width($mobile)
     margin-right: 30px
@@ -51,24 +50,7 @@
   @include max-width($mobile)
     width: 80px
     height: 80px
-    
-.commitments__link--cuisine-du-web
-  @include retina-image("../images/cuisine-du-web-logo", null)
 
-.commitments__link--lyon-rb
-  @include retina-image("../images/lyon-rb-logo", null)
-
-.commitments__link--rulu
-  @include retina-image("../images/rulu-logo", null)
-
-.commitments__link--rails-girls-lyon
-  @include retina-image("../images/rails-girls-lyon-logo", null)
-
-.commitments__link--la-conf-paris
-  @include retina-image("../images/la-conf-paris-logo", null)
-
-.commitments__link--open-source
-  @include retina-image("../images/open-source-logo", null)
-
-.commitments__link--blend-web-mix
-  @include retina-image("../images/blend-web-mix-logo", null)
+@each $commitment in cuisine-du-web lyon-rb rulu rails-girls-lyon la-conf-paris open-source blend-web-mix
+  .commitments__link--#{$commitment}
+    @include retina-image("../images/#{$commitment}-logo", null)

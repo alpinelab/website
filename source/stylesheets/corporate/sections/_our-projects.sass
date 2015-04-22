@@ -89,7 +89,6 @@
     line-height: 1.7
     @include transition(all .3s ease-in-out)
 
-$projects: locale kyero guerir-le-regard skiwallet misterout misterbnb
-@each $project-name in $projects
-  .project-bg--#{$project-name}
-    background-image: image-url("#{$project-name}-project.jpg")
+@each $project_name in locale kyero guerir-le-regard skiwallet misterout misterbnb
+  .project-bg--#{$project_name}
+    background-image: image-url("#{$project_name}-project.jpg")
