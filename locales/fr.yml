@@ -4,7 +4,7 @@ fr:
     commitments:
       community-title: Communauté
       conferences-title: Conférences
-      open-source-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero fugiat, quibusdam maiores nisi iusto, laudantium dolores reprehenderit harum soluta eum neque.
+      open-source-description: 'Nous <strong>maintenons</strong> plusieurs projets/gems open-source et nous <strong>contribuons toutes nos modifications</strong>.<br>Quelques exemples: <a href="https://github.com/Locale/localeapp" target="_blank">localeapp</a>, <a href="https://github.com/middleman/middleman" target="_blank">middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">paperclip</a>, <a href="https://github.com/sunspot/sunspot" target="_blank">sunspot</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, ...'
       open-source-title: Open source
       title: Nos engagements
     common:
@@ -83,7 +83,7 @@ fr:
         twitter: vayan
     what-we-do:
       contracts:
-        details: Nos <a href="/conditions-generales-de-ventes.pdf" target="_blank">CGVs</a> sont des <a href="https://github.com/tibastral/contrats-francais">contrats de développement agile</a> qui spécifient explicitement notre obligation de moyens et que le code produit <strong>vous</strong> appartient.
+        details: Nos <a href="/conditions-generales-de-ventes.pdf" target="_blank">CGVs</a> sont des <a href="https://github.com/tibastral/contrats-francais">contrats agiles</a>. <br>Le code qu'on écrit <strong>vous</strong> appartient.
         title: Agilité
       enterprises:
         details: Nous exploitons des <strong>sites à très fort traffic</strong> grâce à des technologies PaaS fiables pour <strong>déployer sereinement</strong> et <strong>dimensionner</strong> automatiquement des applications dont nous avons optimisé les <strong>performances</strong> (caching, jobs).
