@@ -43,8 +43,8 @@ en:
         title: Kyero
       locale:
         description: 
-        link: http://localeapp.com
-        stack: Rails / Sidekiq / API / open-source gem / Rspec
+        link: http://www.localeapp.com
+        stack: Rails / Sidekiq / API / gem / Rspec
         title: Locale
       misterbnb:
         description: 
@@ -58,6 +58,7 @@ en:
       skiwallet:
         description: 
         link: https://www.skiwallet.com
+        stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
       title: Some projects
     team:

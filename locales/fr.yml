@@ -34,14 +34,14 @@ fr:
         stack: Middleman / Sass / CoffeeScript
         title: Guérir le regard
       kyero:
-        description: 1er site immobilier d'Espagne. Exploitation technique et amélioration continue. Impératif de performance et de stabilité.
+        description: 1er site immobilier d'Espagne. Exploitation technique. Performance et stabilité.
         link: https://kyero.com
         stack: Rails / Sidekiq / Solr / Heroku / Rspec
         title: Kyero
       locale:
-        description: Outil SaaS de traduction pour projets Rails. Gestion et exploitation complète du projet.
-        link: http://localeapp.com
-        stack: Rails / Sidekiq / API / gem open-source / Rspec
+        description: Outil SaaS de traduction pour projets Rails. Gestion et exploitation complètes du projet.
+        link: http://www.localeapp.com
+        stack: Rails / Sidekiq / API / gem / Rspec
         title: Locale
       misterbnb:
         description: AirBnB gay-friendly. Site en très forte croissance. Itérations courtes et rapides.
@@ -53,8 +53,9 @@ fr:
         link: javascript:void(0);
         title: Votre projet ?
       skiwallet:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        description: Site de vente de forfaits de ski. Gestion et exploitation complètes du projet.
         link: https://www.skiwallet.com
+        stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
       title: Quelques projets
     team:
