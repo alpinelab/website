@@ -26,10 +26,9 @@
     @include align-items(center)
     @include flex-direction(column)
     @include justify-content(center)
-  &:hover
+  &:not(.no-hover):hover
     .project-bg
       @include filter(none)
-      @include transform(none)
     .project-overlay
       opacity: 0
       visibility: hidden
@@ -40,6 +39,8 @@
       @include transform(translateY(7px))
     .project-stack
       @include transform(translateY(7px))
+  &:hover .project-bg
+    @include transform(none)
 
 .project-bg,
 .project-bg-color
