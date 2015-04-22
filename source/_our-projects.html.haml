@@ -2,12 +2,13 @@
   %h3.section__title= I18n.t("corporate.our-projects.title")
 
   %ul.our-projects__list
-    - %w{locale kyero guerir-le-regard skiwallet misterout misterbnb}.each do |project_name|
+    - %w{locale kyero guerir-le-regard skiwallet misterbnb misterout}.each do |project_name|
       %li.our-projects__list-item
         %a.project{href: I18n.t("corporate.our-projects.#{project_name}.link"), target: "_blank"}
           %div
             .project-bg{class: "project-bg--#{project_name}"}
-            .project-description
+            .project-overlay
               .project-bg-color{class: "project-bg-color--#{project_name}"}
               %h4.project-title= I18n.t("corporate.our-projects.#{project_name}.title")
-              %p= I18n.t("corporate.our-projects.#{project_name}.description")
+              %p.project-description= I18n.t("corporate.our-projects.#{project_name}.description")
+              %p.project-stack= I18n.t("corporate.our-projects.#{project_name}.stack")

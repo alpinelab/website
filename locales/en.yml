@@ -17,11 +17,9 @@ en:
         <li>
           <a href="tel:+33950831231">33 950 831 231</a>
         </li>
-      email-subject: Please build me something fancy !
+      email-subject: I want you!
       hire-us_html: write to us
-      page-description: Web agency in Lyon, France, specialists of Ruby and Rails, creators of SkiWallet. Agile development, smart design for ergonomic and responsive web sites and applications.
-    customers:
-      title: Our customers
+      page-description: 
     footer:
       articles-title: Latest articles
       copyright: <a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>All code is licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
@@ -34,49 +32,34 @@ en:
       subtitle: Mainly powered by <a href="http://rubyonrails.org" target="_blank">Ruby on Rails</a>
     our-projects:
       guerir-le-regard:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        description: 
         link: http://guerirleregard.fr
+        stack: Middleman / Sass / CoffeeScript
         title: Guérir le regard
       kyero:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: http://kyero.com
+        description: 
+        link: https://kyero.com
+        stack: Rails / Sidekiq / Solr / Heroku / Rspec
         title: Kyero
       locale:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        description: 
         link: http://localeapp.com
+        stack: Rails / Sidekiq / API / open-source gem / Rspec
         title: Locale
       misterbnb:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: http://misterbnb.com
+        description: 
+        link: https://www.misterbnb.com
+        stack: Rails / PostgreSQL / Rspec
         title: Misterbnb
       misterout:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: "#"
-        title: Misterout
+        description: 
+        link: javascript:void(0);
+        title: Your project?
       skiwallet:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: http://skiwallet.com
+        description: 
+        link: https://www.skiwallet.com
         title: Skiwallet
-      title: Our projects
-    projects:
-      locale:
-        description_html: |-
-          <li>Payment system refactoring</li>
-          <li>Customer support and bug fixes</li>
-          <li>Gem maintenance</li>
-          <li>MySQL to PostgreSQL migration</li>
-          <li>Dedicated server to Heroku migration</li>
-        title: Locale
-      skiwallet:
-        description_html: |-
-          <li>Branding</li>
-          <li>Customer process & UX</li>
-          <li>Artistic direction & graphic design</li>
-          <li>Design interaction & prototyping</li>
-          <li>Front and back-end development</li>
-          <li>Product developement</li>
-        title: SkiWallet
-      title: Our projects
+      title: Some projects
     team:
       mike:
         email: michael.baudino@alpine-lab.com

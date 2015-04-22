@@ -17,11 +17,9 @@ fr:
         <li>
           <a href="tel:+33950831231">09.50.83.12.31</a>
         </li>
-      email-subject: Faites-moi quelque chose de chouette !
+      email-subject: Je vous veux !
       hire-us_html: "écrivez-nous"
       page-description: Agence web Ruby/Rails orientée développement agile, startups, applications web complexes et open-source à Lyon.
-    customers:
-      title: Nos projets
     footer:
       articles-title: Derniers articles
       copyright: Le site d'<a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> est publié sous license <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>Le code est sous licence <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
@@ -31,49 +29,34 @@ fr:
       subtitle: agence web orientée startups et open-source
     our-projects:
       guerir-le-regard:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        description: Web-documentaire pour l'Institut Curie. Prix du Jury du Web Program Festival.
         link: http://guerirleregard.fr
+        stack: Middleman / Sass / CoffeeScript
         title: Guérir le regard
       kyero:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: http://kyero.com
+        description: 1er site immobilier d'Espagne. Exploitation technique et amélioration continue. Impératif de performance et de stabilité.
+        link: https://kyero.com
+        stack: Rails / Sidekiq / Solr / Heroku / Rspec
         title: Kyero
       locale:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        description: Outil SaaS de traduction pour projets Rails. Gestion et exploitation complète du projet.
         link: http://localeapp.com
+        stack: Rails / Sidekiq / API / gem open-source / Rspec
         title: Locale
       misterbnb:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: http://misterbnb.com
+        description: AirBnB gay-friendly. Site en très forte croissance. Itérations courtes et rapides.
+        link: https://www.misterbnb.com
+        stack: Rails / PostgreSQL / Rspec
         title: Misterbnb
       misterout:
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: "#"
-        title: Misterout
+        description: Si c'est du Ruby, on peut vous aider. Contactez-nous !
+        link: javascript:void(0);
+        title: Votre projet ?
       skiwallet:
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        link: http://skiwallet.com
+        link: https://www.skiwallet.com
         title: Skiwallet
-      title: Nos projets
-    projects:
-      locale:
-        description_html: |-
-          <li>Refonte du système de paiement</li>
-          <li>Support client et bugfixes</li>
-          <li>Maintenance de la gem</li>
-          <li>Migration de MySQL à PostgreSQL</li>
-          <li>Migration d'un serveur dédié à Heroku</li>
-        title: Locale
-      skiwallet:
-        description_html: |-
-          <li>Branding</li>
-          <li>Process d'achat & UX</li>
-          <li>Direction artistique & design graphique</li>
-          <li>Interaction design & prototypage</li>
-          <li>Développement front et back-end</li>
-          <li>Développement produit</li>
-        title: SkiWallet
-      title: Nos réalisations
+      title: Quelques projets
     team:
       mike:
         email: michael.baudino@alpine-lab.com
@@ -108,7 +91,7 @@ fr:
         title: Prix
       quality:
         details: Notre code est <strong>versionné</strong> (git), <strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit continu</strong> (Codeclimate, code reviews) et de <strong>déployement continu</strong> (Heroku).
-        title: Le Code
+        title: Qualité de code
       startups:
         details: Nous contruisons des <strong>MVP</strong>s pour les startups en itérant rapidement, en vous aidant à faire les choix technologiques adaptés pour un <strong>prototypage rapide</strong>, un <strong>time-to-market</strong> le plus court possible et des métriques de l'activité.
         title: Startups
