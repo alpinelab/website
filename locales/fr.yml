@@ -26,6 +26,30 @@ fr:
       main-title: Nous sommes développeurs <span>Ruby/Rails</span>
       subtitle: agence web orientée startups et open-source
     our-projects:
+      guerir-le-regard:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://guerirleregard.fr
+        title: Guérir le regard
+      kyero:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://kyero.com
+        title: Kyero
+      locale:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://localeapp.com
+        title: Locale
+      misterbnb:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://misterbnb.com
+        title: Misterbnb
+      misterout:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: "#"
+        title: Misterout
+      skiwallet:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://skiwallet.com
+        title: Skiwallet
       title: Nos projets
     projects:
       locale:

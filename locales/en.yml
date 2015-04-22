@@ -29,6 +29,30 @@ en:
         individualized applications.
       subtitle: Mainly powered by <a href="http://rubyonrails.org" target="_blank">Ruby on Rails</a>
     our-projects:
+      guerir-le-regard:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://guerirleregard.fr
+        title: Guérir le regard
+      kyero:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://kyero.com
+        title: Kyero
+      locale:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://localeapp.com
+        title: Locale
+      misterbnb:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://misterbnb.com
+        title: Misterbnb
+      misterout:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: "#"
+        title: Misterout
+      skiwallet:
+        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        link: http://skiwallet.com
+        title: Skiwallet
       title: Our projects
     projects:
       locale:

@@ -11,6 +11,40 @@
 .our-projects__list-item
   float: left
   width: (100% / 3)
+  &:nth-child(odd)
+    .project-bg-color
+      background: rgba(225, 89, 85, .92)
+  &:nth-child(even)
+    .project-title,
+    .project-description p
+      color: $blue
+      &:after
+        background: $blue
+    .project-bg-color
+      background: rgba(229, 245, 252, .94)
+  // &:first-child, &:nth-child(3), &:nth-child(5)
+  //   .project-bg-color
+  //     background: rgba(225, 89, 85, .92)
+  // &:nth-child(2), &:last-child
+  //   .project-title,
+  //   .project-description p
+  //     color: $blue
+  //     &:after
+  //       background: $blue
+  //   .project-bg-color
+  //     background: rgba(229, 245, 252, .94)
+  // &:nth-child(4)
+  //   .project-title,
+  //   .project-description p
+  //     color: $red
+  //     &:after
+  //       background: $red
+  //   .project-bg-color
+  //     background: rgba(249, 204, 196, .92)
+  @include max-width($tabletLandscape)
+    width: 50%
+  @include max-width($mobile)
+    width: 100%
 
 .project
   display: block
@@ -74,38 +108,7 @@
     line-height: 1.7
     @include transition(all .3s ease-in-out)
 
-.project-bg--locale
-  background-image: image-url("locale-project.jpg")
-
-.project-bg-color--locale
-  background: rgba(203, 31, 18, .91)
-
-.project-bg--kyero
-  background-image: image-url("kyero-project.jpg")
-
-.project-bg-color--kyero
-  background: rgba(81, 96, 84, .96)
-
-.project-bg--guerir-le-regard
-  background-image: image-url("guerir-le-regard-project.jpg")
-
-.project-bg-color--guerir-le-regard
-  background: rgba(242, 140, 19, .9)
-
-.project-bg--skiwallet
-  background-image: image-url("skiwallet-project.jpg")
-
-.project-bg-color--skiwallet
-  background: rgba(91, 169, 222, .9)
-
-.project-bg--tyrolienne
-  background-image: image-url("tyrolienne-project.jpg")
-
-.project-bg-color--tyrolienne
-  background: rgba(232, 195, 112, .9)
-
-.project-bg--cinqpoints
-  background-image: image-url("cinqpoints-project.jpg")
-
-.project-bg-color--cinqpoints
-  background: rgba(141, 141, 141, .9)
+$projects: locale kyero guerir-le-regard skiwallet misterout misterbnb
+@each $project-name in $projects
+  .project-bg--#{$project-name}
+    background-image: image-url("#{$project-name}-project.jpg")
