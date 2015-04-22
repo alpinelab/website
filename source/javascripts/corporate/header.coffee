@@ -25,7 +25,7 @@ class Corporate.Header
   getSectionsData: =>
     $('section, #footer').each (index, section) =>
       $section = $(section)
-      @sections[$section.attr('id')] = 
+      @sections[$section.attr('id')] =
         offsetTop: $section.offset().top
         height: $section.outerHeight()
 
