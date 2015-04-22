@@ -2,6 +2,10 @@ fr:
   corporate:
     blog-btn: Blog
     commitments:
+      community-title: Communauté
+      conferences-title: Conférences
+      open-source-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero fugiat, quibusdam maiores nisi iusto, laudantium dolores reprehenderit harum soluta eum neque.
+      open-source-title: Open source
       title: Nos engagements
     common:
       address_html: |-

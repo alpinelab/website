@@ -2,6 +2,10 @@ en:
   corporate:
     blog-btn: Blog
     commitments:
+      community-title: Community
+      conferences-title: Conferences
+      open-source-description: 
+      open-source-title: Open source
       title: Our commitments
     common:
       address_html: |-

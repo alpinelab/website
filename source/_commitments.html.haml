@@ -3,11 +3,11 @@
   
   .container.row
     .col-3.col.col--centered
-      %h5.commitments__title Open source
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi libero fugiat, quibusdam maiores nisi iusto, laudantium dolores reprehenderit harum soluta eum neque.
+      %h5.commitments__title= I18n.t("corporate.commitments.open-source-title")
+      %p= I18n.t("corporate.commitments.open-source-description")
       
     .col-3.col.col--centered
-      %h5.commitments__title Communauté
+      %h5.commitments__title= I18n.t("corporate.commitments.community-title")
       %ul.commitments__list
         %li.commitments__item
           %a.commitments__link.commitments__link--lyon-rb{href: '#', target: '_blank'} Lyon RB
@@ -17,7 +17,7 @@
           %a.commitments__link.commitments__link--cuisine-du-web{href: '#', target: '_blank'} Cuisine du web
     
     .col-3.col.col--centered
-      %h5.commitments__title Conférences
+      %h5.commitments__title= I18n.t("corporate.commitments.conferences-title")
       %ul.commitments__list
         %li.commitments__item
           %a.commitments__link.commitments__link--rulu{href: '#', target: '_blank'} Rulu
