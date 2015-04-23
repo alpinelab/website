@@ -82,7 +82,7 @@ en:
         twitter: vayan
     what-we-do:
       contracts:
-        details: Our <a href="/conditions-generales-de-ventes.pdf" target="_blank">terms</a> (in French) are <a href="https://github.com/tibastral/contrats-francais">agile development contracts</a>.<br>And the code we write <strong>belongs to you</strong>.
+        details: Our <a href="/conditions-generales-de-ventes.pdf" target="_blank">terms</a> (in French) are <a href="https://github.com/tibastral/contrats-francais" target="_blank">agile development contracts</a>. <br>And the code we write <strong>belongs to you</strong>.
         title: Agility
       enterprises:
         details: We manage <strong>very high trafic websites</strong> using reliable PaaS technologies to <strong>deploy peacefully</strong> and <strong>scale</strong> automatically applications that we have optimized for <strong>performance</strong> and robustness (caching, background jobs).

@@ -82,7 +82,7 @@ fr:
         twitter: vayan
     what-we-do:
       contracts:
-        details: Nos <a href="/conditions-generales-de-ventes.pdf" target="_blank">CGVs</a> sont des <a href="https://github.com/tibastral/contrats-francais">contrats de développement agile</a>.<br>Et le code que nous écrivons <strong>vous appartient</strong>.
+        details: Nos <a href="/conditions-generales-de-ventes.pdf" target="_blank">CGVs</a> sont des <a href="https://github.com/tibastral/contrats-francais" target="_blank">contrats de développement agile</a>. <br>Et le code que nous écrivons <strong>vous appartient</strong>.
         title: Agilité
       enterprises:
         details: Nous exploitons des <strong>sites à très fort trafic</strong> grâce à des technologies PaaS fiables pour <strong>déployer sereinement</strong> et <strong>dimensionner</strong> automatiquement des applications dont nous avons optimisé les <strong>performances</strong> (caching, jobs).
