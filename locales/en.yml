@@ -59,7 +59,9 @@ en:
         title: Skiwallet
       title: Some projects
     team:
-      join-us: You want to join us? Add yourself to the team and create <a href="https://github.com/alpinelab/website">a pull request</a> :-)
+      join-us: |-
+        You want to join us? We're always looking for passionate developers !<br>
+        Add yourself to the team and create <a href="https://github.com/alpinelab/website">a pull request</a> :-)
       mike:
         email: michael.baudino@alpine-lab.com
         github: michaelbaudino
