@@ -16,6 +16,10 @@ To configure LocaleApp, type the following command:
 $ localeapp install --standalone your_api_key
 ```
 
+### Wanna join us?
+
+Simply create a PR here that adds you as a team member!
+
 #### License
 
 Written by [Michael Baudino](https://github.com/michaelbaudino) and [Sylvain Fertons](https://github.com/Spharian) for [Alpine Lab](http://www.alpine-lab.com), 2013.
