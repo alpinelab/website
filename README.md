@@ -18,5 +18,5 @@ $ localeapp install --standalone your_api_key
 
 #### License
 
-Written by [Michael Baudino](https://github.com/michaelbaudino) for [Alpine Lab](http://www.alpine-lab.com), 2013.
+Written by [Michael Baudino](https://github.com/michaelbaudino) and [Sylvain Fertons](https://github.com/Spharian) for [Alpine Lab](http://www.alpine-lab.com), 2013.
 Licensed under the terms of the MIT license (see `LICENSE.md` file).
