@@ -1,4 +1,4 @@
-## Alpine Lab corporate website and blog
+# Alpine Lab website and blog
 
 This is the source code only.
 
@@ -9,14 +9,14 @@ The website/blog itself is available at [www.alpine-lab.com](http://www.alpine-l
 Powered by [Middleman](http://middlemanapp.com).
 Precompiles [Haml](http://haml.info), [Sass](http://sass-lang.com), CoffeeScript, Markdown.
 
-### Bootstraping
+#### Bootstraping
 
 To configure LocaleApp, type the following command:
 ```shell
 $ localeapp install --standalone your_api_key
 ```
 
-### Wanna join us?
+## Wanna join us?
 
 Simply create a PR here that adds you as a team member!
 
