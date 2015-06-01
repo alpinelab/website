@@ -83,6 +83,10 @@ fr:
         github: vayan
         name: Yann Vaillant
         twitter: vayan
+      thomas:
+        email: ts@thomasschneider.com
+        github: tomlandia
+        name: Thomas Schneider
     what-we-do:
       contracts:
         details: Nos <a href="/conditions-generales-de-ventes.pdf" target="_blank">CGVs</a> sont des <a href="https://github.com/tibastral/contrats-francais" target="_blank">contrats de développement agile</a>. <br>Et le code que nous écrivons <strong>vous appartient</strong>.
