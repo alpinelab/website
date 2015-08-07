@@ -4,8 +4,12 @@
 
 #team
   padding-bottom: $sectionsMargin
-  .col:hover .avatar
-    @include filter(none)
+  .col
+    &:hover .avatar
+      @include filter(none)
+    &:nth-child(4)
+      margin-left: 0
+      margin-right: 0
   @include max-width(1280px)
     h4
       font-size: 16px
