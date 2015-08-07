@@ -1,15 +1,17 @@
 %section#team.container
   %h3.section__title= I18n.t("corporate.team.title")
   .row
-    - %w{mike thibault yann}.each do |member|
+    - data.team.each do |member|
       .col-3.col.col--centered
-        %img{src: gravatar_for(I18n.t("corporate.team.#{member}.email")), class: "avatar", alt: I18n.t("corporate.team.#{member}.email")}
-        %h4= I18n.t("corporate.team.#{member}.name")
+        %img{src: gravatar_for(member.email), class: "avatar", alt: member.email}
+        %h4= member.name
         %ul.social-networks
           %li
-            %a{href: "https://github.com/#{I18n.t("corporate.team.#{member}.github")}", target: "_blank"} Github
-          %li
-            %a{href: "https://twitter.com/#{I18n.t("corporate.team.#{member}.twitter")}", target: "_blank"} Twitter
+            %a{href: "https://github.com/#{member.github}", target: "_blank"} Github
+          - if member.twitter
+            %li
+              %a{href: "https://twitter.com/#{member.twitter}", target: "_blank"}
+                Twitter
   .row
     .col-1.col.col--centered
       %p= I18n.t("corporate.team.join-us")
