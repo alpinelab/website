@@ -8,8 +8,10 @@
         %ul.social-networks
           %li
             %a{href: "https://github.com/#{member.github}", target: "_blank"} Github
-          %li
-            %a{href: "https://twitter.com/#{member.twitter}", target: "_blank"} Twitter
+          - if member.twitter
+            %li
+              %a{href: "https://twitter.com/#{member.twitter}", target: "_blank"}
+                Twitter
   .row
     .col-1.col.col--centered
       %p= I18n.t("corporate.team.join-us")
