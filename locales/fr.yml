@@ -71,7 +71,7 @@ fr:
         details: Nous exploitons des <strong>sites à très fort trafic</strong> grâce à des technologies PaaS fiables pour <strong>déployer sereinement</strong> et <strong>dimensionner</strong> automatiquement des applications dont nous avons optimisé les <strong>performances</strong> (caching, jobs).
         title: Entreprises
       pricing:
-        details: 'Comme nous travaillons de manière agile, la facturation est<br>simple et transparente : c''est <strong class="price">400€ / jour</strong>.'
+        details: 'Comme nous travaillons de manière agile, la facturation est<br>simple et transparente : c''est <strong class="price">400 € / jour</strong>.'
         title: Prix
       quality:
         details: Notre code est <strong>versionné</strong> (git), <strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit continu</strong> (Codeclimate, code reviews) et de <strong>déployement continu</strong> (Heroku).
