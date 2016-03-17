@@ -20,7 +20,7 @@ en:
       hire-us_html: email us
       page-description: Ruby/Rails web agency in Lyon focusing on agile development, startups, large web applications.
     footer:
-      articles-title: Latest articles
+      articles-title: Latest blog articles
       copyright: <a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>All code is licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
       title: Contact us
     header:
