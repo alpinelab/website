@@ -1,0 +1,15 @@
+sudo: false
+language: ruby
+cache: bundler
+rvm:
+  - 2.3.0
+  - ruby-head
+script: rake
+matrix:
+  fast_finish: true
+  allow_falures:
+    - rvm: ruby-head
+notifications:
+  # FIXME: use appropriate recipient address
+  email:
+    - tj+travis_alpinelab_website@a13.fr
