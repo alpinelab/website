@@ -74,7 +74,7 @@ fr:
         details: 'Comme nous travaillons de manière agile, la facturation est<br>simple et transparente : c''est <strong class="price">400€ / jour</strong>.'
         title: Prix
       quality:
-        details: Notre code est <strong>versionné</strong> (git), <strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit continu</strong> (Codeclimate, code reviews) et de <strong>déployement continu</strong> (Heroku).
+        details: Notre code est <strong>versionné</strong> (git), <strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit continu</strong> (Codeclimate, code reviews) et de <strong>déploiement continu</strong> (Heroku).
         title: Qualité de code
       startups:
         details: Nous contruisons des <strong>MVP</strong>s en itérant rapidement, en vous aidant à faire les choix technologiques adaptés pour un <strong>prototypage rapide</strong> et un <strong>time-to-market</strong> court jusqu'à ce que vous ayez votre propre équipe de dev en interne.
