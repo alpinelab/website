@@ -35,17 +35,17 @@ en:
       kyero:
         description: Leading real-estate website in Spain. Full technical exploitation. Performance and reliability.
         link: https://kyero.com
-        stack: Rails / Sidekiq / Solr / Heroku / Rspec
+        stack: Rails / Sidekiq / Solr / Heroku / RSpec
         title: Kyero
       locale:
         description: Translation SaaS tool for Rails projects. Full management et exploitation.
         link: http://www.localeapp.com
-        stack: Rails / Sidekiq / API / gem / Rspec
+        stack: Rails / Sidekiq / API / gem / RSpec
         title: Locale
       misterbnb:
         description: Gay-friendly Airbnb. High growth website. Short iterations. Large feature set.
         link: https://www.misterbnb.com
-        stack: Rails / PostgreSQL / Rspec
+        stack: Rails / PostgreSQL / RSpec
         title: Misterbnb
       misterout:
         description: If it's Ruby-related, we can help. Contact us!
@@ -55,7 +55,7 @@ en:
       skiwallet:
         description: Ski passes e-commerce website. Full project management and exploitation.
         link: https://www.skiwallet.com
-        stack: Rails / API / Ember.js / Rspec
+        stack: Rails / API / Ember.js / RSpec
         title: Skiwallet
       title: Some projects
     team:
