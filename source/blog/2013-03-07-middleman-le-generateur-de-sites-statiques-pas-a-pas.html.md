@@ -1,9 +1,9 @@
 ---
 title: Middleman, le générateur de sites statiques pas à pas
 date: 2013-03-07 17:38 CET
-priority: 0.7
 authorName: Michael Baudino
-authorUrl: https://plus.google.com/+MichaelBaudino
+authorEmail: michael.baudino@alpine-lab.com
+authorURL: https://github.com/michaelbaudino
 tags: middleman, slim, sass, coffeescript, markdown, github pages
 ---
 

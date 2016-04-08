@@ -1,9 +1,9 @@
 ---
 title: Installer git-flow dans une box Nitrous.IO
 date: 2013-08-01 21:35 CEST
-priority: 0.7
 authorName: Michael Baudino
-authorUrl: https://plus.google.com/+MichaelBaudino
+authorEmail: michael.baudino@alpine-lab.com
+authorURL: https://github.com/michaelbaudino
 tags: git, git-flow, nitrous
 ---
 
