@@ -24,10 +24,10 @@
 
     .post-body{itemprop: "articleBody"}~ yield
 
-    .author{id: (case current_page.data.authorName when 'Michael Baudino' then 'mike' when 'Thibault Dalban' then 'thib' end)}
-      Écrit par
-      = link_to(current_page.data.authorName || 'Alpine Lab', current_page.data.authorUrl || 'https://plus.google.com/+AlpineLab', {:rel => 'author'})
-      .avatar
+    .author
+      Publié par
+      = link_to(current_page.data.authorName, current_page.data.authorURL)
+      %img{src: gravatar_for(current_page.data.authorEmail), class: "avatar", alt: current_page.data.authorEmail}
 
   %aside
     %h3 Autres articles récents

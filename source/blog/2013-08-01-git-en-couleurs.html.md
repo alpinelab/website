@@ -1,9 +1,9 @@
 ---
 title: Git en couleurs
 date: 2013-08-01 19:09 CEST
-priority: 0.7
 authorName: Michael Baudino
-authorUrl: https://plus.google.com/+MichaelBaudino
+authorEmail: michael.baudino@alpine-lab.com
+authorURL: https://github.com/michaelbaudino
 tags: git, terminal
 ---
 

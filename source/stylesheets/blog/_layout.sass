@@ -51,37 +51,6 @@ a.stealth
 h4
   margin-top: 0
 
-div,article
-  &>.avatar
-    width: $avatarSize
-    height: $avatarSize
-    +transition(0.5s ease)
-    +border-radius(50%)
-    border: ($avatarSize/2) solid rgba(black, 0.6)
-    background-position: 50% 50%
-    background-size: $avatarSize $avatarSize
-    background-repeat: no-repeat
-    background-origin: border-box
-    +box-sizing(border-box)
-    background-image: url('/img/blog/logo-alpinelab-128.png') // default avatar image
-  &:hover
-    &>.avatar
-      border: 5px solid rgba(black, 0.6)
-
-#alpinelab
-  .avatar
-    background-image: url('/img/blog/logo-alpinelab-128.png')
-
-#mike
-  .avatar
-    background-image: url('http://www.gravatar.com/avatar/db878dfa87aec08092efcb7cc12ab343?size=128')
-#thib
-  .avatar
-    background-image: url('http://www.gravatar.com/avatar/722d1ed204f164d8424cda48d6d81611?size=128')
-#martin
-  .avatar
-    background-image: url('/img/photo-martin.jpg')
-
 .pagination-wrapper
   margin-top: 4em
 
@@ -95,18 +64,6 @@ i.fa
   &.fa-twitter, &.fa-twitter-square
     &:hover
       color: $twitter
-  &.fa-facebook, &.fa-facebook-square
-    &:hover
-      color: $facebook
-  &.fa-linkedin, &.fa-linkedin-square
-    &:hover
-      color: $linkedin
-  &.fa-pinterest, &.fa-pinterest-square
-    &:hover
-      color: $pinterest
-  &.fa-google-plus, &.fa-google-plus-square
-    &:hover
-      color: $google_plus
 
 .caret
   display: inline-block
@@ -165,9 +122,9 @@ header
       font-size: 0.8em
   .social-networks
     position: absolute
-    font-size: 1.2em
+    font-size: 2em
     right: 0
-    top: 0
+    top: 0.25em
 
 nav
   font-size: 1.2em
