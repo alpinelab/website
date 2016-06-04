@@ -3,7 +3,7 @@ title: Générer ses vues Devise en Haml
 date: 2013-05-07 08:46 CEST
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: rails, devise, haml
 ---
 

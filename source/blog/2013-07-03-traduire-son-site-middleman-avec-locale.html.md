@@ -3,7 +3,7 @@ title: Traduire son site Middleman avec Locale
 date: 2013-07-03 01:53 CEST
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: middleman, locale, i18n
 ---
 

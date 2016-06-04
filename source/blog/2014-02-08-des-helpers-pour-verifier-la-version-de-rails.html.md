@@ -3,7 +3,7 @@ title: Des helpers pour vérifier la version de Rails
 date: 2014-02-08 16:59 CET
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: rails, helper, gem development
 ---
 

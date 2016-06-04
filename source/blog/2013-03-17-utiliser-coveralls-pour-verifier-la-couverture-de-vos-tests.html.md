@@ -3,7 +3,7 @@ title: Utiliser Coveralls.io pour vérifier la couverture de vos tests
 date: 2013-03-17 14:38 CET
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: coveralls, tests, travis
 ---
 

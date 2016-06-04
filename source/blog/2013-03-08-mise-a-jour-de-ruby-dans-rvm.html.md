@@ -3,7 +3,7 @@ title: Mise à jour de Ruby dans RVM
 date: 2013-03-08 12:10 +01:00
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: rvm, ruby
 ---
 

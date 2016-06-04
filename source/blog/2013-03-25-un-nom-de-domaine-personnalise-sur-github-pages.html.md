@@ -3,7 +3,7 @@ title: Un nom de domaine personnalisé sur GitHub Pages
 date: 2013-03-25 01:34 CET
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: github pages, dns
 ---
 

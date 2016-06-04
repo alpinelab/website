@@ -3,7 +3,7 @@ title: SkiWallet à la conférence Blend
 date: 2013-09-24 22:45 CEST
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: conference, blend
 ---
 

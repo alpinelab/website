@@ -3,7 +3,7 @@ title: Interdire uniquement l'enregistrement de nouveaux utilisateurs sous Devis
 date: 2013-05-06 08:11 CEST
 authorName: Michael Baudino
 authorEmail: michael.baudino@alpine-lab.com
-authorURL: https://github.com/michaelbaudino
+authorURL: https://twitter.com/michaelbaudino
 tags: rails, devise
 ---
 
