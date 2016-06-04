@@ -3,7 +3,7 @@ en:
     commitments:
       community-title: Community
       conferences-title: Conferences
-      open-source-description: 'We <strong>maintain</strong> a few open-source projects/gems and we <strong>always contribute our modifications upstream</strong>.<br>Some examples: <a href="https://github.com/Locale/localeapp" target="_blank">localeapp</a>, <a href="https://github.com/middleman/middleman" target="_blank">middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">paperclip</a>, <a href="https://github.com/rafmagana/heroku_bash_completion" target="_blank">heroku_bash_completion</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, <a href="https://github.com/heroku/heroku" target="_blank">heroku</a>, ...'
+      open-source-description: 'We <strong>maintain</strong> a few open-source projects/gems and we <strong>always contribute our modifications upstream</strong>.<br>Some examples: <a href="https://github.com/Locale/localeapp" target="_blank">LocaleApp</a>, <a href="https://github.com/middleman/middleman" target="_blank">Middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">Paperclip</a>, <a href="https://github.com/rafmagana/heroku_bash_completion" target="_blank">heroku_bash_completion</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, <a href="https://github.com/heroku/heroku" target="_blank">Heroku CLI</a>, <a href="https://github.com/shakacode/react_on_rails" target="_blank">React on Rails</a>, ...'
       open-source-title: Open source
       title: Our commitments
     common:
@@ -20,7 +20,7 @@ en:
       hire-us_html: email us
       page-description: Ruby/Rails web agency in Lyon focusing on agile development, startups, large web applications.
     footer:
-      articles-title: Latest blog articles
+      articles-title: Latest articles
       copyright: <a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>All code is licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
       title: Contact us
     header:
@@ -35,17 +35,17 @@ en:
       kyero:
         description: Leading real-estate website in Spain. Full technical exploitation. Performance and reliability.
         link: https://kyero.com
-        stack: Rails / Sidekiq / Solr / Heroku / RSpec
+        stack: Rails / Sidekiq / Solr / Heroku / Rspec
         title: Kyero
       locale:
         description: Translation SaaS tool for Rails projects. Full management et exploitation.
         link: http://www.localeapp.com
-        stack: Rails / Sidekiq / API / gem / RSpec
+        stack: Rails / Sidekiq / API / gem / Rspec
         title: Locale
       misterbnb:
         description: Gay-friendly Airbnb. High growth website. Short iterations. Large feature set.
         link: https://www.misterbnb.com
-        stack: Rails / PostgreSQL / RSpec
+        stack: Rails / PostgreSQL / Rspec
         title: Misterbnb
       misterout:
         description: If it's Ruby-related, we can help. Contact us!
@@ -55,14 +55,34 @@ en:
       skiwallet:
         description: Ski passes e-commerce website. Full project management and exploitation.
         link: https://www.skiwallet.com
-        stack: Rails / API / Ember.js / RSpec
+        stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
       title: Some projects
     team:
       join-us: |-
         You want to join us? We're always looking for passionate developers !<br>
         Add yourself to the team and create <a href="https://github.com/alpinelab/website">a pull request</a> :-)
+      mike:
+        email: michael.baudino@alpine-lab.com
+        github: michaelbaudino
+        name: Michael Baudino
+        twitter: michaelbaudino
+      sylvain:
+        email: s.fertons@gmail.com
+        github: spharian
+        name: Sylvain Fertons
+        twitter: spharian
+      thibault:
+        email: thibault.dalban@alpine-lab.com
+        github: thibaultdalban
+        name: Thibault Dalban
+        twitter: kh_thib
       title: Our team
+      yann:
+        email: yann@vaillant.im
+        github: vayan
+        name: Yann Vaillant
+        twitter: vayan
     what-we-do:
       contracts:
         details: Our <a href="/conditions-generales-de-ventes.pdf" target="_blank">terms</a> (in French) are <a href="https://github.com/tibastral/contrats-francais" target="_blank">agile development contracts</a>. <br>And the code we write <strong>belongs to you</strong>.
@@ -71,7 +91,7 @@ en:
         details: We manage <strong>very high trafic websites</strong> using reliable PaaS technologies to <strong>deploy peacefully</strong> and <strong>scale</strong> automatically applications that we have optimized for <strong>performance</strong> and robustness (caching, background jobs).
         title: Enterprises
       pricing:
-        details: 'As we are working the agile way, invoicing is<br>simple and transparent: <strong class="price">€400 / day</strong>.'
+        details: 'As we are working the agile way, invoicing is<br>simple and transparent: <strong class="price">€ 400 / day</strong>.'
         title: Pricing
       quality:
         details: Our code is <strong>versioned</strong> (git), <strong>organised</strong> (gitflow), <strong>tested</strong> (RSpec, Capybara) within <strong>continuous integration</strong> (Travis, Codeship), <strong>continuous audit</strong> (Codeclimate, code reviews) and <strong>continuous deployment</strong> (Heroku) processes.

@@ -3,7 +3,7 @@ fr:
     commitments:
       community-title: Communauté
       conferences-title: Conférences
-      open-source-description: 'Nous <strong>maintenons</strong> plusieurs projets/gems open-source et nous <strong>contribuons toujours nos modifications</strong>.<br>Quelques exemples: <a href="https://github.com/Locale/localeapp" target="_blank">localeapp</a>, <a href="https://github.com/middleman/middleman" target="_blank">middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">paperclip</a>, <a href="https://github.com/rafmagana/heroku_bash_completion" target="_blank">heroku_bash_completion</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, <a href="https://github.com/heroku/heroku" target="_blank">heroku</a>, ...'
+      open-source-description: 'Nous <strong>maintenons</strong> plusieurs projets/gems open-source et nous <strong>contribuons toujours nos modifications</strong>.<br>Quelques exemples: <a href="https://github.com/Locale/localeapp" target="_blank">LocaleApp</a>, <a href="https://github.com/middleman/middleman" target="_blank">Middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">Paperclip</a>, <a href="https://github.com/rafmagana/heroku_bash_completion" target="_blank">heroku_bash_completion</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, <a href="https://github.com/heroku/heroku" target="_blank">Heroku CLI</a>, <a href="https://github.com/shakacode/react_on_rails" target="_blank">React on Rails</a>, ...'
       open-source-title: Open source
       title: Nos engagements
     common:
@@ -20,7 +20,7 @@ fr:
       hire-us_html: "écrivez nous"
       page-description: Agence web Ruby/Rails à Lyon orientée développement agile, startups, applications web complexes et open-source.
     footer:
-      articles-title: Derniers articles du blog
+      articles-title: Derniers articles
       copyright: Le site d'<a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> est publié sous license <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>Le code est sous licence <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
       title: Nous contacter
     header:
@@ -35,17 +35,17 @@ fr:
       kyero:
         description: 1er site immobilier d'Espagne. Exploitation technique complète. Performance et stabilité.
         link: https://kyero.com
-        stack: Rails / Sidekiq / Solr / Heroku / RSpec
+        stack: Rails / Sidekiq / Solr / Heroku / Rspec
         title: Kyero
       locale:
         description: Outil SaaS de traduction pour projets Rails. Gestion et exploitation complètes du projet.
         link: http://www.localeapp.com
-        stack: Rails / Sidekiq / API / gem / RSpec
+        stack: Rails / Sidekiq / API / gem / Rspec
         title: Locale
       misterbnb:
         description: Airbnb gay-friendly. Site en très forte croissance. Itérations courtes. Nombreuses fonctionnalités.
         link: https://www.misterbnb.com
-        stack: Rails / PostgreSQL / RSpec
+        stack: Rails / PostgreSQL / Rspec
         title: Misterbnb
       misterout:
         description: Si c'est du Ruby, on peut vous aider. Contactez-nous !
@@ -55,14 +55,34 @@ fr:
       skiwallet:
         description: Site de vente de forfaits de ski en ligne. Gestion et exploitation complètes du projet.
         link: https://www.skiwallet.com
-        stack: Rails / API / Ember.js / RSpec
+        stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
       title: Quelques projets
     team:
       join-us: |-
         Vous voulez vous joindre à nous ? On recherche tout le temps des devs passioné-e-s !<br>
         Ajoutez-vous à l'équipe et faites nous <a href="https://github.com/alpinelab/website">une pull request</a> :-)
+      mike:
+        email: michael.baudino@alpine-lab.com
+        github: michaelbaudino
+        name: Michael Baudino
+        twitter: michaelbaudino
+      sylvain:
+        email: s.fertons@gmail.com
+        github: spharian
+        name: Sylvain Fertons
+        twitter: spharian
+      thibault:
+        email: thibault.dalban@alpine-lab.com
+        github: thibaultdalban
+        name: Thibault Dalban
+        twitter: kh_thib
       title: Notre équipe
+      yann:
+        email: yann@vaillant.im
+        github: vayan
+        name: Yann Vaillant
+        twitter: vayan
     what-we-do:
       contracts:
         details: Nos <a href="/conditions-generales-de-ventes.pdf" target="_blank">CGVs</a> sont des <a href="https://github.com/tibastral/contrats-francais" target="_blank">contrats de développement agile</a>. <br>Et le code que nous écrivons <strong>vous appartient</strong>.
@@ -71,10 +91,10 @@ fr:
         details: Nous exploitons des <strong>sites à très fort trafic</strong> grâce à des technologies PaaS fiables pour <strong>déployer sereinement</strong> et <strong>dimensionner</strong> automatiquement des applications dont nous avons optimisé les <strong>performances</strong> (caching, jobs).
         title: Entreprises
       pricing:
-        details: 'Comme nous travaillons de manière agile, la facturation est<br>simple et transparente : c''est <strong class="price">400 € / jour</strong>.'
+        details: 'Comme nous travaillons de manière agile, la facturation est<br>simple et transparente : c''est <strong class="price">400€ / jour</strong>.'
         title: Prix
       quality:
-        details: Notre code est <strong>versionné</strong> (git), <strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit continu</strong> (Codeclimate, code reviews) et de <strong>déploiement continu</strong> (Heroku).
+        details: Notre code est <strong>versionné</strong> (git), <strong>organisé</strong> (gitflow), <strong>testé</strong> (RSpec, Capybara) au sein d'un process d'<strong>intégration continue</strong> (Travis, Codeship), d'<strong>audit continu</strong> (Codeclimate, code reviews) et de <strong>déployement continu</strong> (Heroku).
         title: Qualité de code
       startups:
         details: Nous contruisons des <strong>MVP</strong>s en itérant rapidement, en vous aidant à faire les choix technologiques adaptés pour un <strong>prototypage rapide</strong> et un <strong>time-to-market</strong> court jusqu'à ce que vous ayez votre propre équipe de dev en interne.
