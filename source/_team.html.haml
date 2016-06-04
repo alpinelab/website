@@ -2,7 +2,7 @@
   %h3.section__title= I18n.t("corporate.team.title")
   .row
     - data.team.each do |member|
-      .col-3.col.col--centered
+      .col-4.col.col--centered
         %img{src: gravatar_for(member.email), class: "avatar", alt: member.email}
         %h4= member.name
         %ul.social-networks
