@@ -8,13 +8,10 @@ fr:
       title: Nos engagements
     common:
       address_html: |-
-        <li>1 rue de la Martinière</li>
-        <li>69001 Lyon</li>
+        <li>5 Place d'Ainay</li>
+        <li>69002 Lyon</li>
         <li>
           <a href="mailto:dahu@alpine-lab.com">dahu@alpine-lab.com</a>
-        </li>
-        <li>
-          <a href="tel:+33950831231">09.50.83.12.31</a>
         </li>
       email-subject: Je vous veux !
       hire-us_html: "écrivez nous"
