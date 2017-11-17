@@ -6,14 +6,39 @@ For the compiled, static, hosted on [github:pages](http://pages.github.com) site
 
 The website/blog itself is available at [www.alpine-lab.com](http://www.alpine-lab.com).
 
-Powered by [Middleman](http://middlemanapp.com).
-Precompiles [Haml](http://haml.info), [Sass](http://sass-lang.com), CoffeeScript, Markdown.
+Powered by [Middleman](http://middlemanapp.com) in our [Docker image for Ruby development](https://github.com/alpinelab/docker-ruby-dev).
+Precompiles [Haml](http://haml.info), [Sass](http://sass-lang.com), [CoffeeScript](http://coffeescript.org/) and [Markdown](https://daringfireball.net/projects/markdown/).
 
-#### Bootstraping
+> Run `docker-sync start` once prior to any other command if you're on Macintosh 🍎
 
-To configure LocaleApp, type the following command:
+## Setup
+
+To configure [LocaleApp](https://www.localeapp.com), type the following command:
+
 ```shell
-$ localeapp install --standalone your_api_key
+docker-compose run alpinelab_website localeapp install --standalone --write-env-file <APIKEY>
+```
+
+## Run
+
+To run the development server, run:
+
+```shell
+docker-compose up
+```
+
+Update localized content from [LocaleApp](https://www.localeapp.com) using:
+
+```shell
+docker-compose run alpinelab_website localeapp pull
+```
+
+## Deploy
+
+When your changes are ready to be published, run:
+
+```shell
+docker-compose run alpinelab_website middleman deploy --build-before
 ```
 
 ## Wanna join us?
