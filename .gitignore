@@ -13,8 +13,10 @@
 /.ruby-version
 /.ruby-gemset
 
-# Ignore Sass' cache
+# Ignore build stuff
 /.sass-cache
+/.sass
+/build
 
 # Ignore LocaleApp config
 /.localeapp
