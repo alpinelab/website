@@ -19,6 +19,13 @@ To configure [LocaleApp](https://www.localeapp.com), type the following command:
 docker-compose run alpinelab_website localeapp install --standalone --write-env-file <APIKEY>
 ```
 
+To configure Git for deploy (because it can read your host global config from inside the container):
+
+```shell
+git config user.name "Your Name"
+git config user.email "your@email.com"
+```
+
 ## Run
 
 To run the development server, run:
@@ -38,7 +45,7 @@ docker-compose run alpinelab_website localeapp pull
 When your changes are ready to be published, run:
 
 ```shell
-docker-compose run alpinelab_website middleman deploy --build-before
+docker-compose run -v ~/.ssh:/root/.ssh alpinelab_website middleman deploy --build-before
 ```
 
 ## Wanna join us?
