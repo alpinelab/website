@@ -3,11 +3,10 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
-# Ignore bundler config
+# Ignore dependencies config and repositories
 /.bundle
-
-# Ignore the build directory
-/build
+/vendor/bundle
+/node_modules
 
 # Ignore RVM config file
 /.rvmrc
@@ -25,5 +24,5 @@
 .DS_Store
 .rbenv-gemsets
 
-# Ignore DockerSync temp files
+# Ignore Docker-related stuff
 /.docker-sync

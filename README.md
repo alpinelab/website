@@ -45,7 +45,7 @@ docker-compose run alpinelab_website localeapp pull
 When your changes are ready to be published, run:
 
 ```shell
-docker-compose run -v ~/.ssh:/root/.ssh alpinelab_website middleman deploy --build-before
+docker-compose run -v ~/.ssh:/root/.ssh alpinelab_website deploy.sh
 ```
 
 ## Wanna join us?

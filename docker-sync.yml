@@ -2,4 +2,4 @@ version: "2"
 syncs:
   alpinelab_website-sync:
     src: ./
-    sync_excludes: [build]
+    sync_excludes: [build, node_modules]

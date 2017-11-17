@@ -101,10 +101,6 @@ GEM
       rack (>= 1.4.5, < 2.0)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
-    middleman-deploy (1.0.0)
-      middleman-core (>= 3.2)
-      net-sftp
-      ptools
     middleman-livereload (3.4.2)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -127,9 +123,6 @@ GEM
     mini_portile (0.6.2)
     minitest (5.9.0)
     multi_json (1.12.1)
-    net-sftp (2.1.2)
-      net-ssh (>= 2.6.5)
-    net-ssh (2.9.2)
     netrc (0.11.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -139,7 +132,6 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.7)
       activesupport (>= 3.1)
-    ptools (1.3.2)
     rack (1.6.8)
     rack-livereload (0.3.15)
       rack
@@ -192,7 +184,6 @@ DEPENDENCIES
   localeapp
   middleman (~> 3.3)
   middleman-blog
-  middleman-deploy (~> 1.0)
   middleman-livereload (~> 3.1)
   middleman-minify-html
   middleman-rouge
