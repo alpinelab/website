@@ -3,18 +3,15 @@ en:
     commitments:
       community-title: Community
       conferences-title: Conferences
-      open-source-description: 'We <strong>maintain</strong> a few open-source projects/gems and we <strong>always contribute our modifications upstream</strong>.<br>Some examples: <a href="https://github.com/Locale/localeapp" target="_blank">LocaleApp</a>, <a href="https://github.com/middleman/middleman" target="_blank">Middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">Paperclip</a>, <a href="https://github.com/rafmagana/heroku_bash_completion" target="_blank">heroku_bash_completion</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, <a href="https://github.com/heroku/heroku" target="_blank">Heroku CLI</a>, <a href="https://github.com/shakacode/react_on_rails" target="_blank">React on Rails</a>, ...'
+      open-source-description: 'We <strong>maintain</strong> a few open-source projects/gems and we <strong>always contribute our modifications upstream</strong>.<br>Some examples: <a href="https://github.com/Locale/localeapp" target="_blank">LocaleApp</a>, <a href="https://github.com/eugenmayer/docker-sync/" target="_blank">Docker Sync</a>, <a href="https://github.com/alpinelab/docker-ruby-dev/" target="_blank">docker-ruby-dev</a>, <a href="https://github.com/middleman/middleman" target="_blank">Middleman</a>, <a href="https://github.com/thoughtbot/paperclip" target="_blank">Paperclip</a>, <a href="https://github.com/rafmagana/heroku_bash_completion" target="_blank">heroku_bash_completion</a>, <a href="https://github.com/arches/whacamole" target="_blank">whacamole</a>, <a href="https://github.com/aws/aws-sdk-ruby" target="_blank">aws-sdk-ruby</a>, <a href="https://github.com/waynerobinson/xeroizer" target="_blank">xeroizer</a>, <a href="https://github.com/jipiboily/monologue" target="_blank">monologue</a>, <a href="https://github.com/heroku/heroku" target="_blank">Heroku CLI</a>, <a href="https://github.com/shakacode/react_on_rails" target="_blank">React on Rails</a>, ...'
       open-source-title: Open source
       title: Our commitments
     common:
       address_html: |-
-        <li>1 rue de la Martinière</li>
-        <li>69001 Lyon, France</li>
+        <li>5 place d'Ainay</li>
+        <li>69002 Lyon, France</li>
         <li>
           <a href="mailto:dahu@alpine-lab.com">dahu@alpine-lab.com</a>
-        </li>
-        <li>
-          <a href="tel:+33950831231">33 950 831 231</a>
         </li>
       email-subject: I want you!
       hire-us_html: email us
