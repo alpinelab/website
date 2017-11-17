@@ -1,0 +1,18 @@
+version: "3"
+volumes:
+  alpinelab_website-bundle:       { driver: local }
+  alpinelab_website-node_modules: { driver: local }
+  alpinelab_website-config:       { driver: local }
+  alpinelab_website-sync:         { external: true }
+services:
+  alpinelab_website:
+    image: alpinelab/ruby-dev
+    command: ['middleman', 'server', '--bind-address=0.0.0.0']
+    ports:
+      - "4567:4567"
+      - "35729:35729"
+    volumes:
+      - alpinelab_website-sync:/app:nocopy
+      - alpinelab_website-bundle:/bundle
+      - alpinelab_website-node_modules:/app/node_modules
+      - alpinelab_website-config:/config

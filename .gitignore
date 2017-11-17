@@ -24,3 +24,6 @@
 # Ignore Mac OS X craps
 .DS_Store
 .rbenv-gemsets
+
+# Ignore DockerSync temp files
+/.docker-sync
