@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "nokogiri"
 gem "bourbon"
 gem "font-awesome-sass"
+gem "json", "~> 1.8.6"
 
 gem "middleman", "~> 3.3"
 gem "middleman-deploy", "~> 1.0"
