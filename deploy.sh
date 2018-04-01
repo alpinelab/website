@@ -15,7 +15,7 @@ function build_in_a_new_branch {
   git checkout -q -B ${BUILD_BRANCH} && \
   middleman build && \
   git add --force ${BUILD_DIR} && \
-  git commit -q --message "Middleman build $(date +'%Y-%m-%d %H:%M:%S')"
+  git commit -q --no-gpg-sign --message "Middleman build $(date +'%Y-%m-%d %H:%M:%S')"
 }
 
 function publish_build_directory {

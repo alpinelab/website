@@ -16,14 +16,7 @@ Precompiles [Haml](http://haml.info), [Sass](http://sass-lang.com), [CoffeeScrip
 To configure [LocaleApp](https://www.localeapp.com), type the following command:
 
 ```shell
-docker-compose run alpinelab_website localeapp install --standalone --write-env-file <APIKEY>
-```
-
-To configure Git for deploy (because it can read your host global config from inside the container):
-
-```shell
-git config user.name "Your Name"
-git config user.email "your@email.com"
+docker-compose run app localeapp install --standalone --write-env-file <APIKEY>
 ```
 
 ## Run
@@ -37,7 +30,7 @@ docker-compose up
 Update localized content from [LocaleApp](https://www.localeapp.com) using:
 
 ```shell
-docker-compose run alpinelab_website localeapp pull
+docker-compose run app localeapp pull
 ```
 
 ## Deploy
@@ -45,7 +38,7 @@ docker-compose run alpinelab_website localeapp pull
 When your changes are ready to be published, run:
 
 ```shell
-docker-compose run -v ~/.ssh:/root/.ssh alpinelab_website deploy.sh
+docker-compose run -v ~/.ssh:/etc/skel/.ssh -v ~/.gitconfig:/etc/skel/.gitconfig app ./deploy.sh
 ```
 
 ## Wanna join us?
