@@ -41,9 +41,9 @@ fr:
         title: Locale
       misterbnb:
         description: Airbnb gay-friendly. Site en très forte croissance. Itérations courtes. Nombreuses fonctionnalités.
-        link: https://www.misterbnb.com
+        link: https://www.misterbandb.com
         stack: Rails / PostgreSQL / Rspec
-        title: Misterbnb
+        title: misterb&b
       misterout:
         description: Si c'est du Ruby, on peut vous aider. Contactez-nous !
         link: javascript:void(0);
@@ -51,7 +51,7 @@ fr:
         title: Votre projet ?
       skiwallet:
         description: Site de vente de forfaits de ski en ligne. Gestion et exploitation complètes du projet.
-        link: https://www.skiwallet.com
+        link: "#"
         stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
       title: Quelques projets
