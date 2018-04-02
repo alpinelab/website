@@ -38,7 +38,7 @@
     @include montserratBold
     span
       color: $red
-    // Red line
+    // Grey line
     &:after
       content: ""
       background: #fff
@@ -53,9 +53,9 @@
     @include max-width(1540px)
       font-size: 41px
     @include max-width(890px)
-      font-size: 31px            
+      font-size: 31px
     @include max-width(740px)
-      margin-bottom: 0      
+      margin-bottom: 0
     @include max-width($mobile)
       font-size: 22px
       text-align: left
@@ -64,25 +64,6 @@
   h3
     font-size: 20px
     position: relative
-    a
-      color: $red
-      position: relative
-      // Hover underline
-      &:after
-        content: ""
-        background: $red
-        height: 2px
-        opacity: 0
-        will-change: transform, opacity
-        @include transition(all .2s ease-in-out)
-        @include transform(translateY(2px) scaleX(.95))
-        @include position(absolute, null 0 -2px 0)
-      &:hover
-        color: #da3f47
-        &:after
-          background: #da3f47
-          opacity: 1
-          @include transform(none)
     @include max-width($desktop)
       font-size: 17px
     @include max-width(740px)
