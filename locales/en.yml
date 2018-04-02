@@ -51,7 +51,7 @@ en:
         title: Your project?
       skiwallet:
         description: Ski passes e-commerce website. Full project management and exploitation.
-        link: "#"
+        link: javascript:void();
         stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
       title: Some projects

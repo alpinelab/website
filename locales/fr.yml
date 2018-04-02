@@ -51,7 +51,7 @@ fr:
         title: Votre projet ?
       skiwallet:
         description: Site de vente de forfaits de ski en ligne. Gestion et exploitation complètes du projet.
-        link: "#"
+        link: javascript:void();
         stack: Rails / API / Ember.js / Rspec
         title: Skiwallet
       title: Quelques projets
