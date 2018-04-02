@@ -74,25 +74,6 @@ svg
     opacity: 0
     @include transform(translateY(-10px))
 
-.word
-  background: $greyBg
-  position: relative
-  @include transition(all .7s $ease-out-expo)
-
-.alpine-word
-  z-index: 1
-  @include transition-delay(.2s)
-  .hidden &
-    opacity: 0
-    @include transform(translateY(-9px))
-
-.lab-word
-  left: 0
-  @include transition-delay(.4s)
-  .hidden &
-    opacity: 0
-    left: -62px
-
 .footer__address
   li:not(:last-child)
     margin-bottom: 20px

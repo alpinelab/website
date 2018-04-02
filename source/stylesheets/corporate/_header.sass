@@ -14,7 +14,7 @@
   // Blue rectangle
   &:before
     content: ""
-    background: $blue
+    background: white
     will-change: transform
     z-index: -1
     @include position(absolute, 0)
@@ -27,14 +27,8 @@
   float: left
   position: relative
   z-index: 100
+  margin-top: -6px
   @include transform-origin(0 0)
-  a
-    color: #fff
-  .scrolled &
-    @include transform(translateY(-80px) scale(.8))
-    @include animation(logoApparition .9s $ease-out-circ)
-    @include animation-fill-mode(forwards)
-    @include animation-delay(.2s)
 
 .header__navigation
   text-align: center
@@ -53,6 +47,14 @@
     @include montserrat
     &:not(.active)
       opacity: .6
+    &:hover
+      opacity: .9
+  .scrolled #header &
+    a
+      color: $blue
+      opacity: .7
+      &:hover
+        opacity: 1
 
 .header__languages
   float: right
