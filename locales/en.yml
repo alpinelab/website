@@ -24,11 +24,27 @@ en:
       main-title: We are <span>Ruby/Rails</span> developers
       subtitle: experts in backend, MVPs & open source
     our-projects:
+      title: Some projects
+      accorlocal:
+        description: Reservation of local services provided in Accor group hotels. Back-end, API and back-office development.
+        link: https://www.accorlocal.com/
+        stack: Rails / API (Grape) / ActiveAdmin / RSpec / PostgreSQL
+        title: AccorLocal
+      goodsh:
+        description: Social application of sharing good tips. Back-end and API development.
+        link: https://goodsh.it/
+        stack: Rails / API / Trailblazer / RSpec / Redis
+        title: Goodsh
       guerir-le-regard:
         description: Web-documentary for Institut Curie. Jury prize at Web Program Festival.
         link: http://guerirleregard.fr
         stack: Middleman / Sass / CoffeeScript
         title: Guérir le regard
+      iperia:
+        description: Resumes database for domestic employees.
+        link: https://moncv.iperia.eu/
+        stack: Rails / API / RSpec / CoffeeScript / Sass
+        title: Ipéria
       kyero:
         description: Leading real-estate website in Spain. Full technical exploitation. Performance and reliability.
         link: https://kyero.com
@@ -44,17 +60,16 @@ en:
         link: https://www.misterbandb.com
         stack: Rails / PostgreSQL / Rspec
         title: misterb&b
-      misterout:
+      sirac:
+        description: Provision of part-time staff. Fullstack development.
+        link: http://www.sirac-ettp-temps-partiel.fr/
+        stack: Rails / RSpec / PostgreSQL / SemanticUI
+        title: Sirac
+      your_project:
         description: If it's Ruby-related, we can help. Contact us!
         link: javascript:void(0);
         stack: "&nbsp;"
         title: Your project?
-      skiwallet:
-        description: Ski passes e-commerce website. Full project management and exploitation.
-        link: javascript:void();
-        stack: Rails / API / Ember.js / Rspec
-        title: Skiwallet
-      title: Some projects
     team:
       join-us: |-
         You want to join us? We're always looking for passionate developers !<br>

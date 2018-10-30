@@ -2,7 +2,7 @@
   %h3.section__title= I18n.t("corporate.our-projects.title")
 
   %ul.our-projects__list.container
-    - %w{locale kyero guerir-le-regard skiwallet misterbnb}.each do |project_name|
+    - %w{locale kyero guerir-le-regard iperia misterbnb accorlocal sirac goodsh}.each do |project_name|
       %li.our-projects__list-item
         - project_url = I18n.t("corporate.our-projects.#{project_name}.link")
         %a.project{href: project_url, target: ("_blank" if project_url.start_with? "http") }
@@ -16,8 +16,8 @@
     %li.our-projects__list-item
       %a.project.no-hover.scroll-to{href: "#footer"}
         %div
-          .project-bg{class: "project-bg--misterout"}
+          .project-bg{class: "project-bg--your_project"}
           .project-overlay
-            .project-bg-color{class: "project-bg-color--misterout"}
-            %h4.project-title= I18n.t("corporate.our-projects.misterout.title")
-            %p.project-description= I18n.t("corporate.our-projects.misterout.description")
+            .project-bg-color{class: "project-bg-color--your_project"}
+            %h4.project-title= I18n.t("corporate.our-projects.your_project.title")
+            %p.project-description= I18n.t("corporate.our-projects.your_project.description")
