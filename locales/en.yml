@@ -24,7 +24,6 @@ en:
       main-title: We are <span>Ruby/Rails</span> developers
       subtitle: experts in backend, MVPs & open source
     our-projects:
-      title: Some projects
       accorlocal:
         description: Reservation of local services provided in Accor group hotels. Back-end, API and back-office development.
         link: https://www.accorlocal.com/
@@ -60,11 +59,17 @@ en:
         link: https://www.misterbandb.com
         stack: Rails / PostgreSQL / Rspec
         title: misterb&b
+      save:
+        description: Repair service for electronic devices.
+        link: https://www.save.co/
+        stack: Rails / RSpec / CoffeeScript / Sass/ PostgreSQL
+        title: Save
       sirac:
-        description: Provision of part-time staff. Fullstack development.
+        description: Provision of part-time staff. Fullstack development of post-MVP prototype in high-growth phase.
         link: http://www.sirac-ettp-temps-partiel.fr/
         stack: Rails / RSpec / PostgreSQL / SemanticUI
         title: Sirac
+      title: Some projects
       your_project:
         description: If it's Ruby-related, we can help. Contact us!
         link: javascript:void(0);

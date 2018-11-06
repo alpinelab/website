@@ -24,7 +24,6 @@ fr:
       main-title: Nous sommes développeurs <span>Ruby/Rails</span>
       subtitle: experts en backend, MVPs &amp; open-source
     our-projects:
-      title: Quelques projets
       accorlocal:
         description: Réservation de services de proximité dans les hôtels du groupe Accor. Développement back-end, API et back-office.
         link: https://www.accorlocal.com/
@@ -60,11 +59,17 @@ fr:
         link: https://www.misterbandb.com
         stack: Rails / PostgreSQL / Rspec
         title: misterb&b
+      save:
+        description: Service de réparation d'appareils numériques. Développement fullstack du prototype post-MVP supportant une forte croissance.
+        link: https://www.save.co/
+        stack: Rails / RSpec / CoffeeScript / Sass/ PostgreSQL
+        title: Save
       sirac:
         description: Mise à disposition de salariés à temps partiel / partagé. Outil complet du coeur de métier Gestion des RH. Développement fullstack.
         link: http://www.sirac-ettp-temps-partiel.fr/
         stack: Rails / RSpec / PostgreSQL / SemanticUI
         title: Sirac
+      title: Quelques projets
       your_project:
         description: Si c'est du Ruby, on peut vous aider. Contactez-nous !
         link: javascript:void(0);
