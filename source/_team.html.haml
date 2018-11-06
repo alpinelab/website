@@ -4,7 +4,7 @@
     - data.team.each do |member|
       .col-4.col.col--centered
         %img{src: gravatar_for(member.email), class: "avatar", alt: member.email}
-        %h4= member.name
+        %h4.names= member.name
         %ul.social-networks
           %li
             %a{href: "https://github.com/#{member.github}", target: "_blank"} Github
