@@ -5,7 +5,7 @@ gem "bourbon"
 gem "font-awesome-sass"
 gem "json", "~> 2.1.0"
 
-gem "middleman", "~> 3.3"
+gem "middleman", "~> 4.2"
 gem "middleman-livereload", "~> 3.4"
 gem "middleman-blog"
 gem "middleman-minify-html"
