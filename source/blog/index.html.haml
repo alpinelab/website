@@ -11,7 +11,7 @@ layout: blog
   - page_articles.each do |article|
     %article{itemscope: true, itemtype: "http://schema.org/BlogPosting"}
       %meta{itemprop: "description", content: article.summary}
-      %meta{itemprop: "url", content: "http://www.alpine-lab.com#{article.url}"}
+      %meta{itemprop: "url", content: "https://www.alpine-lab.com/#{article.url}"}
       %meta{itemprop: "inLanguage", content: "fr"}
 
       %h2{itemprop: "name headline"}= link_to article.title, article.url

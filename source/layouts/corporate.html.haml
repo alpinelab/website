@@ -5,10 +5,10 @@
   = javascript_include_tag "corporate"
 
 = wrap_layout :layout do
-  %meta{itemprop: 'name',        content: 'Alpine Lab'                                                        }
-  %meta{itemprop: 'description', content: (yield_content(:description) || current_page.data.description)      }
-  %meta{itemprop: 'url',         content: 'http://www.alpine-lab.com'                                         }
-  %meta{itemprop: 'inLanguage',  content: I18n.locale                                                         }
-  %meta{itemprop: 'image',       content: "http://www.alpine-lab.com#{image_path('logo-alpinelab-500.png')}"  }
+  %meta{itemprop: 'name',        content: 'Alpine Lab'}
+  %meta{itemprop: 'description', content: (yield_content(:description) || current_page.data.description)}
+  %meta{itemprop: 'url',         content: 'https://www.alpine-lab.com'}
+  %meta{itemprop: 'inLanguage',  content: I18n.locale}
+  %meta{itemprop: 'image',       content: "https://www.alpine-lab.com#{asset_path(:images, 'blog/logo-alpinelab-500.png')}"}
 
   = yield

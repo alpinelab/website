@@ -86,6 +86,12 @@ set :markdown,
 
 activate :rouge_syntax
 
+# Use relative URLs
+# activate :relative_assets
+
+# Add asset fingerprinting to avoid cache issues
+activate :asset_hash
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -99,12 +105,6 @@ configure :build do
 
   # Enable cache buster
   # activate :cache_buster
-
-  # Use relative URLs
-  activate :relative_assets
-
-  # Add asset fingerprinting to avoid cache issues
-  activate :asset_hash
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
