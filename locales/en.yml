@@ -18,7 +18,7 @@ en:
       page-description: Ruby/Rails web agency in Lyon focusing on agile development, startups, large web applications.
     footer:
       articles-title: Latest articles
-      copyright: <a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> website is published under <a href="http://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>All code is licensed under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a>.
+      copyright: <a rel="publisher" href="https://plus.google.com/+AlpineLab" target="_blank">Alpine Lab</a> website is published under <a href="https://creativecommons.org/licenses/by/3.0/fr/" target="_blank">Creative Commons Attribution 3.0 (cc-by-3.0)</a>. <br>All code is licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>.
       title: Contact us
     header:
       main-title: We are <span>Ruby/Rails</span> developers
@@ -51,7 +51,7 @@ en:
         title: Kyero
       locale:
         description: Translation SaaS tool for Rails projects. Full management et exploitation.
-        link: http://www.localeapp.com
+        link: https://www.localeapp.com
         stack: Rails / Sidekiq / API / gem / Rspec
         title: Locale
       misterbnb:

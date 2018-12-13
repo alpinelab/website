@@ -61,7 +61,7 @@ Time.zone = 'Paris'
 helpers do
   def gravatar_for(email)
     hash = Digest::MD5.hexdigest(email.chomp.downcase)
-    "http://www.gravatar.com/avatar/#{hash}?size=128"
+    "https://www.gravatar.com/avatar/#{hash}?size=128"
   end
 
   def get_menu_labels(labels)

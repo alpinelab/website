@@ -2,12 +2,12 @@
 
 This is the source code only.
 
-For the compiled, static, hosted on [github:pages](http://pages.github.com) site, see the [gh-pages branch](https://github.com/alpinelab/website/tree/gh-pages).
+For the compiled, static, hosted on [github:pages](https://pages.github.com) site, see the [gh-pages branch](https://github.com/alpinelab/website/tree/gh-pages).
 
-The website/blog itself is available at [www.alpine-lab.com](http://www.alpine-lab.com).
+The website/blog itself is available at [www.alpine-lab.com](https://www.alpine-lab.com).
 
-Powered by [Middleman](http://middlemanapp.com) in our [Docker image for Ruby development](https://github.com/alpinelab/docker-ruby-dev).
-Precompiles [Haml](http://haml.info), [Sass](http://sass-lang.com), [CoffeeScript](http://coffeescript.org/) and [Markdown](https://daringfireball.net/projects/markdown/).
+Powered by [Middleman](https://middlemanapp.com) in our [Docker image for Ruby development](https://github.com/alpinelab/docker-ruby-dev).
+Precompiles [Haml](https://haml.info), [Sass](https://sass-lang.com), [CoffeeScript](https://coffeescript.org/) and [Markdown](https://daringfireball.net/projects/markdown/).
 
 > Run `docker-sync start` once prior to any other command if you're on Macintosh 🍎
 
@@ -47,5 +47,5 @@ Simply create a PR here that adds you as a team member!
 
 #### License
 
-Written by [Michael Baudino](https://github.com/michaelbaudino) and [Sylvain Fertons](https://github.com/Spharian) for [Alpine Lab](http://www.alpine-lab.com), 2013.
+Written by [Michael Baudino](https://github.com/michaelbaudino) and [Sylvain Fertons](https://github.com/Spharian) for [Alpine Lab](https://www.alpine-lab.com), 2013.
 Licensed under the terms of the MIT license (see `LICENSE.md` file).
