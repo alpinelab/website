@@ -1,5 +1,7 @@
 # Alpine Lab website and blog
 
+[![Codeship Status for alpinelab/website](https://app.codeship.com/projects/908e9730-e4cb-0136-bf47-3242880462ae/status?branch=master)](https://app.codeship.com/projects/319122)
+
 This is the source code only.
 
 For the compiled, static, hosted on [github:pages](https://pages.github.com) site, see the [gh-pages branch](https://github.com/alpinelab/website/tree/gh-pages).
@@ -35,7 +37,8 @@ docker-compose run app localeapp pull
 
 ## Deploy
 
-When your changes are ready to be published, run:
+Although deployment is done automatically from Codeship for every commit pushed
+to `master`, you can also publish manually from your computer:
 
 ```shell
 docker-compose run -v ~/.ssh:/etc/skel/.ssh -v ~/.gitconfig:/etc/skel/.gitconfig app ./deploy.sh
