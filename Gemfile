@@ -9,6 +9,7 @@ gem "middleman", "~> 3.3"
 gem "middleman-livereload", "~> 3.4"
 gem "middleman-blog"
 gem "middleman-minify-html"
+gem "middleman-favicon-maker", "~> 3.7"
 gem "jquery-middleman"
 
 gem "redcarpet"
