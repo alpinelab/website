@@ -23,7 +23,7 @@
         display: none
   @include max-width($mobile)
     .row
-      @include flex-direction(column)
+      flex-direction: column
     .col-3
       width: 100%
       font-size: 13px
@@ -51,28 +51,28 @@
     background: #f1878c
     will-change: transform
     @include position(absolute, 0)
-    @include transform(translateY(-100%))
+    transform: translateY(-100%)
   &, &:after
-    @include transition(all .2s ease-in-out)
+    transition: all .2s ease-in-out
   &:hover
     color: #fff
     &:after
-      @include transform(none)
+      transform: none
 
 .footer__logo
   cursor: default
   margin-top: 30px
-  @include user-select(none)
+  user-select: none
   .name
     color: #202023
     font-size: 30px
 
 svg
   will-change: transform
-  @include transition(all .4s ease-in-out)
+  transition: all .4s ease-in-out
   .hidden &
     opacity: 0
-    @include transform(translateY(-10px))
+    transform: translateY(-10px)
 
 .footer__address
   li:not(:last-child)
@@ -90,7 +90,7 @@ svg
     margin-left: -9px
     padding: 0 9px
     &, &:before
-      @include transition(all .6s $ease-out-expo)
+      transition: all .6s $ease-out-expo
     // Hover arrow
     &:before
       content: "›"
@@ -98,9 +98,9 @@ svg
       @include position(absolute, null null null 0)
     &:hover
       color: #606060 !important
-      @include transform(translateX(10px))
+      transform: translateX(10px)
       @include max-width($mobile)
-        @include transform(none)
+        transform: none
 
 .footer__bottom
   background: #2b2b2c
@@ -124,7 +124,7 @@ svg
   a
     font-size: 24px
     opacity: .7
-    @include transition(opacity .2s ease-in-out)
+    transition: opacity .2s ease-in-out
     &:hover
       opacity: 1
     i

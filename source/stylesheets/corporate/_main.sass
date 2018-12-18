@@ -3,7 +3,7 @@
 /**************************************************/
 
 *
-  @include box-sizing(border-box)
+  box-sizing: border-box
 
 body
   color: #707070
@@ -13,13 +13,13 @@ body
   -webkit-tap-highlight-color: transparent
   -webkit-text-size-adjust: 100%
 
-@include selection
+::selection
   background: #f2636a
   color: #fff
 
 a
   color: inherit
-  @include transition(all .2s ease-in-out)
+  transition: all .2s ease-in-out
 
 p strong
   color: #454545
@@ -77,9 +77,9 @@ h4
   background: $blue
 
 .row
-  @include display(flex)
-  @include flex-wrap(wrap)
-  @include justify-content(space-between)
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
 
 .col--centered
   text-align: center

@@ -13,7 +13,7 @@
     will-change: transform
     @include position(absolute, 0)
     @include max-width($mobile)
-      @include calc(background-position, "100% + 120px")
+      calc: background-position, "100% + 120px"
   .parallax-bg--blur
     background-image: url("../images/intro-bg-blur.jpg")
     opacity: 0
@@ -24,10 +24,10 @@
   .container
     overflow: hidden
     text-align: center
-    @include display(flex)
-    @include align-items(center)
-    @include flex-direction(column)
-    @include justify-content(center)
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
   h2
     font-size: 60px
     letter-spacing: 6px
