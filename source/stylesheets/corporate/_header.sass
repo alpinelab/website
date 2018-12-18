@@ -10,7 +10,7 @@
     padding-top: 25px
   .scrolled &
     &:before
-      @include transform(none)
+      transform: none
   // Blue rectangle
   &:before
     content: ""
@@ -18,17 +18,17 @@
     will-change: transform
     z-index: -1
     @include position(absolute, 0)
-    @include transform(translateY(calc(-100% + 4px)))
-    @include transition(transform .5s $ease-out-expo)
+    transform: translateY(calc(-100% + 4px))
+    transition: transform .5s $ease-out-expo
     @include max-width(700px)
-      @include transform(translateY(-100%))
+      transform: translateY(-100%)
 
 .header__logo
   float: left
   position: relative
   z-index: 100
   margin-top: -6px
-  @include transform-origin(0 0)
+  transform-origin: 0 0
 
 .header__navigation
   text-align: center
@@ -98,8 +98,8 @@
   margin: -8px 0 0 36px
   text-align: center
   will-change: transform
-  @include transition(transform .3s ease-in-out)
+  transition: transform .3s ease-in-out
   &:hover
-    @include transform(scale(1.15))
+    transform: scale(1.15)
   @include max-width($mobile)
     display: none

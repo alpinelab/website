@@ -21,25 +21,25 @@
   @include ratio(70%)
   div
     text-align: center
-    @include display(flex)
-    @include align-items(center)
-    @include flex-direction(column)
-    @include justify-content(center)
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
   &:not(.no-hover):hover
     .project-bg
-      @include filter(none)
+      filter: none
     .project-overlay
       opacity: 0
       visibility: hidden
     .project-title
       opacity: 0
-      @include transform(translateY(5px))
+      transform: translateY(5px)
     .project-description
-      @include transform(translateY(7px))
+      transform: translateY(7px)
     .project-stack
-      @include transform(translateY(7px))
+      transform: translateY(7px)
   &:hover .project-bg
-    @include transform(none)
+    transform: none
 
 .project-bg,
 .project-bg-color
@@ -49,9 +49,9 @@
   background-position: center
   background-size: cover
   will-change: transform, filter
-  @include filter(blur(2px))
-  @include transform(scale(1.02))
-  @include transition(all .1s ease, transform .4s ease-in-out)
+  filter: blur(2px)
+  transform: scale(1.02)
+  transition: all .1s ease, transform .4s ease-in-out
 
 .project-title
   color: #fff
@@ -60,7 +60,7 @@
   position: relative
   will-change: transform
   @include montserratBold
-  @include transition(all .3s ease-in-out)
+  transition: all .3s ease-in-out
   &:after
     content: ""
     background: #fff
@@ -72,7 +72,7 @@
 .project-overlay,
 .project-description,
 .project-stack
-  @include transition(all .3s ease-in-out)
+  transition: all .3s ease-in-out
 
 .project-overlay
   color: #fff

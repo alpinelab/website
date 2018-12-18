@@ -7,7 +7,7 @@
     justify-content: space-around
   padding-bottom: $sectionsMargin
   .col:hover .avatar
-    @include filter(none)
+    filter: none
   @include max-width(1280px)
     h4
       font-size: 16px
@@ -33,8 +33,8 @@
   border-radius: 50%
   overflow: hidden
   margin-bottom: 14px
-  @include filter(grayscale(100%))
-  @include transition(all .2s ease-in-out)
+  filter: grayscale(100%)
+  transition: all .2s ease-in-out
 
 .social-networks
   color: $blue
@@ -62,9 +62,9 @@
       height: 1px
       will-change: transform
       @include position(absolute, null 0 0 0)
-      @include transform-origin(100% 0)
-      @include transition(all .5s $ease-out-expo)
+      transform-origin: 100% 0
+      transition: all .5s $ease-out-expo
     &:hover
       color: #016db8
       &:after
-        @include transform(scaleX(0))
+        transform: scaleX(0)

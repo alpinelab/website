@@ -37,7 +37,7 @@
   height: 70px
   opacity: .8
   text-indent: -9999px
-  @include transition(opacity .23s ease-in-out)
+  transition: opacity .23s ease-in-out
   &:hover
     opacity: 1
   @include max-width($mobile)
@@ -46,4 +46,7 @@
 
 @each $commitment in cuisine-du-web lyon-rb rulu rails-girls-lyon la-conf-paris open-source blend-web-mix
   .commitments__link--#{$commitment}
-    @include retina-image("../images/#{$commitment}-logo", null)
+    background-image: url("../images/#{$commitment}-logo.png")
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx)
+    .commitments__link--#{$commitment}
+      background-image: url("../images/#{$commitment}-logo_2x.png")

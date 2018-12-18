@@ -57,7 +57,7 @@ h4
 i.fa
   margin-left: 0.5em
   color: $sw_light_gray
-  +transition(color 0.5s)
+  transition: color 0.5s
   &.fa-github, &.fa-github-square
     &:hover
       color: $sw_dark_gray
@@ -87,7 +87,7 @@ h2
   margin: 0 auto (-$footerHeight)
   background-color: white
   padding: 0 2em
-  +box-shadow(inset 0 -2px 7px 0 $sw_light_gray)
+  box-shadow: inset 0 -2px 7px 0 $sw_light_gray
 
 header
   padding: 1em 0
@@ -153,14 +153,14 @@ nav
   left: 0
   font-size: 14px
   line-height: 20px
-  +transform(rotate(90deg))
-  +transform-origin(bottom left)
+  transform: rotate(90deg)
+  transform-origin: bottom left
   background-color: $sw_red
   padding: 2px 10px
-  +border-top-radius(0.5em)
+  border-top-radius: 0.5em
   border: solid 2px white
   border-bottom: none
-  +box-shadow(-2px -2px 6px $sw_gray)
+  box-shadow: -2px -2px 6px $sw_gray
   a, a:hover
     color: white
     text-transform: uppercase

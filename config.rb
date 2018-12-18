@@ -92,6 +92,9 @@ activate :rouge_syntax
 # Add asset fingerprinting to avoid cache issues
 activate :asset_hash
 
+# Enable Autoprefixer for large browser support of CSS
+activate :autoprefixer
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
