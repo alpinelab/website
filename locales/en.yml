@@ -106,14 +106,14 @@ en:
         title: Agility
       enterprises:
         details: We manage <strong>very high trafic websites</strong> using reliable PaaS technologies to <strong>deploy peacefully</strong> and <strong>scale</strong> automatically applications that we have optimized for <strong>performance</strong> and robustness (caching, background jobs).
-        title: Enterprises
+        title: For Enterprises
       pricing:
         details: 'As we are working the agile way, invoicing is<br>simple and transparent: <strong class="price">€ 75 / hour</strong>.'
         title: Pricing
       quality:
-        details: Our code is <strong>versioned</strong> (git), <strong>organised</strong> (gitflow), <strong>tested</strong> (RSpec, Capybara) within <strong>continuous integration</strong> (Travis, Codeship), <strong>continuous audit</strong> (Codeclimate, code reviews) and <strong>continuous deployment</strong> (Heroku) processes.
+        details: Our code is <strong>versioned</strong>, organised, and <strong>tested</strong> within <strong>continuous integration</strong>, <strong>continuous audit</strong> and <strong>continuous deployment</strong> processes.
         title: Code quality
       startups:
-        details: We build <strong>MVP</strong>s by iterating shortly and guiding you through technological choices for <strong>quick prototyping</strong>, short <strong>time-to-market</strong> and activity monitoring until you are successful enough to have your own internal dev team.
-        title: Startups
+        details: We build <strong>MVP</strong>s by iterating shortly and guiding you through technological choices for <strong>quick prototyping</strong>, short <strong>time-to-market</strong> and activity monitoring until you are successful enough to have your own internal product team.
+        title: For Startups
       title: What we do
