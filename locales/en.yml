@@ -108,7 +108,7 @@ en:
         details: We manage <strong>very high trafic websites</strong> using reliable PaaS technologies to <strong>deploy peacefully</strong> and <strong>scale</strong> automatically applications that we have optimized for <strong>performance</strong> and robustness (caching, background jobs).
         title: Enterprises
       pricing:
-        details: 'As we are working the agile way, invoicing is<br>simple and transparent: <strong class="price">€ 60 / hour</strong>.'
+        details: 'As we are working the agile way, invoicing is<br>simple and transparent: <strong class="price">€ 75 / hour</strong>.'
         title: Pricing
       quality:
         details: Our code is <strong>versioned</strong> (git), <strong>organised</strong> (gitflow), <strong>tested</strong> (RSpec, Capybara) within <strong>continuous integration</strong> (Travis, Codeship), <strong>continuous audit</strong> (Codeclimate, code reviews) and <strong>continuous deployment</strong> (Heroku) processes.
