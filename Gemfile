@@ -17,8 +17,6 @@ gem "redcarpet"
 gem "rouge"
 gem "middleman-rouge"
 
-gem "sprockets", ">= 2.12.5"
-
 gem "bootstrap-sass"
 
 gem "localeapp"
