@@ -193,7 +193,6 @@ DEPENDENCIES
   bourbon
   font-awesome-sass
   jquery-middleman
-  json (~> 2.3.0)
   localeapp
   middleman (~> 3.3)
   middleman-autoprefixer (~> 2.10)
@@ -208,4 +207,4 @@ DEPENDENCIES
   sprockets (>= 2.12.5)
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
