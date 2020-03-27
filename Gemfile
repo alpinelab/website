@@ -12,7 +12,6 @@ gem "middleman-favicon-maker", "~> 3.7"
 gem "middleman-autoprefixer", "~> 2.10"
 gem "jquery-middleman"
 
-gem "rouge"
 gem "middleman-rouge"
 
 gem "bootstrap-sass"
