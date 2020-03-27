@@ -147,10 +147,6 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-configure :development do
- activate :livereload
-end
-
 activate :i18n, mount_at_root: :fr
 
 require '.localeapp/config'
