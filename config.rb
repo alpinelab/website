@@ -84,7 +84,10 @@ set :markdown,
   lax_spacing: true,
   with_toc_data: true
 
-activate :rouge_syntax
+# FIXME:
+# Tried to activate old-style extension: rouge_syntax. They are no longer
+# supported. (RuntimeError)
+# activate :rouge_syntax
 
 # Use relative URLs
 # activate :relative_assets
