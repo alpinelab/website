@@ -202,7 +202,6 @@ DEPENDENCIES
   middleman-minify-html
   middleman-rouge
   nokogiri
-  redcarpet
   rouge
 
 BUNDLED WITH
