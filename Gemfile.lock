@@ -189,21 +189,21 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
-  bourbon
-  font-awesome-sass
-  jquery-middleman
-  localeapp
+  bootstrap-sass (~> 3.4)
+  bourbon (~> 4.3)
+  font-awesome-sass (~> 4.7)
+  jquery-middleman (~> 3.1)
+  localeapp (~> 3.1)
   middleman (~> 3.3)
   middleman-autoprefixer (~> 2.10)
-  middleman-blog
+  middleman-blog (~> 3.5)
   middleman-favicon-maker (~> 3.7)
   middleman-livereload (~> 3.4)
-  middleman-minify-html
-  middleman-rouge
-  nokogiri
-  redcarpet
-  rouge
+  middleman-minify-html (~> 3.4)
+  middleman-rouge (~> 0.0)
+  nokogiri (~> 1.10)
+  redcarpet (~> 3.5)
+  rouge (~> 3.17)
 
 BUNDLED WITH
    1.17.3
