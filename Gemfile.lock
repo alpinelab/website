@@ -204,7 +204,6 @@ DEPENDENCIES
   nokogiri
   redcarpet
   rouge
-  sprockets (>= 2.12.5)
 
 BUNDLED WITH
    1.17.3
