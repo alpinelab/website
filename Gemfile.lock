@@ -203,7 +203,6 @@ DEPENDENCIES
   middleman-minify-html
   middleman-rouge
   nokogiri
-  redcarpet
   rouge
   sprockets (>= 2.12.5)
 
