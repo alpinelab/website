@@ -55,6 +55,15 @@ end
 # Directory Indexes
 activate :directory_indexes
 
+activate :sprockets do |c|
+  c.imported_asset_path = -> asset do
+    case asset.logical_path
+      when /\.js\z/ then "source/javascripts"
+      when /\.css\z/ then "source/stylesheets"
+    end
+  end
+end
+
 Time.zone = 'Paris'
 
 # Methods defined in the helpers block are available in templates
