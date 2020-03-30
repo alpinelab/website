@@ -84,7 +84,7 @@ set :markdown,
   lax_spacing: true,
   with_toc_data: true
 
-activate :rouge_syntax
+activate :syntax
 
 # Use relative URLs
 # activate :relative_assets
