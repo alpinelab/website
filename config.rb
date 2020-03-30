@@ -55,14 +55,18 @@ end
 # Directory Indexes
 activate :directory_indexes
 
-activate :sprockets do |c|
-  c.imported_asset_path = -> asset do
-    case asset.logical_path
-      when /\.js\z/ then "source/javascripts"
-      when /\.css\z/ then "source/stylesheets"
-    end
-  end
-end
+# activate :sprockets do |c|
+#   c.imported_asset_path = "source"
+#   c.expose_middleman_helpers = true
+#   # c.imported_asset_path = -> asset do
+#   #   case asset.logical_path
+#   #     when /\.js\z/ then "javascripts"
+#   #     when /\.css\z/ then "stylesheets"
+#   #   end
+#   # end
+# end
+activate :sprockets
+sprockets.append_path "source"
 
 Time.zone = 'Paris'
 
@@ -80,8 +84,8 @@ helpers do
   end
 end
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
+# set :css_dir, 'stylesheets'
+# set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 set :markdown_engine, :redcarpet
