@@ -79,27 +79,7 @@ fr:
       join-us: |-
         Vous voulez vous joindre à nous ? On recherche tout le temps des devs passioné-e-s !<br>
         Ajoutez-vous à l'équipe et faites nous <a href="https://github.com/alpinelab/website">une pull request</a> :-)
-      mike:
-        email: michael.baudino@alpine-lab.com
-        github: michaelbaudino
-        name: Michael Baudino
-        twitter: michaelbaudino
-      sylvain:
-        email: s.fertons@gmail.com
-        github: spharian
-        name: Sylvain Fertons
-        twitter: spharian
-      thibault:
-        email: thibault.dalban@alpine-lab.com
-        github: thibaultdalban
-        name: Thibault Dalban
-        twitter: kh_thib
       title: Notre équipe
-      yann:
-        email: yann@vaillant.im
-        github: vayan
-        name: Yann Vaillant
-        twitter: vayan
     what-we-do:
       contracts:
         details: Nos <a href="/conditions-generales-de-ventes.pdf" target="_blank">CGVs</a> sont des <a href="https://github.com/tibastral/contrats-francais" target="_blank">contrats de développement agile</a>. <br>Et le code que nous écrivons <strong>vous appartient</strong>.
