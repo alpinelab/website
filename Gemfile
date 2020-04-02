@@ -1,20 +1,16 @@
 source "https://rubygems.org"
 
-gem "nokogiri"
+gem "bootstrap-sass"
 gem "bourbon"
 gem "font-awesome-sass"
-
-gem "middleman", "~> 3.3"
-gem "middleman-livereload", "~> 3.4"
-gem "middleman-blog"
-gem "middleman-minify-html"
-gem "middleman-favicon-maker", "~> 3.7"
-gem "middleman-autoprefixer", "~> 2.10"
+gem "haml", "~> 4.0"
 gem "jquery-middleman"
-
-gem "rouge"
-gem "middleman-rouge"
-
-gem "bootstrap-sass"
-
 gem "localeapp"
+gem "middleman", "~> 3.3"
+gem "middleman-autoprefixer", "~> 2.10"
+gem "middleman-blog"
+gem "middleman-favicon-maker", "~> 3.7"
+gem "middleman-livereload", "~> 3.4"
+gem "middleman-minify-html"
+gem "middleman-rouge"
+gem "nokogiri"
