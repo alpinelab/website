@@ -1,0 +1,11 @@
+/*
+ * jQuery appear plugin
+ *
+ * Copyright (c) 2012 Andrey Sidorov
+ * licensed under MIT license.
+ *
+ * https://github.com/morr/jquery.appear/
+ *
+ * Version: 0.3.4
+ */
+!function(e){function r(){n=!1;for(var r=0,a=i.length;a>r;r++){var o=e(i[r]).filter(function(){return e(this).is(":appeared")});if(o.trigger("appear",[o]),t){var f=t.not(o);f.trigger("disappear",[f])}t=o}}var t,i=[],a=!1,n=!1,o={interval:250,force_process:!1},f=e(window);e.expr[":"].appeared=function(r){var t=e(r);if(!t.is(":visible"))return!1;var i=f.scrollLeft(),a=f.scrollTop(),n=t.offset(),o=n.left,p=n.top;return p+t.height()>=a&&p-(t.data("appear-top-offset")||0)<=a+f.height()&&o+t.width()>=i&&o-(t.data("appear-left-offset")||0)<=i+f.width()?!0:!1},e.fn.extend({appear:function(t){var f=e.extend({},o,t||{}),p=this.selector||this;if(!a){var s=function(){n||(n=!0,setTimeout(r,f.interval))};e(window).scroll(s).resize(s),a=!0}return f.force_process&&setTimeout(r,f.interval),i.push(p),e(p)}}),e.extend({force_appear:function(){return a?(r(),!0):!1}})}(jQuery);

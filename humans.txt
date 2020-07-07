@@ -1,0 +1,28 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Michael Baudino   -- Co-Founder & Rails addict          -- GitHub:  @michaelbaudino
+    Thibault Dalban   -- Co-Founder & Rails addict          -- GitHub:  @thibaultdalban
+    Thibault Jouan    -- Back-end developer & Rails addict  -- GitHub: @tjouan
+    Paul Monseu - de Bodinat   -- Full-stack developer & Rails addict -- GitHub:  @polo2
+
+
+# WHERE ?
+
+  We all live in Lyon, France, except Thibault Jouan who lives in Normandy, but we first met years ago in our hometown, Aix-les-Bains, in the heart of the French Alps.
+  Come visit us and grab a beer if you're in Lyon !
+
+
+# THANKS
+
+    All the amazingly dynamic open-source community
+    Also, huge thanks to Christopher Dell aka @tigrish for everything he's done for us :-)
+
+
+# TECHNOLOGY COLOPHON
+
+    MiddleMan, Ruby
+    Haml, Sass, CoffeeScript
+    HTML5, CSS3, jQuery
